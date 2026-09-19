@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "*/5 * * * *"   # 5 minuutin valein
   workflow_dispatch:         # mahdollistaa ajon kasin
+    inputs:
+      dry_run:
+        description: "Testiajo: ei posteta Discordiin eika tallenneta tilaa"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -29,9 +34,10 @@ jobs:
       - name: Tarkista uudet tuotteet
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-        run: python -u shopify_monitor.py --once
+        run: python -u shopify_monitor.py --once ${{ inputs.dry_run && '--dry-run' || '' }}
 
       - name: Tallenna tila
+        if: ${{ !inputs.dry_run }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
