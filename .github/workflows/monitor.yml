@@ -2,8 +2,8 @@ name: Shopify monitor
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # 5 minuutin välein
-  workflow_dispatch:         # mahdollistaa ajon käsin
+    - cron: "*/5 * * * *"   # 5 minuutin valein
+  workflow_dispatch:         # mahdollistaa ajon kasin
 
 permissions:
   contents: write
@@ -15,6 +15,8 @@ concurrency:
 jobs:
   check:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+
     steps:
       - uses: actions/checkout@v4
 
@@ -27,12 +29,14 @@ jobs:
       - name: Tarkista uudet tuotteet
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-        run: python shopify_monitor.py --once
+        run: python -u shopify_monitor.py --once
 
       - name: Tallenna tila
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add seen.json
-          git diff --staged --quiet || git commit -m "update state"
+          git diff --staged --quiet && echo "ei muutoksia" && exit 0
+          git commit -m "update state"
+          git pull --rebase
           git push
