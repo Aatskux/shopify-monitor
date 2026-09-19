@@ -17,9 +17,32 @@ import time
 import requests
 
 # Kaupat joita seurataan (ilman kauttaviivaa lopussa)
-STORES = [
-    "https://avellalane.com",
-]
+STORES = {
+    "https://avellalane.com": "$",
+    "https://padrecca.com": "$",
+    "https://sentrafashion.com": "$",
+    "https://cielena.com": "$",
+    "https://blankspaces.us": "$",
+    "https://distrikdofficial.com": "$",
+    "https://allicient.co": "$",
+    "https://officialsoreva.com": "$",
+    "https://shoplunnessa.com": "$",
+    "https://www.curvite.com": "$",
+    "https://rovak.store": "$",
+    "https://cortezstudios.co": "$",
+    "https://shopurbanthread.com": "$",
+    "https://shopvelour.co": "$",
+    "https://maisonveya.com": "$",
+    "https://modo-clothing.myshopify.com": "$",
+    "https://vosseraofficial.com": "$",
+    "https://www.ashnon.com": "$",
+    "https://tryoceans.com": "$",
+    "https://alirausa.com": "$",
+    "https://pilocea.com": "$",
+    "https://airpuply.com": "$",
+    "https://shopsakura.store": "$",
+    "https://wearseventyone.net": "$"
+}
 
 WEBHOOK = os.environ["DISCORD_WEBHOOK"]
 INTERVAL = 60                      # sekuntia kierrosten välillä (vain jatkuvassa ajossa)
