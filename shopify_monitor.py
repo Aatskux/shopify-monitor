@@ -3,13 +3,15 @@
 Shopify-monitori: seuraa kauppojen /products.json -listaa ja postaa
 uudet tuotteet Discordin webhookiin.
 
-Asennus:  pip install requests
-Käyttö:   DISCORD_WEBHOOK="https://discord.com/api/webhooks/..." python3 shopify_monitor.py
+Asennus:       pip install requests
+Jatkuva ajo:   DISCORD_WEBHOOK="https://discord.com/api/webhooks/..." python3 shopify_monitor.py
+Yksi kierros:  DISCORD_WEBHOOK="https://discord.com/api/webhooks/..." python3 shopify_monitor.py --once
 """
 
 import json
 import os
 import pathlib
+import sys
 import time
 
 import requests
@@ -17,15 +19,10 @@ import requests
 # Kaupat joita seurataan (ilman kauttaviivaa lopussa)
 STORES = [
     "https://avellalane.com",
-    "https://f9eqwy-zz.myshopify.com",
 ]
 
-WEBHOOK = os.environ.get(
-    "DISCORD_WEBHOOK",
-    "https://discord.com/api/webhooks/1550855981519339566/"
-    "6iUlXcjO4VoiR5oPUPiSGVAQpcf1kdy1dZtBxaPjOTEtC1JRkpZ083X238JVtLV4nt6D",
-)
-INTERVAL = 60                      # sekuntia kierrosten välillä
+WEBHOOK = os.environ["DISCORD_WEBHOOK"]
+INTERVAL = 60                      # sekuntia kierrosten välillä (vain jatkuvassa ajossa)
 STATE = pathlib.Path("seen.json")  # muistaa jo nähdyt tuotteet
 HEADERS = {"User-Agent": "Mozilla/5.0 (product monitor)"}
 
@@ -37,7 +34,7 @@ def load_seen():
 
 
 def save_seen(seen):
-    STATE.write_text(json.dumps({k: sorted(v) for k, v in seen.items()}))
+    STATE.write_text(json.dumps({k: sorted(v) for k, v in seen.items()}, indent=1))
 
 
 def fetch_products(store):
@@ -79,41 +76,47 @@ def notify(store, p):
     requests.post(WEBHOOK, json={"embeds": [embed]}, timeout=15).raise_for_status()
 
 
+def check_all(seen):
+    for store in STORES:
+        baseline = store not in seen
+
+        try:
+            products = fetch_products(store)
+        except Exception as e:
+            print(f"[virhe] {store}: {e}")
+            continue
+
+        known = seen.setdefault(store, set())
+        new = [p for p in products if str(p["id"]) not in known]
+
+        for p in new:
+            known.add(str(p["id"]))
+            # Ensimmaisella kerralla vain tallennetaan, ei spammata
+            if not baseline:
+                try:
+                    notify(store, p)
+                    time.sleep(1)  # Discordin rate limit
+                except Exception as e:
+                    print(f"[webhook-virhe] {e}")
+
+        if baseline:
+            print(f"{store}: pohjadata tallennettu ({len(products)} tuotetta)")
+        else:
+            print(f"{store}: {len(new)} uutta tuotetta")
+
+    save_seen(seen)
+
+
 def main():
+    once = "--once" in sys.argv
     seen = load_seen()
-    first_run = {s: s not in seen for s in STORES}
 
     while True:
-        for store in STORES:
-            try:
-                products = fetch_products(store)
-            except Exception as e:
-                print(f"[virhe] {store}: {e}")
-                continue
-
-            known = seen.setdefault(store, set())
-            new = [p for p in products if str(p["id"]) not in known]
-
-            for p in new:
-                known.add(str(p["id"]))
-                # Ensimmäisellä kierroksella vain tallennetaan, ei spämmätä
-                if not first_run[store]:
-                    try:
-                        notify(store, p)
-                        time.sleep(1)  # Discordin rate limit
-                    except Exception as e:
-                        print(f"[webhook-virhe] {e}")
-
-            if first_run[store]:
-                print(f"{store}: pohjadata tallennettu ({len(products)} tuotetta)")
-                first_run[store] = False
-            elif new:
-                print(f"{store}: {len(new)} uutta tuotetta")
-
-        save_seen(seen)
+        check_all(seen)
+        if once:
+            return
         time.sleep(INTERVAL)
 
 
 if __name__ == "__main__":
     main()
-
