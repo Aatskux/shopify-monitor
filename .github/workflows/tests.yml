@@ -1,0 +1,53 @@
+name: Testit
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      smoke:
+        description: "Aja lisaksi savutesti oikeita kauppoja vasten (ei posta Discordiin)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests
+
+      - name: Yksikkotestit (valekauppa, ei verkkoa)
+        run: python -u -m unittest -v test_shopify_monitor.py
+
+      # Savutesti hakee oikeat kaupat ja renderoi oikeat Discord-embedit,
+      # mutta ajaa dry-runina: mitaan ei posteta eika tilaa kirjoiteta.
+      # Tilasta pudotetaan kaupoittain pari tuoretta ID:ta, jotta embedien
+      # muodostus paasee oikeasti ajoon.
+      - name: Savutesti oikeita kauppoja vasten
+        if: ${{ inputs.smoke }}
+        run: |
+          mkdir -p /tmp/smoke
+          cp shopify_monitor.py /tmp/smoke/
+          python - <<'PY'
+          import json
+          state = json.load(open("seen.json"))
+          trimmed = {k: v[:-2] for k, v in state.items()}
+          json.dump(trimmed, open("/tmp/smoke/seen.json", "w"))
+          print(f"pudotettiin {sum(len(v) for v in state.values()) - sum(len(v) for v in trimmed.values())} ID:ta")
+          PY
+          cd /tmp/smoke && python -u shopify_monitor.py --once --dry-run
