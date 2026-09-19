@@ -44,6 +44,7 @@ STORES = {
     "https://airpuply.com": "$",
     "https://shopsakura.store": "$",
     "https://wearseventyone.net": "$",
+    "https://f9eqwy-zz.myshopify.com": "$"
 }
 
 INTERVAL = 60                      # sekuntia kierrosten välillä (vain jatkuvassa ajossa)
