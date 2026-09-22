@@ -96,7 +96,9 @@ STORES = {
     "https://kairovaglobal.com": "$",
     "https://cavessi.store": "$",
     "https://astrapparels.com": "$",
-    "https://coralyneshop.com": "$",
+    "https://kaverocenter.com": "$",
+    "https://zolera.co": "$",
+    "https://zolerashop.com": "$",
 }
 
 INTERVAL = 60                      # sekuntia kierrosten välillä (vain jatkuvassa ajossa)
