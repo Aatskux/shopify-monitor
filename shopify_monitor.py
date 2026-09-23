@@ -106,7 +106,6 @@ STORES = {
     "https://alacient.co": "$",
     "https://vossaofficial.com": "$",
 }
-}
 
 INTERVAL = 60                      # sekuntia kierrosten välillä (vain jatkuvassa ajossa)
 STATE = pathlib.Path("seen.json")  # muistaa jo nähdyt tuotteet
