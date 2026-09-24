@@ -124,14 +124,16 @@ class Base(unittest.TestCase):
         self.tmp = tempfile.TemporaryDirectory()
         self.addCleanup(self.tmp.cleanup)
 
-        self._stores, self._state, self._timeout = m.STORES, m.STATE, m.TIMEOUT
+        self._saved = m.STORES, m.STORES_FILE, m.STATE, m.TIMEOUT
         m.STORES = {self.base: "$"}
+        m.STORES_FILE = pathlib.Path(self.tmp.name) / "stores.json"
+        m.STORES_FILE.write_text(json.dumps(m.STORES))
         m.STATE = pathlib.Path(self.tmp.name) / "seen.json"
         m.TIMEOUT = 2
         self.addCleanup(self._restore)
 
     def _restore(self):
-        m.STORES, m.STATE, m.TIMEOUT = self._stores, self._state, self._timeout
+        m.STORES, m.STORES_FILE, m.STATE, m.TIMEOUT = self._saved
 
     @property
     def webhook(self):
@@ -316,17 +318,62 @@ class TestCli(Base):
                 self.fail(f"kovakoodattu webhook-URL: {line.strip()}")
 
     def test_stores_on_siisti(self):
-        for url in self._stores:
+        stores = m.load_stores(REPO_STORES)
+        for url in stores:
             self.assertFalse(url.endswith("/"), f"kauttaviiva lopussa: {url}")
             self.assertTrue(url.startswith("https://"), f"ei https: {url}")
-            self.assertTrue(self._stores[url], f"valuuttamerkki puuttuu: {url}")
+            self.assertEqual(url, url.lower(), f"isoja kirjaimia: {url}")
+            self.assertTrue(stores[url], f"valuuttamerkki puuttuu: {url}")
 
     def test_seen_json_vastaa_stores_listaa(self):
         state = pathlib.Path(m.__file__).parent / "seen.json"
         if not state.exists():
             self.skipTest("seen.json puuttuu")
         keys = set(json.loads(state.read_text()))
-        self.assertEqual(keys - set(self._stores), set(), "seen.jsonissa tuntemattomia kauppoja")
+        self.assertEqual(keys - set(m.load_stores(REPO_STORES)), set(),
+                         "seen.jsonissa tuntemattomia kauppoja")
+
+    def test_main_lukee_kaupat_stores_jsonista(self):
+        import sys
+        m.STORES = {}
+        argv = sys.argv
+        sys.argv = ["shopify_monitor.py", "--once", "--dry-run"]
+        try:
+            m.main()
+        finally:
+            sys.argv = argv
+        self.assertEqual(m.STORES, {self.base: "$"})
+
+
+# --- stores.json --------------------------------------------------------
+
+REPO_STORES = pathlib.Path(m.__file__).parent / "stores.json"
+
+
+class TestStoresFile(Base):
+    def test_lukee_kaupat_ja_valuutat(self):
+        m.STORES_FILE.write_text(json.dumps({"https://a.example": "$", "https://b.example": "€"}))
+        self.assertEqual(m.load_stores(), {"https://a.example": "$", "https://b.example": "€"})
+
+    def test_puuttuva_tiedosto_pysayttaa_selkeasti(self):
+        m.STORES_FILE.unlink()
+        with self.assertRaises(SystemExit):
+            m.load_stores()
+
+    def test_rikkinainen_json_pysayttaa_selkeasti(self):
+        m.STORES_FILE.write_text("{ ei jsonia")
+        with self.assertRaises(SystemExit):
+            m.load_stores()
+
+    def test_tyhja_lista_pysayttaa_selkeasti(self):
+        # tyhjalla listalla save_seen tyhjentaisi koko seen.jsonin
+        m.STORES_FILE.write_text("{}")
+        with self.assertRaises(SystemExit):
+            m.load_stores()
+
+    def test_koodissa_ei_ole_kovakoodattua_kauppalistaa(self):
+        src = pathlib.Path(m.__file__).read_text()
+        self.assertNotIn("avellalane.com", src)
 
 
 if __name__ == "__main__":
