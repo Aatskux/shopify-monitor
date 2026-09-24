@@ -18,94 +18,10 @@ import time
 
 import requests
 
-# Kaupat joita seurataan: osoite (ilman kauttaviivaa lopussa) -> valuuttamerkki
-STORES = {
-    "https://avellalane.com": "$",
-    "https://padrecca.com": "$",
-    "https://sentrafashion.com": "$",
-    "https://cielena.com": "$",
-    "https://blankspaces.us": "$",
-    "https://distrikdofficial.com": "$",
-    "https://allicient.co": "$",
-    "https://officialsoreva.com": "$",
-    "https://shoplunnessa.com": "$",
-    "https://www.curvite.com": "$",
-    "https://rovak.store": "$",
-    "https://cortezstudios.co": "$",
-    "https://shopurbanthread.com": "$",
-    "https://shopvelour.co": "$",
-    "https://maisonveya.com": "$",
-    "https://modo-clothing.myshopify.com": "$",
-    "https://vosseraofficial.com": "$",
-    "https://www.ashnon.com": "$",
-    "https://tryoceans.com": "$",
-    "https://alirausa.com": "$",
-    "https://pilocea.com": "$",
-    "https://airpuply.com": "$",
-    "https://shopsakura.store": "$",
-    "https://wearseventyone.net": "$",
-    "https://avelowear.com": "$",
-    "https://pristinelosangeles.com": "$",
-    "https://ashfordhills.com": "$",
-    "https://pinkpookie.com": "$",
-    "https://lovedline.com": "$",
-    "https://namico.store": "$",
-    "https://theivorylane.net": "$",
-    "https://mylumeras.com": "$",
-    "https://elvani.net": "$",
-    "https://sentralofficial.net": "$",
-    "https://peachyhaven.com": "$",
-    "https://renveroapparel.com": "$",
-    "https://silvae.store": "$",
-    "https://daisiesstore.shop": "$",
-    "https://aurorathelabel.shop": "$",
-    "https://shopaluma.com": "$",
-    "https://nivorawear.com": "$",
-    "https://shopvolara.com": "$",
-    "https://exaluna.com": "$",
-    "https://shopnovyrena.com": "$",
-    "https://stryxaco.com": "$",
-    "https://vaylae.com": "$",
-    "https://evonnashop.com": "$",
-    "https://buy.fayora.shop": "$",
-    "https://miravaofficial.com": "$",
-    "https://nuvaly.shop": "$",
-    "https://veyfina.com": "$",
-    "https://urbaneofficial.shop": "$",
-    "https://lumenclothingco.shop": "$",
-    "https://novirausa.com": "$",
-    "https://clemoreclothing.shop": "$",
-    "https://balmay.co": "$",
-    "https://revoraco.com": "$",
-    "https://cevorashop.com": "$",
-    "https://myraco.shop": "$",
-    "https://rosavelle.online": "$",
-    "https://rosinsstore.myshopify.com": "$",
-    "https://maverostyle.com": "$",
-    "https://orvanemain.com": "$",
-    "https://trendlinemain.com": "$",
-    "https://autumnandash.co": "$",
-    "https://coralyneshop.com": "$",
-    "https://lyrx.shop": "$",
-    "https://shopcrome.com": "$",
-    "https://alori.store": "$",
-    "https://lunveraco.com": "$",
-    "https://get.currentsco.com": "$",
-    "https://trinkettown.store": "$",
-    "https://dorchellla.com": "$",
-    "https://kairovaglobal.com": "$",
-    "https://cavessi.store": "$",
-    "https://astrapparels.com": "$",
-    "https://kaverocenter.com": "$",
-    "https://zolera.co": "$",
-    "https://zolerashop.com": "$",
-    "https://bymarlow.com": "$",
-    "https://celinea.online": "$",
-    "https://plantona.store": "$",
-    "https://renovaestore.com": "$",
-    "https://alacient.co": "$",
-    "https://vossaofficial.com": "$",
-}
+# Kaupat joita seurataan luetaan tiedostosta stores.json:
+# {"https://kauppa.com": "$"}  (osoite ilman kauttaviivaa lopussa -> valuuttamerkki)
+STORES_FILE = pathlib.Path("stores.json")
+STORES = {}                        # tayttyy load_stores():lla main():ssa
 
 INTERVAL = 60                      # sekuntia kierrosten välillä (vain jatkuvassa ajossa)
 STATE = pathlib.Path("seen.json")  # muistaa jo nähdyt tuotteet
@@ -122,6 +38,22 @@ def get_webhook():
     except KeyError:
         sys.exit("DISCORD_WEBHOOK puuttuu ymparistomuuttujista "
                  "(tai aja --dry-run-tilassa).")
+
+
+def load_stores(path=None):
+    """Lukee seurattavat kaupat. Rikkinainen tai puuttuva lista pysayttaa ajon
+    selkeasti - tyhjalla listalla ajaminen tallentaisi tyhjan tilan."""
+    path = path or STORES_FILE
+    try:
+        data = json.loads(pathlib.Path(path).read_text())
+    except FileNotFoundError:
+        sys.exit(f"{path} puuttuu")
+    except json.JSONDecodeError as e:
+        sys.exit(f"{path} ei ole validia JSONia ({e})")
+    if not isinstance(data, dict) or not data:
+        sys.exit(f"{path} pitaa olla ei-tyhja objekti "
+                 '{"https://kauppa.com": "$"}')
+    return data
 
 
 def load_seen():
@@ -307,6 +239,8 @@ def main():
                          "tulosta mita olisi postattu")
     args = ap.parse_args()
 
+    global STORES
+    STORES = load_stores()
     webhook = None if args.dry_run else get_webhook()
     seen = load_seen()
 

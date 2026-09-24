@@ -31,6 +31,15 @@ jobs:
 
       - run: pip install requests
 
+      # Lisaa Discord-kanavalle postatut kaupat stores.json:iin ennen
+      # monitorin kierrosta. Jos Discord ei vastaa, monitori ajetaan silti.
+      - name: Lisaa kaupat Discordista
+        continue-on-error: true
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          AI_STORES_CHANNEL_ID: ${{ secrets.AI_STORES_CHANNEL_ID }}
+        run: python -u discord_intake.py ${{ inputs.dry_run && '--dry-run' || '' }}
+
       - name: Tarkista uudet tuotteet
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
@@ -41,7 +50,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add seen.json
+          for f in seen.json stores.json intake_state.json; do
+            if [ -f "$f" ]; then git add "$f"; fi
+          done
           git diff --staged --quiet && echo "ei muutoksia" && exit 0
           git commit -m "update state"
           git pull --rebase

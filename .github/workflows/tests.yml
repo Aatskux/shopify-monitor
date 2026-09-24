@@ -32,7 +32,7 @@ jobs:
       - run: pip install requests
 
       - name: Yksikkotestit (valekauppa, ei verkkoa)
-        run: python -u -m unittest -v test_shopify_monitor.py
+        run: python -u -m unittest -v test_shopify_monitor.py test_discord_intake.py
 
       # Savutesti hakee oikeat kaupat ja renderoi oikeat Discord-embedit,
       # mutta ajaa dry-runina: mitaan ei posteta eika tilaa kirjoiteta.
@@ -42,7 +42,7 @@ jobs:
         if: ${{ inputs.smoke }}
         run: |
           mkdir -p /tmp/smoke
-          cp shopify_monitor.py /tmp/smoke/
+          cp shopify_monitor.py stores.json /tmp/smoke/
           python - <<'PY'
           import json
           state = json.load(open("seen.json"))
