@@ -166,7 +166,7 @@ class Server(ThreadingHTTPServer):
         pass
 
 
-SAVED = ["STORES", "STORES_FILE", "STATE", "TIMEOUT", "BEST_SELLERS", "IMAGE_HASHES",
+SAVED = ["STORES", "STORES_FILE", "STATE", "MISSING_FILE", "TIMEOUT", "BEST_SELLERS", "IMAGE_HASHES",
          "MATCHES_FILE", "SUMMARY_STATE", "IMAGE_TIMEOUT", "BEST_MIN_LISTED",
          "MAX_IMAGE_DOWNLOADS", "IMAGE_BUDGET", "fetch_products"]
 
@@ -199,6 +199,7 @@ class Base(unittest.TestCase):
         m.STORES_FILE = tmp / "stores.json"
         m.STORES_FILE.write_text(json.dumps(m.STORES))
         m.STATE = tmp / "seen.json"
+        m.MISSING_FILE = tmp / "seen_missing.json"
         m.BEST_SELLERS = tmp / "best_sellers.json"
         m.IMAGE_HASHES = tmp / "image_hashes.json"
         m.MATCHES_FILE = tmp / "matches.json"
@@ -746,7 +747,8 @@ class TestImageLimits(LiveBase):
 # --- tilatiedostot eivat muutu turhaan ----------------------------------
 
 class TestStableState(LiveBase):
-    FILES = ("STATE", "IMAGE_HASHES", "MATCHES_FILE", "SUMMARY_STATE", "BEST_SELLERS")
+    FILES = ("STATE", "MISSING_FILE", "IMAGE_HASHES", "MATCHES_FILE", "SUMMARY_STATE",
+             "BEST_SELLERS")
 
     def snapshot(self):
         out = {}
@@ -1123,6 +1125,129 @@ class TestSmallStore(BestBase):
         self.assertIsNone(m.rise_reason(6, 15, old, T0))
         self.assertIsNotNone(m.rise_reason(11, None, old, T0))
         self.assertIsNone(m.rise_reason(12, None, old, T0))
+
+# --- seen.json:n karsinta ja webhook-testi --------------------------------
+
+class TestSeenPruning(LiveBase):
+    """Id karsitaan vasta kun se on puuttunut yhtajaksoisesti 24 h."""
+
+    def setUp(self):
+        super().setUp()
+        m.STORES = {self.a: "$", self.b: "$"}
+        for pid in range(1, 11):
+            self.add("a", pid, f"Tuote {pid}")
+        self.add("b", 50, "B-tuote")
+        self.round()                                   # pohjadata
+
+    def seen(self):
+        return json.loads(m.STATE.read_text())
+
+    def missing(self):
+        return json.loads(m.MISSING_FILE.read_text()) if m.MISSING_FILE.exists() else {}
+
+    def test_puuttuminen_kirjataan_mutta_ei_karsita_heti(self):
+        del LIVE[0]
+        self.round(T0 + timedelta(minutes=5))
+        self.assertIn("1", self.seen()[self.a])
+        self.assertEqual(self.missing(), {self.a: {"1": m._iso(T0 + timedelta(minutes=5))}})
+
+    def test_karsitaan_24_h_yhtajaksoisen_puuttumisen_jalkeen(self):
+        del LIVE[0]
+        self.round(T0 + timedelta(minutes=5))
+        self.round(T0 + timedelta(hours=23, minutes=59))
+        self.assertIn("1", self.seen()[self.a], "alle 24 h: ei viela")
+        self.round(T0 + timedelta(hours=24, minutes=5))
+        self.assertNotIn("1", self.seen()[self.a])
+        self.assertEqual(self.missing(), {}, "karsittu id pois myos ajastimista")
+
+    def test_palaava_id_nollaa_ajastimen(self):
+        removed = LIVE.pop(0)
+        self.round(T0 + timedelta(minutes=5))
+        LIVE.insert(0, removed)
+        self.round(T0 + timedelta(hours=12))           # palasi -> nollaus
+        self.assertEqual(self.missing(), {})
+        LIVE.pop(0)
+        self.round(T0 + timedelta(hours=20))           # puuttuu taas
+        self.round(T0 + timedelta(hours=30))           # 10 h, ei 25 h
+        self.assertIn("1", self.seen()[self.a])
+        self.round(T0 + timedelta(hours=44, minutes=5))
+        self.assertNotIn("1", self.seen()[self.a])
+
+    def test_hetkellinen_vajaa_vastaus_ei_postaa_uudelleen(self):
+        saved = LIVE[:5]
+        del LIVE[:5]
+        self.round(T0 + timedelta(minutes=5))
+        LIVE[:0] = saved
+        self.round(T0 + timedelta(minutes=10))
+        self.assertEqual(POSTED, [], "palanneet eivat ole uusia")
+
+    def test_oikeasti_poistettu_joka_palaa_myohemmin_on_uusi(self):
+        removed = LIVE.pop(0)
+        self.round(T0 + timedelta(minutes=5))
+        self.round(T0 + timedelta(hours=25))           # karsittu
+        LIVE.insert(0, removed)
+        self.round(T0 + timedelta(hours=26))
+        self.assertEqual([b["embeds"][0]["title"] for b in POSTED], ["Tuote 1"])
+
+    def test_epaonnistunut_haku_ei_karsi(self):
+        del LIVE[0]
+        self.round(T0 + timedelta(minutes=5))
+        original = m.fetch_products
+
+        def flaky(store):
+            if store == self.a:
+                raise requests.ConnectionError("katkos")
+            return original(store)
+        m.fetch_products = flaky
+        self.round(T0 + timedelta(hours=25))
+        self.assertIn("1", self.seen()[self.a], "haku epaonnistui -> ei karsintaa")
+
+    def test_tyhja_vastaus_ei_kaynnista_ajastimia(self):
+        del LIVE[:10]
+        self.round(T0 + timedelta(minutes=5))
+        self.assertEqual(self.missing(), {})
+        self.assertEqual(len(self.seen()[self.a]), 10)
+
+    def test_muiden_kauppojen_tila_sailyy(self):
+        del LIVE[0]
+        self.round(T0 + timedelta(minutes=5))
+        self.round(T0 + timedelta(hours=25))
+        self.assertEqual(self.seen()[self.b], ["50"])
+
+    def test_poistetun_kaupan_ajastimet_siivotaan(self):
+        del LIVE[0]
+        self.round(T0 + timedelta(minutes=5))
+        m.STORES = {self.b: "$"}
+        self.round(T0 + timedelta(minutes=10))
+        self.assertEqual(self.missing(), {})
+
+
+class TestWebhookTest(Base):
+    def test_testikortti_molempiin(self):
+        os.environ["SALES_WEBHOOK"] = f"{self.base}/sales"
+        os.environ["TRENDS_WEBHOOK"] = f"{self.base}/trends"
+        self.assertTrue(m.send_test_cards())
+        self.assertEqual(POSTED_PATHS, ["/sales", "/trends"])
+        self.assertEqual({b["embeds"][0]["title"] for b in POSTED}, {"Testi, voit poistaa"})
+
+    def test_puuttuva_tai_rikki_webhook_raportoidaan(self):
+        os.environ["SALES_WEBHOOK"] = "http://127.0.0.1:1/sales"
+        self.assertFalse(m.send_test_cards())
+        self.assertEqual(POSTED, [])
+
+    def test_cli_lopettaa_testin_jalkeen(self):
+        import sys
+        os.environ["SALES_WEBHOOK"] = f"{self.base}/sales"
+        os.environ["TRENDS_WEBHOOK"] = f"{self.base}/trends"
+        argv = sys.argv
+        sys.argv = ["shopify_monitor.py", "--test-webhooks"]
+        try:
+            with self.assertRaises(SystemExit) as cm:
+                m.main()
+        finally:
+            sys.argv = argv
+        self.assertEqual(cm.exception.code, 0)
+        self.assertFalse(m.STATE.exists(), "testi ei aja kierrosta")
 
 
 if __name__ == "__main__":

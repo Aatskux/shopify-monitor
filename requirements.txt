@@ -1,4 +1,9 @@
-requests
-imagehash
-Pillow
-rapidfuzz
+# Lukitut versiot: phash-tiivisteet riippuvat imagehash/scipy/numpy/Pillow-
+# versioista, ja uusien tiivisteiden pitaa vastata image_hashes.json:ia.
+requests==2.34.2
+imagehash==4.3.2
+Pillow==12.3.0
+numpy==2.5.3
+scipy==1.18.1
+PyWavelets==1.10.0
+rapidfuzz==3.14.6

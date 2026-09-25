@@ -3,10 +3,11 @@
 Shopify-monitori: seuraa kauppojen /products.json -listaa ja postaa
 uudet tuotteet Discordin webhookiin.
 
-Asennus:       pip install requests
+Asennus:       pip install -r requirements.txt
 Jatkuva ajo:   DISCORD_WEBHOOK="https://discord.com/api/webhooks/..." python3 shopify_monitor.py
 Yksi kierros:  DISCORD_WEBHOOK="https://discord.com/api/webhooks/..." python3 shopify_monitor.py --once
 Testiajo:      python3 shopify_monitor.py --once --dry-run   (ei postaa Discordiin)
+Webhook-testi: python3 shopify_monitor.py --test-webhooks      (testikortti SALES/TRENDS)
 
 Saman tuotteen tunnistus kauppojen valilla: uuden tuotteen ensimmaisesta
 kuvasta lasketaan perceptual hash (image_hashes.json) ja nimia verrataan
@@ -43,6 +44,9 @@ STORES = {}                        # tayttyy load_stores():lla main():ssa
 
 INTERVAL = 60                      # sekuntia kierrosten välillä (vain jatkuvassa ajossa)
 STATE = pathlib.Path("seen.json")  # muistaa jo nähdyt tuotteet
+# Kauppa -> tuote-id -> milloin id havaittiin ensimmaisen kerran puuttuvaksi.
+MISSING_FILE = pathlib.Path("seen_missing.json")
+PRUNE_AFTER = 24 * 3600            # sekuntia yhtajaksoista puuttumista ennen karsintaa
 HEADERS = {"User-Agent": "Mozilla/5.0 (product monitor)"}
 TIMEOUT = 15                       # sekuntia yhtä HTTP-pyyntöä kohti
 PAGE_SIZE = 250
@@ -148,6 +152,31 @@ def save_seen(seen):
     text = json.dumps(data, indent=1) + "\n"
     if not STATE.exists() or STATE.read_text() != text:   # ei turhia kirjoituksia
         STATE.write_text(text)
+
+
+def prune_seen(known, products, missing, now):
+    """Karsii kaupan nahdyista tuotteista ne, jotka ovat puuttuneet
+    products.jsonista yhtajaksoisesti PRUNE_AFTER sekuntia.
+
+    missing = {tuote-id: ensimmainen puuttumisaika} talle kaupalle; paivitetaan
+    paikallaan. Id:n palatessa listalle ajastin nollataan, joten hetkellinen
+    vajaa vastaus ei aiheuta uudelleenpostauksia. Kutsutaan vain kun kaupan
+    haku onnistui talla kierroksella. Tyhjaa vastausta ei uskota lainkaan.
+    Palauttaa karsittujen maaran.
+    """
+    current = {str(p.get("id")) for p in products}
+    if not current:
+        return 0
+    for pid in [i for i in missing if i in current or i not in known]:
+        del missing[pid]                      # palasi listalle -> nollaus
+    for pid in known - current:
+        missing.setdefault(pid, _iso(now))
+    expired = [pid for pid, since in missing.items()
+               if (now - (_parse_time(since) or now)).total_seconds() >= PRUNE_AFTER]
+    for pid in expired:
+        known.discard(pid)
+        del missing[pid]
+    return len(expired)
 
 
 def fetch_products(store):
@@ -951,6 +980,7 @@ def check_all(seen, webhook=None, dry_run=False, now=None):
     failed = []
     catalog = {}                 # taman kierroksen onnistuneet haut
     best_state = _load_json(BEST_SELLERS, {})
+    missing = _load_json(MISSING_FILE, {})
     matches_log = _load_json(MATCHES_FILE, [])
     hashes = _load_json(IMAGE_HASHES, {})
     hashes.setdefault("products", {})
@@ -991,12 +1021,15 @@ def check_all(seen, webhook=None, dry_run=False, now=None):
             except Exception as e:
                 print(f"[webhook-virhe] {store}: {describe_error(e)}")
 
+        pruned = prune_seen(known, products, missing.setdefault(store, {}), now)
+
         if baseline:
             print(f"{store}: OK, {len(products)} tuotetta, "
                   f"pohjadata tallennettu ({took:.1f}s)")
         else:
             print(f"{store}: OK, {len(products)} tuotetta, "
-                  f"{len(new)} uutta ({took:.1f}s)")
+                  f"{len(new)} uutta" + (f", {pruned} yli 24 h puuttunutta karsittu" if pruned else "")
+                  + f" ({took:.1f}s)")
 
     done_new = update_image_hashes(hashes, catalog)
     found = process_new_matches(done_new, hashes, matches_log, now, dry_run=dry_run)
@@ -1018,6 +1051,7 @@ def check_all(seen, webhook=None, dry_run=False, now=None):
         # Kuten seen.json: poistettujen kauppojen tila ei jaa roikkumaan.
         _save_json(IMAGE_HASHES, hashes)
         _save_json(BEST_SELLERS, best_state)
+        _save_json(MISSING_FILE, {k: v for k, v in missing.items() if k in STORES and v})
         _save_json(MATCHES_FILE, matches_log)
         _save_json(SUMMARY_STATE, summary)
 
@@ -1031,14 +1065,44 @@ def check_all(seen, webhook=None, dry_run=False, now=None):
     return failed
 
 
+def send_test_cards():
+    """Lahettaa testikortin SALES_WEBHOOKiin ja TRENDS_WEBHOOKiin ja kertoo
+    menikö läpi. Palauttaa True jos kaikki onnistuivat."""
+    ok = True
+    for env, color in (("SALES_WEBHOOK", 0x3498DB), ("TRENDS_WEBHOOK", 0xE67E22)):
+        webhook = os.environ.get(env)
+        if not webhook:
+            print(f"[testi] {env}: PUUTTUU (ymparistomuuttuja tyhja)")
+            ok = False
+            continue
+        payload = {"embeds": [{
+            "title": "Testi, voit poistaa",
+            "description": f"shopify-monitorin testikortti kanavalle {env}.",
+            "color": color,
+            "timestamp": _iso(_utcnow()),
+        }]}
+        try:
+            post_webhook(webhook, payload)
+            print(f"[testi] {env}: OK, kortti lahetetty")
+        except Exception as e:
+            print(f"[testi] {env}: EPAONNISTUI ({describe_error(e)})")
+            ok = False
+    return ok
+
+
 def main():
     ap = argparse.ArgumentParser(description="Shopify-tuotemonitori")
     ap.add_argument("--once", action="store_true",
                     help="aja yksi kierros ja lopeta")
+    ap.add_argument("--test-webhooks", action="store_true",
+                    help="laheta testikortti SALES_WEBHOOKiin ja TRENDS_WEBHOOKiin ja lopeta")
     ap.add_argument("--dry-run", action="store_true",
                     help="tee kaikki muu paitsi ala posta Discordiin; "
                          "tulosta mita olisi postattu")
     args = ap.parse_args()
+
+    if args.test_webhooks:
+        sys.exit(0 if send_test_cards() else 1)
 
     global STORES
     STORES = load_stores()
