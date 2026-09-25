@@ -11,8 +11,12 @@ Testiajo:      python3 shopify_monitor.py --once --dry-run   (ei postaa Discordi
 Saman tuotteen tunnistus kauppojen valilla: uuden tuotteen ensimmaisesta
 kuvasta lasketaan perceptual hash (image_hashes.json) ja nimia verrataan
 sumeasti. Ristiinkauppaosumat postataan heti TRENDS_WEBHOOKiin, ja sinne
-lahtee myos 2 tunnin kooste. Loppuunmyynnit (variantti available -> false)
-kootaan kerran tunnissa SALES_WEBHOOKiin.
+lahtee myos 2 tunnin kooste.
+
+Best-sellerit: kerran tunnissa kaupan /collections/all?sort_by=best-selling
+-sivulta luetaan top 20 (best_sellers.json). Nousut postataan
+SALES_WEBHOOKiin; KUUMA-kortit (top 10 + sama tuote muissakin kaupoissa)
+myos TRENDS_WEBHOOKiin.
 """
 
 import argparse
@@ -46,8 +50,7 @@ MAX_PAGES = 20                     # turvaraja, ettei sivutus jää jumiin
 
 # --- tilatiedostot (kirjoitetaan vain kun sisalto oikeasti muuttuu) ---
 IMAGE_HASHES = pathlib.Path("image_hashes.json")    # kauppa -> tuote -> hash, nimi, ...
-STOCK_STATE = pathlib.Path("stock_state.json")      # kauppa -> saatavilla olevat variantit
-EVENTS_FILE = pathlib.Path("events.json")           # loppuunmyynnit (72 h)
+BEST_SELLERS = pathlib.Path("best_sellers.json")    # kauppa -> top 20 handle -> sija
 MATCHES_FILE = pathlib.Path("matches.json")         # ristiinkauppaosumat (7 pv)
 SUMMARY_STATE = pathlib.Path("summary_state.json")  # milloin yhteenvedot viimeksi lahetettiin
 
@@ -76,19 +79,27 @@ SERVICE_TITLE = re.compile(r"protection|priority processing|insurance|gift ?card
                            r"e-?gift|\btips?\b|donation|membership", re.I)
 
 # --- yhteenvedot ---
-EVENT_RETENTION = timedelta(hours=72)
 MATCH_RETENTION = timedelta(days=7)
-SALES_EVERY = timedelta(hours=1)
 TRENDS_EVERY = timedelta(hours=2)
 # Cron ei osu minuutilleen: pieni etuajo, ettei tahti valu joka kerta
 # yhden 5 min kierroksen myohemmaksi.
 SUMMARY_GRACE = timedelta(minutes=3)
 FRESH_DAYS = 7
 DIGEST_TOP = 10
-# Kauppa jonka saatavilla olevista varianteista yli puolet loppuu samalla
-# kierroksella on varastosynkan hairio, ei myyntia.
-STOCK_NOISE_SHARE = 0.5
-STOCK_NOISE_MIN = 20
+
+# --- best-sellerit ---
+BEST_EVERY = timedelta(hours=1)    # haku kerran tunnissa, ei joka kierroksella
+BEST_TOP = 20                      # tallennetaan top 20
+BEST_HOT = 10                      # tuore tuote top 10:een -> kortti
+BEST_JUMP = 10                     # nousu vah. 10 sijaa top 20:een -> kortti
+BEST_MAX_PAGES = 3                 # kokoelmasivuja per haku (sivukoko vaihtelee)
+# Pienessa kaupassa top 10 on lahes koko valikoima, joten alle
+# BEST_MIN_LISTED tuotteen kaupassa postataan vain kun tuore tuote nousee
+# sijoille 1-BEST_SMALL_TOP. Alle 3 tuotteen kauppaa ei voi tarkistaa.
+BEST_MIN_LISTED = 15
+BEST_SMALL_TOP = 3
+BEST_ALPHA_MIN = 0.9               # aakkostesti: nain osa pareista jarjestyksessa
+BEST_RECHECK = timedelta(days=7)   # tukematon kauppa tarkistetaan uudelleen
 
 
 def get_webhook():
@@ -312,58 +323,6 @@ def _first_image(p):
 
 def is_service(p):
     return bool(SERVICE_TITLE.search(p.get("title") or ""))
-
-
-# --- loppuunmyynnit -----------------------------------------------------
-
-def detect_soldouts(store, products, known, now):
-    """Variantti joka oli edellisella kierroksella saatavilla ja on nyt
-    loppu = loppuunmyynti.
-
-    known on kaupan edellisen kierroksen saatavilla olevat variantti-id:t,
-    tai None jos kauppa on uusi -> pohjadata, ei tapahtumia.
-    Palauttaa (saatavilla olevat variantit nyt, tapahtumat).
-
-    Jos tuotteen KAIKKI (vah. 2) seurattua varianttia loppuvat samalla
-    kierroksella, se on todennakoisesti kauppiaan muokkaus: yksi "edit"-
-    tapahtuma eika loppuunmyynteja.
-    """
-    available = sorted(str(v.get("id")) for p in products
-                       for v in p.get("variants") or [] if v.get("available"))
-    if known is None:
-        return available, []
-
-    was = set(known)
-    events, gone_total = [], 0
-    when = _iso(now)
-    for p in products:
-        tracked = [v for v in p.get("variants") or [] if str(v.get("id")) in was]
-        gone = [v for v in tracked if not v.get("available")]
-        if not gone:
-            continue
-        gone_total += len(gone)
-        base = {
-            "time": when,
-            "store": store,
-            "product_id": str(p.get("id")),
-            "title": p.get("title") or "(nimeton tuote)",
-            "handle": p.get("handle", ""),
-        }
-        if len(tracked) > 1 and len(gone) == len(tracked):
-            events.append({**base, "type": "edit",
-                           "variant": f"kaikki {len(gone)} varianttia"})
-            continue
-        for v in gone:
-            events.append({**base, "type": "soldout",
-                           "variant": v.get("title") or str(v.get("id")),
-                           "variant_id": str(v.get("id")),
-                           "price": v.get("price")})
-
-    if len(was) >= STOCK_NOISE_MIN and gone_total > STOCK_NOISE_SHARE * len(was):
-        print(f"[varasto] {store}: {gone_total}/{len(was)} varianttia loppui kerralla, "
-              "tulkitaan varastosynkan hairioksi")
-        return available, []
-    return available, events
 
 
 def prune(records, now, keep):
@@ -611,51 +570,6 @@ def _print_payload(label, payload):
         print(text.replace("\n", " / "))
 
 
-def build_sales_summary(events, since, now):
-    """Loppuunmyynnit aikavalilla: kaupat maarineen ja top 5 tuotetta.
-    None jos loppuunmyynteja ei ollut."""
-    window = [e for e in events
-              if since < (_parse_time(e.get("time")) or since) <= now]
-    sales = [e for e in window if e.get("type") == "soldout"]
-    if not sales:
-        return None
-    edits = sum(1 for e in window if e.get("type") == "edit")
-
-    per_store = Counter(e["store"] for e in sales)
-    per_product = Counter((e["store"], e["product_id"]) for e in sales)
-    info = {(e["store"], e["product_id"]): e for e in sales}
-
-    lines, used = [], 0
-    ranked = per_store.most_common()
-    for i, (store, n) in enumerate(ranked):
-        line = f"**{_host(store)}** — {n}"
-        if used + len(line) > 3800:          # embedin kuvaus max 4096
-            lines.append(f"… +{len(ranked) - i} kauppaa")
-            break
-        lines.append(line)
-        used += len(line) + 1
-
-    top = []
-    for i, (key, n) in enumerate(per_product.most_common(5), 1):
-        e = info[key]
-        title = _clip(e.get("title") or "?", 60)
-        top.append(f"{i}. [{title}]({_product_url(e['store'], e.get('handle', ''))})"
-                   f" — {_host(e['store'])} — {n}")
-
-    footer = f"{len(per_store)} kauppaa"
-    if edits:
-        footer += f" · {edits} kauppiaan muokkausta suodatettu pois"
-    embed = {
-        "title": f"Loppuunmyynnit {since:%H:%M}–{now:%H:%M} UTC: {len(sales)} varianttia",
-        "description": "\n".join(lines),
-        "color": 0x3498DB,
-        "fields": [{"name": "Top 5 tuotetta", "value": _clip("\n".join(top), 1024)}],
-        "footer": {"text": footer},
-        "timestamp": _iso(now),
-    }
-    return {"embeds": [embed]}
-
-
 def match_groups(matches_log, products):
     """Yhdistaa kuvaosumat ryhmiksi (sama tuote useassa kaupassa).
     Mahdolliset (vain nimi) osumat eivat yhdista ryhmia."""
@@ -687,10 +601,8 @@ def match_groups(matches_log, products):
             for nodes in groups.values() if len({s for s, _ in nodes}) > 1]
 
 
-def digest_rows(matches_log, products, events, now):
+def digest_rows(matches_log, products, now):
     """Top ryhmat: kauppojen maara painotettuna tuoreudella."""
-    soldouts = Counter((e["store"], e["product_id"]) for e in events
-                       if e.get("type") == "soldout")
     rows = []
     for nodes, recs in match_groups(matches_log, products):
         stores = sorted({s for s, _ in nodes})
@@ -705,7 +617,6 @@ def digest_rows(matches_log, products, events, now):
         rows.append({
             "score": round(len(stores) * (1 + fresh), 2), "stores": stores,
             "node": rep_node, "age_days": age_days, "strengths": strengths,
-            "soldouts": sum(soldouts[n] for n in nodes),
         })
     rows.sort(key=lambda r: (-r["score"], -len(r["stores"]), r["node"]))
     return rows[:DIGEST_TOP]
@@ -751,11 +662,11 @@ def possible_matches_payload(matches_log, products, since, now):
     }]}
 
 
-def build_digest(matches_log, products, events, now, since=None):
+def build_digest(matches_log, products, now, since=None):
     """2 h kooste: lista viesteja. Ensin top 10 kuvaosumaryhmaa, sitten
     omana viestinaan jakson mahdolliset osumat."""
     payloads = []
-    top = build_top_groups(matches_log, products, events, now)
+    top = build_top_groups(matches_log, products, now)
     if top:
         payloads.append(top)
     possible = possible_matches_payload(matches_log, products,
@@ -765,8 +676,8 @@ def build_digest(matches_log, products, events, now, since=None):
     return payloads or None
 
 
-def build_top_groups(matches_log, products, events, now):
-    rows = digest_rows(matches_log, products, events, now)
+def build_top_groups(matches_log, products, now):
+    rows = digest_rows(matches_log, products, now)
     if not rows:
         return None
     cards = []
@@ -789,9 +700,6 @@ def build_top_groups(matches_log, products, events, now):
         ]
         if e.get("price"):
             fields.insert(0, {"name": "Hinta", "value": e["price"], "inline": True})
-        if r["soldouts"]:
-            fields.append({"name": "Loppuunmyynnit 72 h", "value": str(r["soldouts"]),
-                           "inline": True})
         card = {
             "title": _clip(e["name"], 256),
             "url": _product_url(store, e.get("handle", "")),
@@ -812,49 +720,229 @@ def _is_due(summary, key, every, now):
     return last is None or now - last >= every - SUMMARY_GRACE
 
 
-def send_summaries(events, matches_log, products, summary, now, dry_run=False):
-    """Tunnin loppuunmyyntikooste ja 2 tunnin trendikooste. summary kertoo
-    milloin kumpikin viimeksi LAHETETTIIN; se paivittyy vain lahetyksesta,
-    joten tilatiedosto ei muutu hiljaisina tunteina."""
+# --- best-sellerit ------------------------------------------------------
 
-    def sales_payload():
-        last = _parse_time(summary.get("sales"))
-        return build_sales_summary(events, last or now - SALES_EVERY, now)
+# Shopifyn analytiikkadata on jokaisella kokoelmasivulla tuotteiden
+# nayttojarjestyksessa - myos teemoissa jotka lataavat ruudukon
+# JavaScriptilla. /collections/all/products.json ei noudata sort_by:ta.
+_META = re.compile(r"var meta = (\{.*?\});\s*\n", re.S)
 
-    def trends_payload():
-        last = _parse_time(summary.get("trends")) or now - TRENDS_EVERY
-        if not any((_parse_time(r.get("time")) or last) > last for r in matches_log):
-            return None                      # ei uusia osumia -> ei viestia
-        return build_digest(matches_log, products, events, now, since=last)
 
-    jobs = [("sales", "SALES_WEBHOOK", SALES_EVERY, sales_payload),
-            ("trends", "TRENDS_WEBHOOK", TRENDS_EVERY, trends_payload)]
-    for key, env, every, build in jobs:
-        if not _is_due(summary, key, every, now):
-            continue
-        payloads = build()
-        if payloads is None:
-            continue
-        if isinstance(payloads, dict):
-            payloads = [payloads]
-        webhook = os.environ.get(env)
-        if dry_run:
-            for payload in payloads:
-                _print_payload(env, payload)
-            continue
-        if not webhook:
-            print(f"[{key}] {env} puuttuu, yhteenveto ohitetaan")
-            continue
+def collection_handles(store, sort, pages=BEST_MAX_PAGES, want=BEST_TOP):
+    """Kaikki-kokoelman handlet sivun jarjestyksessa, enintaan want kpl.
+    None jos sivulla ei ole jarjestysdataa."""
+    handles = []
+    for page in range(1, pages + 1):
+        r = requests.get(f"{store}/collections/all",
+                         params={"sort_by": sort, "page": page},
+                         headers=HEADERS, timeout=TIMEOUT)
+        r.raise_for_status()
+        m = _META.search(r.text)
         try:
-            for i, payload in enumerate(payloads):
-                if i:
-                    time.sleep(1)             # Discordin rate limit
+            items = json.loads(m.group(1)).get("products") or [] if m else None
+        except ValueError:
+            items = None
+        if items is None:
+            return None if page == 1 else handles
+        new = [p["handle"] for p in items if p.get("handle") and p["handle"] not in handles]
+        if not new:
+            break
+        handles += new
+        if len(handles) >= want:
+            break
+    return handles[:want]
+
+
+def sorting_supported(store, best, titles):
+    """Noudattaako kauppa sort_by:ta? Tarkistetaan aakkosjarjestyksella:
+    sen pitaa oikeasti olla aakkosissa ja erota best-selling-listasta.
+    Muuten kauppa naytaa oletusjarjestyksen (usein uusin ensin), jolloin
+    jokainen uusi tuote nayttaisi nousevan top 10:een."""
+    alpha = collection_handles(store, "title-ascending", pages=1) or []
+    names = [titles[h].lower() for h in alpha if h in titles]
+    if len(names) < 3:
+        return False
+    ordered = sum(a <= b for a, b in zip(names, names[1:])) / (len(names) - 1)
+    n = min(len(alpha), len(best))
+    return ordered >= BEST_ALPHA_MIN and alpha[:n] != best[:n]
+
+
+def rise_reason(rank, before, published, now, small=False):
+    """Miksi nousu postataan, tai None. before = edellinen sija tai None
+    jos tuote oli top 20:n ulkopuolella (eli sija >= 21). small = kaupassa
+    alle BEST_MIN_LISTED tuotetta: vain tuore tuote sijoille 1-3."""
+    fresh = published is not None and now - published < timedelta(days=FRESH_DAYS)
+    if small:
+        # Pienessa kaupassa kaikki tuotteet ovat listalla, joten before=None
+        # tarkoittaa etta tuote julkaistiin vasta nyt. Myymattomien tuotteiden
+        # jarjestys on satunnainen (uusi voi ilmestya heti sijalle 1), joten
+        # ensiesiintyminen ei ole nousu.
+        if fresh and rank <= BEST_SMALL_TOP and before is not None and before > BEST_SMALL_TOP:
+            return f"Alle 7 pv vanha tuote nousi sijalta {before} sijalle {rank} (pieni kauppa)"
+        return None
+    if fresh and rank <= BEST_HOT and (before is None or before > BEST_HOT):
+        return "Alle 7 pv vanha tuote nousi top 10:een"
+    if before is not None and before - rank >= BEST_JUMP:
+        return f"Nousi {before - rank} sijaa"
+    if before is None and rank <= BEST_TOP + 1 - BEST_JUMP:
+        return f"Nousi top {BEST_TOP}:n ulkopuolelta vahintaan {BEST_TOP + 1 - rank} sijaa"
+    return None
+
+
+def check_best_sellers(state, catalog, now):
+    """Paivittaa kauppojen top 20:n ja palauttaa postattavat nousut.
+
+    state = {"checked": aika, "stores": {kauppa: {"ranks": {handle: sija}}
+                                          tai {"unsupported": aika}}}
+    Ensimmainen onnistunut haku per kauppa on pohjadata. Kauppa joka ei
+    tue jarjestysta (tai jolla on alle 3 tuotetta) ohitetaan hiljaa ja
+    tarkistetaan uudelleen BEST_RECHECK:n paasta.
+    """
+    stores = state.setdefault("stores", {})
+    for s in [s for s in stores if s not in STORES]:
+        del stores[s]
+    alerts, stats = [], Counter()
+    for store, products in catalog.items():
+        prev = stores.get(store)
+        if prev and "unsupported" in prev:
+            since = _parse_time(prev["unsupported"])
+            if since and now - since < BEST_RECHECK:
+                stats["ohitettu"] += 1
+                continue
+            prev = None
+        by_handle = {p.get("handle"): p for p in products}
+        try:
+            best = collection_handles(store, "best-selling")
+            if prev is None:
+                titles = {h: p.get("title") or "" for h, p in by_handle.items()}
+                if not best or len(best) < 3 or not sorting_supported(store, best, titles):
+                    stores[store] = {"unsupported": _iso(now)}
+                    stats["ei tue jarjestysta"] += 1
+                    continue
+        except Exception:
+            stats["haku epaonnistui"] += 1        # hiljaa: vanha lista jaa voimaan
+            continue
+        if not best:
+            stats["haku epaonnistui"] += 1        # hetkellinen: vanha lista jaa voimaan
+            continue
+
+        ranks = {h: i + 1 for i, h in enumerate(best)}
+        stores[store] = {"ranks": ranks}
+        if prev is None:
+            stats["pohjadata"] += 1
+            continue
+        small = len(best) < BEST_MIN_LISTED
+        stats["seurattu (pieni)" if small else "seurattu"] += 1
+        for handle, rank in ranks.items():
+            p = by_handle.get(handle)
+            if p is None or is_service(p):        # kassalisat myyvat aina karkea
+                continue
+            before = prev["ranks"].get(handle)
+            reason = rise_reason(rank, before, _parse_time(p.get("published_at")), now, small)
+            if reason:
+                alerts.append({"store": store, "product": p, "rank": rank,
+                               "before": before, "reason": reason})
+    state["checked"] = _iso(now)
+    print("[best-sellerit] " + ", ".join(f"{k}: {v}" for k, v in sorted(stats.items()))
+          + f", nousuja {len(alerts)}")
+    return alerts
+
+
+def build_best_card(alert, hashes, now):
+    """Nousukortti. Palauttaa (payload, kuuma)."""
+    store, p = alert["store"], alert["product"]
+    pid = str(p.get("id"))
+    entry = hashes["products"].get(store, {}).get(pid)
+    others = None                               # ei tiedossa ennen tiivistetta
+    if entry and entry.get("hash"):
+        others = [m for m in find_matches(store, pid, hashes["products"]) if _is_strong(m)]
+    hot = alert["rank"] <= BEST_HOT and bool(others)
+
+    published = _parse_time(p.get("published_at"))
+    age = f" ({(now - published).total_seconds() / 86400:.1f} pv sitten)" if published else ""
+    if others is None:
+        shared = "ei viela tiivistetty"
+    elif others:
+        shared = f"{len(others)}: " + ", ".join(_host(m["store"]) for m in others[:5])
+        if len(others) > 5:
+            shared += f" +{len(others) - 5}"
+    else:
+        shared = "0"
+    price = _fmt_money(_prices(p.get("variants") or [], "price"),
+                       STORES.get(store, "$")) or "?"
+    embed = {
+        "title": _clip(("KUUMA: " if hot else "") + (p.get("title") or "(nimeton tuote)"), 256),
+        "url": _product_url(store, p.get("handle", "")),
+        "color": 0xE74C3C if hot else 0x3498DB,
+        "description": alert["reason"],
+        "fields": [
+            {"name": "Hinta", "value": price, "inline": True},
+            {"name": "Kauppa", "value": _host(store), "inline": True},
+            {"name": "Sija nyt", "value": str(alert["rank"]), "inline": True},
+            {"name": "Edellinen sija",
+             "value": str(alert["before"]) if alert["before"] else f"yli {BEST_TOP}",
+             "inline": True},
+            {"name": "Julkaistu", "value": _fmt_date(p.get("published_at")) + age,
+             "inline": True},
+            {"name": "Muissa kaupoissa", "value": shared, "inline": True},
+        ],
+    }
+    image = _first_image(p)
+    if image:
+        embed["thumbnail"] = {"url": image}
+    return {"embeds": [embed]}, hot
+
+
+def post_best_sellers(alerts, hashes, now, dry_run=False):
+    """Kaikki nousut #salesiin, KUUMA-kortit lisaksi #trendsiin."""
+    for alert in alerts:
+        payload, hot = build_best_card(alert, hashes, now)
+        targets = ["SALES_WEBHOOK"] + (["TRENDS_WEBHOOK"] if hot else [])
+        for env in targets:
+            if dry_run:
+                _print_payload(env, payload)
+                continue
+            webhook = os.environ.get(env)
+            if not webhook:
+                print(f"[best-sellerit] {env} puuttuu, korttia ei postata")
+                continue
+            try:
                 post_webhook(webhook, payload)
-        except Exception as e:
-            print(f"[webhook-virhe] {env}: {describe_error(e)}")
-            continue                          # seuraava kierros yrittaa uudelleen
-        print(f"[{key}] yhteenveto lahetetty")
-        summary[key] = _iso(now)
+                time.sleep(1)  # Discordin rate limit
+            except Exception as e:
+                print(f"[webhook-virhe] {env}: {describe_error(e)}")
+
+
+def send_summaries(matches_log, products, summary, now, dry_run=False):
+    """2 tunnin trendikooste. summary kertoo milloin se viimeksi
+    LAHETETTIIN; se paivittyy vain lahetyksesta, joten tilatiedosto ei muutu
+    hiljaisina tunteina. Ei viestia jos uusia osumia ei tullut."""
+    if not _is_due(summary, "trends", TRENDS_EVERY, now):
+        return
+    last = _parse_time(summary.get("trends")) or now - TRENDS_EVERY
+    if not any((_parse_time(r.get("time")) or last) > last for r in matches_log):
+        return
+    payloads = build_digest(matches_log, products, now, since=last)
+    if payloads is None:
+        return
+    if dry_run:
+        for payload in payloads:
+            _print_payload("TRENDS_WEBHOOK", payload)
+        return
+    webhook = os.environ.get("TRENDS_WEBHOOK")
+    if not webhook:
+        print("[trends] TRENDS_WEBHOOK puuttuu, kooste ohitetaan")
+        return
+    try:
+        for i, payload in enumerate(payloads):
+            if i:
+                time.sleep(1)                 # Discordin rate limit
+            post_webhook(webhook, payload)
+    except Exception as e:
+        print(f"[webhook-virhe] TRENDS_WEBHOOK: {describe_error(e)}")
+        return                                # seuraava kierros yrittaa uudelleen
+    print("[trends] kooste lahetetty")
+    summary["trends"] = _iso(now)
 
 
 def check_all(seen, webhook=None, dry_run=False, now=None):
@@ -862,8 +950,7 @@ def check_all(seen, webhook=None, dry_run=False, now=None):
     now = now or _utcnow()
     failed = []
     catalog = {}                 # taman kierroksen onnistuneet haut
-    stock = _load_json(STOCK_STATE, {})
-    events = _load_json(EVENTS_FILE, [])
+    best_state = _load_json(BEST_SELLERS, {})
     matches_log = _load_json(MATCHES_FILE, [])
     hashes = _load_json(IMAGE_HASHES, {})
     hashes.setdefault("products", {})
@@ -883,12 +970,6 @@ def check_all(seen, webhook=None, dry_run=False, now=None):
 
         took = time.monotonic() - t0
         catalog[store] = products
-
-        stock_baseline = store not in stock
-        stock[store], found = detect_soldouts(store, products, stock.get(store), now)
-        events += found
-        soldouts = sum(1 for e in found if e["type"] == "soldout")
-        activity = "" if stock_baseline else f", {soldouts} loppuunmyyty"
 
         known = seen.setdefault(store, set())
         new = [p for p in products if str(p.get("id")) not in known]
@@ -915,26 +996,28 @@ def check_all(seen, webhook=None, dry_run=False, now=None):
                   f"pohjadata tallennettu ({took:.1f}s)")
         else:
             print(f"{store}: OK, {len(products)} tuotetta, "
-                  f"{len(new)} uutta{activity} ({took:.1f}s)")
+                  f"{len(new)} uutta ({took:.1f}s)")
 
     done_new = update_image_hashes(hashes, catalog)
     found = process_new_matches(done_new, hashes, matches_log, now, dry_run=dry_run)
     print(f"[osumat] {len(done_new)} uutta tuotetta tiivistetty, "
           f"{found} ristiinkauppaosumaa")
 
-    events = prune(events, now, EVENT_RETENTION)
+    if _is_due(best_state, "checked", BEST_EVERY, now):
+        alerts = check_best_sellers(best_state, catalog, now)
+        post_best_sellers(alerts, hashes, now, dry_run=dry_run)
+
     matches_log = prune(matches_log, now, MATCH_RETENTION)
     summary = _load_json(SUMMARY_STATE, {})
-    send_summaries(events, matches_log, hashes["products"], summary, now, dry_run=dry_run)
+    send_summaries(matches_log, hashes["products"], summary, now, dry_run=dry_run)
 
     if dry_run:
         print("[dry-run] tilatiedostoja ei kirjoiteta")
     else:
         save_seen(seen)
         # Kuten seen.json: poistettujen kauppojen tila ei jaa roikkumaan.
-        _save_json(STOCK_STATE, {k: v for k, v in stock.items() if k in STORES})
         _save_json(IMAGE_HASHES, hashes)
-        _save_json(EVENTS_FILE, events)
+        _save_json(BEST_SELLERS, best_state)
         _save_json(MATCHES_FILE, matches_log)
         _save_json(SUMMARY_STATE, summary)
 
