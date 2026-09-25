@@ -1019,6 +1019,12 @@ class TestBestSellers(BestBase):
         self.assertEqual(self.fields(body)["Muissa kaupoissa"], "ei viela tiivistetty")
         self.assertFalse(body["embeds"][0]["title"].startswith("KUUMA"))
 
+    def test_kassalisat_eivat_ole_nousuja(self):
+        self.add("a", 30, "Shipping Protection", published=m._iso(T0 - timedelta(days=1)))
+        self.rank("a", [30] + list(range(1, 26)))
+        self.round(T0 + timedelta(hours=1))
+        self.assertEqual(self.sales(), [])
+
     def test_dry_run_ei_postaa_eika_tallenna(self):
         before = m.BEST_SELLERS.read_text()
         self.rank("a", [17] + [p for p in range(1, 26) if p != 17])
@@ -1047,10 +1053,50 @@ class TestBestSellerSkips(BestBase):
         self.assertIn("ranks", self.best()["stores"][self.a], "tuki loytyi -> pohjadata")
         self.assertEqual(self.sales(), [])
 
-    def test_pieni_kauppa_ohitetaan(self):
-        del LIVE[m.BEST_MIN_LISTED - 1:]
+    def test_alle_3_tuotteen_kauppa_ohitetaan(self):
+        del LIVE[2:]
         self.round()
         self.assertIn("unsupported", self.best()["stores"][self.a])
+
+
+class TestSmallStore(BestBase):
+    """Alle 15 tuotetta: vain tuore tuote sijoille 1-3."""
+
+    def setUp(self):
+        super().setUp()
+        del LIVE[8:]                                   # 8 tuotetta
+        LIVE[7]["published_at"] = m._iso(T0 - timedelta(days=2))   # tuore, sija 8
+        self.rank("a", range(1, 9))
+        self.round()                                   # pohjadata
+
+    def test_pieni_kauppa_seurataan(self):
+        self.assertEqual(len(self.best()["stores"][self.a]["ranks"]), 8)
+
+    def test_tuore_tuote_nousee_sijoille_1_3(self):
+        self.rank("a", [1, 8] + list(range(2, 8)))     # tuote 8: sija 8 -> 2
+        self.round(T0 + timedelta(hours=1))
+        [body] = self.sales()
+        f = self.fields(body)
+        self.assertEqual((f["Sija nyt"], f["Edellinen sija"]), ("2", "8"))
+        self.assertIn("pieni kauppa", body["embeds"][0]["description"])
+
+    def test_tuore_tuote_sijalle_4_ei_postaa(self):
+        self.rank("a", [1, 2, 3, 8] + list(range(4, 8)))
+        self.round(T0 + timedelta(hours=1))
+        self.assertEqual(self.sales(), [])
+
+    def test_juuri_julkaistu_suoraan_karkeen_ei_ole_nousu(self):
+        # oikea havainto: myymattomien jarjestys on satunnainen, uusi tuote
+        # voi ilmestya heti sijalle 1
+        self.add("a", 30, "Uutuus", published=m._iso(T0 + timedelta(minutes=30)))
+        self.rank("a", [30] + list(range(1, 9)))
+        self.round(T0 + timedelta(hours=1))
+        self.assertEqual(self.sales(), [])
+
+    def test_vanha_tuote_ei_postaa_vaikka_nousee_karkeen(self):
+        self.rank("a", [7] + [p for p in range(1, 9) if p != 7])
+        self.round(T0 + timedelta(hours=1))
+        self.assertEqual(self.sales(), [])
 
     def test_hakuvirhe_ei_kaada_ja_vanha_lista_jaa(self):
         self.round()
@@ -1069,6 +1115,11 @@ class TestBestSellerSkips(BestBase):
         self.assertIsNone(m.rise_reason(8, 9, fresh, T0), "oli jo top 10:ssa")
         self.assertIsNone(m.rise_reason(12, None, fresh, T0), "tuore mutta ei top 10")
         self.assertEqual(m.rise_reason(5, 15, old, T0), "Nousi 10 sijaa")
+        self.assertIsNone(m.rise_reason(3, None, fresh, T0, small=True), "ensiesiintyminen")
+        self.assertIsNotNone(m.rise_reason(1, 5, fresh, T0, small=True))
+        self.assertIsNone(m.rise_reason(2, 3, fresh, T0, small=True), "oli jo top 3:ssa")
+        self.assertIsNone(m.rise_reason(4, 6, fresh, T0, small=True))
+        self.assertIsNone(m.rise_reason(1, 15, old, T0, small=True), "vanha: ei hyppysaantoa")
         self.assertIsNone(m.rise_reason(6, 15, old, T0))
         self.assertIsNotNone(m.rise_reason(11, None, old, T0))
         self.assertIsNone(m.rise_reason(12, None, old, T0))

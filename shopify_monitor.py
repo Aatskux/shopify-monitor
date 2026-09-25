@@ -93,8 +93,11 @@ BEST_TOP = 20                      # tallennetaan top 20
 BEST_HOT = 10                      # tuore tuote top 10:een -> kortti
 BEST_JUMP = 10                     # nousu vah. 10 sijaa top 20:een -> kortti
 BEST_MAX_PAGES = 3                 # kokoelmasivuja per haku (sivukoko vaihtelee)
-# Pienessa kaupassa top 10 on lahes koko valikoima: kaikki uudet "nousisivat".
+# Pienessa kaupassa top 10 on lahes koko valikoima, joten alle
+# BEST_MIN_LISTED tuotteen kaupassa postataan vain kun tuore tuote nousee
+# sijoille 1-BEST_SMALL_TOP. Alle 3 tuotteen kauppaa ei voi tarkistaa.
 BEST_MIN_LISTED = 15
+BEST_SMALL_TOP = 3
 BEST_ALPHA_MIN = 0.9               # aakkostesti: nain osa pareista jarjestyksessa
 BEST_RECHECK = timedelta(days=7)   # tukematon kauppa tarkistetaan uudelleen
 
@@ -764,10 +767,19 @@ def sorting_supported(store, best, titles):
     return ordered >= BEST_ALPHA_MIN and alpha[:n] != best[:n]
 
 
-def rise_reason(rank, before, published, now):
+def rise_reason(rank, before, published, now, small=False):
     """Miksi nousu postataan, tai None. before = edellinen sija tai None
-    jos tuote oli top 20:n ulkopuolella (eli sija >= 21)."""
+    jos tuote oli top 20:n ulkopuolella (eli sija >= 21). small = kaupassa
+    alle BEST_MIN_LISTED tuotetta: vain tuore tuote sijoille 1-3."""
     fresh = published is not None and now - published < timedelta(days=FRESH_DAYS)
+    if small:
+        # Pienessa kaupassa kaikki tuotteet ovat listalla, joten before=None
+        # tarkoittaa etta tuote julkaistiin vasta nyt. Myymattomien tuotteiden
+        # jarjestys on satunnainen (uusi voi ilmestya heti sijalle 1), joten
+        # ensiesiintyminen ei ole nousu.
+        if fresh and rank <= BEST_SMALL_TOP and before is not None and before > BEST_SMALL_TOP:
+            return f"Alle 7 pv vanha tuote nousi sijalta {before} sijalle {rank} (pieni kauppa)"
+        return None
     if fresh and rank <= BEST_HOT and (before is None or before > BEST_HOT):
         return "Alle 7 pv vanha tuote nousi top 10:een"
     if before is not None and before - rank >= BEST_JUMP:
@@ -783,8 +795,8 @@ def check_best_sellers(state, catalog, now):
     state = {"checked": aika, "stores": {kauppa: {"ranks": {handle: sija}}
                                           tai {"unsupported": aika}}}
     Ensimmainen onnistunut haku per kauppa on pohjadata. Kauppa joka ei
-    tue jarjestysta (tai jolla on alle BEST_MIN_LISTED tuotetta) ohitetaan
-    hiljaa ja tarkistetaan uudelleen BEST_RECHECK:n paasta.
+    tue jarjestysta (tai jolla on alle 3 tuotetta) ohitetaan hiljaa ja
+    tarkistetaan uudelleen BEST_RECHECK:n paasta.
     """
     stores = state.setdefault("stores", {})
     for s in [s for s in stores if s not in STORES]:
@@ -803,15 +815,14 @@ def check_best_sellers(state, catalog, now):
             best = collection_handles(store, "best-selling")
             if prev is None:
                 titles = {h: p.get("title") or "" for h, p in by_handle.items()}
-                if (not best or len(best) < BEST_MIN_LISTED
-                        or not sorting_supported(store, best, titles)):
+                if not best or len(best) < 3 or not sorting_supported(store, best, titles):
                     stores[store] = {"unsupported": _iso(now)}
                     stats["ei tue jarjestysta"] += 1
                     continue
         except Exception:
             stats["haku epaonnistui"] += 1        # hiljaa: vanha lista jaa voimaan
             continue
-        if not best or len(best) < BEST_MIN_LISTED:
+        if not best:
             stats["haku epaonnistui"] += 1        # hetkellinen: vanha lista jaa voimaan
             continue
 
@@ -820,13 +831,14 @@ def check_best_sellers(state, catalog, now):
         if prev is None:
             stats["pohjadata"] += 1
             continue
-        stats["seurattu"] += 1
+        small = len(best) < BEST_MIN_LISTED
+        stats["seurattu (pieni)" if small else "seurattu"] += 1
         for handle, rank in ranks.items():
             p = by_handle.get(handle)
-            if p is None:
+            if p is None or is_service(p):        # kassalisat myyvat aina karkea
                 continue
             before = prev["ranks"].get(handle)
-            reason = rise_reason(rank, before, _parse_time(p.get("published_at")), now)
+            reason = rise_reason(rank, before, _parse_time(p.get("published_at")), now, small)
             if reason:
                 alerts.append({"store": store, "product": p, "rank": rank,
                                "before": before, "reason": reason})
