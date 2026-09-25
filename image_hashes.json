@@ -1,5 +1,16 @@
 {
- "pending": {},
+ "pending": {
+  "https://shopaluma.com": {
+   "9932689539355": {
+    "new": false,
+    "tries": 1
+   },
+   "9932689670427": {
+    "new": false,
+    "tries": 1
+   }
+  }
+ },
  "products": {
   "https://airpuply.com": {
    "10066790613232": {
@@ -369,6 +380,56 @@
     "published_at": "2026-09-20T21:38:26-04:00"
    }
   },
+  "https://aurorathelabel.shop": {
+   "10254394261609": {
+    "handle": "ash-bloom-incense",
+    "hash": "a461999ecb3965cc",
+    "image": "https://cdn.shopify.com/s/files/1/0585/6840/9193/files/ChatGPTImageSep24_2026_01_44_30AM.png?v=1790271886",
+    "name": "Ash & Bloom Incense",
+    "price": "$24.99",
+    "published_at": "2026-09-24T13:47:56-04:00"
+   },
+   "10254641266793": {
+    "handle": "ash-bloom-clear-glass-incense-tray",
+    "hash": "b2cc993266c99b36",
+    "image": "https://cdn.shopify.com/s/files/1/0585/6840/9193/files/Clear_front.webp?v=1790290085",
+    "name": "Ash & Bloom Clear Glass Incense Tray",
+    "price": "$20.00",
+    "published_at": "2026-09-24T18:51:12-04:00"
+   },
+   "10254674690153": {
+    "handle": "sage-hooded-poncho",
+    "hash": "b073c7d32e2c98c6",
+    "image": "https://cdn.shopify.com/s/files/1/0585/6840/9193/files/ChatGPTImageSep24_2026_07_32_24PM.png?v=1790292772",
+    "name": "Sage Hooded Poncho",
+    "price": "$29.99",
+    "published_at": "2026-09-24T19:27:33-04:00"
+   },
+   "9449447096425": {
+    "handle": "crochet-skull-pants",
+    "hash": "bcf3876c9948932c",
+    "image": "https://cdn.shopify.com/s/files/1/0585/6840/9193/files/ChatGPTImageSep13_2026_01_14_35PM.png?v=1789319952",
+    "name": "Crochet Skull Pants",
+    "price": "$24.99",
+    "published_at": "2026-09-13T13:21:43-04:00"
+   },
+   "9455901147241": {
+    "handle": "arizona-slide-sandal",
+    "hash": "ab93c44c3eb3e258",
+    "image": "https://cdn.shopify.com/s/files/1/0585/6840/9193/files/ChatGPT_Image_Sep_16_2026_05_04_23_PM.png?v=1789592678",
+    "name": "Arizona Slide Sandal",
+    "price": "$34.99",
+    "published_at": "2026-09-19T16:59:21-04:00"
+   },
+   "9456159293545": {
+    "handle": "sienna-leopard-clogs",
+    "hash": "ee94851b1a65b6c6",
+    "image": "https://cdn.shopify.com/s/files/1/0585/6840/9193/files/ChatGPTImageSep16_2026_10_47_29PM.png?v=1789613426",
+    "name": "Sienna Leopard Clogs",
+    "price": "$34.99",
+    "published_at": "2026-09-16T22:52:06-04:00"
+   }
+  },
   "https://avellalane.com": {
    "16329426796879": {
     "handle": "club-zip-hoodie",
@@ -587,6 +648,16 @@
     "name": "Heat Reactive Puffer",
     "price": "$34.99",
     "published_at": "2026-09-25T08:47:52-07:00"
+   }
+  },
+  "https://buy.fayora.shop": {
+   "8763717025892": {
+    "handle": "crochet-mlp-bag",
+    "hash": "fba9a047877ccc03",
+    "image": "https://cdn.shopify.com/s/files/1/0767/4242/6724/files/il_1588xN.8489825367_t5fd.jpg?v=1790252511",
+    "name": "Crochet MLP Bag",
+    "price": "$29.99",
+    "published_at": "2026-09-23T05:52:34-05:00"
    }
   },
   "https://cielena.com": {
@@ -879,6 +950,848 @@
     "published_at": "2026-09-24T09:54:45-04:00"
    }
   },
+  "https://clemoreclothing.shop": {
+   "15783540588704": {
+    "handle": "midnight-horizon-cinch-front-blouse",
+    "hash": "bb34c4cb95ce6834",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/3_5e35ed43-591e-4570-b471-f9e88a16a715.webp?v=1783489664",
+    "name": "Midnight Horizon Cinch-Front Blouse",
+    "price": "$99.99",
+    "published_at": "2026-07-08T01:48:02-04:00"
+   },
+   "15787052171424": {
+    "handle": "panthera-botanical-mid-rise-trousers",
+    "hash": "b8e3c63c9398c69c",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1_a5adb431-915c-4a4f-9454-0a0bed97bc1c.webp?v=1783751777",
+    "name": "Panthera Botanical Mid-Rise Trousers",
+    "price": "$99.99",
+    "published_at": "2026-07-11T02:39:34-04:00"
+   },
+   "15787602772128": {
+    "handle": "cascade-light-wash-pintuck-jean",
+    "hash": "bca2c2ccc39b9b1c",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/3_06e76900-d0f4-488f-8c73-84d683392305.jpg?v=1783843295",
+    "name": "Cascade Light-Wash Pintuck Jean",
+    "price": "$99.99",
+    "published_at": "2026-07-12T04:01:50-04:00"
+   },
+   "15787604377760": {
+    "handle": "florentine-embroidered-organza-flare",
+    "hash": "f0eb9e85cf909a12",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/4_2b3ffc25-f33f-49a3-a7cd-d82d888f3592.jpg?v=1783843349",
+    "name": "Florentine Embroidered Organza Flare",
+    "price": "$99.99",
+    "published_at": "2026-07-12T04:03:09-04:00"
+   },
+   "15789677576352": {
+    "handle": "solstice-peach-slouchy-knit-pant",
+    "hash": "abb14ccec233934d",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2_a7336193-1605-4410-959e-cff1eea91630.jpg?v=1784007281",
+    "name": "Solstice Peach Slouchy Knit Pant",
+    "price": "$99.99",
+    "published_at": "2026-07-14T01:34:58-04:00"
+   },
+   "15789677609120": {
+    "handle": "serpentine-embroidered-off-white-denim",
+    "hash": "cee4311bb3b3484e",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/3_13ea6695-3653-49bf-a9bd-06e225f1cd2c.jpg?v=1784007352",
+    "name": "Serpentine Embroidered Off-White Denim",
+    "price": "$99.99",
+    "published_at": "2026-07-14T01:36:27-04:00"
+   },
+   "15794593530016": {
+    "handle": "zanpakuto-graphic-denim-capsule",
+    "hash": "aca486ca97db0d27",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/8a_d035fa37-0bb5-483e-9bf3-48093605da17.jpg?v=1784274988",
+    "name": "Zanpakuto Graphic Denim Capsule",
+    "price": "$99.99",
+    "published_at": "2026-07-17T03:57:07-04:00"
+   },
+   "15796050460832": {
+    "handle": "equinox-tan-structured-bell-bottom",
+    "hash": "b4438b49cb2cce3d",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2_415d74c9-8997-4522-9fda-7aa6caf16af0.jpg?v=1784360934",
+    "name": "Equinox Tan Structured Bell-Bottom",
+    "price": "$99.99",
+    "published_at": "2026-07-18T03:49:11-04:00"
+   },
+   "15798118088864": {
+    "handle": "the-eclipse-horizontal-stripe-lounge-pants",
+    "hash": "a8d593c1d70ed60e",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2_f67cfe3d-4a00-466b-9a04-1a30240b114a.jpg?v=1784536432",
+    "name": "The Eclipse Horizontal Stripe Lounge Pants",
+    "price": "$99.99",
+    "published_at": "2026-07-20T04:34:10-04:00"
+   },
+   "15798118219936": {
+    "handle": "the-seafoam-flow-state-wide-leg",
+    "hash": "ac13934cc36ec64f",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/3_2eb0d082-9116-4f44-84e5-14748f8ddd86.jpg?v=1784536506",
+    "name": "The Seafoam Flow-State Wide Leg",
+    "price": "$99.99",
+    "published_at": "2026-07-20T04:35:27-04:00"
+   },
+   "15798714925216": {
+    "handle": "ivory-eclipse-polka-dot-co-ord",
+    "hash": "8ebc61c37887073e",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1_8b6a6ac7-ea8c-4b51-9f59-67da764f1bb6.jpg?v=1784621082",
+    "name": "Ivory Eclipse Polka Dot Co-Ord",
+    "price": "$99.99",
+    "published_at": "2026-07-21T04:05:13-04:00"
+   },
+   "15798718759072": {
+    "handle": "gilded-tapestry-wide-leg-trouser",
+    "hash": "b4d3934cc72cca8e",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1_31d829b8-62d5-4d91-ae99-2c81c20b1102.jpg?v=1784621719",
+    "name": "Gilded Tapestry Wide-Leg Trouser",
+    "price": "$99.99",
+    "published_at": "2026-07-21T04:15:39-04:00"
+   },
+   "15798718955680": {
+    "handle": "the-coastal-blue-zigzag-knit-shift",
+    "hash": "bdc2c3f0d00f0f78",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2_0f003d9b-d80a-493d-ad3b-12c066c32947.jpg?v=1784621805",
+    "name": "The Coastal Blue Zigzag Knit Shift",
+    "price": "$99.99",
+    "published_at": "2026-07-21T04:18:03-04:00"
+   },
+   "15798719316128": {
+    "handle": "graphite-heavyweight-boxy-fleece",
+    "hash": "bba1845e99d86587",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/3_d4594ad4-4868-4a16-8949-70658787a5ff.jpg?v=1784621968",
+    "name": "Graphite Heavyweight Boxy Fleece",
+    "price": "$99.99",
+    "published_at": "2026-07-21T04:20:20-04:00"
+   },
+   "15798719479968": {
+    "handle": "heritage-gilded-floral-corset-dress",
+    "hash": "bcd0c32ecc0dc3d3",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/4_20c74059-b5ff-44d2-9f74-584cad765187.jpg?v=1784622111",
+    "name": "Heritage Gilded Floral Corset Dress",
+    "price": "$99.99",
+    "published_at": "2026-07-21T04:22:08-04:00"
+   },
+   "15799886905504": {
+    "handle": "the-ultimate-deconstructed-bootcut",
+    "hash": "e186de148e599b5a",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1_5de69f02-f7d4-4dbe-8d2e-4df253ad6c0a.jpg?v=1784694968",
+    "name": "The Ultimate Deconstructed Bootcut",
+    "price": "$99.99",
+    "published_at": "2026-07-22T00:36:26-04:00"
+   },
+   "15801815924896": {
+    "handle": "the-coastal-knit-relaxed-trouser",
+    "hash": "fef4d183c706821b",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2_ce535443-3921-49a4-b799-d50787c0cd65.jpg?v=1784795162",
+    "name": "The Coastal Knit Relaxed Trouser",
+    "price": "$99.99",
+    "published_at": "2026-07-23T04:26:19-04:00"
+   },
+   "15808767721632": {
+    "handle": "cream-pinstripe-heritage-trousers",
+    "hash": "85a95e8370c743de",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2_d1bb2aad-e4ac-481d-bee7-6c1e9daf2aac.jpg?v=1785400414",
+    "name": "Cream Pinstripe Heritage Trousers",
+    "price": "$99.99",
+    "published_at": "2026-07-30T04:23:33-04:00"
+   },
+   "15840468828320": {
+    "handle": "midnight-floral-applique-denim",
+    "hash": "f9e186ce951ac24e",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/9_9fad5dff-e474-4695-8b10-dddf53a33410.jpg?v=1787388376",
+    "name": "Midnight Floral Appliqué Denim",
+    "price": "$99.99",
+    "published_at": "2026-08-22T04:46:42-04:00"
+   },
+   "15840468893856": {
+    "handle": "blush-stripe-linen-pants",
+    "hash": "96d90967f905f624",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/10.webp?v=1787388440",
+    "name": "Blush Stripe Linen Pants",
+    "price": "$99.99",
+    "published_at": "2026-08-22T04:47:41-04:00"
+   },
+   "15840469057696": {
+    "handle": "peach-flowy-draped-top",
+    "hash": "bcb4c34bd0333e2c",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/11_c8c7c50b-9cd8-452f-9709-47b330d72ec2.jpg?v=1787388502",
+    "name": "Peach Flowy Draped Top",
+    "price": "$99.99",
+    "published_at": "2026-08-22T04:48:41-04:00"
+   },
+   "15840470040736": {
+    "handle": "shadow-graphic-pullover",
+    "hash": "b1964e6471db4c6c",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/12_8345010b-5e35-4b1a-9c57-0d0d964ca177.jpg?v=1787388568",
+    "name": "Shadow Graphic Pullover",
+    "price": "$99.99",
+    "published_at": "2026-08-22T04:49:57-04:00"
+   },
+   "15841665515680": {
+    "handle": "leopard-print-lounge-set",
+    "hash": "ea7c858b94c32eb2",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/3.avif?v=1787477125",
+    "name": "Leopard Print Lounge Set",
+    "price": "$99.99",
+    "published_at": "2026-08-23T05:26:02-04:00"
+   },
+   "15842100412576": {
+    "handle": "colossus-britannia-denim",
+    "hash": "e6c69a319b199c6c",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/3x1.webp?v=1787547098",
+    "name": "Colossus Britannia Denim",
+    "price": "$99.99",
+    "published_at": "2026-08-24T00:51:55-04:00"
+   },
+   "15842945925280": {
+    "handle": "f1-official-core-logo-hoodie",
+    "hash": "85af589977268659",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/4_8da0ae73-f47d-4921-b2ea-f5957c923469.jpg?v=1787640867",
+    "name": "F1 Official Core Logo Hoodie",
+    "price": "$99.99",
+    "published_at": "2026-08-25T02:54:54-04:00"
+   },
+   "15842951659680": {
+    "handle": "gap-arch-logo-hoodie-zip-up",
+    "hash": "eb3cc5c294c3c61b",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/Gemini_Generated_Image_ly2kk2ly2kk2ly2k.jpg?v=1787689616",
+    "name": "Cheetah-Print Set",
+    "price": "$99.99",
+    "published_at": "2026-08-25T02:57:42-04:00"
+   },
+   "15842955198624": {
+    "handle": "playful-dachshund-hoodie",
+    "hash": "bbe0c40ff9303ce4",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/6_5e201cd1-aeb2-49a0-9680-07abe4aa2cb2.jpg?v=1787641159",
+    "name": "Playful Dachshund Hoodie",
+    "price": "$99.99",
+    "published_at": "2026-08-25T02:59:43-04:00"
+   },
+   "15843738189984": {
+    "handle": "cheetah-print-zip-up",
+    "hash": "abb4900bcf8a2fb1",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/Gemini_Generated_Image_y81gtgy81gtgy81g.jpg?v=1787690491",
+    "name": "Cheetah-Print Zip-Up",
+    "price": "$19.99",
+    "published_at": "2026-08-25T16:37:21-04:00"
+   },
+   "15844523573408": {
+    "handle": "matcha-retro-layered-set",
+    "hash": "b39bcd64cc24cb26",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/3_a709c522-d89e-4fad-9a06-5f44dbe90304.jpg?v=1787745667",
+    "name": "Matcha Retro Layered Set",
+    "price": "$99.99",
+    "published_at": "2026-08-26T08:01:23-04:00"
+   },
+   "15845255413920": {
+    "handle": "spider-man-oversized-tee",
+    "hash": "bd2bc0b4834a3dad",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/4_ef934e2b-dde5-4286-ab16-897b7def4724.jpg?v=1787824738",
+    "name": "Spider-Man Oversized Tee",
+    "price": "$99.99",
+    "published_at": "2026-08-27T05:59:25-04:00"
+   },
+   "15845256265888": {
+    "handle": "trout-applique-crewneck",
+    "hash": "aa8e95101e9f6ae9",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/5_274fd99a-4cf9-4c71-b3a8-eaf3ee0b72a6.jpg?v=1787824801",
+    "name": "Trout Appliqué Crewneck",
+    "price": "$99.99",
+    "published_at": "2026-08-27T06:00:19-04:00"
+   },
+   "15845259215008": {
+    "handle": "bape-leopard-graphic-tee",
+    "hash": "fac7c5b0164f29b0",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/6_0ee021ee-974f-4fc2-b95d-6513054d40f9.jpg?v=1787824851",
+    "name": "BAPE Leopard Graphic Tee",
+    "price": "$99.99",
+    "published_at": "2026-08-27T06:01:18-04:00"
+   },
+   "15846247989408": {
+    "handle": "barcelona-retro-tracksuit",
+    "hash": "f886dae2c1e0c71b",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2_6e269f32-562d-41e9-8f58-67a094ad5b73.jpg?v=1787907749",
+    "name": "Barcelona Retro Tracksuit",
+    "price": "$99.99",
+    "published_at": "2026-08-28T05:02:49-04:00"
+   },
+   "15849108144288": {
+    "handle": "grey-fleece-lounge-set",
+    "hash": "b039c7c6c76d8c98",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/3_d56d6291-fb15-4752-b0fd-d1f4daae93f2.jpg?v=1788083339",
+    "name": "Grey Fleece Lounge Set",
+    "price": "$99.99",
+    "published_at": "2026-08-30T05:49:19-04:00"
+   },
+   "15849820651680": {
+    "handle": "motorsport-heritage-jacket",
+    "hash": "d6a62b999d195326",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1_d3655cec-2548-4685-8d83-f007a2d41679.jpg?v=1788182861",
+    "name": "Motorsport Heritage Jacket",
+    "price": "$99.99",
+    "published_at": "2026-08-31T09:27:58-04:00"
+   },
+   "15849821012128": {
+    "handle": "web-slinger-outline-pullover",
+    "hash": "ffe0c11f9a38980d",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2_0ceb318d-b670-4535-8ad2-89cc1520b36c.jpg?v=1788182910",
+    "name": "Web-Slinger Outline Pullover",
+    "price": "$99.99",
+    "published_at": "2026-08-31T09:28:47-04:00"
+   },
+   "15851261034656": {
+    "handle": "technical-zip-up-windbreaker-suit",
+    "hash": "e8c3959e907a7865",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1a_5adedc8e-1e6b-44c0-9e2b-831a3c1a2d93.webp?v=1788252875",
+    "name": "Technical Zip-Up Windbreaker Suit",
+    "price": "$99.99",
+    "published_at": "2026-09-01T04:54:53-04:00"
+   },
+   "15853171867808": {
+    "handle": "core-motion-set",
+    "hash": "ec86c4ce1f693c31",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/U3040RG_03842_b1_s1_a1_m214_750x_1.webp?v=1788325402",
+    "name": "Core Motion Set",
+    "price": "$99.99",
+    "published_at": "2026-09-02T01:05:28-04:00"
+   },
+   "15853172228256": {
+    "handle": "core-motion-quarter-zip",
+    "hash": "e8a797d2965a8e48",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/Gemini_Generated_Image_dbtf70dbtf70dbtf.jpg?v=1788325840",
+    "name": "Core Motion Quarter Zip",
+    "price": "$19.99",
+    "published_at": "2026-09-02T01:13:13-04:00"
+   },
+   "15853217677472": {
+    "handle": "fortnite-tracksuit-set",
+    "hash": "b4d3ccb4c3d8ca4c",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/fortnight.jpg?v=1788333323",
+    "name": "Fortnite Tracksuit Set",
+    "price": "$99.99",
+    "published_at": "2026-09-02T03:16:22-04:00"
+   },
+   "15853466255520": {
+    "handle": "monogram-premium-hoodie",
+    "hash": "adb0d48bc36f3434",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1_20335d58-344c-407e-b060-7f2f6da15954.jpg?v=1788365442",
+    "name": "Monogram Premium Hoodie",
+    "price": "$99.99",
+    "published_at": "2026-09-02T12:11:10-04:00"
+   },
+   "15853467730080": {
+    "handle": "marvel-avengers-graphic-tee",
+    "hash": "e91e96e1c44e1b99",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2_a0d77d8f-11a9-44e5-a67d-31894fdb7b68.jpg?v=1788365510",
+    "name": "Marvel Avengers Graphic Tee",
+    "price": "$99.99",
+    "published_at": "2026-09-02T12:12:14-04:00"
+   },
+   "15853469827232": {
+    "handle": "panther-wings-tracksuit-set",
+    "hash": "eea6b2139b98998c",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/3a_f918188d-455a-464e-a62b-bf3591e8ae8b.jpg?v=1788365584",
+    "name": "Panther Wings Tracksuit Set",
+    "price": "$99.99",
+    "published_at": "2026-09-02T12:13:57-04:00"
+   },
+   "15853475299488": {
+    "handle": "roblox-graphic-tee",
+    "hash": "ebd2b4a4c31b9a68",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/4_45ff038b-6e64-4f25-9a6d-707eef6d402a.jpg?v=1788365731",
+    "name": "Roblox Graphic Tee",
+    "price": "$99.99",
+    "published_at": "2026-09-02T12:18:45-04:00"
+   },
+   "15853478445216": {
+    "handle": "camo-floral-t-shirt",
+    "hash": "bc9ac3e4901a3b4f",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/5_60d62d25-e7e8-4fdc-ba3f-6ef534cfca69.jpg?v=1788366081",
+    "name": "Camo Floral T-Shirt",
+    "price": "$99.99",
+    "published_at": "2026-09-02T12:21:59-04:00"
+   },
+   "15853487358112": {
+    "handle": "ribbed-horizontal-stripe-top",
+    "hash": "ea61959696da49c9",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/6a.avif?v=1788366187",
+    "name": "Ribbed Horizontal Stripe Top",
+    "price": "$99.99",
+    "published_at": "2026-09-02T12:28:05-04:00"
+   },
+   "15854742175904": {
+    "handle": "classic-batman-graphic-tee",
+    "hash": "e93633878b837171",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1.avif?v=1788447801",
+    "name": "Classic Batman Graphic Tee",
+    "price": "$99.99",
+    "published_at": "2026-09-03T11:03:54-04:00"
+   },
+   "15854744043680": {
+    "handle": "vory-layered-bohemian-dress",
+    "hash": "bc83d0f4c16fc552",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2_b14f41f8-660b-4952-8231-4f7fa4c22f8f.jpg?v=1788447893",
+    "name": "Ivory Layered Bohemian Dress",
+    "price": "$99.99",
+    "published_at": "2026-09-03T11:05:47-04:00"
+   },
+   "15857944068256": {
+    "handle": "whale-shark-graphic-hoodie",
+    "hash": "bee0c10ffc3b9860",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1_a999b58b-3773-45fd-a456-86789158398d.jpg?v=1788538889",
+    "name": "Whale Shark Graphic Hoodie",
+    "price": "$99.99",
+    "published_at": "2026-09-04T12:21:53-04:00"
+   },
+   "15857945051296": {
+    "handle": "teal-smocked-cami",
+    "hash": "bcc3cb38c63c38c3",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2_af897f73-0baa-4a3c-a9cd-09adaede9d6c.jpg?v=1788538973",
+    "name": "Teal Smocked Cami",
+    "price": "$99.99",
+    "published_at": "2026-09-04T12:23:21-04:00"
+   },
+   "15858923012256": {
+    "handle": "olive-short-sleeve-turtleneck",
+    "hash": "afb2d08c0fce3531",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1_bde0c8a4-6892-4c93-a6ac-ccd57dea1d95.jpg?v=1788695774",
+    "name": "Olive Short-Sleeve Turtleneck",
+    "price": "$99.99",
+    "published_at": "2026-09-06T07:56:31-04:00"
+   },
+   "15858923077792": {
+    "handle": "plaid-wide-leg-trousers",
+    "hash": "bcf1d14fc14ec40e",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2_df5c0b92-0525-4bdc-bcd5-959450bcd48d.jpg?v=1788695818",
+    "name": "Plaid Wide-Leg Trousers",
+    "price": "$99.99",
+    "published_at": "2026-09-06T07:57:18-04:00"
+   },
+   "15858923274400": {
+    "handle": "fairy-skirt-collection",
+    "hash": "bfb0c02f87e08eca",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/3a_6d4b348a-126e-408b-819c-22a03082fd84.jpg?v=1788695876",
+    "name": "Fairy Skirt Collection",
+    "price": "$99.99",
+    "published_at": "2026-09-06T07:59:40-04:00"
+   },
+   "15858923339936": {
+    "handle": "classic-faded-bootcut-jeans",
+    "hash": "b4329bc1cbccce8a",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/4_7343146a-c10d-43e2-8db9-6cbe23c3b6a6.jpg?v=1788696012",
+    "name": "Classic Faded Bootcut Jeans",
+    "price": "$99.99",
+    "published_at": "2026-09-06T08:00:28-04:00"
+   },
+   "15858923405472": {
+    "handle": "union-jack-baggy-jeans",
+    "hash": "e6c69a319b199c6c",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/5a_11c50c27-ce1b-4021-9c5a-9b24318a8afe.webp?v=1788696064",
+    "name": "Union Jack Baggy Jeans",
+    "price": "$99.99",
+    "published_at": "2026-09-06T08:01:23-04:00"
+   },
+   "15859434258592": {
+    "handle": "burgundy-ribbed-wrap-set",
+    "hash": "b119ccc6cf29cb86",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1_a700f577-b9f0-4d77-8711-f63afca7042a.jpg?v=1788720719",
+    "name": "Burgundy Ribbed Wrap Set",
+    "price": "$99.99",
+    "published_at": "2026-09-06T14:52:25-04:00"
+   },
+   "15859435896992": {
+    "handle": "leopard-fringe-skirt",
+    "hash": "b433936cc2cb4e99",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2_ce4a9a55-2f69-44ce-9f8d-22a35075b11a.jpg?v=1788720794",
+    "name": "Leopard Fringe Skirt",
+    "price": "$99.99",
+    "published_at": "2026-09-06T14:53:40-04:00"
+   },
+   "15859437764768": {
+    "handle": "sand-structured-set",
+    "hash": "b2c79ec6336c388c",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/3a.avif?v=1788720879",
+    "name": "Sand Structured Set",
+    "price": "$99.99",
+    "published_at": "2026-09-06T14:55:15-04:00"
+   },
+   "15859438911648": {
+    "handle": "gold-corset-top",
+    "hash": "b94cc6336d3299c5",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/4_fc1e7437-f8e3-4032-8918-e1b46e1f6e72.jpg?v=1788720951",
+    "name": "Gold Corset Top",
+    "price": "$99.99",
+    "published_at": "2026-09-06T14:56:14-04:00"
+   },
+   "15859442712736": {
+    "handle": "cavalli-skirts-capris",
+    "hash": "a99b94b496c76961",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/5a_cb5419cb-6fe8-4a9c-a375-3b71fc26aeea.jpg?v=1788721036",
+    "name": "Cavalli Skirts & Capris",
+    "price": "$99.99",
+    "published_at": "2026-09-06T14:59:12-04:00"
+   },
+   "15861034451104": {
+    "handle": "vintage-brown-jacket",
+    "hash": "b979815b4e4b6626",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1a_46ae8fb7-de0c-4313-9d4c-56ae592ff055.webp?v=1788804454",
+    "name": "Vintage Brown Jacket",
+    "price": "$99.99",
+    "published_at": "2026-09-07T14:07:51-04:00"
+   },
+   "15861034516640": {
+    "handle": "pink-graffiti-sweatsuit",
+    "hash": "e91ac5e5961a3ae4",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2_0fe05090-f40d-4bee-91d9-12983d07e49f.jpg?v=1788804753",
+    "name": "Pink Graffiti Sweatsuit",
+    "price": "$99.99",
+    "published_at": "2026-09-07T14:09:06-04:00"
+   },
+   "15861034909856": {
+    "handle": "faux-fur-sherpa-hoodie",
+    "hash": "abb085679e1a994d",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/3_2cca615e-ae02-4505-9f7e-57487c5fdaa8.jpg?v=1788804598",
+    "name": "Faux-Fur Sherpa Hoodie",
+    "price": "$99.99",
+    "published_at": "2026-09-07T14:11:33-04:00"
+   },
+   "15861036122272": {
+    "handle": "novelty-print-pajama-set",
+    "hash": "bc8fe0f1c33a8b60",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/4_477fa639-7e8a-4f3d-a2e1-3ddd19d555f3.jpg?v=1788805078",
+    "name": "Novelty Print Pajama Set",
+    "price": "$99.99",
+    "published_at": "2026-09-07T14:18:17-04:00"
+   },
+   "15861036286112": {
+    "handle": "blue-camo-activewear-set",
+    "hash": "ad66f1341392c46f",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/5a_8def6e2b-b3f1-41a6-9203-a6b434b25b83.webp?v=1788805130",
+    "name": "Blue Camo Activewear Set",
+    "price": "$99.99",
+    "published_at": "2026-09-07T14:19:33-04:00"
+   },
+   "15861882650784": {
+    "handle": "black-zip-front-denim-jacket",
+    "hash": "bef4c10b3ccc3871",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1_5f56a09c-c2e9-428c-89fd-1b87a3203391.jpg?v=1788884631",
+    "name": "Black Zip-Front Denim Jacket",
+    "price": "$99.99",
+    "published_at": "2026-09-08T12:24:56-04:00"
+   },
+   "15861883469984": {
+    "handle": "vintage-mud-wash-flare-denim",
+    "hash": "e6849cccd9339933",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2a_092814c9-1322-41d4-9b00-2b8ae026a55d.webp?v=1788884764",
+    "name": "Vintage Mud Wash Flare Denim",
+    "price": "$99.99",
+    "published_at": "2026-09-08T12:26:24-04:00"
+   },
+   "15862940926112": {
+    "handle": "cat-ear-zip-up-hoodie",
+    "hash": "bdc7e0bada1a1581",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1a_d867a318-3371-4118-8e0c-b585fc7219db.webp?v=1788978647",
+    "name": "Cat Ear Zip-Up Hoodie",
+    "price": "$99.99",
+    "published_at": "2026-09-09T14:31:19-04:00"
+   },
+   "15862942400672": {
+    "handle": "colorblock-fleece-pullover",
+    "hash": "bfc8c002c73beb38",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2_ce719d25-d8d7-4cf0-8264-0beebed3a86e.jpg?v=1788978745",
+    "name": "Colorblock Fleece Pullover",
+    "price": "$99.99",
+    "published_at": "2026-09-09T14:32:51-04:00"
+   },
+   "15862945874080": {
+    "handle": "juicy-couture-ballet-flats",
+    "hash": "e687196a87397887",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/3_53a386c0-4596-4d96-84fc-b029d5d42f88.jpg?v=1788978927",
+    "name": "Juicy Couture Ballet Flats",
+    "price": "$99.99",
+    "published_at": "2026-09-09T14:35:40-04:00"
+   },
+   "15862946463904": {
+    "handle": "hollister-lace-trim-ribbed-cami",
+    "hash": "976a699968956a96",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/4_5fe31032-c80e-4dbb-8637-61326ede04b1.jpg?v=1788978978",
+    "name": "White Lace-Trim Ribbed Cami",
+    "price": "$99.99",
+    "published_at": "2026-09-09T14:36:55-04:00"
+   },
+   "15863929241760": {
+    "handle": "bass-pro-hoodie",
+    "hash": "eb90b16dda4ac427",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1_023e39d6-73f9-4dfb-b106-daa58336534b.jpg?v=1789087660",
+    "name": "Bass Pro Hoodie",
+    "price": "$99.99",
+    "published_at": "2026-09-10T20:48:43-04:00"
+   },
+   "15867453440160": {
+    "handle": "true-religion-pink-track-jacket",
+    "hash": "b4174bcb5a2c6565",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1_1f017849-3373-4a94-8928-0a1ec920d71a.jpg?v=1789156572",
+    "name": "True Religion Pink Track Jacket",
+    "price": "$99.99",
+    "published_at": "2026-09-11T15:56:28-04:00"
+   },
+   "15867453702304": {
+    "handle": "abstract-airbrush-sweatsuit",
+    "hash": "b132c5e4ce4c9cb9",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2_0e358e68-0af3-4888-ba66-b70a9122faae.jpg?v=1789156611",
+    "name": "Abstract Airbrush Sweatsuit",
+    "price": "$99.99",
+    "published_at": "2026-09-11T15:57:05-04:00"
+   },
+   "15867453767840": {
+    "handle": "colorblock-sherpa-zip-up",
+    "hash": "e8a59768b1cac88f",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/3_4bbc7709-fac3-45f9-9f5a-2c88ad205383.jpg?v=1789156650",
+    "name": "Colorblock Sherpa Zip-Up",
+    "price": "$99.99",
+    "published_at": "2026-09-11T15:57:45-04:00"
+   },
+   "15867453866144": {
+    "handle": "essential-grey-windbreaker",
+    "hash": "eaa6953ad21a8b99",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/4_6800a23f-ca55-4122-ab26-12ecf9ea9f9c.jpg?v=1789156689",
+    "name": "Essential Grey Windbreaker",
+    "price": "$99.99",
+    "published_at": "2026-09-11T15:58:23-04:00"
+   },
+   "15867453898912": {
+    "handle": "cloudnine-cyan-pullover",
+    "hash": "eaa4945ad959b895",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/5_0639c38c-73dd-4d9e-9539-b237a74926a3.jpg?v=1789156723",
+    "name": "Cloudnine Cyan Pullover",
+    "price": "$99.99",
+    "published_at": "2026-09-11T15:59:00-04:00"
+   },
+   "15867454029984": {
+    "handle": "plaid-lined-grey-zip-up",
+    "hash": "e62633688dcc999b",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/6_43273fed-4146-49ea-82ca-cd9f28a18844.jpg?v=1789156764",
+    "name": "Reversible Plaid Zip-Up",
+    "price": "$99.99",
+    "published_at": "2026-09-11T15:59:37-04:00"
+   },
+   "15868143435936": {
+    "handle": "pink-stripe-button-neck-tank",
+    "hash": "c7e9299630963e72",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2_38c176a3-989e-4679-8c1f-0ae3e06b066e.jpg?v=1789232335",
+    "name": "Pink Stripe Button-Neck Tank",
+    "price": "$99.99",
+    "published_at": "2026-09-12T12:59:18-04:00"
+   },
+   "15868143534240": {
+    "handle": "embroidered-liberty-graphic-jeans",
+    "hash": "f8a6909995c6c6cd",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1_15f7f21c-d161-4733-b325-fe81fbda7b75.jpg?v=1789232388",
+    "name": "Embroidered Liberty Graphic Jeans",
+    "price": "$99.99",
+    "published_at": "2026-09-12T13:00:08-04:00"
+   },
+   "15868579709088": {
+    "handle": "faux-fur-zip-up-jacket",
+    "hash": "f9919632c94969cd",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1a_f18f5503-bf7b-4caf-b949-df4356397aad.avif?v=1789322275",
+    "name": "Faux-Fur Zip-Up Jacket",
+    "price": "$99.99",
+    "published_at": "2026-09-13T13:53:55-04:00"
+   },
+   "15872283803808": {
+    "handle": "draped-chiffon-flowy-skirt",
+    "hash": "bc33c34c93c84e9b",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1_29d80fdf-9882-461a-8fba-76b912f14a71.jpg?v=1789506229",
+    "name": "Draped Chiffon Flowy Skirt",
+    "price": "$99.99",
+    "published_at": "2026-09-15T17:04:07-04:00"
+   },
+   "15872285606048": {
+    "handle": "ietsfrans-joggers",
+    "hash": "e166c699da199a59",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2a.jpg?v=1789506288",
+    "name": "Ietsfrans Joggers",
+    "price": "$99.99",
+    "published_at": "2026-09-15T17:05:09-04:00"
+   },
+   "15872287932576": {
+    "handle": "airbrush-graphic-lounge-set",
+    "hash": "e13685e5ce5898b9",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/3a_b9bd10dc-984f-47f5-b012-81a5ff11833a.webp?v=1789506407",
+    "name": "Airbrush Graphic Lounge Set",
+    "price": "$99.99",
+    "published_at": "2026-09-15T17:07:02-04:00"
+   },
+   "15876037771424": {
+    "handle": "cropped-belted-trench-coat",
+    "hash": "9ec961856c968d73",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1a_3fd36bcd-dfcd-4410-ba62-b975dcc8cd61.webp?v=1789714542",
+    "name": "Cropped Belted Trench Coat",
+    "price": "$99.99",
+    "published_at": "2026-09-18T02:55:59-04:00"
+   },
+   "15877589926048": {
+    "handle": "heritage-baggy-jeans",
+    "hash": "fce1911cc21b9cce",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1a_4c6fd01e-4077-4847-91c8-6b6e98b5e30a.jpg?v=1789773158",
+    "name": "Heritage Baggy Jeans",
+    "price": "$99.99",
+    "published_at": "2026-09-18T19:12:59-04:00"
+   },
+   "15877590909088": {
+    "handle": "textured-brain-motif-beanie",
+    "hash": "c1073f7ca063c38f",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2_6383c31d-582b-4082-9b7f-57a65d453e95.jpg?v=1789773220",
+    "name": "Textured Brain Motif Beanie",
+    "price": "$99.99",
+    "published_at": "2026-09-18T19:13:54-04:00"
+   },
+   "15877592252576": {
+    "handle": "toile-satin-pajama-set",
+    "hash": "ecce219693665a99",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/3_ba2f3500-ad45-447d-8318-db46ad787fe6.jpg?v=1789773270",
+    "name": "Toile Satin Pajama Set",
+    "price": "$99.99",
+    "published_at": "2026-09-18T19:14:50-04:00"
+   },
+   "15882438049952": {
+    "handle": "nightwing-graphic-pullover",
+    "hash": "eae4851ed8d96985",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1a_a9a6ae1e-45e0-42d9-9433-cc73979eccd9.jpg?v=1789959440",
+    "name": "Nightwing Graphic Pullover",
+    "price": "$99.99",
+    "published_at": "2026-09-20T22:57:48-04:00"
+   },
+   "15882691248288": {
+    "handle": "vintage-ivory-lace-long-sleeve-bodysuit",
+    "hash": "b667e616633c8c64",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1a_f164868d-c3bd-4af5-968f-7f013adf8864.avif?v=1789978636",
+    "name": "Vintage Ivory Lace Long Sleeve Bodysuit",
+    "price": "$99.99",
+    "published_at": "2026-09-21T04:17:59-04:00"
+   },
+   "15882695016608": {
+    "handle": "retro-typography-tee",
+    "hash": "e9da96a5965a5a88",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2_241f928b-2296-4237-8036-61e8d7b153a7.jpg?v=1789978781",
+    "name": "Retro Typography Tee",
+    "price": "$99.99",
+    "published_at": "2026-09-21T04:20:03-04:00"
+   },
+   "15883590860960": {
+    "handle": "high-neck-plaid-peplum-jacket",
+    "hash": "99f242e53d2c9ec2",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1_be027ed5-42f2-426c-ad45-c258e26fe76c.jpg?v=1790020612",
+    "name": "High-Neck Plaid Peplum Jacket",
+    "price": "$99.99",
+    "published_at": "2026-09-21T15:57:08-04:00"
+   },
+   "15883592532128": {
+    "handle": "hunter-red-boot-socks",
+    "hash": "bcbcc3439cc36934",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2_efb5844b-c669-4bd1-943e-3678155eae39.jpg?v=1790020851",
+    "name": "Hunter Red Boot Socks",
+    "price": "$99.99",
+    "published_at": "2026-09-21T16:01:06-04:00"
+   },
+   "15883592925344": {
+    "handle": "sequin-wing-hoodie",
+    "hash": "a0e796c34e2f9ce0",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/3a_d1315650-7f47-455e-bc7f-2dbf3a1756c5.webp?v=1790020911",
+    "name": "Sequin Wing Hoodie",
+    "price": "$99.99",
+    "published_at": "2026-09-21T16:03:00-04:00"
+   },
+   "15885040058528": {
+    "handle": "heritage-zip-front-windbreaker",
+    "hash": "bef0c31ecc0c3cc9",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1_760987fd-2a6e-4906-8f04-91a684fab3f1.avif?v=1790138160",
+    "name": "Heritage Zip-Front Windbreaker",
+    "price": "$99.99",
+    "published_at": "2026-09-23T00:36:25-04:00"
+   },
+   "15885046317216": {
+    "handle": "black-funnel-neck-wool-jacket",
+    "hash": "989bd94d6d266236",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2_9745ade7-3547-406a-ab87-8e4d22d3bec2.webp?v=1790138645",
+    "name": "Black Funnel-Neck Wool Jacket",
+    "price": "$99.99",
+    "published_at": "2026-09-23T00:44:23-04:00"
+   },
+   "15885047201952": {
+    "handle": "ultrafleece-barrel-leg-sweatpants",
+    "hash": "8fd0fd9794ea4a40",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/3a_f7cf582a-342b-44e5-845b-27bd1f04cd91.avif?v=1790138707",
+    "name": "UltraFleece Lounge Set",
+    "price": "$99.99",
+    "published_at": "2026-09-23T00:45:24-04:00"
+   },
+   "15885450608800": {
+    "handle": "contrast-sherpa-pullover",
+    "hash": "b1c36c9c6992675a",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1a_a9a7a210-adfe-4b51-803d-00b1d6365de3.avif?v=1790185313",
+    "name": "Contrast Sherpa Pullover",
+    "price": "$99.99",
+    "published_at": "2026-09-23T13:43:17-04:00"
+   },
+   "15885453099168": {
+    "handle": "skull-detail-micro-skirt",
+    "hash": "eb6e9481623e3cc3",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2_e922ace7-f087-4450-9253-8d668c4674d7.jpg?v=1790185435",
+    "name": "Skull Detail Micro Skirt",
+    "price": "$99.99",
+    "published_at": "2026-09-23T13:44:10-04:00"
+   },
+   "15886993817760": {
+    "handle": "imperial-dragon-tee",
+    "hash": "e99791e19e1b8938",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1_dc33cc48-1a5d-4b4e-9b6f-9727518f0400.webp?v=1790274191",
+    "name": "Imperial Dragon Tee",
+    "price": "$99.99",
+    "published_at": "2026-09-24T14:23:44-04:00"
+   },
+   "15886994276512": {
+    "handle": "ed-hardy-illustrated-denim",
+    "hash": "ec66ce399399c388",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2a_f290b1b6-e820-42d2-a0b9-23a55540ff75.webp?v=1790274262",
+    "name": "Ed Hardy Illustrated Denim",
+    "price": "$99.99",
+    "published_at": "2026-09-24T14:24:52-04:00"
+   },
+   "15886995226784": {
+    "handle": "lace-applique-jeans",
+    "hash": "e59b696c9839cc38",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/3a_d5c83599-d46c-49a5-b80c-8d3cdfca79ea.avif?v=1790274335",
+    "name": "Lace Appliqué Jeans",
+    "price": "$99.99",
+    "published_at": "2026-09-24T14:26:43-04:00"
+   },
+   "15887869018272": {
+    "handle": "stargirl-tracksuit",
+    "hash": "cf4f34b23b30cb24",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1a_4560c08a-68ca-40c8-b6ef-3ee77a9c66a2.webp?v=1790359179",
+    "name": "Stargirl Tracksuit",
+    "price": "$99.99",
+    "published_at": "2026-09-25T13:59:53-04:00"
+   },
+   "15887869739168": {
+    "handle": "heritage-sherpa-snap-pullover",
+    "hash": "bcc69b3364f09a19",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2e.avif?v=1790359320",
+    "name": "Heritage Sherpa Snap Pullover",
+    "price": "$99.99",
+    "published_at": "2026-09-25T14:02:25-04:00"
+   },
+   "15887870427296": {
+    "handle": "leopard-trim-hoodie",
+    "hash": "e4c6643a9b1bc999",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/3a_c350ad59-f6fd-4409-8ff9-104b391c6864.webp?v=1790359393",
+    "name": "Leopard Trim Hoodie",
+    "price": "$99.99",
+    "published_at": "2026-09-25T14:03:32-04:00"
+   }
+  },
   "https://cortezstudios.co": {
    "10510390559012": {
     "handle": "paint-gat-sneaker",
@@ -895,6 +1808,24 @@
     "name": "Mind Slides 001©",
     "price": "$39.99",
     "published_at": "2026-07-21T22:49:56-05:00"
+   }
+  },
+  "https://daisiesstore.shop": {
+   "9288713208065": {
+    "handle": "package-priority",
+    "hash": "cb3364cc9b3326cc",
+    "image": "https://cdn.shopify.com/s/files/1/0832/3819/1361/files/sani-order-priority_1.webp?v=1784844384",
+    "name": "Package Priority",
+    "price": "$3.95",
+    "published_at": "2026-07-23T18:06:49-04:00"
+   },
+   "9362465227009": {
+    "handle": "resident-evil-limited-edition-popcorn-bucket",
+    "hash": "adc4e62e96989939",
+    "image": "https://cdn.shopify.com/s/files/1/0832/3819/1361/files/IMG-9243.webp?v=1790095405",
+    "name": "Resident Evil Limited Edition Popcorn Bucket",
+    "price": "$34.95",
+    "published_at": "2026-09-22T12:43:46-04:00"
    }
   },
   "https://distrikdofficial.com": {
@@ -1593,6 +2524,346 @@
     "name": "Naruto Inspired Collection",
     "price": "$24.99 - $34.99",
     "published_at": "2026-09-18T10:50:27-04:00"
+   }
+  },
+  "https://evonnashop.com": {
+   "9086846206150": {
+    "handle": "classic-casual-clogs",
+    "hash": "b969c18596b6c636",
+    "image": "https://cdn.shopify.com/s/files/1/0686/6826/0550/files/Red.jpg?v=1790321667",
+    "name": "Classic Casual Clogs",
+    "price": "$34.99",
+    "published_at": "2026-09-25T00:38:31-07:00"
+   },
+   "9086865375430": {
+    "handle": "casual-necklace-set",
+    "hash": "b398cc2399cccc9b",
+    "image": "https://cdn.shopify.com/s/files/1/0686/6826/0550/files/1_c7d2a5df-4dbe-496d-a210-f77474238793.jpg?v=1790323235",
+    "name": "Casual Necklace Set",
+    "price": "$19.99",
+    "published_at": "2026-09-25T01:00:49-07:00"
+   }
+  },
+  "https://exaluna.com": {
+   "8554211541153": {
+    "handle": "south-beach-stripe-set",
+    "hash": "adf396c839c524c9",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/South_Beach_Stripe_Set_1.jpg?v=1781431382",
+    "name": "South Beach Stripe Set",
+    "price": "$31.95",
+    "published_at": "2026-06-14T06:02:59-04:00"
+   },
+   "8554211573921": {
+    "handle": "striped-logo-everyday-set",
+    "hash": "e4a59e5a1db2930d",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/C79A4791.webp?v=1781431385",
+    "name": "Striped Logo Everyday Set",
+    "price": "$32.95",
+    "published_at": "2026-06-14T06:03:01-04:00"
+   },
+   "8554211606689": {
+    "handle": "cotton-candy-clouds-skirt",
+    "hash": "a347ce36cc9c9919",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/download_800x800_8742b29c-eb69-494a-b95f-48da4fe41b8e.jpg?v=1781431386",
+    "name": "Cotton Candy Clouds Skirt",
+    "price": "$24.95",
+    "published_at": "2026-06-14T06:03:03-04:00"
+   },
+   "8554211639457": {
+    "handle": "hampton-stripe-set",
+    "hash": "b3cb8a285d7c89c9",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/Subject__Same_blonde_model_in_202605211657_1.jpg?v=1781431387",
+    "name": "Hampton Stripe Set",
+    "price": "$27.95",
+    "published_at": "2026-06-14T06:03:04-04:00"
+   },
+   "8574017372321": {
+    "handle": "nightmare-skeleton-32oz-water-bottle",
+    "hash": "b000d97fcf79cc84",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/NightmareSkeleton32ozWaterBottle_4.webp?v=1782882086",
+    "name": "Nightmare Skeleton 32oz Water Bottle",
+    "price": "$28.95",
+    "published_at": "2026-07-01T01:01:55-04:00"
+   },
+   "8578230321313": {
+    "handle": "rolling-in-24oz-freesip-water-bottle",
+    "hash": "cc99333333663366",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/OW_Birthday_Bash_Rollin-In_24oz-FreeSip_PDP_GIF-7_3335.webp?v=1783322741",
+    "name": "Rolling In 24oz FreeSip Water Bottle",
+    "price": "$28.95",
+    "published_at": "2026-07-06T03:26:10-04:00"
+   },
+   "8583807107233": {
+    "handle": "exclusive-tulip-bouquet-freesip-32oz-water-bottle",
+    "hash": "98226bf93dab7814",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/0533953900021_060_b.webp?v=1783502342",
+    "name": "Exclusive Tulip Bouquet FreeSip 32oz Water Bottle",
+    "price": "$28.95",
+    "published_at": "2026-07-08T05:19:10-04:00"
+   },
+   "8584871674017": {
+    "handle": "sofia-striped-set-tropic",
+    "hash": "b921655ceb96213b",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/BIRDSOFPARADISE03-PINTEREST_1_720x_b78cffd8-97c1-4cf7-8bdf-0ef69251f22b.webp?v=1783579305",
+    "name": "Sofia Striped Set | Tropic",
+    "price": "$24.95",
+    "published_at": "2026-07-09T02:46:02-04:00"
+   },
+   "8586404987041": {
+    "handle": "duskrise-dragon",
+    "hash": "b3c3cc3c69c19336",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/SUN2DD__75846.jpg?v=1783669692",
+    "name": "Duskrise Dragon",
+    "price": "$24.95",
+    "published_at": "2026-07-10T03:35:25-04:00"
+   },
+   "8588061606049": {
+    "handle": "owala-delft-cat-print-freesip-32-oz-water-bottle",
+    "hash": "91ff4f80ee0ac6a4",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/106171572_040_b.webp?v=1783762544",
+    "name": "Delft Cat Print FreeSip 32 oz Water Bottle",
+    "price": "$28.95",
+    "published_at": "2026-08-31T07:08:22-04:00"
+   },
+   "8593825267873": {
+    "handle": "pink-oversized-mock-neck-sweatshirt",
+    "hash": "b6e766b12e812c93",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/112931277ONZ_OM_F.webp?v=1784101485",
+    "name": "PINK Oversized Mock-Neck Sweatshirt",
+    "price": "$24.95",
+    "published_at": "2026-07-15T03:45:49-04:00"
+   },
+   "8597335048353": {
+    "handle": "on-the-dot-traveler-40oz-tumbler",
+    "hash": "aec83172c79ac78c",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/111567814_220_b.webp?v=1784268970",
+    "name": "Dot & Striped Traveler 40oz Tumbler",
+    "price": "$29.95",
+    "published_at": "2026-07-17T02:16:08-04:00"
+   },
+   "8600299438241": {
+    "handle": "exclusive-midnight-floral-40oz-traveler-tumbler",
+    "hash": "b69cc9c39c279934",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/imgi_3_ExclusiveMidnightFloral40ozTravelerTumbler_4.jpg?v=1784451301",
+    "name": "Exclusive Midnight Floral 40oz Traveler Tumbler",
+    "price": "$34.95",
+    "published_at": "2026-07-19T04:56:19-04:00"
+   },
+   "8632198791329": {
+    "handle": "winnie-the-pooh-piglet-owala",
+    "hash": "e699994cd9319971",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/p_p-bottle_2.jpg?v=1785318540",
+    "name": "Winnie The Pooh & Piglet 32oz FreeSip Water Bottle",
+    "price": "$34.95",
+    "published_at": "2026-07-29T05:04:00-04:00"
+   },
+   "8635339636897": {
+    "handle": "vintage-winnie-the-pooh-bunny-plush",
+    "hash": "a79c92f3b129866c",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/VintageWinnieThePoohBunnyPlush_4.jpg?v=1785401225",
+    "name": "Vintage Winnie The Pooh Bunny Plush",
+    "price": "$24.95",
+    "published_at": "2026-07-30T04:47:02-04:00"
+   },
+   "8660862435489": {
+    "handle": "appaloosa-40oz-traveler-tumbler",
+    "hash": "b12c9697cd9a92c6",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/84049444823.webp?v=1786091760",
+    "name": "Appaloosa 40oz Traveler Tumbler",
+    "price": "$29.95",
+    "published_at": "2026-08-07T04:36:16-04:00"
+   },
+   "8671888965793": {
+    "handle": "olivia-rodrigo-40oz-tumbler",
+    "hash": "b3cccecccccd6430",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/20-10001-101.jpg?v=1786266756",
+    "name": "Olivia Rodrigo 40oz Tumbler",
+    "price": "$29.95",
+    "published_at": "2026-08-09T05:15:34-04:00"
+   },
+   "8674775204001": {
+    "handle": "mini-spider-soft-toy",
+    "hash": "e0969b6897689c67",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/15250802835042_x20055107_744915ab-9a6b-4a96-ac3f-d7a8c017aa69.jpg?v=1786351875",
+    "name": "Mini Spider Soft Toy",
+    "price": "$24.95",
+    "published_at": "2026-08-10T04:51:21-04:00"
+   },
+   "8678356025505": {
+    "handle": "bartholomew-bear-pumpkin",
+    "hash": "b092cb6c8f61966d",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/BARL2PUM__67403.jpg?v=1786438921",
+    "name": "Bartholomew Bear Pumpkin",
+    "price": "$24.95",
+    "published_at": "2026-08-11T05:02:09-04:00"
+   },
+   "8681977381025": {
+    "handle": "stanley-espresso-gold-40-oz-tumbler",
+    "hash": "e6d19cbcc114fda0",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/Untitled_design_14_3f60520d-632b-40e2-bee2-8fbbceb10bb3.png?v=1786526826",
+    "name": "Stanley Espresso Gold 30 oz Tumbler",
+    "price": "$29.95",
+    "published_at": "2026-08-12T05:28:35-04:00"
+   },
+   "8683513544865": {
+    "handle": "chocolate-gold-40oz-tumbler",
+    "hash": "fcf8f3e408fc8118",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/1.png?v=1786611933",
+    "name": "Chocolate Gold 40oz Tumbler",
+    "price": "$29.95",
+    "published_at": "2026-08-13T05:06:26-04:00"
+   },
+   "8687462351009": {
+    "handle": "winnie-the-pooh-daisy-flower-tumbler",
+    "hash": "b3c88c37998cce99",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/pooh-daisy-tumbler.jpg?v=1786792418",
+    "name": "Winnie The Pooh Daisy Flower 40oz Tumbler",
+    "price": "$29.95",
+    "published_at": "2026-08-15T07:13:36-04:00"
+   },
+   "8690080350369": {
+    "handle": "gazelle-indoor-x-hello-kitty-anniversary-shoes",
+    "hash": "eee4919f496827c8",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/Gazelle_Indoor_x_Hello_Kitty_Anniversary_Shoes_White_II0013_14_hover_standard.jpg?v=1787049366",
+    "name": "Hello Kitty x Adidas Gazelle",
+    "price": "$24.95",
+    "published_at": "2026-08-18T06:36:03-04:00"
+   },
+   "8691668713633": {
+    "handle": "spider-man-32oz-freesip-bottle-crimson-web-edition",
+    "hash": "f0daae421f29b1b2",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/Spider-Man32ozFreeSipBottle_CrimsonWebEdition_1_03f8d5de-b0e7-4325-870a-f7f26c5a126c.png?v=1787133926",
+    "name": "Spider-Man 32oz FreeSip Bottle — Crimson Web Edition",
+    "price": "$34.95",
+    "published_at": "2026-08-19T06:05:23-04:00"
+   },
+   "8698145276065": {
+    "handle": "leopard-print-jellycat-bashful-bunny",
+    "hash": "e99c90e3972dc899",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/BAS3LPB__67482.jpg?v=1787470131",
+    "name": "Leopard Print Jellycat Bashful Bunny",
+    "price": "$24.95",
+    "published_at": "2026-08-23T03:23:57-04:00"
+   },
+   "8699668594849": {
+    "handle": "black-cherry-owala-freesip-32oz-water-bottle",
+    "hash": "e6cccecece648c24",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/imgi_5_568392878_10173587706165604_5150177294743713992_n_800x800_9b8b57c3-b882-43dd-98b0-f9931c81a688.jpg?v=1787562264",
+    "name": "Black Cherry Owala FreeSip 32oz Water Bottle",
+    "price": "$28.95",
+    "published_at": "2026-08-24T05:05:01-04:00"
+   },
+   "8702013178017": {
+    "handle": "winnie-the-pooh-40-oz-collectors-tumbler",
+    "hash": "d9d649ea006dfa07",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/pooh_tumbler_1.jpg?v=1787652218",
+    "name": "Winnie the Pooh 40 Oz Collector's Tumbler",
+    "price": "$29.95",
+    "published_at": "2026-08-25T06:10:17-04:00"
+   },
+   "8705012269217": {
+    "handle": "poohs-garden-party-40oz-tumbler",
+    "hash": "ec93816cb74c936c",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/poohgardentumbler.jpg?v=1787838258",
+    "name": "Pooh's Garden Party 40oz Tumbler",
+    "price": "$29.95 - $39.95",
+    "published_at": "2026-08-27T05:27:55-04:00"
+   },
+   "8705655603361": {
+    "handle": "bride-bunny",
+    "hash": "98c96eb76026b336",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/ZY4LYYWTDSD2ZZX6HCCY52IT.jpg?v=1787905757",
+    "name": "Bride Bunny",
+    "price": "$24.95",
+    "published_at": "2026-08-28T04:29:14-04:00"
+   },
+   "8707419766945": {
+    "handle": "seaside-sweets-snoopy-tote-bags",
+    "hash": "ed92d227876c9079",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/snoopy-totes_2.jpg?v=1787995354",
+    "name": "Seaside & Sweets Snoopy Tote Bags",
+    "price": "$24.95",
+    "published_at": "2026-08-29T05:23:56-04:00"
+   },
+   "8709811667105": {
+    "handle": "sally-x-jack-skellington-40-oz-tumbler",
+    "hash": "994eb40967e8ae66",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/06_f7604fc9-194c-4303-b73c-2cc109766bd6.webp?v=1788090087",
+    "name": "Sally x Jack Skellington 40 Oz Tumbler",
+    "price": "$29.95",
+    "published_at": "2026-08-30T07:41:25-04:00"
+   },
+   "8711494336673": {
+    "handle": "fall-edition-brown-black-40oz-tumbler",
+    "hash": "fcf8fbe408fc8018",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/1.png_2K_202609011813.jpg?v=1788263993",
+    "name": "Fall Edition Espresso 40oz Tumbler",
+    "price": "$29.95",
+    "published_at": "2026-09-01T06:09:47-04:00"
+   },
+   "8711497187489": {
+    "handle": "spooky-40oz-tumbler",
+    "hash": "a54b2dd70cf21de0",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/548858881_18524338504020105_572322335382634807_n.jpg?v=1788258289",
+    "name": "Spooky Season  40oz Tumbler",
+    "price": "$39.95",
+    "published_at": "2026-09-01T06:20:34-04:00"
+   },
+   "8715962908833": {
+    "handle": "coraline-spooky-season-40oz-tumbler",
+    "hash": "f0f88ba389d2b487",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/Screenshot2025-08-17162829.png?v=1788597260",
+    "name": "Coraline Spooky Season 40oz Tumbler",
+    "price": "$29.95",
+    "published_at": "2026-09-05T04:34:18-04:00"
+   },
+   "8716247400609": {
+    "handle": "spooky-season-40oz-tumbler-collection",
+    "hash": "cc366c69366c9a93",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/Web_PNG_Square-The_Quencher_H20_FlowState_Tumbler_40OZ_-_Deadly_Damask_-_Front.png?v=1788258037",
+    "name": "Spooky Season  40oz Tumbler Collection",
+    "price": "$34.95",
+    "published_at": "2026-09-05T14:43:43-04:00"
+   },
+   "8717509329057": {
+    "handle": "spooky-vibes-collection-40-oz-tumbler",
+    "hash": "cc366c69366c9a93",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/Web_PNG_Square-The_Quencher_H20_FlowState_Tumbler_40OZ_-_Deadly_Damask_-_Front_bd078e29-7df7-458c-97f4-2b5eea7f2475.png?v=1788781450",
+    "name": "Spooky Vibes Collection 40 OZ Tumbler",
+    "price": "$29.95",
+    "published_at": "2026-09-07T07:45:09-04:00"
+   },
+   "8724795949217": {
+    "handle": "limited-edition-fall-40oz-traveler-collection",
+    "hash": "e3699c9689ca986d",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/GUEST_df6755da-6e2a-47bb-b71a-78b555352b9e.webp?v=1789200880",
+    "name": "Limited Edition Fall 40oz Traveler Collection",
+    "price": "$29.95",
+    "published_at": "2026-09-12T06:28:38-04:00"
+   },
+   "8734074536097": {
+    "handle": "monster-energy-drink-can-plushie-zero-sugar",
+    "hash": "87ad38a02d7870bf",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/il_1588xN.8534831792_msfn.jpg?v=1789639034",
+    "name": "Monster Energy Drink Can Plushie – Zero Sugar",
+    "price": "$24.95",
+    "published_at": "2026-09-17T08:22:35-04:00"
+   },
+   "8737324236961": {
+    "handle": "classic-platform-clogs",
+    "hash": "d4402ab5e75f8ce8",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/crocs_4.avif?v=1789722522",
+    "name": "Classic Winnie Platform Clogs",
+    "price": "$24.95",
+    "published_at": "2026-09-18T07:05:35-04:00"
+   },
+   "8749934018721": {
+    "handle": "limited-edition-haunted-holiday-40oz-tumbler-collection",
+    "hash": "cfcc3c303636b2c3",
+    "image": "https://cdn.shopify.com/s/files/1/0734/2718/9921/files/Web_PNG_Square-TheQuencherH2.0FlowstateTumbler-40oz1.18L-BlackMagic-Front.webp?v=1790244547",
+    "name": "Limited Edition Haunted Holiday 40oz Tumbler Collection",
+    "price": "$32.95",
+    "published_at": "2026-09-24T09:44:19-04:00"
    }
   },
   "https://lovedline.com": {
@@ -2386,6 +3657,398 @@
     "price": "$29.95",
     "published_at": "2026-09-25T16:19:53-04:00"
    },
+   "9185098170587": {
+    "handle": "luxe-cellulite-massager",
+    "hash": "e6923bc998729327",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/cull.webp?v=1773517251",
+    "name": "Luxe Cellulite Massager",
+    "price": "$49.98",
+    "published_at": "2026-03-14T15:41:04-04:00"
+   },
+   "9187215671515": {
+    "handle": "luxe-bottle-cleaner",
+    "hash": "951d98f8636a365a",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/BrushCleaer.webp?v=1773705740",
+    "name": "Luxe Bottle Cleaner",
+    "price": "$29.98",
+    "published_at": "2026-03-16T19:55:39-04:00"
+   },
+   "9187220062427": {
+    "handle": "spring-blossom",
+    "hash": "ce336c693624939b",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Stanley.webp?v=1773706012",
+    "name": "Spring Blossom",
+    "price": "$39.95",
+    "published_at": "2026-03-16T20:07:22-04:00"
+   },
+   "9342201200859": {
+    "handle": "capilia-longa",
+    "hash": "e9c93396c43dc43a",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Gemini_Generated_Image_jgtklmjgtklmjgtk.png?v=1779022444",
+    "name": "Capilia Longa",
+    "price": "$29.95",
+    "published_at": "2026-05-08T14:31:21-04:00"
+   },
+   "9357482983643": {
+    "handle": "plaque-remover",
+    "hash": "a659199d63768d23",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Gemini_Generated_Image_staubestaubestau.png?v=1779555563",
+    "name": "Plaque Remover",
+    "price": "$49.95",
+    "published_at": "2026-05-23T12:58:55-04:00"
+   },
+   "9357761609947": {
+    "handle": "silky-crayons",
+    "hash": "8f9d996af490b44a",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Crayons_6e0f128f-d928-4a47-b7f4-c2bb67e7adba.webp?v=1779665088",
+    "name": "Silky Crayons",
+    "price": "$29.95 - $49.95",
+    "published_at": "2026-05-24T19:25:18-04:00"
+   },
+   "9359740207323": {
+    "handle": "saffron-capsules",
+    "hash": "e65ada2135a7319a",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Gemini_Generated_Image_7lyuem7lyuem7lyu.png?v=1779919812",
+    "name": "Saffron Capsules",
+    "price": "$39.98",
+    "published_at": "2026-05-26T20:25:34-04:00"
+   },
+   "9362209964251": {
+    "handle": "glitter-stick",
+    "hash": "b135c4d88fa1749e",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Glitter.jpg?v=1780156052",
+    "name": "Glitter Stick",
+    "price": "$29.98 - $39.98",
+    "published_at": "2026-05-30T11:47:01-04:00"
+   },
+   "9376918110427": {
+    "handle": "facial-trimmer",
+    "hash": "b7d98ac68c669e44",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Gemini_Generated_Image_99xbxm99xbxm99xb.png?v=1781796354",
+    "name": "Facial Trimmer",
+    "price": "$29.95",
+    "published_at": "2026-06-18T10:57:12-04:00"
+   },
+   "9378495824091": {
+    "handle": "toy-story-cup",
+    "hash": "e699c99a8fcca462",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/starbuckscup.webp?v=1782078449",
+    "name": "Toy Story Cup",
+    "price": "$29.95",
+    "published_at": "2026-06-21T17:47:49-04:00"
+   },
+   "9382702481627": {
+    "handle": "peach-blossom-ring",
+    "hash": "b8a5c7683d917265",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Ring.webp?v=1782430333",
+    "name": "Peach Blossom Ring",
+    "price": "$29.95",
+    "published_at": "2026-06-25T19:26:35-04:00"
+   },
+   "9383444054235": {
+    "handle": "ocean-water-bottle",
+    "hash": "ead53f0aaacaaac0",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Owala2.webp?v=1782504292",
+    "name": "Ocean Water Bottle",
+    "price": "$34.95",
+    "published_at": "2026-06-26T16:05:15-04:00"
+   },
+   "9384470085851": {
+    "handle": "one-wish-willow-hoodie",
+    "hash": "bbb1c34bcd4c9c90",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/hf_20260628_233640_7953ff58-9339-405c-a831-f516a2e525b1.png?v=1782690200",
+    "name": "One Wish Willow Hoodie",
+    "price": "$39.95",
+    "published_at": "2026-06-28T19:18:50-04:00"
+   },
+   "9385457287387": {
+    "handle": "spidey-jellycat",
+    "hash": "e99cc2879e698536",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/hf_20260629_230819_1a452457-59aa-4e9b-a62a-7f7d8cf956f2.png?v=1782779363",
+    "name": "Spidey JellyCat",
+    "price": "$39.95",
+    "published_at": "2026-06-29T19:11:53-04:00"
+   },
+   "9390754037979": {
+    "handle": "fan-held-fan",
+    "hash": "e1189ac7c6c69a4f",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/hf_20260703_220025_4c173ea3-4733-41ae-bc57-688b63cc0839.png?v=1783116255",
+    "name": "Fan Held Fan",
+    "price": "$29.95",
+    "published_at": "2026-07-01T20:56:24-04:00"
+   },
+   "9392759898331": {
+    "handle": "terrova-shoes",
+    "hash": "ba8f91704b14accf",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/hf_20260704_212152_b669c341-f090-4f40-8757-75073f667b3e.png?v=1783200428",
+    "name": "Terrova Shoes",
+    "price": "$89.98",
+    "published_at": "2026-07-04T17:33:20-04:00"
+   },
+   "9396605485275": {
+    "handle": "floating-cash-lamp",
+    "hash": "ebc5946bc3304f85",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/hf_20260707_233756_474c226a-894e-4a66-9b83-3cca18d44719.png?v=1783468124",
+    "name": "Floating Cash Lamp",
+    "price": "$39.95",
+    "published_at": "2026-07-07T19:48:54-04:00"
+   },
+   "9398702211291": {
+    "handle": "pink-bottle",
+    "hash": "e4cd9b9833349b31",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Starbucks-Summer-Pink-Collection-Owalla-Water-Bottle.png?v=1783639961",
+    "name": "Pink Bottle",
+    "price": "$29.95",
+    "published_at": "2026-07-09T19:29:08-04:00"
+   },
+   "9401489653979": {
+    "handle": "cloggs-collections",
+    "hash": "938b93971b383c2d",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Blackspidermanclog.webp?v=1783985591",
+    "name": "Cloggs Collections",
+    "price": "$39.95",
+    "published_at": "2026-07-13T19:34:05-04:00"
+   },
+   "9404195635419": {
+    "handle": "plump-mouth-tape",
+    "hash": "f3d4cc61a6c82976",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/T.webp?v=1784303079",
+    "name": "Plump Mouth Tape",
+    "price": "$29.95 - $39.95",
+    "published_at": "2026-07-17T11:44:57-04:00"
+   },
+   "9405045440731": {
+    "handle": "spidey-bucket",
+    "hash": "8cd3762d29693366",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Spiderman.webp?v=1784406426",
+    "name": "Spidey Bucket",
+    "price": "$29.95",
+    "published_at": "2026-07-18T16:27:39-04:00"
+   },
+   "9410093744347": {
+    "handle": "repetto-x-birken",
+    "hash": "fe9c8513e903c66c",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Bircken.webp?v=1784768233",
+    "name": "Repetto X Birken",
+    "price": "$39.95",
+    "published_at": "2026-07-22T20:54:40-04:00"
+   },
+   "9421123354843": {
+    "handle": "repetto-x-birken-vip",
+    "hash": "fe9c8513e903c66c",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Bircken.webp?v=1784768233",
+    "name": "Repetto X Birken VIP",
+    "price": "$39.95",
+    "published_at": "2026-07-27T16:52:02-04:00"
+   },
+   "9421123518683": {
+    "handle": "spidey-bucket-copy",
+    "hash": "8cd3762d29693366",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Spiderman.webp?v=1784406426",
+    "name": "Spidey Bucket VIP",
+    "price": "$29.95",
+    "published_at": "2026-07-27T16:52:29-04:00"
+   },
+   "9421123551451": {
+    "handle": "plump-mouth-tape-copy",
+    "hash": "f3d4cc61a6c82976",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/T.webp?v=1784303079",
+    "name": "Plump Mouth Tape VIP",
+    "price": "$29.95 - $39.95",
+    "published_at": "2026-07-27T16:52:44-04:00"
+   },
+   "9421123584219": {
+    "handle": "cloggs-collections-copy",
+    "hash": "938b93971b383c2d",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Blackspidermanclog.webp?v=1783985591",
+    "name": "Cloggs Collections VIP",
+    "price": "$39.95",
+    "published_at": "2026-07-27T16:52:59-04:00"
+   },
+   "9421123748059": {
+    "handle": "spring-blossom-copy",
+    "hash": "ce336c693624939b",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Stanley.webp?v=1773706012",
+    "name": "Spring Blossom VIP",
+    "price": "$39.95",
+    "published_at": "2026-07-27T16:53:37-04:00"
+   },
+   "9421123780827": {
+    "handle": "luxe-cellulite-massager-copy",
+    "hash": "e6923bc998729327",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/cull.webp?v=1773517251",
+    "name": "Luxe Cellulite Massager VIP",
+    "price": "$49.98",
+    "published_at": "2026-07-27T16:53:51-04:00"
+   },
+   "9424249520347": {
+    "handle": "one-minute-with-god-365-devotions",
+    "hash": "c3d028d729d629d7",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Book.jpg?v=1785466132",
+    "name": "One Minute with God",
+    "price": "$29.95",
+    "published_at": "2026-07-30T22:49:14-04:00"
+   },
+   "9441225965787": {
+    "handle": "the-365-day-bible-book",
+    "hash": "f8cd9330c638c4e7",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Yearwithjesus.webp?v=1786310341",
+    "name": "The 365 Day Bible Book",
+    "price": "$29.95",
+    "published_at": "2026-08-09T17:19:34-04:00"
+   },
+   "9442803024091": {
+    "handle": "slingback-clogs",
+    "hash": "ea83943c6bc3d21e",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Taupe.webp?v=1786488346",
+    "name": "Slingback Clogs",
+    "price": "$29.95",
+    "published_at": "2026-08-11T18:46:52-04:00"
+   },
+   "9446495191259": {
+    "handle": "jesus-saves-ring",
+    "hash": "b3d5cc6a3338cc86",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/JesusSavegold.webp?v=1786814046",
+    "name": "Jesus Saves Ring",
+    "price": "$29.95",
+    "published_at": "2026-08-15T13:14:14-04:00"
+   },
+   "9446498599131": {
+    "handle": "nyc-zip-hoodie",
+    "hash": "aeb5d24e9919cc70",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/BlueZipNYC.webp?v=1786814865",
+    "name": "NYC Zip Hoodie",
+    "price": "$29.95",
+    "published_at": "2026-08-15T13:31:35-04:00"
+   },
+   "9447213334747": {
+    "handle": "halloween-squishy-dumplings",
+    "hash": "ef87f97ac2601982",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/EyeBall.webp?v=1786914180",
+    "name": "Halloween Squishy Dumplings",
+    "price": "$29.95",
+    "published_at": "2026-08-16T17:09:17-04:00"
+   },
+   "9448391016667": {
+    "handle": "couples-book",
+    "hash": "b1a4ce32ce99c699",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Cbook.webp?v=1786991053",
+    "name": "Couples Book",
+    "price": "$29.95",
+    "published_at": "2026-08-17T14:24:36-04:00"
+   },
+   "9451360190683": {
+    "handle": "halloween-goodie-bag",
+    "hash": "ff91c07e85c0b1c3",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Good.webp?v=1787172935",
+    "name": "Halloween Goodie Bag",
+    "price": "$29.95",
+    "published_at": "2026-08-19T16:58:37-04:00"
+   },
+   "9451536842971": {
+    "handle": "bleached-marvel-hoodie",
+    "hash": "afe4c60f99399868",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/55FE20F3-F18A-49F2-A611-3E6FD17D44C0.png?v=1787182859",
+    "name": "Bleached Marvel Hoodie",
+    "price": "$29.95",
+    "published_at": "2026-08-19T19:43:22-04:00"
+   },
+   "9452811747547": {
+    "handle": "bleached-hoodie",
+    "hash": "afe4c60f99399868",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/55FE20F3-F18A-49F2-A611-3E6FD17D44C0.png?v=1787182859",
+    "name": "Bleached Hoodie",
+    "price": "$39.95",
+    "published_at": "2026-08-20T20:28:01-04:00"
+   },
+   "9453391151323": {
+    "handle": "bambi-blanket",
+    "hash": "b9c2c66dc9363c62",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Blan.webp?v=1787367839",
+    "name": "Bambi blanket",
+    "price": "$49.95",
+    "published_at": "2026-08-21T22:12:40-04:00"
+   },
+   "9455237857499": {
+    "handle": "samba-deer-print",
+    "hash": "bb91c44e18b17bd8",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Adidas1.webp?v=1787494498",
+    "name": "Samba Deer Print",
+    "price": "$49.95",
+    "published_at": "2026-08-23T10:15:23-04:00"
+   },
+   "9455869919451": {
+    "handle": "colombia-fleece-sweater",
+    "hash": "e4969b699c3998c6",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Fleece5.webp?v=1787522645",
+    "name": "Colombia Fleece Sweater",
+    "price": "$29.95",
+    "published_at": "2026-08-23T17:56:34-04:00"
+   },
+   "9457258627291": {
+    "handle": "polka-dot-hoodie",
+    "hash": "acb472cbc5db9118",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Amare.webp?v=1787624490",
+    "name": "Polka Dot Hoodie",
+    "price": "$39.95",
+    "published_at": "2026-08-24T22:23:33-04:00"
+   },
+   "9457265508571": {
+    "handle": "polka-dot-sweats",
+    "hash": "9ec9608c679b6798",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Amare2.webp?v=1787624493",
+    "name": "Polka Dot Sweats",
+    "price": "$29.95",
+    "published_at": "2026-08-24T22:26:19-04:00"
+   },
+   "9458523865307": {
+    "handle": "infinity-gauntlet",
+    "hash": "9a6996749d316966",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/ChatGPT_Image_Aug_26_2026_10_56_52_PM.webp?v=1787781806",
+    "name": "Infinity Gauntlet",
+    "price": "$49.95",
+    "published_at": "2026-08-26T18:03:53-04:00"
+   },
+   "9458781356251": {
+    "handle": "fall-free-sip-bottle",
+    "hash": "afb3d8ecc464e0c8",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/ChatGPT_Image_Aug_26_2026_11_47_12_PM_2.webp?v=1787785219",
+    "name": "Fall Free-Sip Bottle",
+    "price": "$39.95",
+    "published_at": "2026-08-26T19:01:37-04:00"
+   },
+   "9460297957595": {
+    "handle": "halloween-blanket",
+    "hash": "aab698de162abba0",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/ChatGPT_Image_Aug_27_2026_11_46_34_PM.webp?v=1787871179",
+    "name": "Vintage Patchwork Blanket",
+    "price": "$49.95",
+    "published_at": "2026-08-27T18:53:18-04:00"
+   },
+   "9460305297627": {
+    "handle": "be-kind-hoodie",
+    "hash": "aff5c003db0cccd8",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/Black.jpg?v=1787874672",
+    "name": "Be Kind Hoodie",
+    "price": "$29.95",
+    "published_at": "2026-08-27T19:53:37-04:00"
+   },
+   "9463985897691": {
+    "handle": "dolly-parton-shirt",
+    "hash": "f91aa69fdae08621",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/ChatGPT_Image_Aug_30_2026_05_37_29_PM.webp?v=1788130366",
+    "name": "Dolly Parton Shirt",
+    "price": "$29.95",
+    "published_at": "2026-08-30T18:54:38-04:00"
+   },
+   "9466006208731": {
+    "handle": "fox-bonnet",
+    "hash": "fa91c15e8566364b",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/ChatGPT_Image_Sep_1_2026_10_28_16_PM_5f59fb8e-8f30-4b5f-a185-aee170d54d6f.webp?v=1788298451",
+    "name": "Fox Bonnet",
+    "price": "$29.95",
+    "published_at": "2026-09-01T17:36:08-04:00"
+   },
    "9466055917787": {
     "handle": "fall-boots",
     "hash": "f8496268c3f6912f",
@@ -2627,6 +4290,292 @@
     "name": "Buttercup Floral Set",
     "price": "$29.99",
     "published_at": "2026-09-14T05:36:36-04:00"
+   }
+  },
+  "https://nivorawear.com": {
+   "14910625480815": {
+    "handle": "cropped-top",
+    "hash": null,
+    "image": null,
+    "name": "Cropped top",
+    "price": "$2.95",
+    "published_at": "2026-03-01T13:06:09-06:00"
+   },
+   "15130330431599": {
+    "handle": "grant-gustin-autographed-merch",
+    "hash": "c98708db5af8587c",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/jacket.webp?v=1783068999",
+    "name": "Grant Gustin Autographed Merch",
+    "price": "$29.95",
+    "published_at": "2026-07-03T04:00:34-05:00"
+   },
+   "15138486059119": {
+    "handle": "limited-miraculous-jewelry-collection",
+    "hash": "87c3783967c79648",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/Screenshot_2026-07-04_010127_637058b0-611f-495e-bffc-22d6b26f7f16.png?v=1783145965",
+    "name": "Limited Miraculous Jewelry Collection",
+    "price": "$24.95",
+    "published_at": "2026-07-04T01:26:08-05:00"
+   },
+   "15140522066031": {
+    "handle": "miraculous-jewelry-box",
+    "hash": "ee4a923991b16397",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/Screenshot2026-07-04015314.png?v=1783149463",
+    "name": "Miraculous Jewelry Box",
+    "price": "$29.95",
+    "published_at": "2026-07-04T02:18:22-05:00"
+   },
+   "15146200924271": {
+    "handle": "marinette-pj-set",
+    "hash": "e49b986c9b8ccc93",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/ChatGPT_Image_Jul_4_2026_05_48_53_AM.png?v=1783158561",
+    "name": "Marinette PJ Set",
+    "price": "$24.95",
+    "published_at": "2026-07-04T04:46:54-05:00"
+   },
+   "15204754620527": {
+    "handle": "2026-world-cup-columbia-jersey",
+    "hash": "fa93856cde1b3184",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/67e0708f-da1d-442a-941d-9477564515cf_de9a21dd-1dff-4c0f-9cc9-3517d37015f3.png?v=1783244324",
+    "name": "2026 World Cup Columbia Jersey",
+    "price": "$5.00",
+    "published_at": "2026-07-05T04:42:25-05:00"
+   },
+   "15401561227375": {
+    "handle": "spider-man-bnd-popcorn-bucket",
+    "hash": "8cd3762d29693366",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/SMBND-OITHERO_0006s_0001_snkndnk.POP_W.webp?v=1784791062",
+    "name": "Limited Spider-Man Brand New Day Popcorn Buckets",
+    "price": "$19.95 - $29.95",
+    "published_at": "2026-07-23T02:45:28-05:00"
+   },
+   "15407279210607": {
+    "handle": "limited-sprayground-spider-man-backpack",
+    "hash": "c74e389160cecf63",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/B9140_1.webp?v=1785047118",
+    "name": "Limited Sprayground Spider-Man Backpack",
+    "price": "$24.95",
+    "published_at": "2026-07-26T01:28:09-05:00"
+   },
+   "15411522175087": {
+    "handle": "spider-man-funko-pop-for-mj",
+    "hash": "c3c33c386b676c0d",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/76826a_Marvel_ScarletWitch_POP_GLAM-1-Funko-1-Funko-WEB.png?v=1785310940",
+    "name": "Spider-Man Funko Pop For MJ",
+    "price": "$24.95",
+    "published_at": "2026-07-29T02:42:49-05:00"
+   },
+   "15414174646383": {
+    "handle": "new-disney-spider-man-hoodie",
+    "hash": "baa1c44e9b1ab9cc",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/08067A00-B5C6-4D73-A1D8-7C3A38DD6FE5.png?v=1785400373",
+    "name": "New Disney Spider-Man Hoodie",
+    "price": "$24.95",
+    "published_at": "2026-07-30T03:35:14-05:00"
+   },
+   "15417038864495": {
+    "handle": "crochet-spider-man-bikini-set",
+    "hash": "e9c1961ec46b9cd1",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/Screenshot_2026-07-31_044211.png?v=1785490937",
+    "name": "Crochet Spider-Man Bikini Set",
+    "price": "$24.95",
+    "published_at": "2026-07-31T03:30:57-05:00"
+   },
+   "15424059342959": {
+    "handle": "rapunzel-disney-loungefly-bag",
+    "hash": "ebc58436961ed8c9",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/Screenshot2026-08-01050616.png?v=1785582680",
+    "name": "Rapunzel Disney Loungefly Bag",
+    "price": "$24.95",
+    "published_at": "2026-08-01T06:12:13-05:00"
+   },
+   "15427064922223": {
+    "handle": "emotional-spider-man-shirt",
+    "hash": "ec93266d926c916d",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/5CBCB53A-181A-4472-8285-2526095E7EC4.webp?v=1785746018",
+    "name": "Emotional Spider-Man Shirt",
+    "price": "$24.95",
+    "published_at": "2026-08-03T03:34:43-05:00"
+   },
+   "15427122888815": {
+    "handle": "steve-harrington-knit-sweater",
+    "hash": "bff8d013944ac38b",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/TV-Series-Stranger-Things-S05-Steve-Harrington-Beige-Crew-Neck-Knit-Sweater.jpg?v=1785749004",
+    "name": "Steve Harrington Knit Sweater",
+    "price": "$24.95",
+    "published_at": "2026-08-03T04:21:25-05:00"
+   },
+   "15428644634735": {
+    "handle": "juicy-couture-pants",
+    "hash": "f136cac3cac99a49",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/110010762_LIQUORICE_2a_1_b1dae121-fa93-4210-96c3-e5c2fc514afa.jpg?v=1785832027",
+    "name": "Juicy Velour Pants - Featured On Brand New Day",
+    "price": "$24.95",
+    "published_at": "2026-08-04T03:07:55-05:00"
+   },
+   "15430864765039": {
+    "handle": "lana-del-rey-racing-jacket",
+    "hash": "efe290159aa849f9",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/bce272cd-6e2f-4624-be57-726dd1bcce42.png?v=1785918566",
+    "name": "Lana Del Rey Racing Jacket",
+    "price": "$24.95",
+    "published_at": "2026-08-05T03:32:55-05:00"
+   },
+   "15431173144687": {
+    "handle": "spider-verse-shoes",
+    "hash": "b994dc69c32c6c96",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/IMG-1584.webp?v=1785923872",
+    "name": "Limited Spider-Man Shoes Collection",
+    "price": "$29.95",
+    "published_at": "2026-08-05T05:03:04-05:00"
+   },
+   "15437037731951": {
+    "handle": "padme-loungefly-bag",
+    "hash": "944b3df034956a97",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/STBK0453-LFSTARWARSPADMECOSPLAYMINIBACKPACK_51.png?v=1786001113",
+    "name": "Padme Loungefly Bag",
+    "price": "$24.95",
+    "published_at": "2026-08-06T02:30:26-05:00"
+   },
+   "15446987735151": {
+    "handle": "limited-marinette-bag-collection",
+    "hash": "ee649991b04ec6cb",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/IMG-1681.png?v=1786175098",
+    "name": "Limited Marinette Bag Collection",
+    "price": "$24.95",
+    "published_at": "2026-08-08T02:49:30-05:00"
+   },
+   "15451062927471": {
+    "handle": "limited-marinette-dress",
+    "hash": "ac942e6c946d9ccb",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/Screenshot2026-08-11043456.png?v=1786440907",
+    "name": "Limited Marinette Dress",
+    "price": "$29.95",
+    "published_at": "2026-08-11T04:33:17-05:00"
+   },
+   "15452722233455": {
+    "handle": "limited-padme-dress",
+    "hash": "e68f943b934b914c",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/IMG-1838.png?v=1786529032",
+    "name": "Limited Padme Lake Dress",
+    "price": "$24.95",
+    "published_at": "2026-08-12T05:03:06-05:00"
+   },
+   "15457188872303": {
+    "handle": "solene-floral-wedge-heels",
+    "hash": "ebc0943fc27ccb12",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/62ab98e0-51d2-418b-94ea-90bd88f6c942-t0.webp?v=1786781518",
+    "name": "Floral Wedge Heels",
+    "price": "$29.95",
+    "published_at": "2026-08-15T03:11:58-05:00"
+   },
+   "15459228418159": {
+    "handle": "limited-paul-frank-knit-set",
+    "hash": "8c1bb1b2b1ddcce0",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/IMG_1913.jpg?v=1786954771",
+    "name": "Limited Paul Frank Knit Set",
+    "price": "$24.95",
+    "published_at": "2026-08-17T03:17:55-05:00"
+   },
+   "15465547497583": {
+    "handle": "untitled-aug20_03-03-33",
+    "hash": "e1251e9873a3d999",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/IMG_1966.jpg?v=1787213160",
+    "name": "Limited Caterpillar Knit Set",
+    "price": "$24.95",
+    "published_at": "2026-08-20T03:27:37-05:00"
+   },
+   "15472763043951": {
+    "handle": "mia-thermopolis-d23-ears",
+    "hash": "e132cccd6683933d",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/4503055210697-1.webp?v=1787474574",
+    "name": "Mia Thermopolis D23 Ears",
+    "price": "$24.95",
+    "published_at": "2026-08-23T03:47:33-05:00"
+   },
+   "15474171019375": {
+    "handle": "pusheen-bundle",
+    "hash": "bac4c43bc63b914d",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/ChatGPTImageAug18_2026_04_24_40AM.png?v=1787551512",
+    "name": "Pusheen Bundle!",
+    "price": "$19.95",
+    "published_at": "2026-08-24T01:06:17-05:00"
+   },
+   "15474192154735": {
+    "handle": "limited-coraline-shoes-collection",
+    "hash": "bb93c44c9533199d",
+    "image": "https://cdn.shopify.com/s/files/1/0682/1108/1327/files/Coraline_Converse_Adult_G51748_2.webp?v=1787553033",
+    "name": "Limited Coraline Shoes Collection",
+    "price": "$29.95",
+    "published_at": "2026-08-24T01:30:35-05:00"
+   }
+  },
+  "https://novirausa.com": {
+   "10540913852695": {
+    "handle": "snoopy-glass-cup",
+    "hash": "b2c7ce38cd1832c7",
+    "image": "https://cdn.shopify.com/s/files/1/1019/8355/1767/files/ChatGPTImageSep6_2026_02_47_13PM_1.png?v=1788724047",
+    "name": "Snoopy Glass Cup",
+    "price": "$29.95",
+    "published_at": "2026-09-06T14:47:52-05:00"
+   },
+   "10581140504855": {
+    "handle": "y2k-bug-costume",
+    "hash": "be808c4fd33d8c72",
+    "image": "https://cdn.shopify.com/s/files/1/1019/8355/1767/files/4bc12067-4d24-4f50-a8db-0902f9e187b0.png?v=1789965322",
+    "name": "Y2K Bug Costume",
+    "price": "$29.99",
+    "published_at": "2026-09-20T23:36:07-05:00"
+   },
+   "10583497998615": {
+    "handle": "energy-drink-jellycat",
+    "hash": "b1366799cc989959",
+    "image": "https://cdn.shopify.com/s/files/1/1019/8355/1767/files/ChatGPT_Image_Sep_21_2026_03_41_26_PM_2.png?v=1790023323",
+    "name": "Energy Drink Plush",
+    "price": "$24.99",
+    "published_at": "2026-09-21T13:48:56-05:00"
+   },
+   "10586265190679": {
+    "handle": "hocus-pocus-bunny-plush",
+    "hash": "ece6c44ec46ccc3c",
+    "image": "https://cdn.shopify.com/s/files/1/1019/8355/1767/files/153d5623-a618-4c2a-8867-e53b97ddb85c.png?v=1790172488",
+    "name": "Hocus Pocus Bunny Plush",
+    "price": "$29.99",
+    "published_at": "2026-09-23T09:03:50-05:00"
+   }
+  },
+  "https://nuvaly.shop": {
+   "10316812517609": {
+    "handle": "leopard-zip-up-jacket",
+    "hash": "b331439b8ccccccd",
+    "image": "https://cdn.shopify.com/s/files/1/0762/7666/2505/files/D6E05811-38D3-4933-9EFF-000BAC894526.jpg?v=1790219681",
+    "name": "Leopard  zip up jacket",
+    "price": "$24.99",
+    "published_at": "2026-09-23T17:49:38-04:00"
+   },
+   "10317511524585": {
+    "handle": "ripped-jeans",
+    "hash": "b4639ec6c726c91c",
+    "image": "https://cdn.shopify.com/s/files/1/0762/7666/2505/files/6C37DC2A-467B-4D97-A220-B9315C3AC686.jpg?v=1790305295",
+    "name": "Ripped jeans",
+    "price": "$24.99",
+    "published_at": "2026-09-24T12:42:01-04:00"
+   },
+   "10318558068969": {
+    "handle": "cozy-set",
+    "hash": "e46696c6c66c993c",
+    "image": "https://cdn.shopify.com/s/files/1/0762/7666/2505/files/B895C149-EDC9-4B37-BD5C-81DFC2A07187.png?v=1790359751",
+    "name": "cozy set",
+    "price": "$24.99",
+    "published_at": "2026-09-25T14:08:32-04:00"
+   },
+   "9432697569513": {
+    "handle": "halter-neck-mini-dress",
+    "hash": "e592c7926b699929",
+    "image": "https://cdn.shopify.com/s/files/1/0762/7666/2505/files/0251D79E-3744-4672-A7B7-DEBC62FC1CA9.png?v=1790132427",
+    "name": "Cozy Set",
+    "price": "$24.99",
+    "published_at": "2026-09-22T13:04:10-04:00"
    }
   },
   "https://officialsoreva.com": {
@@ -9401,6 +11350,136 @@
     "published_at": "2026-09-16T02:31:56-06:00"
    }
   },
+  "https://shopaluma.com": {
+   "10002550391067": {
+    "handle": "jesus-loves-you-hoodie",
+    "hash": "a4b3338dcccd32c9",
+    "image": "https://cdn.shopify.com/s/files/1/0731/7959/5035/files/15_d670817a-77c7-4ff1-a1c4-9e7513826282.png?v=1760165671",
+    "name": "Jesus Loves You Hoodie",
+    "price": "$99.95",
+    "published_at": "2025-10-08T17:22:07-05:00"
+   },
+   "10039706321179": {
+    "handle": "unisex-rhinestone-hoodie",
+    "hash": "bd1bd0b0d393c383",
+    "image": "https://cdn.shopify.com/s/files/1/0731/7959/5035/files/26.png?v=1762467533",
+    "name": "Unisex Rhinestone Hoodie",
+    "price": "$99.99",
+    "published_at": "2025-11-06T17:39:17-06:00"
+   },
+   "10039709827355": {
+    "handle": "unisex-rhinestone-sweatpants",
+    "hash": "a5929b9bdb8a9930",
+    "image": "https://cdn.shopify.com/s/files/1/0731/7959/5035/files/30_489f9ba9-9a89-466d-9f59-e9890912bdce.png?v=1762471265",
+    "name": "Unisex Rhinestone Sweatpants",
+    "price": "$99.99",
+    "published_at": "2025-11-06T17:39:33-06:00"
+   },
+   "10051516858651": {
+    "handle": "gods-wake-up-list-hoodie",
+    "hash": "aea1973a86ce989a",
+    "image": "https://cdn.shopify.com/s/files/1/0731/7959/5035/files/55.png?v=1763324219",
+    "name": "Gods Wake Up List Hoodie",
+    "price": "$99.99",
+    "published_at": "2025-11-16T15:07:36-06:00"
+   },
+   "10069247492379": {
+    "handle": "signature-marty-jacket",
+    "hash": "eae1873e908acccb",
+    "image": "https://cdn.shopify.com/s/files/1/0731/7959/5035/files/70_91ea050c-599c-4ca2-921c-23397c4619e7.png?v=1764365357",
+    "name": "Signature Marty Jacket",
+    "price": "$139.99",
+    "published_at": "2025-11-28T15:24:26-06:00"
+   },
+   "10071931355419": {
+    "handle": "angel-wing-sequin-hoodie",
+    "hash": "feb439947c137032",
+    "image": "https://cdn.shopify.com/s/files/1/0731/7959/5035/files/2_386f1865-c893-4a55-9c1d-5f32805e5d2b.png?v=1764891174",
+    "name": "Angel Wing Sequin Hoodie",
+    "price": "$99.95",
+    "published_at": "2025-12-02T17:57:53-06:00"
+   },
+   "10071932109083": {
+    "handle": "wing-sequin-cuffed-pants",
+    "hash": "b2b85a9a8953ac73",
+    "image": "https://cdn.shopify.com/s/files/1/0731/7959/5035/files/8_ec939cc7-1404-4411-b34a-5ce91eded2fd.png?v=1764720082",
+    "name": "Angel Wing Sequin Cuffed Pants",
+    "price": "$99.95",
+    "published_at": "2025-12-02T18:03:35-06:00"
+   },
+   "10125659832603": {
+    "handle": "city-of-liberty-zip-up-hoodie",
+    "hash": "b84bb2b49b0b4b63",
+    "image": "https://cdn.shopify.com/s/files/1/0731/7959/5035/files/111.png?v=1769028538",
+    "name": "City of Liberty Zip Up Hoodie",
+    "price": "$99.99",
+    "published_at": "2026-01-21T14:45:28-06:00"
+   },
+   "10154228416795": {
+    "handle": "jesus-is-the-light-rhinestone-hoodies-2",
+    "hash": "baf3855fc80ced04",
+    "image": "https://cdn.shopify.com/s/files/1/0731/7959/5035/files/4_d440b8cf-e103-4a70-8aa9-e0c7b8b96b29.png?v=1758685418",
+    "name": "Jesus is The Light Rhinestone Hoodies",
+    "price": "$135.95",
+    "published_at": "2026-02-21T16:13:46-06:00"
+   },
+   "10156459557147": {
+    "handle": "chrome-wired-earbuds",
+    "hash": "b9d8c43fca6019e6",
+    "image": "https://cdn.shopify.com/s/files/1/0731/7959/5035/files/112_4398ebd6-b2a8-45c6-a8bb-cf7c5463b10a.png?v=1772134746",
+    "name": "Chrome Wired Earbuds",
+    "price": "$99.99",
+    "published_at": "2026-02-26T15:21:23-06:00"
+   },
+   "10172587114779": {
+    "handle": "summer-rainbow-tank-top",
+    "hash": "9e326ba5f04e9958",
+    "image": "https://cdn.shopify.com/s/files/1/0731/7959/5035/files/123.png?v=1773799823",
+    "name": "Summer Rainbow Tank Top",
+    "price": "$79.99",
+    "published_at": "2026-03-16T16:57:10-05:00"
+   },
+   "9889451966747": {
+    "handle": "satin-shield-flexi-shower-cap",
+    "hash": "f3948e63bc62c992",
+    "image": "https://cdn.shopify.com/s/files/1/0731/7959/5035/files/1_07e81f44-20d4-4b1e-8df0-99fbb5166c3f.png?v=1748376369",
+    "name": "Satin Shield Flexi Shower Cap",
+    "price": "$19.95",
+    "published_at": "2025-05-27T16:40:45-05:00"
+   },
+   "9971342835995": {
+    "handle": "jesus-is-the-light-rhinestone-sweatpants",
+    "hash": "e1669a999e099e99",
+    "image": "https://cdn.shopify.com/s/files/1/0731/7959/5035/files/Untitled_3000_x_3000_px_3.png?v=1757049568",
+    "name": "\"Jesus is The Light\" Rhinestone Sweatpants",
+    "price": "$25.00",
+    "published_at": "2025-09-05T00:20:31-05:00"
+   },
+   "9973276475675": {
+    "handle": "jesus-is-the-light-car-air-freshener",
+    "hash": "ea0681a8877d957d",
+    "image": "https://cdn.shopify.com/s/files/1/0731/7959/5035/files/Untitled_3000x3000px_6.png?v=1757442360",
+    "name": "\"Jesus is The Light\" Car Air Fresheners (5 Pack)",
+    "price": "$24.95",
+    "published_at": "2025-09-07T22:27:23-05:00"
+   },
+   "9975936811291": {
+    "handle": "jesus-is-the-light-socks",
+    "hash": "8c4c39cb671e613d",
+    "image": "https://cdn.shopify.com/s/files/1/0731/7959/5035/files/885024AA-4572-432D-B5D1-B38CFB15FE04.jpg?v=1757633059",
+    "name": "Jesus is The Light Socks",
+    "price": "$29.95",
+    "published_at": "2025-09-09T23:02:25-05:00"
+   },
+   "9986833285403": {
+    "handle": "jesus-is-light-hoodies",
+    "hash": "baf3855fc80ced04",
+    "image": "https://cdn.shopify.com/s/files/1/0731/7959/5035/files/4_d440b8cf-e103-4a70-8aa9-e0c7b8b96b29.png?v=1758685418",
+    "name": "Jesus is The Light Rhinestone Hoodie",
+    "price": "$99.95",
+    "published_at": "2025-09-17T00:06:45-05:00"
+   }
+  },
   "https://shoplunnessa.com": {
    "16081507483973": {
     "handle": "marea-drop-earrings",
@@ -10369,6 +12448,108 @@
     "published_at": "2026-07-27T17:40:26-07:00"
    }
   },
+  "https://shopvolara.com": {
+   "10470417727788": {
+    "handle": "squishy-advent-calendar-12-day",
+    "hash": "8182fe02ad7fd781",
+    "image": "https://cdn.shopify.com/s/files/1/0963/1616/2348/files/ChatGPTImageSep16_2026_07_55_52AM.png?v=1789563481",
+    "name": "Squishy Advent Calendar (12 Day)",
+    "price": "$59.99",
+    "published_at": "2026-09-16T07:59:08-05:00"
+   },
+   "10477968425260": {
+    "handle": "lando-norris-plushie",
+    "hash": "ba9be5c25b698621",
+    "image": "https://cdn.shopify.com/s/files/1/0963/1616/2348/files/ChatGPTImageSep23_2026_07_46_34AM.png?v=1790167812",
+    "name": "Lando Norris Plushie",
+    "price": "$24.99",
+    "published_at": "2026-09-23T07:50:25-05:00"
+   }
+  },
+  "https://silvae.store": {
+   "10076953018682": {
+    "handle": "exclusive-collab-freesip-32-oz-water-bottle",
+    "hash": "e4cc996692d9e664",
+    "image": "https://cdn.shopify.com/s/files/1/0973/3898/2714/files/Image_1_12c70ccf-2a66-4cca-b97a-1ed802c71cca.png?v=1764477485",
+    "name": "Exclusive Collab FreeSip 32 oz Water Bottle",
+    "price": "$24.99",
+    "published_at": "2025-11-29T23:15:18-05:00"
+   },
+   "10102142697786": {
+    "handle": "snoop-exclusive-collab-freesip-32-oz-water-bottle",
+    "hash": "e49c92369b99b299",
+    "image": "https://cdn.shopify.com/s/files/1/0973/3898/2714/files/ChatGPTImageDec21_2025_09_28_29PM.jpg?v=1766370534",
+    "name": "Snoop Exclusive Collab FreeSip 32 oz Water Bottle",
+    "price": "$25.99",
+    "published_at": "2025-12-21T21:21:13-05:00"
+   },
+   "10144432816442": {
+    "handle": "exclusive-hello-kitty-collab-40-oz",
+    "hash": "c6f89d479ac56a0c",
+    "image": "https://cdn.shopify.com/s/files/1/0973/3898/2714/files/im_4.jpg?v=1768354361",
+    "name": "Exclusive Hello Kitty Collab 40 oz",
+    "price": "$29.99",
+    "published_at": "2026-01-13T20:34:10-05:00"
+   },
+   "10177943044410": {
+    "handle": "exclusive-strawberry-shortcake-collab-40-oz",
+    "hash": "8708d8f2dca33e2d",
+    "image": "https://cdn.shopify.com/s/files/1/0973/3898/2714/files/IMG-0479.png?v=1769873138",
+    "name": "Exclusive Strawberry Shortcake Collab 40 oz",
+    "price": "$29.99",
+    "published_at": "2026-01-31T10:25:45-05:00"
+   },
+   "10217204515130": {
+    "handle": "exclusive-bear-collab-40-oz",
+    "hash": "f1b0af4d8c88de52",
+    "image": "https://cdn.shopify.com/s/files/1/0973/3898/2714/files/IMG-0904.webp?v=1772627188",
+    "name": "Exclusive Bear Collab 40 oz",
+    "price": "$29.99",
+    "published_at": "2026-03-04T07:26:51-05:00"
+   },
+   "10223756804410": {
+    "handle": "monkey-in-pjays-plushie",
+    "hash": "b072c31ecb93c6c9",
+    "image": "https://cdn.shopify.com/s/files/1/0973/3898/2714/files/Image1_141b30c0-7673-4a5b-a70f-c2089c884711.webp?v=1773279103",
+    "name": "Exclusive Curious George Plushie",
+    "price": "$19.99",
+    "published_at": "2026-09-10T23:10:34-04:00"
+   },
+   "10255742927162": {
+    "handle": "exclusive-karol-g-collab-40-oz",
+    "hash": "ce8c6c3196ce9393",
+    "image": "https://cdn.shopify.com/s/files/1/0973/3898/2714/files/1.webp?v=1774971553",
+    "name": "Limited Edition Karol G collab 40 Oz",
+    "price": "$29.99",
+    "published_at": "2026-03-31T11:36:40-04:00"
+   },
+   "10319296332090": {
+    "handle": "one-wish-willow",
+    "hash": "e984967a6c85db34",
+    "image": "https://cdn.shopify.com/s/files/1/0973/3898/2714/files/IMAGE2_e7e00066-3863-4828-8aff-a4c64fb89407.jpg?v=1780350989",
+    "name": "ONE WISH WILLOW",
+    "price": "$9.99",
+    "published_at": "2026-06-01T17:41:28-04:00"
+   },
+   "10430553653562": {
+    "handle": "exclusive-brew-doh",
+    "hash": "ba24c77e9d83c119",
+    "image": "https://cdn.shopify.com/s/files/1/0973/3898/2714/files/IMG-3682.png?v=1788923864",
+    "name": "Exclusive 7Brew Doh",
+    "price": "$9.99 - $17.99",
+    "published_at": "2026-09-07T10:44:40-04:00"
+   }
+  },
+  "https://stryxaco.com": {
+   "10233018744866": {
+    "handle": "cute-crochet-keychain",
+    "hash": "e6d989768c699866",
+    "image": "https://cdn.shopify.com/s/files/1/0848/4067/7410/files/red_9970f301-b858-47de-ada5-93a87140e88a.jpg?v=1790319297",
+    "name": "Cute Crochet Keychain",
+    "price": "$14.99",
+    "published_at": "2026-09-24T23:55:39-07:00"
+   }
+  },
   "https://tryoceans.com": {
    "7952828137611": {
     "handle": "test-product",
@@ -10393,6 +12574,260 @@
     "name": "Weighted Cow Plush",
     "price": "$9.95",
     "published_at": "2026-07-07T20:24:43-04:00"
+   }
+  },
+  "https://urbaneofficial.shop": {
+   "8279764467849": {
+    "handle": "spidey-cloggs",
+    "hash": "ee9491693e96690d",
+    "image": "https://cdn.shopify.com/s/files/1/0726/8063/6553/files/Gemini_Generated_Image_6x4e16x4e16x4e16.png?v=1771225801",
+    "name": "Character Clogg Collection",
+    "price": "$99.99",
+    "published_at": "2025-10-09T23:17:08-04:00"
+   },
+   "8286812176521": {
+    "handle": "lady-bug-cloggs",
+    "hash": "ae2fbd14f9060c2e",
+    "image": "https://cdn.shopify.com/s/files/1/0726/8063/6553/files/818gB6jjPiL._AC_SY695.jpg?v=1760421709",
+    "name": "Lady Bug Cloggs",
+    "price": "$99.99",
+    "published_at": "2025-10-14T02:01:30-04:00"
+   },
+   "8433576902793": {
+    "handle": "character-clogg-collection-copy",
+    "hash": "b9cec33c3433c9d0",
+    "image": "https://cdn.shopify.com/s/files/1/0726/8063/6553/files/C3F55549-C559-4D2B-938A-C60960A9AA63_1.webp?v=1771225801",
+    "name": "Mcqueen Cloggs",
+    "price": "$99.99",
+    "published_at": "2026-01-27T19:12:55-05:00"
+   },
+   "8757358493833": {
+    "handle": "ultimate-web-slinger-footwear-collection",
+    "hash": "eb66941d5b62648d",
+    "image": "https://cdn.shopify.com/s/files/1/0726/8063/6553/files/1_add9037a-a30f-4f7f-88d9-705397fe2fc5.jpg?v=1785600923",
+    "name": "Spidey Crocs",
+    "price": "$99.99",
+    "published_at": "2026-08-01T12:15:21-04:00"
+   }
+  },
+  "https://vaylae.com": {
+   "9938460016864": {
+    "handle": "web-graphic-hoodie",
+    "hash": "afb2c21b8c78838f",
+    "image": "https://cdn.shopify.com/s/files/1/0779/3963/8496/files/Style1.jpg?v=1784266257",
+    "name": "Web Graphic Hoodie",
+    "price": "$24.95",
+    "published_at": "2026-07-16T22:32:30-07:00"
+   }
+  },
+  "https://veyfina.com": {
+   "10004433797365": {
+    "handle": "cheetah-arizona-sandals",
+    "hash": "b393cc2cb1d32e8c",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/wowo2.png?v=1789712662",
+    "name": "Cheetah Arizona Sandals",
+    "price": "$34.99",
+    "published_at": "2026-09-17T23:28:20-07:00"
+   },
+   "10010218987765": {
+    "handle": "mossy-tee",
+    "hash": "e4199be671396493",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/image_high_15.png?v=1789975478",
+    "name": "Mossy Tee",
+    "price": "$19.99",
+    "published_at": "2026-09-21T00:25:46-07:00"
+   },
+   "10010223411445": {
+    "handle": "mossy-leggings",
+    "hash": "a4649b939b9a8ccd",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/image_high_8_31ae73be-ed77-4a58-86e0-00091f3f34d2.png?v=1789975578",
+    "name": "Mossy Leggings",
+    "price": "$19.99",
+    "published_at": "2026-09-21T00:27:03-07:00"
+   },
+   "10010231865589": {
+    "handle": "mossy-set",
+    "hash": "e4199be671396493",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/image_high_15_9c41f1dd-a873-4e86-9e36-15453d611f9f.png?v=1789975665",
+    "name": "Mossy Set",
+    "price": "$24.99",
+    "published_at": "2026-09-21T00:29:17-07:00"
+   },
+   "10010237010165": {
+    "handle": "mossy-long-sleeve",
+    "hash": "bc30d3cf241c7971",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/image_high_17_9b9d5381-56b8-4a9d-8999-08c3db9f9dfb.png?v=1789975794",
+    "name": "Mossy Long Sleeve",
+    "price": "$19.99",
+    "published_at": "2026-09-21T00:30:26-07:00"
+   },
+   "10010364674293": {
+    "handle": "mossy-top",
+    "hash": "e4199be671396493",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/image_high_15_9c41f1dd-a873-4e86-9e36-15453d611f9f.png?v=1789975665",
+    "name": "Mossy Top",
+    "price": "$19.99",
+    "published_at": "2026-09-21T01:05:56-07:00"
+   },
+   "9779731300597": {
+    "handle": "leopard-zip-up-hoodie",
+    "hash": "eaa3915acfa96894",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/nocturne-beast-zip-hoodie-blue-6398465.png?v=1786084876",
+    "name": "Leopard Zip-up Hoodie",
+    "price": "$24.99",
+    "published_at": "2026-08-06T23:43:09-07:00"
+   },
+   "9784602329333": {
+    "handle": "spidey-zip-up",
+    "hash": "fba0855e9a1acc4d",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/5f32bca2-f292-49ad-962b-e38e688823dc.png?v=1786160515",
+    "name": "Spidey Zip Up",
+    "price": "$24.99",
+    "published_at": "2026-08-07T19:17:37-07:00"
+   },
+   "9787263779061": {
+    "handle": "funnel-trench-jacket",
+    "hash": "b026cf9d38d13936",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/00030200711-a4o_9a7113df-1d55-4faa-823b-85886f4d707b.png?v=1786343338",
+    "name": "Funnel Trench Jacket",
+    "price": "$24.99",
+    "published_at": "2026-08-09T23:31:01-07:00"
+   },
+   "9826251145461": {
+    "handle": "17oz-mini-bottle-flip-cap-1",
+    "hash": "e6999964a6639966",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/Coco_002_29caf310-b6d3-4ea9-9aab-ecb0f5c7fafa.png?v=1786513622",
+    "name": "17oz Mini Bottle Flip Cap",
+    "price": "$19.99",
+    "published_at": "2026-08-17T19:46:12-07:00"
+   },
+   "9828077633781": {
+    "handle": "bashful-unicorn",
+    "hash": "e6e79898c23ec31c",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/BAS3UC__17256.1749467947.png?v=1786681922",
+    "name": "Bashful Unicorn",
+    "price": "$19.99",
+    "published_at": "2026-08-13T21:43:53-07:00"
+   },
+   "9829362368757": {
+    "handle": "new-crew-backpack",
+    "hash": "bcc3c53e1678c30d",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/1ea3c5af6693368d.png?v=1786764090",
+    "name": "New Crew Backpack",
+    "price": "$29.99",
+    "published_at": "2026-08-14T20:23:19-07:00"
+   },
+   "9846067429621": {
+    "handle": "posable-bat-stuffed-animal",
+    "hash": "a7e895ca4a97c20f",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/11Gemini_Generated_Image_bnejqybnejqybnej.jpg?v=1787027099",
+    "name": "Posable Bat Stuffed Animal",
+    "price": "$19.99",
+    "published_at": "2026-08-17T19:49:38-07:00"
+   },
+   "9882243170549": {
+    "handle": "evelina-clog",
+    "hash": "eb636b21943cc32e",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/Gemini_Generated_Image_pzk42npzk42npzk4_no_ugg.jpg?v=1787285864",
+    "name": "Evelina Clog",
+    "price": "$34.99",
+    "published_at": "2026-08-19T22:20:20-07:00"
+   },
+   "9949764321525": {
+    "handle": "paul-frank-hoodie",
+    "hash": "b063cf1c31d33473",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/03704309600-a4o.png?v=1787555814",
+    "name": "Paul Frank Hoodie",
+    "price": "$19.99",
+    "published_at": "2026-08-24T00:08:05-07:00"
+   },
+   "9968985145589": {
+    "handle": "faye-shoulder-bag",
+    "hash": "e19e9a619e6934c6",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/cv529_svbk_a0.png?v=1787801582",
+    "name": "Faye Shoulder Bag",
+    "price": "$39.99",
+    "published_at": "2026-08-26T20:40:58-07:00"
+   },
+   "9970118328565": {
+    "handle": "cherry-charm",
+    "hash": "b3cc9926cc33cc99",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/77840_b4p1y_a0.avif?v=1787897256",
+    "name": "Cherry Charm",
+    "price": "$95.00",
+    "published_at": "2026-08-27T23:07:55-07:00"
+   },
+   "9970121474293": {
+    "handle": "apple-charm",
+    "hash": "b3cc8c33cc3366cc",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/cy399_b4l38_a0.avif?v=1787899070",
+    "name": "Apple Charm",
+    "price": "$95.00",
+    "published_at": "2026-08-27T23:38:01-07:00"
+   },
+   "9976022466805": {
+    "handle": "cora-pajama-set",
+    "hash": "b4c3c73c99299963",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/Coraline_Silk-Pajamas-COR-APP-346-4_1e5a8c6b-b616-4482-b586-50ee033b6954.png?v=1788410144",
+    "name": "Cora Pajama Set",
+    "price": "$19.99",
+    "published_at": "2026-09-02T21:37:13-07:00"
+   },
+   "9978260291829": {
+    "handle": "snoopy-sippy-cup-16oz",
+    "hash": "b2938b6499cc669b",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/4E46DD9C-E7AB-4C50-A17A-B302C68CD7AC_2d7768f2-5867-4d78-a7af-f016f3a990cc.png?v=1788498254",
+    "name": "Snoopy Sippy Cup 16oz",
+    "price": "$24.99",
+    "published_at": "2026-09-03T22:05:50-07:00"
+   },
+   "9978938949877": {
+    "handle": "station-tote-bag",
+    "hash": "b0c3c33cce31db34",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/ccd69_imxu5_a0.png?v=1788578193",
+    "name": "Station Tote Bag",
+    "price": "$44.99",
+    "published_at": "2026-09-04T20:18:29-07:00"
+   },
+   "9978939015413": {
+    "handle": "bag-insert",
+    "hash": "9fc0b13b684c97b1",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/Gemini_Generated_Image_yko2toyko2toyko2_32f9ceb9-6b64-4f8e-9c07-1bd97a3663eb.jpg?v=1788578342",
+    "name": "Tote Bag Insert",
+    "price": "$10.00",
+    "published_at": "2026-09-04T20:19:28-07:00"
+   },
+   "9979023458549": {
+    "handle": "c-tote-bag",
+    "hash": "b0c3c33cce31db34",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/ccd69_imxu5_a0.png?v=1788578193",
+    "name": "C Tote Bag",
+    "price": "$44.99",
+    "published_at": "2026-09-04T23:12:06-07:00"
+   },
+   "9981774856437": {
+    "handle": "leopard-print-purse",
+    "hash": "b9c7866896364b39",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/58186d39-c581-41cf-ba84-8d627db21fc8.png?v=1788756127",
+    "name": "Leopard Print Purse",
+    "price": "$39.99",
+    "published_at": "2026-09-06T23:17:38-07:00"
+   },
+   "9983593808117": {
+    "handle": "c-leopard-bag",
+    "hash": "b9c7866896364b39",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/58186d39-c581-41cf-ba84-8d627db21fc8.png?v=1788756127",
+    "name": "C Leopard Bag",
+    "price": "$39.99",
+    "published_at": "2026-09-07T20:40:12-07:00"
+   },
+   "9989310873845": {
+    "handle": "cobblehop-bunny-plushie",
+    "hash": "e99c90e3972dc899",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/BAS3LPB__05251.1767371163.png?v=1789016730",
+    "name": "Cobblehop Bunny Plushie",
+    "price": "$19.99",
+    "published_at": "2026-09-09T22:07:41-07:00"
    }
   },
   "https://vosseraofficial.com": {
