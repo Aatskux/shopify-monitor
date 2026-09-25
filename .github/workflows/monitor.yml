@@ -9,6 +9,10 @@ on:
         description: "Testiajo: ei posteta Discordiin eika tallenneta tilaa"
         type: boolean
         default: false
+      test_webhooks:
+        description: "Laheta testikortti SALES_WEBHOOKiin ja TRENDS_WEBHOOKiin"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -30,6 +34,16 @@ jobs:
           python-version: "3.12"
 
       - run: pip install -r requirements.txt
+
+      # Vain kasiajolla: tarkistaa etta #sales- ja #trends-webhookit toimivat.
+      # Ei estä normaalia kierrosta vaikka webhook olisi rikki.
+      - name: Testikortit
+        if: ${{ inputs.test_webhooks }}
+        continue-on-error: true
+        env:
+          SALES_WEBHOOK: ${{ secrets.SALES_WEBHOOK }}
+          TRENDS_WEBHOOK: ${{ secrets.TRENDS_WEBHOOK }}
+        run: python -u shopify_monitor.py --test-webhooks
 
       # Lisaa Discord-kanavalle postatut kaupat stores.json:iin ennen
       # monitorin kierrosta. Jos Discord ei vastaa, monitori ajetaan silti.

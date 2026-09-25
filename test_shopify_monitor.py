@@ -1124,6 +1124,90 @@ class TestSmallStore(BestBase):
         self.assertIsNotNone(m.rise_reason(11, None, old, T0))
         self.assertIsNone(m.rise_reason(12, None, old, T0))
 
+# --- seen.json:n karsinta ja webhook-testi --------------------------------
+
+class TestSeenPruning(LiveBase):
+    def setUp(self):
+        super().setUp()
+        m.STORES = {self.a: "$", self.b: "$"}
+        for pid in range(1, 11):
+            self.add("a", pid, f"Tuote {pid}")
+        self.add("b", 50, "B-tuote")
+        self.round()                                   # pohjadata
+
+    def seen(self):
+        return json.loads(m.STATE.read_text())
+
+    def test_poistunut_tuote_karsitaan(self):
+        del LIVE[0]                                    # tuote 1 poistui kaupasta
+        self.round(T0 + timedelta(minutes=5))
+        self.assertNotIn("1", self.seen()[self.a])
+        self.assertEqual(len(self.seen()[self.a]), 9)
+
+    def test_epaonnistunut_haku_ei_karsi(self):
+        original = m.fetch_products
+
+        def flaky(store):
+            if store == self.a:
+                raise requests.ConnectionError("katkos")
+            return original(store)
+        m.fetch_products = flaky
+        del LIVE[:5]
+        self.round(T0 + timedelta(minutes=5))
+        self.assertEqual(len(self.seen()[self.a]), 10, "haku epaonnistui -> ei karsintaa")
+
+    def test_tyhja_vastaus_ei_karsi(self):
+        del LIVE[:10]                                  # kauppa a palauttaa tyhjan listan
+        self.round(T0 + timedelta(minutes=5))
+        self.assertEqual(len(self.seen()[self.a]), 10)
+
+    def test_iso_osa_kadonnut_karsitaan(self):
+        # oikeassa datassa 12 kauppaa on poistanut yli puolet tuotteistaan
+        del LIVE[:8]
+        self.round(T0 + timedelta(minutes=5))
+        self.assertEqual(self.seen()[self.a], ["10", "9"])
+
+    def test_karsittu_tuote_joka_palaa_on_uusi(self):
+        removed = LIVE.pop(0)
+        self.round(T0 + timedelta(minutes=5))
+        LIVE.insert(0, removed)
+        self.round(T0 + timedelta(minutes=10))
+        titles = [b["embeds"][0]["title"] for b in POSTED]
+        self.assertEqual(titles, ["Tuote 1"])
+
+    def test_muiden_kauppojen_tila_sailyy(self):
+        del LIVE[0]
+        self.round(T0 + timedelta(minutes=5))
+        self.assertEqual(self.seen()[self.b], ["50"])
+
+
+class TestWebhookTest(Base):
+    def test_testikortti_molempiin(self):
+        os.environ["SALES_WEBHOOK"] = f"{self.base}/sales"
+        os.environ["TRENDS_WEBHOOK"] = f"{self.base}/trends"
+        self.assertTrue(m.send_test_cards())
+        self.assertEqual(POSTED_PATHS, ["/sales", "/trends"])
+        self.assertEqual({b["embeds"][0]["title"] for b in POSTED}, {"Testi, voit poistaa"})
+
+    def test_puuttuva_tai_rikki_webhook_raportoidaan(self):
+        os.environ["SALES_WEBHOOK"] = "http://127.0.0.1:1/sales"
+        self.assertFalse(m.send_test_cards())
+        self.assertEqual(POSTED, [])
+
+    def test_cli_lopettaa_testin_jalkeen(self):
+        import sys
+        os.environ["SALES_WEBHOOK"] = f"{self.base}/sales"
+        os.environ["TRENDS_WEBHOOK"] = f"{self.base}/trends"
+        argv = sys.argv
+        sys.argv = ["shopify_monitor.py", "--test-webhooks"]
+        try:
+            with self.assertRaises(SystemExit) as cm:
+                m.main()
+        finally:
+            sys.argv = argv
+        self.assertEqual(cm.exception.code, 0)
+        self.assertFalse(m.STATE.exists(), "testi ei aja kierrosta")
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
