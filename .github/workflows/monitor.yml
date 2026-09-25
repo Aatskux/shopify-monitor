@@ -40,9 +40,9 @@ jobs:
           AI_STORES_CHANNEL_ID: ${{ secrets.AI_STORES_CHANNEL_ID }}
         run: python -u discord_intake.py ${{ inputs.dry_run && '--dry-run' || '' }}
 
-      # Sama 5 min kierros hoitaa myos ristiinkauppaosumat (postataan heti
-      # TRENDS_WEBHOOKiin) seka tunnin ja 2 tunnin koosteet, jotka lahtevat
-      # kun summary_state.json:n mukaan on niiden vuoro.
+      # Sama 5 min kierros hoitaa myos ristiinkauppaosumat (heti
+      # TRENDS_WEBHOOKiin), 2 tunnin trendikoosteen (summary_state.json) ja
+      # tunnin valein best-sellerit (best_sellers.json -> SALES_WEBHOOK).
       - name: Tarkista uudet tuotteet
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
@@ -56,7 +56,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           for f in seen.json stores.json intake_state.json image_hashes.json \
-                   stock_state.json events.json matches.json summary_state.json; do
+                   best_sellers.json matches.json summary_state.json; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
           git diff --staged --quiet && echo "ei muutoksia" && exit 0

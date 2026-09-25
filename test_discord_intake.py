@@ -152,13 +152,13 @@ class Base(unittest.TestCase):
         tmp = pathlib.Path(self.tmp.name)
 
         saved_d = (d.API_BASE, d.STORES_FILE, d.SEEN_FILE, d.STATE_FILE, d.products_url)
-        saved_m = (m.TIMEOUT, m.STORES, m.STATE, m.fetch_products, m.STOCK_STATE,
-                   m.IMAGE_HASHES, m.EVENTS_FILE, m.MATCHES_FILE, m.SUMMARY_STATE)
+        saved_m = (m.TIMEOUT, m.STORES, m.STATE, m.fetch_products, m.BEST_SELLERS,
+                   m.IMAGE_HASHES, m.MATCHES_FILE, m.SUMMARY_STATE)
 
         def restore():
             d.API_BASE, d.STORES_FILE, d.SEEN_FILE, d.STATE_FILE, d.products_url = saved_d
-            (m.TIMEOUT, m.STORES, m.STATE, m.fetch_products, m.STOCK_STATE,
-             m.IMAGE_HASHES, m.EVENTS_FILE, m.MATCHES_FILE, m.SUMMARY_STATE) = saved_m
+            (m.TIMEOUT, m.STORES, m.STATE, m.fetch_products, m.BEST_SELLERS,
+             m.IMAGE_HASHES, m.MATCHES_FILE, m.SUMMARY_STATE) = saved_m
         self.addCleanup(restore)
 
         d.API_BASE = f"{self.base}/api"
@@ -170,9 +170,8 @@ class Base(unittest.TestCase):
             f"{self.base}/shop/{store.split('://', 1)[1]}/products.json")
         m.TIMEOUT = 2
         # monitorin kierros ajetaan osassa testeja: sen tilat temppiin
-        m.STOCK_STATE = tmp / "stock_state.json"
+        m.BEST_SELLERS = tmp / "best_sellers.json"
         m.IMAGE_HASHES = tmp / "image_hashes.json"
-        m.EVENTS_FILE = tmp / "events.json"
         m.MATCHES_FILE = tmp / "matches.json"
         m.SUMMARY_STATE = tmp / "summary_state.json"
 

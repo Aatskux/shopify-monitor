@@ -16,6 +16,8 @@ import threading
 import unittest
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
+import requests
+
 import shopify_monitor as m
 
 # --- valekauppa ---------------------------------------------------------
@@ -48,6 +50,11 @@ WEBHOOK_STATUS = [200]
 LIVE = []            # muokattava valekauppa uusille testeille
 IMAGES = {}          # /img/<nimi> -> kuvan tavut
 IMAGE_REQUESTS = []  # kuvapyyntojen polut kyselyineen
+BEST_ORDER = {}      # kauppa -> handlet best-selling-jarjestyksessa
+NO_SORT = set()      # kaupat jotka eivat noudata sort_by:ta
+NO_META = set()      # kaupat joiden sivulla ei ole analytiikkadataa
+COLLECTION_PAGE = [20]
+COLLECTION_REQUESTS = []
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -71,6 +78,8 @@ class Handler(BaseHTTPRequestHandler):
             # /live/<kauppa>/products.json -> LIVE-tuotteet joilla "shop" == <kauppa>
             shop = path.split("/")[2] if path.count("/") > 2 else ""
             self._json(200, {"products": [p for p in LIVE if p.get("_shop", "") == shop]})
+        elif path.startswith("/live/") and path.endswith("/collections/all"):
+            self._collection(path.split("/")[2])
         elif path.startswith("/img/"):
             IMAGE_REQUESTS.append(self.path)
             name = path[len("/img/"):]
@@ -107,6 +116,33 @@ class Handler(BaseHTTPRequestHandler):
         else:
             self.send_response(404); self.end_headers()
 
+    def _collection(self, shop):
+        """Kokoelmasivu kuten Shopify: analytiikkadata var meta = {...};"""
+        from urllib.parse import parse_qs, urlsplit
+        COLLECTION_REQUESTS.append(self.path)
+        q = parse_qs(urlsplit(self.path).query)
+        sort, page = q.get("sort_by", [""])[0], int(q.get("page", ["1"])[0])
+        items = [p for p in LIVE if p.get("_shop") == shop][::-1]   # oletus: uusin ensin
+        if shop not in NO_SORT:
+            if sort == "best-selling":
+                order = BEST_ORDER.get(shop, [])
+                items.sort(key=lambda p: order.index(p["handle"]) if p["handle"] in order
+                           else len(order))
+            elif sort == "title-ascending":
+                items.sort(key=lambda p: p["title"].lower())
+        size = COLLECTION_PAGE[0]
+        chunk = items[(page - 1) * size:page * size]
+        meta = {"products": [{"id": p["id"], "handle": p["handle"], "vendor": "x"}
+                             for p in chunk], "page": {"pageType": "collection"}}
+        script = "" if shop in NO_META else f"var meta = {json.dumps(meta)};\n"
+        body = f"<html><script>window.x = 1;\n{script}for (var a in meta) {{}}</script></html>"
+        b = body.encode()
+        self.send_response(200)
+        self.send_header("Content-Type", "text/html")
+        self.send_header("Content-Length", str(len(b)))
+        self.end_headers()
+        self.wfile.write(b)
+
     def do_POST(self):
         n = int(self.headers.get("Content-Length", 0))
         POSTED.append(json.loads(self.rfile.read(n) or b"{}"))
@@ -130,8 +166,8 @@ class Server(ThreadingHTTPServer):
         pass
 
 
-SAVED = ["STORES", "STORES_FILE", "STATE", "TIMEOUT", "STOCK_STATE", "IMAGE_HASHES",
-         "EVENTS_FILE", "MATCHES_FILE", "SUMMARY_STATE", "IMAGE_TIMEOUT",
+SAVED = ["STORES", "STORES_FILE", "STATE", "TIMEOUT", "BEST_SELLERS", "IMAGE_HASHES",
+         "MATCHES_FILE", "SUMMARY_STATE", "IMAGE_TIMEOUT", "BEST_MIN_LISTED",
          "MAX_IMAGE_DOWNLOADS", "IMAGE_BUDGET", "fetch_products"]
 
 
@@ -148,9 +184,11 @@ class Base(unittest.TestCase):
         cls.srv.shutdown()
 
     def setUp(self):
-        for lst in (POSTED, POSTED_PATHS, LIVE, IMAGE_REQUESTS):
+        for lst in (POSTED, POSTED_PATHS, LIVE, IMAGE_REQUESTS, COLLECTION_REQUESTS):
             lst.clear()
-        IMAGES.clear()
+        for coll in (IMAGES, BEST_ORDER, NO_SORT, NO_META):
+            coll.clear()
+        COLLECTION_PAGE[0] = 20
         WEBHOOK_STATUS[0] = 200
         self.tmp = tempfile.TemporaryDirectory()
         self.addCleanup(self.tmp.cleanup)
@@ -161,9 +199,8 @@ class Base(unittest.TestCase):
         m.STORES_FILE = tmp / "stores.json"
         m.STORES_FILE.write_text(json.dumps(m.STORES))
         m.STATE = tmp / "seen.json"
-        m.STOCK_STATE = tmp / "stock_state.json"
+        m.BEST_SELLERS = tmp / "best_sellers.json"
         m.IMAGE_HASHES = tmp / "image_hashes.json"
-        m.EVENTS_FILE = tmp / "events.json"
         m.MATCHES_FILE = tmp / "matches.json"
         m.SUMMARY_STATE = tmp / "summary_state.json"
         m.TIMEOUT = 2
@@ -709,13 +746,19 @@ class TestImageLimits(LiveBase):
 # --- tilatiedostot eivat muutu turhaan ----------------------------------
 
 class TestStableState(LiveBase):
-    FILES = ("STATE", "STOCK_STATE", "IMAGE_HASHES", "EVENTS_FILE", "MATCHES_FILE",
-             "SUMMARY_STATE")
+    FILES = ("STATE", "IMAGE_HASHES", "MATCHES_FILE", "SUMMARY_STATE", "BEST_SELLERS")
 
     def snapshot(self):
         out = {}
         for name in self.FILES:
             f = getattr(m, name)
+            if name == "BEST_SELLERS":
+                # tallennetaan speksin mukaan kerran tunnissa: vain "checked"
+                # saa muuttua, listat eivat jos jarjestys ei muutu
+                data = json.loads(f.read_text())
+                data.pop("checked")
+                out[name] = data
+                continue
             out[name] = (f.read_text(), f.stat().st_mtime_ns) if f.exists() else None
         return out
 
@@ -725,8 +768,7 @@ class TestStableState(LiveBase):
         self.add("a", 1, "Snoopy Bag", image=1)
         self.add("b", 2, "Other", image=2)
         self.round()
-        self.add("c", 3, "Snoopy Bag", image=1)        # osuma + koosteet
-        LIVE[0]["variants"][0]["available"] = False   # loppuunmyynti
+        self.add("c", 3, "Snoopy Bag", image=1)        # osuma + kooste
         self.round(T0 + timedelta(minutes=5))
         self.assertTrue(POSTED, "tassa vaiheessa jotain pitaa lahtea")
 
@@ -736,94 +778,6 @@ class TestStableState(LiveBase):
         after = self.snapshot()
         for name in self.FILES:
             self.assertEqual(before[name], after[name], f"{name} muuttui turhaan")
-
-
-# --- loppuunmyynnit -----------------------------------------------------
-
-class TestSoldouts(LiveBase):
-    def setUp(self):
-        super().setUp()
-        m.STORES = {self.a: "$"}
-        self.add("a", 1, "Kolmen koon huppari", variants=[
-            {"id": 11, "title": "S", "price": "40.00", "available": True},
-            {"id": 12, "title": "M", "price": "40.00", "available": True},
-            {"id": 13, "title": "L", "price": "40.00", "available": False}])
-        self.add("a", 2, "Yhden koon paita")
-        self.round()
-
-    def events(self, kind=None):
-        return [e for e in self.state(m.EVENTS_FILE) or [] if kind in (None, e["type"])]
-
-    def test_pohjadata_ei_tuota_tapahtumia(self):
-        self.assertEqual(self.events(), [])
-        self.assertEqual(self.state(m.STOCK_STATE)[self.a], ["11", "12", "20"])
-
-    def test_loppuunmyyty_variantti(self):
-        LIVE[0]["variants"][1]["available"] = False
-        self.round(T0 + timedelta(minutes=5))
-        [e] = self.events()
-        self.assertEqual((e["type"], e["product_id"], e["variant"]), ("soldout", "1", "M"))
-        self.assertEqual(e["time"], m._iso(T0 + timedelta(minutes=5)))
-
-    def test_yhden_variantin_tuote_loppuu(self):
-        LIVE[1]["variants"][0]["available"] = False
-        self.round(T0 + timedelta(minutes=5))
-        self.assertEqual([e["product_id"] for e in self.events("soldout")], ["2"])
-
-    def test_kaikki_variantit_kerralla_on_muokkaus(self):
-        for v in LIVE[0]["variants"]:
-            v["available"] = False
-        self.round(T0 + timedelta(minutes=5))
-        self.assertEqual(self.events("soldout"), [])
-        self.assertEqual(len(self.events("edit")), 1)
-
-    def test_valmiiksi_loppunut_tai_uusi_variantti_ei_ole_myynti(self):
-        LIVE[0]["variants"].append({"id": 14, "title": "XL", "available": False})
-        self.round(T0 + timedelta(minutes=5))
-        self.assertEqual(self.events(), [])
-
-    def test_koko_kaupan_varastohairio_ei_ole_myyntia(self):
-        LIVE.clear()
-        for pid in range(1, 31):
-            self.add("a", pid, f"T{pid}")
-        m.STOCK_STATE.unlink()
-        self.round()
-        for p in LIVE[:20]:
-            p["variants"][0]["available"] = False
-        self.round(T0 + timedelta(minutes=5))
-        self.assertEqual(self.events(), [])
-
-    def test_yli_72h_vanhat_karsitaan(self):
-        m.EVENTS_FILE.write_text(json.dumps([
-            {"type": "soldout", "store": self.a, "product_id": "1",
-             "time": m._iso(T0 - timedelta(hours=73))},
-            {"type": "soldout", "store": self.a, "product_id": "2",
-             "time": m._iso(T0 - timedelta(hours=71))}]))
-        self.round()
-        self.assertEqual([e["product_id"] for e in self.events()], ["2"])
-
-    def test_tunnin_kooste(self):
-        os.environ["SALES_WEBHOOK"] = f"{self.base}/sales"
-        LIVE[0]["variants"][0]["available"] = False
-        self.round(T0 + timedelta(minutes=5))
-        [body] = self.posted("/sales")
-        embed = body["embeds"][0]
-        self.assertIn("1 varianttia", embed["title"])
-        self.assertEqual(embed["description"], f"**{m._host(self.a)}** — 1")
-        self.assertIn("Kolmen koon huppari", embed["fields"][0]["value"])
-
-        LIVE[0]["variants"][1]["available"] = False
-        self.round(T0 + timedelta(minutes=10))
-        self.assertEqual(len(self.posted("/sales")), 1, "ei uudestaan saman tunnin sisalla")
-        self.round(T0 + timedelta(minutes=63))
-        self.assertEqual(len(self.posted("/sales")), 2)
-        self.assertIn("1 varianttia", self.posted("/sales")[1]["embeds"][0]["title"])
-
-    def test_ei_viestia_ilman_loppuunmyynteja(self):
-        os.environ["SALES_WEBHOOK"] = f"{self.base}/sales"
-        self.round(T0 + timedelta(hours=2))
-        self.assertEqual(POSTED, [])
-        self.assertFalse(m.SUMMARY_STATE.exists() and self.state(m.SUMMARY_STATE))
 
 
 # --- 2 tunnin trendikooste ----------------------------------------------
@@ -856,7 +810,7 @@ class TestDigest(LiveBase):
         ]
 
     def test_eniten_kauppoja_painotettuna_tuoreudella(self):
-        rows = m.digest_rows(self.log, self.products, [], T0)
+        rows = m.digest_rows(self.log, self.products, T0)
         names = [self.products[r["node"][0]][r["node"][1]]["name"] for r in rows]
         # Tuore (uusin julkaisu tanaan): 2 * (1 + 1) = 4.0; Kolmessa: 3 * 1 = 3.0;
         # Vanha: 2 * 1 = 2.0
@@ -868,23 +822,23 @@ class TestDigest(LiveBase):
         log = [self.record(self.a, str(i), [(self.b, str(i))]) for i in range(15)]
         products = {s: {str(i): self.entry(f"T{i}", 1) for i in range(15)}
                     for s in (self.a, self.b)}
-        self.assertEqual(len(m.build_top_groups(log, products, [], T0)["embeds"]), 10)
+        self.assertEqual(len(m.build_top_groups(log, products, T0)["embeds"]), 10)
 
     def test_kooste_2h_valein_ja_vain_uusista_osumista(self):
         os.environ["TRENDS_WEBHOOK"] = f"{self.base}/trends"
         summary = {}
-        m.send_summaries([], self.log, self.products, summary, T0)
+        m.send_summaries(self.log, self.products, summary, T0)
         self.assertEqual(len(POSTED), 1)
         self.assertTrue(POSTED[0]["content"].startswith("**Trendikooste"))
         # 2 h kuluttua, mutta ei uusia osumia -> ei viestia eika tilamuutosta
-        m.send_summaries([], self.log, self.products, summary, T0 + timedelta(hours=2))
+        m.send_summaries(self.log, self.products, summary, T0 + timedelta(hours=2))
         self.assertEqual(len(POSTED), 1)
         self.assertEqual(summary["trends"], m._iso(T0))
         # uusi osuma tunnin paasta -> odotetaan silti 2 h tahtiin
         log = self.log + [self.record(self.c, "3", [(self.a, "1")], T0 + timedelta(hours=1))]
-        m.send_summaries([], log, self.products, summary, T0 + timedelta(hours=1, minutes=5))
+        m.send_summaries(log, self.products, summary, T0 + timedelta(hours=1, minutes=5))
         self.assertEqual(len(POSTED), 1)
-        m.send_summaries([], log, self.products, summary, T0 + timedelta(hours=2, minutes=5))
+        m.send_summaries(log, self.products, summary, T0 + timedelta(hours=2, minutes=5))
         self.assertEqual(len(POSTED), 2)
 
     def possible(self, store, pid, other, opid, when=T0):
@@ -897,39 +851,227 @@ class TestDigest(LiveBase):
         self.products[self.c]["9"] = self.entry("Nimitwin", 1)
         self.products[self.a]["9"] = self.entry("Nimitwin", 1)
         log = self.log + [self.possible(self.c, "9", self.a, "9")]
-        top, possible = m.build_digest(log, self.products, [], T0)
+        top, possible = m.build_digest(log, self.products, T0)
         self.assertTrue(top["content"].startswith("**Trendikooste"))
         self.assertEqual(possible["embeds"][0]["title"],
                          "Mahdolliset osumat, tarkista itse (1)")
         self.assertIn("nimi 100", possible["embeds"][0]["description"])
         names = [self.products[s][p]["name"] for s, p in
-                 (r["node"] for r in m.digest_rows(log, self.products, [], T0))]
+                 (r["node"] for r in m.digest_rows(log, self.products, T0))]
         self.assertNotIn("Nimitwin", names, "mahdollinen ei muodosta trendiryhmaa")
 
     def test_mahdolliset_vain_jakson_ajalta(self):
         self.products[self.c]["9"] = self.entry("Nimitwin", 1)
         self.products[self.a]["9"] = self.entry("Nimitwin", 1)
         old = self.possible(self.c, "9", self.a, "9", T0 - timedelta(hours=3))
-        self.assertEqual(len(m.build_digest(self.log + [old], self.products, [], T0)), 1)
+        self.assertEqual(len(m.build_digest(self.log + [old], self.products, T0)), 1)
 
     def test_mahdollinen_ei_yhdista_kuvaryhmia(self):
         # a1-b1-c1 on kuvaryhma; d3 vain nimella a1:n kanssa -> ryhma pysyy 3 kaupassa
         log = self.log + [self.possible("https://d.example", "3", self.a, "1")]
-        rows = m.digest_rows(log, self.products, [], T0)
+        rows = m.digest_rows(log, self.products, T0)
         self.assertEqual(sorted(len(r["stores"]) for r in rows), [2, 2, 3])
 
     def test_poistetut_tuotteet_eivat_ole_koosteessa(self):
         del self.products[self.b]["2"]
-        rows = m.digest_rows(self.log, self.products, [], T0)
+        rows = m.digest_rows(self.log, self.products, T0)
         self.assertNotIn("Tuore", [self.products[s][p]["name"] for s, p in
                                    (r["node"] for r in rows)])
 
-    def test_loppuunmyynnit_nakyvat_kortissa(self):
-        events = [{"type": "soldout", "store": self.a, "product_id": "2", "time": m._iso(T0)}] * 3
-        card = m.build_top_groups(self.log, self.products, events, T0)["embeds"][0]
-        fields = {f["name"]: f["value"] for f in card["fields"]}
-        self.assertEqual(fields["Loppuunmyynnit 72 h"], "3")
-        self.assertEqual(fields["Kauppoja"], "2")
+# --- best-sellerit ------------------------------------------------------
+
+class BestBase(LiveBase):
+    """Kaupassa a on 25 tuotetta; best-selling-jarjestys ohjataan BEST_ORDERilla."""
+
+    def setUp(self):
+        super().setUp()
+        os.environ["SALES_WEBHOOK"] = f"{self.base}/sales"
+        os.environ["TRENDS_WEBHOOK"] = f"{self.base}/trends"
+        m.STORES = {self.a: "$", self.b: "$"}
+        old = m._iso(T0 - timedelta(days=30))
+        for pid in range(1, 26):
+            # nimet eri jarjestyksessa kuin myynti, muuten aakkostesti hylkaisi
+            self.add("a", pid, f"Tuote {pid * 7 % 26:02d}", published=old)
+        self.rank("a", range(1, 26))
+
+    def rank(self, shop, pids):
+        BEST_ORDER[shop] = [f"h{pid}" for pid in pids]
+
+    def best(self):
+        return self.state(m.BEST_SELLERS)
+
+    def sales(self):
+        return self.posted("/sales")
+
+    def fields(self, body):
+        return {f["name"]: f["value"] for f in body["embeds"][0]["fields"]}
+
+
+class TestBestSellerFetch(BestBase):
+    def test_jarjestys_luetaan_analytiikkadatasta(self):
+        self.rank("a", [5, 3, 1])
+        handles = m.collection_handles(self.a, "best-selling")
+        self.assertEqual(handles[:3], ["h5", "h3", "h1"])
+        self.assertEqual(len(handles), 20, "vain top 20")
+
+    def test_sivutus_kun_sivukoko_pieni(self):
+        COLLECTION_PAGE[0] = 8
+        self.assertEqual(len(m.collection_handles(self.a, "best-selling")), 20)
+        self.assertEqual(len(COLLECTION_REQUESTS), 3)
+
+    def test_ilman_analytiikkadataa_none(self):
+        NO_META.add("a")
+        self.assertIsNone(m.collection_handles(self.a, "best-selling"))
+
+    def test_jarjestyksen_tuki_tarkistetaan_aakkosilla(self):
+        titles = {p["handle"]: p["title"] for p in LIVE}
+        best = m.collection_handles(self.a, "best-selling")
+        self.assertTrue(m.sorting_supported(self.a, best, titles))
+        NO_SORT.add("a")
+        best = m.collection_handles(self.a, "best-selling")
+        self.assertFalse(m.sorting_supported(self.a, best, titles))
+
+
+class TestBestSellers(BestBase):
+    def setUp(self):
+        super().setUp()
+        self.round()                                   # pohjadata
+
+    def test_pohjadata_ei_postaa_ja_tallentaa_top20(self):
+        self.assertEqual(self.sales(), [])
+        ranks = self.best()["stores"][self.a]["ranks"]
+        self.assertEqual(len(ranks), 20)
+        self.assertEqual((ranks["h1"], ranks["h20"]), (1, 20))
+        self.assertNotIn("h21", ranks)
+
+    def test_haku_kerran_tunnissa(self):
+        n = len(COLLECTION_REQUESTS)
+        self.round(T0 + timedelta(minutes=5))
+        self.round(T0 + timedelta(minutes=30))
+        self.assertEqual(len(COLLECTION_REQUESTS), n, "ei hakua saman tunnin sisalla")
+        self.round(T0 + timedelta(minutes=58))         # cronin viive-etuajo sallittu
+        self.assertGreater(len(COLLECTION_REQUESTS), n)
+
+    def test_tuore_tuote_nousee_top_10(self):
+        self.add("a", 30, "Uutuus", published=m._iso(T0 - timedelta(days=2)), image=30)
+        self.rank("a", [1, 2, 30] + list(range(3, 26)))
+        self.round(T0 + timedelta(hours=1))
+        [body] = self.sales()
+        f = self.fields(body)
+        embed = body["embeds"][0]
+        self.assertEqual(embed["title"], "Uutuus")
+        self.assertEqual((f["Sija nyt"], f["Edellinen sija"]), ("3", "yli 20"))
+        self.assertEqual(f["Hinta"], "$30.00")
+        self.assertEqual(f["Kauppa"], m._host(self.a))
+        self.assertIn("23.09.2026", f["Julkaistu"])
+        self.assertIn("top 10", embed["description"])
+        self.assertEqual(embed["url"], f"{self.a}/products/h30")
+        self.assertTrue(embed["thumbnail"]["url"].startswith(f"{self.base}/img/30.png"))
+        self.assertEqual(self.posted("/trends"), [], "ei muissa kaupoissa -> ei KUUMA")
+
+    def test_vanha_tuote_pieni_nousu_top_10_ei_postaa(self):
+        self.rank("a", [12] + [p for p in range(1, 26) if p != 12])   # 12 -> 1: 11 sijaa
+        self.round(T0 + timedelta(hours=1))
+        self.assertEqual(len(self.sales()), 1)
+        self.rank("a", [12, 1, 14] + [p for p in range(2, 26) if p not in (12, 14)])  # 14: 13 -> 3 = 10
+        self.round(T0 + timedelta(hours=2))
+        self.assertEqual(len(self.sales()), 2)
+        self.rank("a", [12, 1, 14, 3, 2] + [p for p in range(4, 26) if p not in (12, 14)])  # 3: 5 -> 4
+        self.round(T0 + timedelta(hours=3))
+        self.assertEqual(len(self.sales()), 2, "alle 10 sijan nousu vanhalle tuotteelle ei postaa")
+
+    def test_nousu_vahintaan_10_sijaa(self):
+        self.rank("a", [1, 2, 3, 4, 17] + [p for p in range(5, 26) if p != 17])
+        self.round(T0 + timedelta(hours=1))
+        [body] = self.sales()
+        f = self.fields(body)
+        self.assertEqual((f["Sija nyt"], f["Edellinen sija"]), ("5", "17"))
+        self.assertEqual(body["embeds"][0]["description"], "Nousi 12 sijaa")
+
+    def test_top_20_ulkopuolelta(self):
+        self.rank("a", list(range(1, 11)) + [24] + list(range(11, 24)) + [25])   # 24 -> 11
+        self.round(T0 + timedelta(hours=1))
+        [body] = self.sales()
+        self.assertEqual(self.fields(body)["Edellinen sija"], "yli 20")
+        self.rank("a", list(range(1, 11)) + [24] + list(range(11, 16)) + [25] + list(range(16, 24)))
+        self.round(T0 + timedelta(hours=2))                  # 25 ulkopuolelta sijalle 17
+        self.assertEqual(len(self.sales()), 1, "ei varmaa 10 sijan nousua")
+
+    def test_kuuma_myos_trendsiin(self):
+        self.add("a", 30, "Snoopy Bag", published=m._iso(T0 - timedelta(days=1)), image=77)
+        self.add("b", 40, "Snoopy Bag", image=77)            # sama kuva toisessa kaupassa
+        self.round(T0 + timedelta(minutes=5))                # tiivisteet (b = pohjadataa)
+        self.rank("a", [30] + list(range(1, 26)))
+        self.round(T0 + timedelta(hours=1))
+        [sales] = self.sales()
+        hot = [b for b in self.posted("/trends") if b["embeds"][0]["title"].startswith("KUUMA")]
+        self.assertEqual(len(hot), 1)
+        self.assertEqual(sales, hot[0])
+        self.assertEqual(sales["embeds"][0]["title"], "KUUMA: Snoopy Bag")
+        self.assertTrue(self.fields(sales)["Muissa kaupoissa"].startswith("1: "))
+
+    def test_ilman_tiivistetta_muissa_kaupoissa_ei_tiedossa(self):
+        m.MAX_IMAGE_DOWNLOADS = 0
+        self.add("a", 30, "Uutuus", published=m._iso(T0 - timedelta(days=1)), image=31)
+        self.rank("a", [30] + list(range(1, 26)))
+        self.round(T0 + timedelta(hours=1))
+        [body] = self.sales()
+        self.assertEqual(self.fields(body)["Muissa kaupoissa"], "ei viela tiivistetty")
+        self.assertFalse(body["embeds"][0]["title"].startswith("KUUMA"))
+
+    def test_dry_run_ei_postaa_eika_tallenna(self):
+        before = m.BEST_SELLERS.read_text()
+        self.rank("a", [17] + [p for p in range(1, 26) if p != 17])
+        self.round(T0 + timedelta(hours=1), dry_run=True)
+        self.assertEqual(POSTED, [])
+        self.assertEqual(m.BEST_SELLERS.read_text(), before)
+
+
+class TestBestSellerSkips(BestBase):
+    def test_jarjestysta_tukematon_kauppa_ohitetaan_hiljaa(self):
+        NO_SORT.add("a")                       # oletusjarjestys: uusin ensin
+        self.round()
+        self.assertEqual(self.best()["stores"][self.a], {"unsupported": m._iso(T0)})
+        self.add("a", 30, "Uusin", published=m._iso(T0))
+        self.round(T0 + timedelta(hours=1))
+        self.assertEqual(self.sales(), [], "uusin ensin -jarjestys ei saa nayttaa nousulta")
+
+    def test_tukematon_tarkistetaan_uudelleen_viikon_paasta(self):
+        NO_META.add("a")
+        self.round()
+        n = len(COLLECTION_REQUESTS)
+        self.round(T0 + timedelta(days=3))
+        self.assertEqual(len(COLLECTION_REQUESTS), n, "ei turhia hakuja")
+        NO_META.clear()
+        self.round(T0 + timedelta(days=8))
+        self.assertIn("ranks", self.best()["stores"][self.a], "tuki loytyi -> pohjadata")
+        self.assertEqual(self.sales(), [])
+
+    def test_pieni_kauppa_ohitetaan(self):
+        del LIVE[m.BEST_MIN_LISTED - 1:]
+        self.round()
+        self.assertIn("unsupported", self.best()["stores"][self.a])
+
+    def test_hakuvirhe_ei_kaada_ja_vanha_lista_jaa(self):
+        self.round()
+        ranks = self.best()["stores"][self.a]
+        original = m.collection_handles
+        m.collection_handles = lambda *a, **k: (_ for _ in ()).throw(requests.ConnectionError())
+        self.addCleanup(setattr, m, "collection_handles", original)
+        failed = self.round(T0 + timedelta(hours=1))
+        self.assertEqual(failed, [])
+        self.assertEqual(self.best()["stores"][self.a], ranks)
+
+    def test_rise_reason(self):
+        fresh, old = T0 - timedelta(days=3), T0 - timedelta(days=30)
+        self.assertIsNotNone(m.rise_reason(10, None, fresh, T0))
+        self.assertIsNotNone(m.rise_reason(9, 14, fresh, T0))
+        self.assertIsNone(m.rise_reason(8, 9, fresh, T0), "oli jo top 10:ssa")
+        self.assertIsNone(m.rise_reason(12, None, fresh, T0), "tuore mutta ei top 10")
+        self.assertEqual(m.rise_reason(5, 15, old, T0), "Nousi 10 sijaa")
+        self.assertIsNone(m.rise_reason(6, 15, old, T0))
+        self.assertIsNotNone(m.rise_reason(11, None, old, T0))
+        self.assertIsNone(m.rise_reason(12, None, old, T0))
 
 
 if __name__ == "__main__":
