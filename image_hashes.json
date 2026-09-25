@@ -1,6 +1,32 @@
 {
  "pending": {},
  "products": {
+  "https://alirausa.com": {
+   "8346347045053": {
+    "handle": "smudge-monkey",
+    "hash": "e995966a31e06e9c",
+    "image": "https://cdn.shopify.com/s/files/1/0775/7670/0093/files/SMG2M__08487.jpg?v=1781922867",
+    "name": "Smudge Monkey",
+    "price": "$24.95",
+    "published_at": "2026-06-19T21:35:01-05:00"
+   },
+   "8346350092477": {
+    "handle": "amuseables-banana",
+    "hash": "bf9fc178c0e0e0e1",
+    "image": "https://cdn.shopify.com/s/files/1/0775/7670/0093/files/FABF6B.webp?v=1781922979",
+    "name": "Amuseables Banana",
+    "price": "$19.95",
+    "published_at": "2026-06-19T21:36:51-05:00"
+   },
+   "8427750850749": {
+    "handle": "red-zebra-top",
+    "hash": "b496c36734699c9a",
+    "image": "https://cdn.shopify.com/s/files/1/0775/7670/0093/files/1-modelinfo-olivia-us2_f2d5fa1a-882a-44bc-b1a1-72f36e04e8c3.webp?v=1785287634",
+    "name": "Red Zebra Top",
+    "price": "$24.99",
+    "published_at": "2026-07-28T20:15:00-05:00"
+   }
+  },
   "https://allicient.co": {
    "10310216188225": {
     "handle": "ichigo-kurosaki-hoodie",
@@ -695,6 +721,24 @@
     "name": "Coraline  Plush",
     "price": "$24.95",
     "published_at": "2026-09-24T09:54:45-04:00"
+   }
+  },
+  "https://cortezstudios.co": {
+   "10510390559012": {
+    "handle": "paint-gat-sneaker",
+    "hash": "ecc19636e15b32e4",
+    "image": "https://cdn.shopify.com/s/files/1/1012/5905/1300/files/ChatGPTImage29apr2026_11_47_30.webp?v=1781633675",
+    "name": "PAINT GAT SNEAKER",
+    "price": "$50.00",
+    "published_at": "2026-07-14T23:58:26-05:00"
+   },
+   "10658397389092": {
+    "handle": "mind-slides-001",
+    "hash": "e3859c3a63c53693",
+    "image": "https://cdn.shopify.com/s/files/1/1012/5905/1300/files/Untitleddesign_91_1060x_0921ce86-05f2-4bd2-b7c5-32c54b24dec0.webp?v=1784692052",
+    "name": "Mind Slides 001©",
+    "price": "$39.99",
+    "published_at": "2026-07-21T22:49:56-05:00"
    }
   },
   "https://distrikdofficial.com": {
@@ -1395,6 +1439,418 @@
     "published_at": "2026-09-18T10:50:27-04:00"
    }
   },
+  "https://maisonveya.com": {
+   "10367609209114": {
+    "handle": "white-distressed-trucker-hat",
+    "hash": "fac0b53fc0380fe2",
+    "image": "https://cdn.shopify.com/s/files/1/1005/8583/2730/files/d9be79f5-73b2-4c1b-a437-2efd28cff67d.png?v=1787158343",
+    "name": "White Distressed Trucker Hat",
+    "price": "$19.95",
+    "published_at": "2026-08-19T12:52:35-04:00"
+   },
+   "10367609438490": {
+    "handle": "white-racing-club-trucker-cap",
+    "hash": "fbc08d0fd0336bc8",
+    "image": "https://cdn.shopify.com/s/files/1/1005/8583/2730/files/d87e0d00-5f36-4591-aa7d-7a05da329d1b.png?v=1787158369",
+    "name": "White Racing Club Trucker Cap",
+    "price": "$24.95",
+    "published_at": "2026-08-19T12:52:56-04:00"
+   },
+   "10367609995546": {
+    "handle": "white-athletic-dept-1987-cap",
+    "hash": "bae0878fe0341ed3",
+    "image": "https://cdn.shopify.com/s/files/1/1005/8583/2730/files/f3565869-b07a-4250-b4e9-995674dda3e6.png?v=1787158388",
+    "name": "White Athletic Dept. 1987 Cap",
+    "price": "$29.95",
+    "published_at": "2026-08-19T12:53:16-04:00"
+   },
+   "10367610323226": {
+    "handle": "white-rhinestone-monogram-trucker-cap",
+    "hash": "fae0951fc03c4bf0",
+    "image": "https://cdn.shopify.com/s/files/1/1005/8583/2730/files/c5555bac-eb7f-4cfb-ad71-fff712a990f9.png?v=1787158410",
+    "name": "White Rhinestone Monogram Trucker Cap",
+    "price": "$34.95",
+    "published_at": "2026-08-19T12:53:36-04:00"
+   },
+   "10367610618138": {
+    "handle": "white-distressed-denim-baseball-cap",
+    "hash": "fae0951fc03d0fe0",
+    "image": "https://cdn.shopify.com/s/files/1/1005/8583/2730/files/696d15c1-2c2a-48b2-81e5-b56674828fb7.png?v=1787158430",
+    "name": "White Distressed Denim Baseball Cap",
+    "price": "$39.95",
+    "published_at": "2026-08-19T12:53:54-04:00"
+   },
+   "10367624151322": {
+    "handle": "white-athletic-dept-1987-cap-vip",
+    "hash": "bae0878fe0341ed3",
+    "image": "https://cdn.shopify.com/s/files/1/1005/8583/2730/files/f3565869-b07a-4250-b4e9-995674dda3e6.png?v=1787158388",
+    "name": "White Athletic Dept. 1987 Cap - VIP",
+    "price": "$29.95",
+    "published_at": "2026-08-19T13:09:54-04:00"
+   },
+   "10367624184090": {
+    "handle": "white-distressed-denim-baseball-cap-vip",
+    "hash": "fae0951fc03d0fe0",
+    "image": "https://cdn.shopify.com/s/files/1/1005/8583/2730/files/696d15c1-2c2a-48b2-81e5-b56674828fb7.png?v=1787158430",
+    "name": "White Distressed Denim Baseball Cap - VIP",
+    "price": "$39.95",
+    "published_at": "2026-08-19T13:09:55-04:00"
+   },
+   "10367624315162": {
+    "handle": "white-distressed-trucker-hat-vip",
+    "hash": "fac0b53fc0380fe2",
+    "image": "https://cdn.shopify.com/s/files/1/1005/8583/2730/files/d9be79f5-73b2-4c1b-a437-2efd28cff67d.png?v=1787158343",
+    "name": "White Distressed Trucker Hat - VIP",
+    "price": "$19.95",
+    "published_at": "2026-08-19T13:09:56-04:00"
+   },
+   "10367624544538": {
+    "handle": "white-racing-club-trucker-cap-vip",
+    "hash": "fbc08d0fd0336bc8",
+    "image": "https://cdn.shopify.com/s/files/1/1005/8583/2730/files/d87e0d00-5f36-4591-aa7d-7a05da329d1b.png?v=1787158369",
+    "name": "White Racing Club Trucker Cap - VIP",
+    "price": "$24.95",
+    "published_at": "2026-08-19T13:09:57-04:00"
+   },
+   "10367624741146": {
+    "handle": "white-rhinestone-monogram-trucker-cap-vip",
+    "hash": "fae0951fc03c4bf0",
+    "image": "https://cdn.shopify.com/s/files/1/1005/8583/2730/files/c5555bac-eb7f-4cfb-ad71-fff712a990f9.png?v=1787158410",
+    "name": "White Rhinestone Monogram Trucker Cap - VIP",
+    "price": "$34.95",
+    "published_at": "2026-08-19T13:09:58-04:00"
+   },
+   "10382240219418": {
+    "handle": "bella-swan-twilight-sheet-set",
+    "hash": "f33373321b8e4c4c",
+    "image": "https://cdn.shopify.com/s/files/1/1005/8583/2730/files/84643857_009_b.webp?v=1788276622",
+    "name": "Bella Swan “Twilight” Sheet Set",
+    "price": "$29.95",
+    "published_at": "2026-09-01T11:30:51-04:00"
+   },
+   "10429990404378": {
+    "handle": "2026-snoopy-peanuts-popcorn-bucket",
+    "hash": "f9c0861ece619733",
+    "image": "https://cdn.shopify.com/s/files/1/1005/8583/2730/files/e1d2ec41-681c-4164-9567-fe9e9a7894a2.png?v=1790094903",
+    "name": "2026 Snoopy Peanuts Popcorn Bucket",
+    "price": "$29.95",
+    "published_at": "2026-09-22T12:35:32-04:00"
+   },
+   "10430017601818": {
+    "handle": "bella-s-twilight-floral-duvet-set",
+    "hash": "aaabea6f82b44ac1",
+    "image": "https://cdn.shopify.com/s/files/1/1005/8583/2730/files/c9924479-bdb0-491d-aa93-429367cc00b9.png?v=1790097100",
+    "name": "Bella’s Twilight Floral Duvet Set",
+    "price": "$34.95",
+    "published_at": "2026-09-22T13:13:07-04:00"
+   },
+   "10431609241882": {
+    "handle": "lando-norris-jellycat",
+    "hash": "bb9ce5865a689847",
+    "image": "https://cdn.shopify.com/s/files/1/1005/8583/2730/files/9756677a-1060-4565-bac9-1647a80961fe.png?v=1790181984",
+    "name": "Lando Norris Jellycat",
+    "price": "$24.95",
+    "published_at": "2026-09-23T12:46:37-04:00"
+   },
+   "10434129559834": {
+    "handle": "lanterns-hal-jordan-brown-jacket",
+    "hash": "b993c783c3838b36",
+    "image": "https://cdn.shopify.com/s/files/1/1005/8583/2730/files/Lanterns-Hal-Jordan-Jacket-Front-view.webp?v=1790274839",
+    "name": "Lanterns Hal Jordan Brown Jacket",
+    "price": "$29.95",
+    "published_at": "2026-09-24T14:35:20-04:00"
+   },
+   "10434186805530": {
+    "handle": "twilight-fur-jacket",
+    "hash": "abbd9426c664d662",
+    "image": "https://cdn.shopify.com/s/files/1/1005/8583/2730/files/8f43e0c5-52db-4ceb-a256-5708899174b0.png?v=1790277221",
+    "name": "Twilight Fur Jacket",
+    "price": "$29.95",
+    "published_at": "2026-09-24T15:13:49-04:00"
+   }
+  },
+  "https://modo-clothing.myshopify.com": {
+   "9268318699757": {
+    "handle": "wings-zip-up-jacket",
+    "hash": "b8a5c76cd11b9a1a",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/wings_bcad8bb0-39ef-4422-b8ee-cdaa567616e4.webp?v=1770691946",
+    "name": "Wings Zip-Up Jacket",
+    "price": "$74.99",
+    "published_at": "2026-07-26T03:56:42-04:00"
+   },
+   "9273192153325": {
+    "handle": "super-legacy-hoodie",
+    "hash": "e892b5c31bc9e994",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/5079_blue-wash_003_07_01_deek_ecomm.jpg?v=1772278608",
+    "name": "UNISEX SUPER LEGACY HOODIE & PANTS",
+    "price": "$19.99",
+    "published_at": "2026-02-16T16:32:26-05:00"
+   },
+   "9338654425325": {
+    "handle": "minecraft-painting-zip-up",
+    "hash": "abf5f6028a2fc838",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/Gemini_Generated_Image_hvlgu8hvlgu8hvlg_2.png?v=1776339866",
+    "name": "Minecraft Painting Zip-Up",
+    "price": "$99.99",
+    "published_at": "2026-07-26T03:56:35-04:00"
+   },
+   "9339509375213": {
+    "handle": "mcqueen-zip-up",
+    "hash": "efb0924e933ace28",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/Disney-s-Lightning-McQueen-Men-s-Big-Men-s-Hooded-Sweatshirt-Sizes-XS-3XL_70d0f340-0799-4152-96e1-793360a87d74.cffec8dabfe42b6f54079a9a0db448da.avif?v=1776338152",
+    "name": "McQueen Zip-Up",
+    "price": "$69.99",
+    "published_at": "2026-07-26T03:56:48-04:00"
+   },
+   "9340279324909": {
+    "handle": "world-cup-ball-hoodie",
+    "hash": "eee5901ec95127c6",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/Gemini_Generated_Image_8wdrne8wdrne8wdr.png?v=1776438350",
+    "name": "World Cup Ball Hoodie",
+    "price": "$64.99",
+    "published_at": "2026-07-26T03:56:55-04:00"
+   },
+   "9375443452141": {
+    "handle": "kawaii-kitty-zip-up-hoodie",
+    "hash": "e33296c8d9c8cecc",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/Gemini_Generated_Image_dth2pxdth2pxdth2_1.png?v=1779373168",
+    "name": "Kawaii Kitty Zip-Up Hoodie",
+    "price": "$59.99",
+    "published_at": "2026-07-26T03:57:02-04:00"
+   },
+   "9413113577709": {
+    "handle": "2007-08-vintage-japan-olympic-track-jacket",
+    "hash": "b868399b93c5c791",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/hf_20260801_054434_3ad8c711-d161-49f1-9380-1782ade3e0cc.png?v=1785563204",
+    "name": "2007-08 Vintage Japan Olympic Track Jacket",
+    "price": "$24.99",
+    "published_at": "2026-06-26T20:49:28-04:00"
+   },
+   "9414453854445": {
+    "handle": "yamamoto-track-jacket",
+    "hash": "aaf3a19781978636",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/w2c-this-yohji-yamamoto-x-adidas-jacket-v0-6yvj040dq1rf1.webp?v=1782715025",
+    "name": "2006 Vintage Yamamoto Track Jacket",
+    "price": "$79.99",
+    "published_at": "2026-07-26T03:56:28-04:00"
+   },
+   "9426400968941": {
+    "handle": "i-heart-me-hoodie-joggers",
+    "hash": "d95e3ce1423dd066",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/Ashley_Williams_August_2025_109.webp?v=1783493987",
+    "name": "I HEART ME HOODIE & JOGGERS",
+    "price": "$22.49",
+    "published_at": "2026-07-08T02:59:33-04:00"
+   },
+   "9429768339693": {
+    "handle": "black-id-jacket-set",
+    "hash": "93782c96d3653c93",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/A6AB86CF-9499-42EB-B9E0-0A0E5F60172D.webp?v=1783660975",
+    "name": "KITTY ID SET",
+    "price": "$19.99",
+    "published_at": "2026-07-10T01:22:02-04:00"
+   },
+   "9443056222445": {
+    "handle": "angel-hoodie",
+    "hash": "fea1a44eda689435",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/2482b3a8-50ed-4aa2-a63c-25a0f9bcf6c9.webp?v=1784535397",
+    "name": "Unisex Angel Hoodie",
+    "price": "$24.99",
+    "published_at": "2026-07-20T04:16:25-04:00"
+   },
+   "9449118466285": {
+    "handle": "graphic-zip-up-hoodie",
+    "hash": "e985965b99662693",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/e16e4b74-abb4-435e-b023-7e7f39d07ca7.png?v=1784797810",
+    "name": "Graphic Zip Up Hoodie",
+    "price": "$19.99",
+    "published_at": "2026-07-22T06:13:15-04:00"
+   },
+   "9457186767085": {
+    "handle": "burned-out-zip-up-hoodie",
+    "hash": "e3368e9999ccb126",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/BURNEDOUTMOCK1.webp?v=1784956787",
+    "name": "Burned Out Zip-Up Hoodie",
+    "price": "$19.99",
+    "published_at": "2026-07-25T01:19:36-04:00"
+   },
+   "9472447217901": {
+    "handle": "jesus-zip-up-hoodie",
+    "hash": "b6c38b3cc433e30e",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/jesus-zip-up-hoodie-blue.jpg?v=1785404936",
+    "name": "Jesus Zip Up Hoodie",
+    "price": "$19.99",
+    "published_at": "2026-07-30T05:49:17-04:00"
+   },
+   "9480492843245": {
+    "handle": "unisex-wreath-hoodie-and-pants",
+    "hash": "ff3acc94b48990b1",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/613mQ0UhZDL._AC_SL1500_84c360b7-1123-415c-9bad-459a757279d5.jpg?v=1785665210",
+    "name": "Unisex Wreath Hoodie and Pants",
+    "price": "$19.99",
+    "published_at": "2026-08-02T06:06:47-04:00"
+   },
+   "9511513194733": {
+    "handle": "unisex-peace-hoodie",
+    "hash": "ecb2854a9aad934d",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/studio.jpg?v=1786265749",
+    "name": "Unisex Peace Hoodie",
+    "price": "$19.99",
+    "published_at": "2026-08-09T04:52:14-04:00"
+   },
+   "9517884440813": {
+    "handle": "thermal-print-hoodie",
+    "hash": "aee693194ce433c3",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/9007232025082909241568b1013f98ea7.jpg?v=1786457016",
+    "name": "Thermal Print Hoodie",
+    "price": "$19.99",
+    "published_at": "2026-08-11T10:03:14-04:00"
+   },
+   "9523988496621": {
+    "handle": "sought-the-lord-hoodie",
+    "hash": "b4e3e3064b5eec30",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/4900b531a5e3473e97992820bbf4bb6b.jpg?v=1786561677",
+    "name": "Psalm 34:4 Hoodie",
+    "price": "$24.99",
+    "published_at": "2026-08-12T15:08:41-04:00"
+   },
+   "9526173434093": {
+    "handle": "i-heart-zip-up-hoodie",
+    "hash": "c80d7ee0a557ea25",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/IMG-8140.png?v=1786625309",
+    "name": "Y2K Heart Print Zip Up Hoodie",
+    "price": "$19.99",
+    "published_at": "2026-08-13T08:48:06-04:00"
+   },
+   "9526212428013": {
+    "handle": "script-embroidery-hoodie-joggers",
+    "hash": "bff2c00f2cf03293",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/900723202607300926386a6aa84e25bfa.jpg?v=1786626339",
+    "name": "Gothic Script Embroidered Hoodie & Joggers",
+    "price": "$19.99",
+    "published_at": "2026-08-13T09:05:17-04:00"
+   },
+   "9526269772013": {
+    "handle": "60s-mod-colorblock-mini-dress",
+    "hash": "9b5a64c06b3d62e5",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/hf_20260813_134436_c10d258d-c577-445a-978d-2e410dcd9f36.png?v=1786628873",
+    "name": "1960s Vintage Mod Mini Dress",
+    "price": "$19.99",
+    "published_at": "2026-08-13T09:49:29-04:00"
+   },
+   "9527045783789": {
+    "handle": "enderman-graphic-tee",
+    "hash": "aad3d0ecc65b58a8",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/hero_final.jpg?v=1786654024",
+    "name": "Enderman Graphic Tee",
+    "price": "$19.99",
+    "published_at": "2026-08-13T16:45:02-04:00"
+   },
+   "9532014592237": {
+    "handle": "air-land-ocean-quarter-zip",
+    "hash": "ebe09417ca9969b8",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/alo_ghost_hero.jpg?v=1787124422",
+    "name": "Unisex Air Land Ocean Quarter Zip & Pants",
+    "price": "$19.99",
+    "published_at": "2026-08-15T15:49:48-04:00"
+   },
+   "9537449787629": {
+    "handle": "flame-kitty-ear-zip-up-hoodie",
+    "hash": "bbb0c6199b66c698",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/flamekitty_front.jpg?v=1787131199",
+    "name": "Flame Kitty Ear Zip Up Hoodie",
+    "price": "$99.99",
+    "published_at": "2026-08-19T05:19:54-04:00"
+   },
+   "9547013914861": {
+    "handle": "kitty-camo-full-zip-up-hoodie",
+    "hash": "bbb1c64e8c4c99d1",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/hf_20260826_111137_33d9bd03-091b-49fe-b73b-0b618b3f99dd.png?v=1787742882",
+    "name": "Kitty Camo Full Zip Up Hoodie",
+    "price": "$24.99",
+    "published_at": "2026-08-26T07:02:28-04:00"
+   },
+   "9547026563309": {
+    "handle": "tiger-racing-zip-up-hoodie",
+    "hash": "fee0851ed84d9c91",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/hf_20260826_114532_e3a63982-a22a-4fcd-ac71-47ed7c54ab67.png?v=1787744854",
+    "name": "Tiger Racing Zip Up Hoodie",
+    "price": "$24.99",
+    "published_at": "2026-08-26T07:43:42-04:00"
+   },
+   "9547027611885": {
+    "handle": "mardi-gras-collage-zip-up-hoodie",
+    "hash": "bea4c05bb91b6d90",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/hf_20260826_120336_84cec48e-cf33-4738-a1d0-cf3f34e852cc.png?v=1787745922",
+    "name": "Mardi Gras Collage Zip Up Hoodie",
+    "price": "$24.99",
+    "published_at": "2026-08-26T07:59:37-04:00"
+   },
+   "9548963283181": {
+    "handle": "back-logo-hoodie-and-pants",
+    "hash": "aef0931ecc39d846",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/hf_20260827_103606_2b007d8d-7de3-4e85-9710-3188ee3fa7b7.png?v=1787827210",
+    "name": "Back Logo Hoodie and Pants",
+    "price": "$19.99",
+    "published_at": "2026-08-27T06:33:14-04:00"
+   },
+   "9560668864749": {
+    "handle": "minion-full-zip-up-hoodie",
+    "hash": "ec869661c9189f76",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/61e731ab-6626-4502-86c4-184c04c7c1e6.png?v=1788161121",
+    "name": "Minion Full Zip Up Hoodie",
+    "price": "$24.99",
+    "published_at": "2026-08-31T00:22:24-04:00"
+   },
+   "9560669126893": {
+    "handle": "blue-leopard-zip-up-hoodie",
+    "hash": "bab1854e868ee88f",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/c3b14f7a-2edc-423d-8927-f4b0caef07a9.png?v=1788151812",
+    "name": "Blue Leopard Zip Up Hoodie",
+    "price": "$19.99",
+    "published_at": "2026-08-31T00:22:30-04:00"
+   },
+   "9560669257965": {
+    "handle": "patchwork-plaid-hoodie",
+    "hash": "ebb0944f9c1999cc",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/68df26d8-e7be-447f-a541-f3a819145629.png?v=1788151819",
+    "name": "Patchwork Plaid Hoodie",
+    "price": "$24.99",
+    "published_at": "2026-08-31T00:22:35-04:00"
+   },
+   "9560671027437": {
+    "handle": "city-script-hoodie",
+    "hash": "efa4949aa1319a9e",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/53e72b94-4cd4-419c-9081-12fa1446f7ba.png?v=1788151827",
+    "name": "City Script Hoodie",
+    "price": "$19.99",
+    "published_at": "2026-08-31T00:23:16-04:00"
+   },
+   "9560672174317": {
+    "handle": "varsity-letter-zip-up-hoodie",
+    "hash": "eba19534964e9a1b",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/b8b14bb1-ccb8-4da2-8ba9-96d77fbcd3ac.png?v=1788151806",
+    "name": "Varsity Letter Zip Up Hoodie",
+    "price": "$19.99",
+    "published_at": "2026-08-31T00:24:08-04:00"
+   },
+   "9580550324461": {
+    "handle": "nba-logo-hoodie",
+    "hash": "faa1854e99996ce4",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/nba_front_white.png?v=1789101599",
+    "name": "NBA Logo Hoodie",
+    "price": "$19.99",
+    "published_at": "2026-09-11T00:39:54-04:00"
+   },
+   "9590419882221": {
+    "handle": "blindfolded-angel-zip-up-hoodie",
+    "hash": "ece7811e9a318573",
+    "image": "https://cdn.shopify.com/s/files/1/0795/6873/2397/files/000247134799E51B_L.jpg?v=1789441360",
+    "name": "Blindfolded Angel Zip Up Hoodie",
+    "price": "$24.99",
+    "published_at": "2026-09-14T23:02:35-04:00"
+   }
+  },
   "https://namico.store": {
    "15394218180844": {
     "handle": "hero-pullover",
@@ -1671,6 +2127,1186 @@
     "name": "Hey Sista T-Shirt",
     "price": "$19.99",
     "published_at": "2026-09-19T13:39:21-05:00"
+   }
+  },
+  "https://pilocea.com": {
+   "8577943142561": {
+    "handle": "unisex-fit-washed-t-shirt-2601008086-hdw260104470-1",
+    "hash": "fea1c5f4800ec37a",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1768362741198wZxqewvKKUQ6JGrZ.jpg?v=1783307620",
+    "name": "Jujutsu Kaisen Unisex Fit Washed T-Shirt 2601008086",
+    "price": "$32.99",
+    "published_at": "2026-07-05T20:13:36-07:00"
+   },
+   "8577943175329": {
+    "handle": "unisex-washed-hoodie-2601008087-hdw260104471-1",
+    "hash": "f887935e89788762",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1768362796308G09NfReKNArl1pUH.jpg?v=1783307623",
+    "name": "Jujutsu Kaisen Unisex Washed Hoodie 2601008087",
+    "price": "$51.99",
+    "published_at": "2026-07-05T20:13:40-07:00"
+   },
+   "8577943208097": {
+    "handle": "unisex-washed-hoodie-2601008079-hdw260104472-1",
+    "hash": "f8a3835e887cb570",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/17683622352049bra7zS7mWzNQCWk.jpg?v=1783307625",
+    "name": "Jujutsu Kaisen Unisex Washed Hoodie 2601008079",
+    "price": "$51.99",
+    "published_at": "2026-07-05T20:13:42-07:00"
+   },
+   "8577943240865": {
+    "handle": "unisex-fit-washed-t-shirt-2511013610-hdw251105350-1",
+    "hash": "fea5c1d48203d37a",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1762936955926pvmXAt6ydTOmxFJ0.jpg?v=1783307628",
+    "name": "Jujutsu Kaisen Unisex Fit Washed T-Shirt 2511013610",
+    "price": "$32.99",
+    "published_at": "2026-07-05T20:13:44-07:00"
+   },
+   "8577943273633": {
+    "handle": "unisex-washed-sweatshirts-2511013648-hdw251105353-1",
+    "hash": "f2859b7a8d318c71",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1762937534508LdCcfFluJ3GfA1ix.jpg?v=1783307630",
+    "name": "Jujutsu Kaisen Unisex washed sweatshirts 2511013648",
+    "price": "$51.99",
+    "published_at": "2026-07-05T20:13:47-07:00"
+   },
+   "8577943371937": {
+    "handle": "unisex-fit-washed-t-shirt-2510002810-hdw251001710-1",
+    "hash": "fea5a0f49102c75e",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1760170735936f7F0umFTwpTpsSzt.jpg?v=1783307633",
+    "name": "jujutsukaisen Unisex Fit Washed T-Shirt 2510002810",
+    "price": "$32.99",
+    "published_at": "2026-07-05T20:13:50-07:00"
+   },
+   "8577943437473": {
+    "handle": "casual-washed-hoodie-2506023263-hdw250612307-1",
+    "hash": "f885c25e8d789572",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/2-102.jpg?v=1783307635",
+    "name": "Jujutsu Kaisen Casual Washed Hoodies 2506023263",
+    "price": "$51.99",
+    "published_at": "2026-07-05T20:13:52-07:00"
+   },
+   "8577943470241": {
+    "handle": "casual-washed-hoodie-2506023918-hdw250612550-1",
+    "hash": "f885c35e89798672",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/35-2.jpg?v=1783307637",
+    "name": "Jujutsu Kaisen Gojo Satoru Casual Washed Hoodies 2506023918",
+    "price": "$51.99",
+    "published_at": "2026-07-05T20:13:54-07:00"
+   },
+   "8577943503009": {
+    "handle": "unisex-fit-washed-t-shirt-2504005208-hdw250403594-1",
+    "hash": "f8ada1d4871a9d58",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/grehabv.png?v=1783307641",
+    "name": "Jujutsu Kaisen Gojo Satoru Unisex Fit Washed T-Shirt 2504005208",
+    "price": "$32.99",
+    "published_at": "2026-07-05T20:13:57-07:00"
+   },
+   "8577943568545": {
+    "handle": "unisex-fit-washed-t-shirt-2503010138-hdw250307643-1",
+    "hash": "f8a78550874a9fd8",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/324.jpg?v=1783307643",
+    "name": "Jujutsu Kaisen Unisex Fit Washed T-Shirt 2503010138",
+    "price": "$32.99",
+    "published_at": "2026-07-05T20:14:00-07:00"
+   },
+   "8577943601313": {
+    "handle": "unisex-fit-washed-t-shirt-2503010140-hdw250307644-1",
+    "hash": "f8a781d4865a9b78",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/323.jpg?v=1783307646",
+    "name": "Jujutsu Kaisen Unisex Fit Washed T-Shirt 2503010140",
+    "price": "$32.99",
+    "published_at": "2026-07-05T20:14:03-07:00"
+   },
+   "8577943634081": {
+    "handle": "unisex-fit-washed-t-shirt-2503010145-hdw250307646-1",
+    "hash": "f8a781d0875a8f78",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/321.jpg?v=1783307649",
+    "name": "Jujutsu Kaisen Unisex Fit Washed T-Shirt 2503010145",
+    "price": "$32.99",
+    "published_at": "2026-07-05T20:14:05-07:00"
+   },
+   "8577943666849": {
+    "handle": "unisex-fit-washed-t-shirt-2503010141-hdw250307645-1",
+    "hash": "f8a7a7d0871a8d58",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/322.jpg?v=1783307651",
+    "name": "Jujutsu Kaisen Unisex Fit Washed T-Shirt 2503010141",
+    "price": "$32.99",
+    "published_at": "2026-07-05T20:14:08-07:00"
+   },
+   "8577943699617": {
+    "handle": "unisex-fit-washed-t-shirt-2503010147-hdw250307648-1",
+    "hash": "f8a781d0875a9d5a",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/320.jpg?v=1783307654",
+    "name": "Jujutsu Kaisen Unisex Fit Washed T-Shirt 2503010147",
+    "price": "$32.99",
+    "published_at": "2026-07-05T20:14:11-07:00"
+   },
+   "8580351393953": {
+    "handle": "washed-t-shirt-2607001481-hdw260701585-1",
+    "hash": "fea3a0f48403c3de",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1782981791750DdmkfrSkpwM0cKW5.jpg?v=1783404637",
+    "name": "Naruto Washed T-shirt 2607001481",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:10:34-07:00"
+   },
+   "8580351525025": {
+    "handle": "unisex-fit-washed-t-shirt-2602007501-hdw260204577-1",
+    "hash": "fea3a0f4840393db",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1770800228364bnP6tt3gLGntK1C2.jpg?v=1783404640",
+    "name": "Naruto Unisex Fit Washed T-Shirt 2602007501",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:10:37-07:00"
+   },
+   "8580351623329": {
+    "handle": "unisex-fit-washed-t-shirt-2507024176-hdw250710471-1",
+    "hash": "fea1b0e4b302c65e",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1753173051605m5KgS4NF8ToMUbz4.jpg?v=1783404643",
+    "name": "Naturo Unisex Fit Washed T-Shirt 2507024176",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:10:40-07:00"
+   },
+   "8580351787169": {
+    "handle": "unisex-fit-washed-t-shirt-2511024505-hdw251110475-1",
+    "hash": "fea5a0f09302c6de",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1763804545539H6lLuRu3BZyvoRPb.jpg?v=1783404646",
+    "name": "Naruto Unisex Fit Washed T-Shirt 2511024505",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:10:43-07:00"
+   },
+   "8580351918241": {
+    "handle": "unisex-fit-washed-t-shirt-2509012221-hdw250907720-1",
+    "hash": "fea3b0f5810286de",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1758089228497THlrpD4lIb4rAvD4.jpg?v=1783404651",
+    "name": "Naruto Unisex Fit Washed T-Shirt 2509012221",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:10:46-07:00"
+   },
+   "8580352213153": {
+    "handle": "unisex-fit-washed-t-shirt-2508023392-hdw250811385-1",
+    "hash": "fea3a0f4870283de",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/17561786051282JQZR1SkNIkIsIQk.jpg?v=1783404655",
+    "name": "Naruto Unisex Fit Washed T-Shirt 2508023392",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:10:52-07:00"
+   },
+   "8580352344225": {
+    "handle": "unisex-fit-washed-t-shirt-2507030098-hdw250712232-1",
+    "hash": "fea7b0f48403865e",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1753424637129Nd0NfgofSWs0mleM.jpg?v=1783404658",
+    "name": "Naruto Unisex Fit Washed T-Shirt 2507030098",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:10:54-07:00"
+   },
+   "8580352442529": {
+    "handle": "unisex-fit-washed-t-shirt-2504009778-hdw250406745-1",
+    "hash": "f8ada370870e9d58",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/5b902a309f204df1893116e2203f8a76.jpg?v=1783404660",
+    "name": "Naruto Unisex Fit Washed T-Shirt 2504009778",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:10:57-07:00"
+   },
+   "8580352573601": {
+    "handle": "unisex-fit-washed-t-shirt-2504005182-hdw250403591-1",
+    "hash": "f8a785d4971a8e58",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/greagv.png?v=1783404663",
+    "name": "Naruto Rock Lee Unisex Fit Washed T-Shirt 2504005182",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:10:59-07:00"
+   },
+   "8580352704673": {
+    "handle": "unisex-fit-washed-t-shirt-2502006949-hdw2502006949-1",
+    "hash": "f8a785d0871a9f58",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/130.jpg?v=1783404665",
+    "name": "Naruto Unisex Fit Washed T-Shirt 2502006949",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:11:02-07:00"
+   },
+   "8580352770209": {
+    "handle": "washed-finish-sweatshirt-2607002648-hdw260702551-1",
+    "hash": "f8a5c35e88789572",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/17833180049385xK32GN23pDMeylb.jpg?v=1783404666",
+    "name": "Naruto Washed-finish sweatshirt 2607002648",
+    "price": "$51.99",
+    "published_at": "2026-07-06T23:11:04-07:00"
+   },
+   "8580352868513": {
+    "handle": "unisex-fit-washed-t-shirt-2603003349-hdw260302269-1",
+    "hash": "f2898cf28766ce38",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1772701632564yTPy8kpvPuOFTZ3g.jpg?v=1783404669",
+    "name": "Naruto Unisex Fit Washed T-Shirt 2603003349",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:11:05-07:00"
+   },
+   "8580352999585": {
+    "handle": "unisex-washed-hoodie-2602007535-hdw260204584-1",
+    "hash": "f885c55e8a79a570",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1770802091771eLEOUPePP4HgHZFn.jpg?v=1783404671",
+    "name": "Naruto Unisex Washed Hoodie 2602007535",
+    "price": "$49.99",
+    "published_at": "2026-07-06T23:11:09-07:00"
+   },
+   "8580353097889": {
+    "handle": "unisex-washed-hoodie-2601014231-hdw260108087-1",
+    "hash": "f8a5c75e88788572",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1769150180632WxvfXLEku5R6GE8W.jpg?v=1783404673",
+    "name": "Naruto Unisex Washed Hoodie 2601014231",
+    "price": "$51.99",
+    "published_at": "2026-07-06T23:11:11-07:00"
+   },
+   "8580353196193": {
+    "handle": "unisex-washed-hoodie-2511024516-hdw251110477-1",
+    "hash": "f885c35e887c9572",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1763804887809rZCfWCBrEC1vmf2d.jpg?v=1783404675",
+    "name": "Naruto Unisex Washed Hoodie 2511024516",
+    "price": "$51.99",
+    "published_at": "2026-07-06T23:11:13-07:00"
+   },
+   "8580353294497": {
+    "handle": "unisex-fit-washed-t-shirt-2510008383-hdw251004597-1",
+    "hash": "f88dc55384245b7e",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1760673632363q3nxZJmPnZg0Rmy3.jpg?v=1783404678",
+    "name": "Jiraiya Unisex Fit Washed T-Shirt 2510008383",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:11:15-07:00"
+   },
+   "8580353425569": {
+    "handle": "casual-washed-hoodie-2509012968-hdw250908137-1",
+    "hash": "e69399669979c630",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1758158265496phyZZEFJZc2MXJkZ.jpg?v=1783404679",
+    "name": "Naruto Casual Washed Hoodie 2509012968",
+    "price": "$51.99",
+    "published_at": "2026-07-06T23:11:17-07:00"
+   },
+   "8580353523873": {
+    "handle": "casual-washed-hoodie-2509012969-hdw250908138-1",
+    "hash": "e6c399269e19c734",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1758158305388yWp6gJbAWhpuXEm8.jpg?v=1783404681",
+    "name": "Naruto Casual Washed Hoodie 2509012969",
+    "price": "$51.99",
+    "published_at": "2026-07-06T23:11:18-07:00"
+   },
+   "8580353654945": {
+    "handle": "casual-washed-hoodie-2509012970-hdw250908139-1",
+    "hash": "b0c7cd3a996cc631",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1758158424690bu9VDiTUbzlo6h4Z.jpg?v=1783404682",
+    "name": "Naruto Casual Washed Hoodie 2509012970",
+    "price": "$51.99",
+    "published_at": "2026-07-06T23:11:20-07:00"
+   },
+   "8580353720481": {
+    "handle": "casual-washed-hoodie-2509012972-hdw250908140-1",
+    "hash": "b2c6cd32986dc734",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1758158480506GgLWVZNTK6pwCh26.jpg?v=1783404684",
+    "name": "Naruto Casual Washed Hoodie 2509012972",
+    "price": "$51.99",
+    "published_at": "2026-07-06T23:11:21-07:00"
+   },
+   "8580353818785": {
+    "handle": "casual-washed-hoodie-2509012973-hdw250908141-1",
+    "hash": "bcd2c34fcc2c9233",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/17581586333000Ze2MB4uvu7Uihm0.jpg?v=1783404686",
+    "name": "Naruto Casual Washed Hoodie 2509012973",
+    "price": "$51.99",
+    "published_at": "2026-07-06T23:11:23-07:00"
+   },
+   "8580353884321": {
+    "handle": "unisex-fit-washed-t-shirt-2509012213-hdw250907719-1",
+    "hash": "fea1b0f49203935e",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1758088430883wCJp3PWnofdfUE90.jpg?v=1783404688",
+    "name": "Naruto Unisex Fit Washed T-Shirt 2509012213",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:11:25-07:00"
+   },
+   "8580354015393": {
+    "handle": "unisex-fit-washed-t-shirt-2508017672-hdw250808433-1",
+    "hash": "faa581f0c63383ce",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1755572505235fNWfcFAOzNJiFEzM.jpg?v=1783404691",
+    "name": "Naruto Unisex Fit Washed T-Shirt 2508017672",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:11:28-07:00"
+   },
+   "8580354113697": {
+    "handle": "unisex-fit-washed-t-shirt-2508017073-hdw250808006-1",
+    "hash": "f38ccc31e646917a",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1755506846117Ga0GfaG09RBIop0q.jpg?v=1783404693",
+    "name": "Naruto Unisex Fit Washed T-Shirt 2508017073",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:11:30-07:00"
+   },
+   "8580354212001": {
+    "handle": "unisex-fit-washed-t-shirt-2508017087-hdw250808007-1",
+    "hash": "f38c8cf38426d3ca",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1755507016030Rn10JdJfgy45dfSW.jpg?v=1783404695",
+    "name": "Naruto Unisex Fit Washed T-Shirt 2508017087",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:11:32-07:00"
+   },
+   "8580354343073": {
+    "handle": "unisex-fit-washed-t-shirt-2508017092-hdw250808008-1",
+    "hash": "f38dcc738326c25a",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1755507084292c9E5WB1SIoMHCuxv.jpg?v=1783404696",
+    "name": "Naruto Unisex Fit Washed T-Shirt 2508017092",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:11:34-07:00"
+   },
+   "8580354441377": {
+    "handle": "unisex-fit-washed-t-shirt-2508007820-hdw250803477-1",
+    "hash": "fea7b0f08602927e",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/17546246000526wtKvMn4RuHK7gzd.jpg?v=1783404698",
+    "name": "Naruto Pain Nagato Unisex Fit Washed T-Shirt 2508007820",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:11:35-07:00"
+   },
+   "8580354572449": {
+    "handle": "unisex-fit-washed-t-shirt-2507030107-hdw250712233-1",
+    "hash": "fea1a0f48503c75e",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1753424782469TgHSeMBctTCMPVQg.jpg?v=1783404699",
+    "name": "Naruto Unisex Fit Washed T-Shirt 2507030107",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:11:37-07:00"
+   },
+   "8580354637985": {
+    "handle": "unisex-fit-washed-t-shirt-2507030111-hdw250712234-1",
+    "hash": "fea3a0f48502c3de",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/17534248389103nK0T4cFMcFqRPoT.jpg?v=1783404700",
+    "name": "Naruto Unisex Fit Washed T-Shirt 2507030111",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:11:38-07:00"
+   },
+   "8580354703521": {
+    "handle": "unisex-fit-washed-t-shirt-2507030119-hdw250712235-1",
+    "hash": "fca3a1f48303875e",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1753424932949nb19EBHb093gXG9B.jpg?v=1783404702",
+    "name": "Naruto Unisex Fit Washed T-Shirt 2507030119",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:11:39-07:00"
+   },
+   "8580354801825": {
+    "handle": "unisex-fit-washed-t-shirt-2507024103-hdw250710405-1",
+    "hash": "fca1b0f4820bc6de",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1753171915169GL8o5nrHeT0AZWXM.jpg?v=1783404705",
+    "name": "Naturo Unisex Fit Washed T-Shirt 2507024103",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:11:42-07:00"
+   },
+   "8580354932897": {
+    "handle": "unisex-fit-washed-t-shirt-2507012467-hdw2507012467-1",
+    "hash": "fea3b0f48302837e",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/17524789931939kdSqLkWGtqfTTPv.jpg?v=1783404707",
+    "name": "Naruto Unisex Fit Washed T-Shirt 2507012467",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:11:44-07:00"
+   },
+   "8580355031201": {
+    "handle": "unisex-fit-washed-t-shirt-2505011258-hdw250506733-1",
+    "hash": "f289cd32c64c9973",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/17477974874135Bg9e3b7dTprEtp1.png?v=1783404710",
+    "name": "Naturo 𝑲𝒂𝒌𝒂𝒔𝒉𝒊 𝑯𝒂𝒕𝒂𝒌𝒆 Unisex Fit Washed T-Shirt 2505011258",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:11:47-07:00"
+   },
+   "8580355195041": {
+    "handle": "unisex-fit-washed-t-shirt-2504009774-hdw250406744-1",
+    "hash": "f8a785d0870e9f58",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/4-95.jpg?v=1783404712",
+    "name": "Naruto Unisex Fit Washed T-Shirt 2504009774",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:11:49-07:00"
+   },
+   "8580355326113": {
+    "handle": "unisex-fit-washed-t-shirt-2504005187-hdw250403592-1",
+    "hash": "f8a785d4871a9758",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/gsgrwg.png?v=1783404715",
+    "name": "Naruto Rock Lee Unisex Fit Washed T-Shirt 2504005187",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:11:52-07:00"
+   },
+   "8580355457185": {
+    "handle": "unisex-fit-washed-t-shirt-hdw250206750-1",
+    "hash": "f8ada1d6871a8e58",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/xzgarxtc.png?v=1783404716",
+    "name": "Naruto Jiraiya Streetwear Washed T-Shirt",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:11:54-07:00"
+   },
+   "8580355522721": {
+    "handle": "unisex-fit-washed-t-shirt-2502006948-hdw2502006948-1",
+    "hash": "f8a785d0871a8f78",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/129.jpg?v=1783404718",
+    "name": "Naruto Unisex Fit Washed T-Shirt 2502006948",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:11:55-07:00"
+   },
+   "8580355588257": {
+    "handle": "unisex-fit-washed-t-shirt-2502006950-hdw2502006950-1",
+    "hash": "f8a785d0871a9e78",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/131.jpg?v=1783404719",
+    "name": "Naruto Unisex Fit Washed T-Shirt 2502006950",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:11:57-07:00"
+   },
+   "8580355653793": {
+    "handle": "unisex-fit-washed-t-shirt-2502003593-hdw2502003593-1",
+    "hash": "f2a8cdd39119b26c",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/62.jpg?v=1783404721",
+    "name": "Naruto Unisex Fit Washed T-Shirt 2502003593",
+    "price": "$31.99",
+    "published_at": "2026-07-06T23:11:58-07:00"
+   },
+   "8580355784865": {
+    "handle": "unisex-fit-washed-t-shirt-hdw250100520-1",
+    "hash": "ef9290659257d236",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1735875437226tguMiQDeESDuoAer.jpg?v=1783404723",
+    "name": "NARUTO Unisex Fit Washed T-Shirt",
+    "price": "$32.99",
+    "published_at": "2026-07-06T23:12:01-07:00"
+   },
+   "8581523865761": {
+    "handle": "unisex-fit-washed-t-shirt-2507001136-hdw250700578-1",
+    "hash": "fea5a0f4850a83de",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/17513621002444PAHOWUAvLGQXoWg.jpg?v=1783413825",
+    "name": "Elden RingUnisex Fit Washed T-Shirt 2507001136",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:43:38-07:00"
+   },
+   "8581523931297": {
+    "handle": "unisex-fit-washed-t-shirt-2507001118-hdw250700576-1",
+    "hash": "fea9a0f5910292de",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/17513617059427N6WONJKBhuOa4yL.jpg?v=1783413831",
+    "name": "Elden RingUnisex Fit Washed T-Shirt 2507001118",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:43:47-07:00"
+   },
+   "8581523964065": {
+    "handle": "unisex-fit-washed-t-shirt-2604019631-hdw260412937-1",
+    "hash": "fea7a0f4850283de",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1777450685768Giq1ImViallfiF75.jpg?v=1783413834",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2604019631",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:43:51-07:00"
+   },
+   "8581523996833": {
+    "handle": "unisex-fit-washed-t-shirt-2604008971-hdw260405842-1",
+    "hash": "fea3a0f4850383de",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/17762174004689JTTitTvFPFpHn6U.jpg?v=1783413837",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2604008971",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:43:53-07:00"
+   },
+   "8581524062369": {
+    "handle": "unisex-fit-washed-t-shirt-2602010872-hdw260207126-1",
+    "hash": "fea3a0f48702c35e",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1771989258220WUuzaRGFWh6WDxNX.jpg?v=1783413840",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2602010872",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:43:56-07:00"
+   },
+   "8581524095137": {
+    "handle": "unisex-fit-washed-t-shirt-2601003177-hdw260101827-1",
+    "hash": "fea3b0f48403935e",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1767753008472IbINhr1cWQefOT3A.jpg?v=1783413844",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2601003177",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:44:00-07:00"
+   },
+   "8581524160673": {
+    "handle": "unisex-fit-washed-t-shirt-2605002946-hdw260502348-1",
+    "hash": "fea1b0f4c302cada",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/17782321616034JQiwWihfhcTrwyN.jpg?v=1783413846",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2605002946",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:44:03-07:00"
+   },
+   "8581524258977": {
+    "handle": "vintage-tank-top-2604015501-hdw260410066-1",
+    "hash": "ea15c06a9d66953e",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1776928301374ZTs9CMcFmzpCpZJL.jpg?v=1783413848",
+    "name": "Elden Ring VINTAGE TANK TOP 2604015501",
+    "price": "$26.99",
+    "published_at": "2026-07-07T01:44:06-07:00"
+   },
+   "8581524291745": {
+    "handle": "vintage-tank-top-2604015505-hdw260410067-1",
+    "hash": "ea15c06a9d66953e",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1776928362626TPefAWD3hH51W2Pu.jpg?v=1783413850",
+    "name": "Elden Ring VINTAGE TANK TOP 2604015505",
+    "price": "$26.99",
+    "published_at": "2026-07-07T01:44:08-07:00"
+   },
+   "8581524357281": {
+    "handle": "vintage-tank-top-2604015510-hdw260410068-1",
+    "hash": "ea15c46a9d66953a",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1776928424069d6oNvThnXBgJDlUb.jpg?v=1783413852",
+    "name": "Elden Ring VINTAGE TANK TOP 2604015510",
+    "price": "$26.99",
+    "published_at": "2026-07-07T01:44:09-07:00"
+   },
+   "8581524390049": {
+    "handle": "unisex-fit-washed-t-shirt-2602011001-hdw260207225-1",
+    "hash": "fea3a0f48703835e",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1771999677684ibKFaiK8p4TOF8LO.jpg?v=1783413855",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2602011001",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:44:11-07:00"
+   },
+   "8581524422817": {
+    "handle": "unisex-fit-washed-t-shirt-2602011007-hdw260207227-1",
+    "hash": "fea3a0f4940383de",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1771999903487MOIu1XxzUnTVMtU9.jpg?v=1783413858",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2602011007",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:44:14-07:00"
+   },
+   "8581524488353": {
+    "handle": "unisex-fit-washed-t-shirt-2509012653-hdw250907947-1",
+    "hash": "fea5a0f48503c35e",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1758099288425Br004Oo2ly1h2iKB.jpg?v=1783413860",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2509012653",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:44:17-07:00"
+   },
+   "8581524521121": {
+    "handle": "unisex-fit-washed-t-shirt-2507030600-hdw250712364-1",
+    "hash": "fea1a1f48706c35a",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1753430821195V8aG7PwEE9MCZWg9.jpg?v=1783413862",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2507030600",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:44:18-07:00"
+   },
+   "8581524553889": {
+    "handle": "casual-washed-hoodie-2506023731-hdw250612534-1",
+    "hash": "f885c35e897c8572",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/18-8.jpg?v=1783413864",
+    "name": "Elden Ring Casual Washed Hoodies 2506023731",
+    "price": "$51.99",
+    "published_at": "2026-07-07T01:44:21-07:00"
+   },
+   "8581524586657": {
+    "handle": "unisex-fit-washed-t-shirt-2502008126-hdw2502008126-1",
+    "hash": "adc2d0b4824acbef",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/162.jpg?v=1783413866",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2502008126",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:44:24-07:00"
+   },
+   "8581524619425": {
+    "handle": "unisex-fit-washed-t-shirt-2502008130-hdw2502008130-1",
+    "hash": "faa5a1d4971a9c68",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/160.jpg?v=1783413868",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2502008130",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:44:25-07:00"
+   },
+   "8581524652193": {
+    "handle": "unisex-fit-washed-t-shirt-2502005728-hdw2502005728-1",
+    "hash": "f8a785d0871a8f78",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/104.jpg?v=1783413870",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2502005728",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:44:27-07:00"
+   },
+   "8581524684961": {
+    "handle": "unisex-fit-washed-t-shirt-2502005744-hdw2502005744-1",
+    "hash": "faa7a154861a9b78",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/99.jpg?v=1783413871",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2502005744",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:44:29-07:00"
+   },
+   "8581524717729": {
+    "handle": "unisex-fit-washed-t-shirt-2502005022-hdw2502005022-1",
+    "hash": "fcaba1f484038ade",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/87.jpg?v=1783413874",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2502005022",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:44:30-07:00"
+   },
+   "8581524750497": {
+    "handle": "unisex-fit-washed-t-shirt-2605002930-hdw260502346-1",
+    "hash": "fea5b0f4850a83da",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1778231782529MQZszyfkbz0sUV6r.jpg?v=1783413877",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2605002930",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:44:33-07:00"
+   },
+   "8581524848801": {
+    "handle": "unisex-fit-washed-t-shirt-2604019315-hdw260412796-1",
+    "hash": "fea1a0f49102c7de",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1777442213499TbeNioS3tlxHIxC6.jpg?v=1783413879",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2604019315",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:44:36-07:00"
+   },
+   "8581524947105": {
+    "handle": "vintage-tank-top-2604015208-hdw260410064-1",
+    "hash": "ea15c46a9d66953a",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1776915399605t6GaTTZsE4gNwGer.jpg?v=1783413881",
+    "name": "Elden Ring VINTAGE TANK TOP 2604015208",
+    "price": "$26.99",
+    "published_at": "2026-07-07T01:44:39-07:00"
+   },
+   "8581525012641": {
+    "handle": "unisex-fit-washed-t-shirt-2604007588-hdw260404607-1",
+    "hash": "fea3a1f48502c35e",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1776073944291vz3iyARNxyA0aKdG.jpg?v=1783413884",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2604007588",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:44:40-07:00"
+   },
+   "8581525143713": {
+    "handle": "unisex-washed-hoodie-2604005423-hdw260403349-1",
+    "hash": "f885c75e887c8572",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1775784184287GgzwpiNokF4b6G5F.jpg?v=1783413886",
+    "name": "Elden Ring Unisex Washed Hoodie 2604005423",
+    "price": "$51.99",
+    "published_at": "2026-07-07T01:44:43-07:00"
+   },
+   "8581525274785": {
+    "handle": "vintage-tank-top-2603016446-hdw260311378-1",
+    "hash": "ed13926ece69c624",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1774406655449nZnWxFZDWusJTLwq.jpg?v=1783413888",
+    "name": "Elden Ring VINTAGE TANK TOP 2603016446",
+    "price": "$26.99",
+    "published_at": "2026-07-07T01:44:45-07:00"
+   },
+   "8581525373089": {
+    "handle": "vintage-tank-top-2603016452-hdw260311380-1",
+    "hash": "ea15c06a9d6e913e",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1774406805322XobiDudBiZWRyRkA.jpg?v=1783413889",
+    "name": "Elden Ring VINTAGE TANK TOP 2603016452",
+    "price": "$27.99",
+    "published_at": "2026-07-07T01:44:47-07:00"
+   },
+   "8581525471393": {
+    "handle": "vintage-tank-top-2603016464-hdw260311383-1",
+    "hash": "ea1dc4629d66913e",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1774407073897MWFGhkQtHnLi0fgr.jpg?v=1783413891",
+    "name": "EldenRing VINTAGE TANK TOP 2603016464",
+    "price": "$27.99",
+    "published_at": "2026-07-07T01:44:49-07:00"
+   },
+   "8581525536929": {
+    "handle": "unisex-fit-washed-t-shirt-2602010996-hdw260207221-1",
+    "hash": "fea3a0f48702935e",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1771999230948uehpmu5VDoS8ltfS.jpg?v=1783413893",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2602010996",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:44:50-07:00"
+   },
+   "8581525668001": {
+    "handle": "unisex-washed-hoodie-2602010997-hdw260207222-1",
+    "hash": "f885c75e88798572",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1771999333281u4VW02SxFltTtg31.jpg?v=1783413896",
+    "name": "Elden Ring Unisex Washed Hoodie 2602010997",
+    "price": "$49.99",
+    "published_at": "2026-07-07T01:44:53-07:00"
+   },
+   "8581525799073": {
+    "handle": "unisex-washed-hoodie-2602010999-hdw260207224-1",
+    "hash": "f8a5c35e8878a572",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1771999546176znBwLtPwHKugSXim.jpg?v=1783413898",
+    "name": "Elden Ring Unisex Washed Hoodie 2602010999",
+    "price": "$49.99",
+    "published_at": "2026-07-07T01:44:55-07:00"
+   },
+   "8581525897377": {
+    "handle": "unisex-washed-hoodie-2602011010-hdw260207228-1",
+    "hash": "f8a5c75e88788572",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1771999948150Amohynq3CBkENfKb.jpg?v=1783413901",
+    "name": "Elden Ring Unisex Washed Hoodie 2602011010",
+    "price": "$49.99",
+    "published_at": "2026-07-07T01:44:58-07:00"
+   },
+   "8581526028449": {
+    "handle": "unisex-washed-hoodie-2602011011-hdw260207229-1",
+    "hash": "f8a5c75e88788572",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1772000100487oOO58Vw77eDxdLxH.jpg?v=1783413903",
+    "name": "Elden Ring Unisex Washed Hoodie 2602011011",
+    "price": "$49.99",
+    "published_at": "2026-07-07T01:45:00-07:00"
+   },
+   "8581526126753": {
+    "handle": "unisex-fit-washed-t-shirt-2602011015-hdw260207230-1",
+    "hash": "fea3b0f48102c3de",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1772000166631Vlvhs9WnMindyk6I.jpg?v=1783413906",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2602011015",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:45:02-07:00"
+   },
+   "8581526323361": {
+    "handle": "unisex-washed-hoodie-2602010887-hdw260207130-1",
+    "hash": "f8a3c35e89788572",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1771990316062bopLdZb9lifhvdFd.jpg?v=1783413910",
+    "name": "Elden Ring Unisex Washed Hoodie 2602010887",
+    "price": "$49.99",
+    "published_at": "2026-07-07T01:45:07-07:00"
+   },
+   "8581526552737": {
+    "handle": "unisex-washed-hoodie-2602010888-hdw260207131-1",
+    "hash": "f8a5c75e88788572",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1771990374032aFS68kQ0h7BqT7V2.jpg?v=1783413913",
+    "name": "Elden Ring Unisex Washed Hoodie 2602010888",
+    "price": "$49.99",
+    "published_at": "2026-07-07T01:45:10-07:00"
+   },
+   "8581526651041": {
+    "handle": "unisex-washed-hoodie-2602010890-hdw260207133-1",
+    "hash": "f8a5c75e88788572",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1771990548343pwcinLIuN8PCreUc.jpg?v=1783413915",
+    "name": "Elden Ring Unisex Washed Hoodie 2602010890",
+    "price": "$49.99",
+    "published_at": "2026-07-07T01:45:12-07:00"
+   },
+   "8581526749345": {
+    "handle": "unisex-fit-washed-t-shirt-2601018585-hdw2601018585-1",
+    "hash": "fea3a0f4850a877a",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1769759571947MiAoBuQdZrvd60Qz.jpg?v=1783413917",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2601018585",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:45:15-07:00"
+   },
+   "8581526814881": {
+    "handle": "unisex-fit-washed-t-shirt-2601009086-hdw260104993-1",
+    "hash": "fea7a0f4850283de",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1768456513937TiOwundTqlZD6w6H.jpg?v=1783413920",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2601009086",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:45:16-07:00"
+   },
+   "8581527044257": {
+    "handle": "unisex-fit-washed-t-shirt-2601009087-hdw260104994-1",
+    "hash": "fea1a0f4918b827e",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1768456597886nLtHvNzoPyTpZi5f.jpg?v=1783413923",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2601009087",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:45:19-07:00"
+   },
+   "8581527273633": {
+    "handle": "unisex-washed-hoodie-2601009148-hdw260104995-1",
+    "hash": "f885c75e88789572",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1768458111077QzTEDU6tLxWthfeZ.jpg?v=1783413926",
+    "name": "Elden Ring Unisex Washed Hoodie 2601009148",
+    "price": "$51.99",
+    "published_at": "2026-07-07T01:45:23-07:00"
+   },
+   "8581527371937": {
+    "handle": "unisex-washed-hoodie-2601009178-hdw260104996-1",
+    "hash": "f8a1c75e89788572",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1768458905496SP5Pe27W3DfITC4q.jpg?v=1783413928",
+    "name": "Elden Ring Unisex Washed Hoodie 2601009178",
+    "price": "$51.99",
+    "published_at": "2026-07-07T01:45:25-07:00"
+   },
+   "8581527470241": {
+    "handle": "unisex-fit-washed-t-shirt-2601003157-hdw260101823-1",
+    "hash": "fea5a0f48102c77e",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1767751875073Ju5qQM5FXTCsVFxo.jpg?v=1783413931",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2601003157",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:45:27-07:00"
+   },
+   "8581527699617": {
+    "handle": "unisex-fit-washed-t-shirt-2509000017-hdw250900078-1",
+    "hash": "fea1a0f48502c77e",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1756689754278SRyEFo3BzhlmcpPR.jpg?v=1783413935",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2509000017",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:45:31-07:00"
+   },
+   "8581527896225": {
+    "handle": "unisex-fit-washed-t-shirt-2507030595-hdw250712363-1",
+    "hash": "fea1a0f48702c77a",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1753430710947y0stD3LKiH8naP0I.jpg?v=1783413938",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2507030595",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:45:34-07:00"
+   },
+   "8581528027297": {
+    "handle": "unisex-fit-washed-t-shirt-2507001142-hdw250700579-1",
+    "hash": "fea7a0f4860283de",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1751362318829WRLQXUTsmw5nD3Tw.jpg?v=1783413941",
+    "name": "Elden RingUnisex Fit Washed T-Shirt 2507001142",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:45:37-07:00"
+   },
+   "8581528158369": {
+    "handle": "unisex-fit-washed-t-shirt-2507001157-hdw250700580-1",
+    "hash": "fea3a0f48502d35e",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1751362684528GXhG0M8p1RW9DTqi.jpg?v=1783413945",
+    "name": "Elden RingUnisex Fit Washed T-Shirt 2507001157",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:45:41-07:00"
+   },
+   "8581528289441": {
+    "handle": "casual-washed-hoodie-2506023721-hdw250612533-1",
+    "hash": "f885c35a8d788772",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/15-5.jpg?v=1783413947",
+    "name": "Elden Ring Casual Washed Hoodies 2506023721",
+    "price": "$51.99",
+    "published_at": "2026-07-07T01:45:44-07:00"
+   },
+   "8581528453281": {
+    "handle": "unisex-fit-washed-t-shirt-2505003213-hdw250502172-1",
+    "hash": "f8a58574971a8f58",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/12-3.jpg?v=1783413949",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2505003213",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:45:46-07:00"
+   },
+   "8581528551585": {
+    "handle": "unisex-fit-washed-t-shirt-2502008121-hdw2502008121-1",
+    "hash": "f8a7a4d4961a9978",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/152.jpg?v=1783413952",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2502008121",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:45:48-07:00"
+   },
+   "8581528715425": {
+    "handle": "unisex-fit-washed-t-shirt-2502008125-hdw2502008125-1",
+    "hash": "f8a785d0871a9f58",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/153.jpg?v=1783413954",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2502008125",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:45:51-07:00"
+   },
+   "8581528780961": {
+    "handle": "unisex-fit-washed-t-shirt-2502008127-hdw2502008127-1",
+    "hash": "f8a7a1548f1a9758",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/161.jpg?v=1783413955",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2502008127",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:45:53-07:00"
+   },
+   "8581528912033": {
+    "handle": "unisex-fit-washed-t-shirt-2502008142-hdw2502008142-1",
+    "hash": "f8a785d0871a8f78",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/156.jpg?v=1783413957",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2502008142",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:45:54-07:00"
+   },
+   "8581529043105": {
+    "handle": "unisex-fit-washed-t-shirt-2502008146-hdw2502008146-1",
+    "hash": "add2b4a59242d2eb",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1740189563625BtBqoqJFewLZkXh8.jpg?v=1783413960",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2502008146",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:45:57-07:00"
+   },
+   "8581529206945": {
+    "handle": "unisex-fit-washed-t-shirt-2502008191-hdw2502008191-1",
+    "hash": "f8a781d0871a9f78",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/163.jpg?v=1783413962",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2502008191",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:45:59-07:00"
+   },
+   "8581529338017": {
+    "handle": "unisex-fit-washed-t-shirt-2502006198-hdw2502006198-1",
+    "hash": "f8a78170974e8f58",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/118.jpg?v=1783413963",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2502006198",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:46:01-07:00"
+   },
+   "8581529403553": {
+    "handle": "unisex-fit-washed-t-shirt-2502005698-hdw2502005698-1",
+    "hash": "f8a7a554871a9b58",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/92.jpg?v=1783413965",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2502005698",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:46:02-07:00"
+   },
+   "8581529501857": {
+    "handle": "unisex-fit-washed-t-shirt-2502005701-hdw2502005701-1",
+    "hash": "f8a78550871a9f78",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/93.jpg?v=1783413968",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2502005701",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:46:05-07:00"
+   },
+   "8581529665697": {
+    "handle": "unisex-fit-washed-t-shirt-2502005706-hdw2502005706-1",
+    "hash": "f8a58570870e9f78",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/94.jpg?v=1783413971",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2502005706",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:46:07-07:00"
+   },
+   "8581529796769": {
+    "handle": "unisex-fit-washed-t-shirt-2502005709-hdw2502005709-1",
+    "hash": "bd46b4b19242d3ea",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1739784084134Lt54NADkED8rIckd.jpg?v=1783413972",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2502005709",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:46:10-07:00"
+   },
+   "8581529862305": {
+    "handle": "unisex-fit-washed-t-shirt-2502005718-hdw2502005718-1",
+    "hash": "f8a785d0871a8f78",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/95.jpg?v=1783413974",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2502005718",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:46:11-07:00"
+   },
+   "8581529960609": {
+    "handle": "unisex-fit-washed-t-shirt-2502005720-hdw2502005720-1",
+    "hash": "f8a785d0871a8f78",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/96.jpg?v=1783413975",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2502005720",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:46:13-07:00"
+   },
+   "8581530026145": {
+    "handle": "unisex-fit-washed-t-shirt-2502005726-hdw2502005726-1",
+    "hash": "f8a7a474971a8758",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/103.jpg?v=1783413977",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2502005726",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:46:14-07:00"
+   },
+   "8581530124449": {
+    "handle": "unisex-fit-washed-t-shirt-2502005735-hdw2502005735-1",
+    "hash": "f8a7a151874e9d58",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/98.jpg?v=1783413978",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2502005735",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:46:16-07:00"
+   },
+   "8581530189985": {
+    "handle": "unisex-fit-washed-t-shirt-2502005027-hdw2502005027-1",
+    "hash": "bd46b4b19242d2eb",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/1739605745739IiSDk64apwnwwhfL.jpg?v=1783413980",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2502005027",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:46:17-07:00"
+   },
+   "8581530288289": {
+    "handle": "unisex-fit-washed-t-shirt-2502005059-hdw2502005059-1",
+    "hash": "faa5a0f48302d77a",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/83.jpg?v=1783413981",
+    "name": "Elden Ring Unisex Fit Washed T-Shirt 2502005059",
+    "price": "$32.99",
+    "published_at": "2026-07-07T01:46:19-07:00"
+   },
+   "8642133328033": {
+    "handle": "magnolia-longsleeve",
+    "hash": "fa61c11685de6ec8",
+    "image": "https://cdn.shopify.com/s/files/1/0736/5895/7985/files/4_a44ce6e0-8aad-47a7-85ad-3a528cb5fb61.png?v=1785548310",
+    "name": "Magnolia Floral Long Sleeve",
+    "price": "$29.99",
+    "published_at": "2026-07-31T18:38:27-07:00"
+   }
+  },
+  "https://rovak.store": {
+   "15967597527372": {
+    "handle": "vintage-studded-hobo-bag",
+    "hash": "e994966b911dce62",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/white-leopard-hobo-bag_light.webp?v=1787381243",
+    "name": "Vintage Studded Hobo Bag",
+    "price": "$33.32 - $37.70",
+    "published_at": "2026-08-10T06:21:30+02:00"
+   },
+   "15967687704908": {
+    "handle": "all-day-polo-3-pack",
+    "hash": "b0c7cb9e8c38e433",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/ADP3-ZT_1.webp?v=1786347748",
+    "name": "All-Day Polo 3-Pack",
+    "price": "$32.44",
+    "published_at": "2026-08-23T04:55:17+02:00"
+   },
+   "15974246515020": {
+    "handle": "cloud-soft-booty-lifting-pants",
+    "hash": "b493929e49cd9ccc",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/1_7946b563-439e-4916-9c6d-022e2326b0e3.jpg?v=1786613658",
+    "name": "Cloud-Soft Booty-Lifting Pants",
+    "price": "$26.30",
+    "published_at": "2026-08-23T04:55:17+02:00"
+   },
+   "16023091020108": {
+    "handle": "the-everything-puffer-tote",
+    "hash": "bcc2c23f0cd0c36f",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/ZT_1_920b08ca-a6ac-4618-ad14-bcad493ee64b.webp?v=1787554855",
+    "name": "The Everything Puffer Tote",
+    "price": "$27.18 - $28.93",
+    "published_at": "2026-08-24T16:10:43+02:00"
+   },
+   "16023105044812": {
+    "handle": "everyday-luxe-leather-sling-bag",
+    "hash": "bfc3c03c0fc2f0c3",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/ZT_1_1844f8a7-b9f6-445a-9df8-f6884bab376b.webp?v=1787555465",
+    "name": "Everyday Luxe Leather Sling Bag",
+    "price": "$84.18 - $104.36",
+    "published_at": "2026-08-24T16:10:44+02:00"
+   },
+   "16023434756428": {
+    "handle": "the-workday-laptop-tote-set",
+    "hash": "b7c0c31bfc31d80d",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/zt_1_bfe8fbe0-bf4a-46a8-a033-6ca4fd98a971.webp?v=1787567116",
+    "name": "The Workday Laptop Tote Set",
+    "price": "$42.09 - $43.84",
+    "published_at": "2026-08-25T08:10:44+02:00"
+   },
+   "16023479484748": {
+    "handle": "wild-side-leopard-bag",
+    "hash": "e887b66a964a9179",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/zt_1_bf1b463e-fe18-4137-a15b-38ae76dafd17.webp?v=1787563476",
+    "name": "Wild Side Leopard Bag",
+    "price": "$35.07 - $37.70",
+    "published_at": "2026-08-25T08:11:01+02:00"
+   },
+   "16028695232844": {
+    "handle": "puffy-bow-everything-tote",
+    "hash": "bfc1d23e643c902e",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/zt_1_44c4d932-6880-49ce-8f36-a47629d7838f.webp?v=1787622956",
+    "name": "Puffy Bow Everything Tote",
+    "price": "$15.78",
+    "published_at": "2026-08-25T15:57:27+02:00"
+   },
+   "16028701458764": {
+    "handle": "the-everyday-luxe-crossbody-bag",
+    "hash": "ce8f7a74614e3461",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/zt_1_be4c1803-57b6-4699-bc34-91532a0d9e7f.webp?v=1787625025",
+    "name": "The Everyday Luxe Crossbody Bag",
+    "price": "$28.06",
+    "published_at": "2026-08-25T15:57:27+02:00"
+   },
+   "16029084090700": {
+    "handle": "personalized-charm-ready-summer-tote",
+    "hash": "e1cf96349ac99331",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/zt_1_b3a02edc-b65e-4173-b133-27270afaa96e.webp?v=1787643894",
+    "name": "Personalized Charm-Ready Summer Tote",
+    "price": "$30.69",
+    "published_at": "2026-08-25T15:57:28+02:00"
+   },
+   "16029119775052": {
+    "handle": "customizable-charm-belt-bag",
+    "hash": "fa96816897879a9a",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/ZT_1_90024dc8-de98-48a3-a9b8-819f8731caf4.webp?v=1787645778",
+    "name": "Customizable Charm Belt Bag",
+    "price": "$30.69",
+    "published_at": "2026-08-25T15:57:28+02:00"
+   },
+   "16029647864140": {
+    "handle": "vintage-multi-pocket-hobo-bag",
+    "hash": "bc90c36fc41e837c",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/zt_1_e238bb3a-6139-4fe4-8e12-55e48d6b45b1.webp?v=1787651574",
+    "name": "Vintage Multi-Pocket Hobo Bag",
+    "price": "$42.96",
+    "published_at": "2026-08-25T15:57:29+02:00"
+   },
+   "16034254881100": {
+    "handle": "grid-rush-shoulder-bag",
+    "hash": "ed929239c96d3278",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/zt_1.png?v=1787730301",
+    "name": "Grid Rush Shoulder Bag",
+    "price": "$41.21",
+    "published_at": "2026-08-27T12:57:03+02:00"
+   },
+   "16034496053580": {
+    "handle": "luxe-pleat-carryall",
+    "hash": "add0932bdc24d03f",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/zt_1.jpg?v=1787735038",
+    "name": "Luxe Pleat Carryall",
+    "price": "$35.07",
+    "published_at": "2026-08-28T16:29:19+02:00"
+   },
+   "16034739355980": {
+    "handle": "vintage-multiway-carryall",
+    "hash": "b9c5d22fd80d8b34",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/07.jpg?v=1787740858",
+    "name": "Vintage Multiway Carryall",
+    "price": "$29.81",
+    "published_at": "2026-08-28T16:29:20+02:00"
+   },
+   "16036568564044": {
+    "handle": "leopard-luxe-shoulder-bag",
+    "hash": "e887967a811dda69",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/magnific_edit-the-supplied-product_ksww4Dj16B.jpg?v=1787811038",
+    "name": "Leopard Luxe Shoulder Bag",
+    "price": "$35.07",
+    "published_at": "2026-08-28T08:41:17+02:00"
+   },
+   "16036586225996": {
+    "handle": "wild-instinct-multi-pocket-bag",
+    "hash": "bcd0c32fd41ec334",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/1_ad041a6b-2ffe-4cb5-8616-371de63b3379.jpg?v=1787814013",
+    "name": "Wild Instinct Multi-Pocket Bag",
+    "price": "$35.95",
+    "published_at": "2026-08-28T08:41:10+02:00"
+   },
+   "16036682694988": {
+    "handle": "sss",
+    "hash": "b993ce6c913b8166",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/3_02d69ccb-e54d-4cb5-ad72-70e406b9c1c2.jpg?v=1787817788",
+    "name": "Wildside Leopard Carryall",
+    "price": "$37.70",
+    "published_at": "2026-08-28T16:29:21+02:00"
+   },
+   "16036691116364": {
+    "handle": "luxe-multi-pocket-shoulder-bag",
+    "hash": "f2954a2fc44ab371",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/2_a3c30b75-27a5-491b-853b-9d3ff3bd6529.jpg?v=1787817898",
+    "name": "Luxe Multi-Pocket Shoulder Bag",
+    "price": "$39.46",
+    "published_at": "2026-08-28T16:29:21+02:00"
+   },
+   "16037847368012": {
+    "handle": "vintage-multi-pocket-crossbody",
+    "hash": "ecc79e68957a8c21",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/2_5ac8b9b8-2a2b-4748-8f78-20b1f240b509.jpg?v=1787824151",
+    "name": "Vintage Multi-Pocket Crossbody",
+    "price": "$39.46",
+    "published_at": "2026-08-28T16:29:22+02:00"
+   },
+   "16037980930380": {
+    "handle": "retro-city-shoulder-bag",
+    "hash": "c196d66996499679",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/ZT_1_ff9e6dc5-844d-4700-885d-b27068d863e0.png?v=1787829139",
+    "name": "Retro City Shoulder Bag",
+    "price": "$43.84",
+    "published_at": "2026-08-28T16:29:22+02:00"
+   },
+   "16056243945804": {
+    "handle": "western-rider-boots",
+    "hash": "f1b69e4bc625c036",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/DM_20260901165947_001.jpg?v=1788253212",
+    "name": "Effortless Slouchy Moto Boots",
+    "price": "$37.70",
+    "published_at": "2026-09-01T11:22:05+02:00"
+   },
+   "16058066862412": {
+    "handle": "the-suede-clogs",
+    "hash": "eb82943c6dc3d21e",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/1_1_20ac398f-c7c7-4f00-be66-b3ed53f9d539.jpg?v=1788260234",
+    "name": "The Suede Clogs",
+    "price": "$32.44",
+    "published_at": "2026-09-02T07:54:19+02:00"
+   },
+   "16059887092044": {
+    "handle": "y2k-puffy-skate-sneaker",
+    "hash": "f2c68d3970e62794",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/1_1_ed57b9c4-9f11-4ad8-b34b-89ac79ad4781.webp?v=1788330822",
+    "name": "Y2K Puffy Skate Sneaker",
+    "price": "$61.38",
+    "published_at": "2026-09-02T09:22:34+02:00"
+   },
+   "16060109521228": {
+    "handle": "the-camden-bag",
+    "hash": "f885877a8d58d233",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/1_10_168ea071-a02f-41ee-959f-679509638d61.webp?v=1788335273",
+    "name": "Brooklyn Carryall",
+    "price": "$37.70",
+    "published_at": "2026-09-02T09:49:13+02:00"
+   },
+   "16060358164812": {
+    "handle": "urban-shield-jacket",
+    "hash": "ea02c36a9d7eb4c2",
+    "image": "https://cdn.shopify.com/s/files/1/1042/3389/4220/files/1_10__fixed.webp?v=1788344342",
+    "name": "Urban Shield Jacket",
+    "price": "$37.70",
+    "published_at": "2026-09-02T12:19:31+02:00"
    }
   },
   "https://sentrafashion.com": {
@@ -2021,6 +3657,576 @@
     "published_at": "2026-09-24T03:21:00-04:00"
    }
   },
+  "https://shopurbanthread.com": {
+   "9006281294081": {
+    "handle": "forever-promise-keychains",
+    "hash": "bcf8c0861fc5ce0b",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/image-2026-01-19T210832.757.png?v=1768886674",
+    "name": "Forever Promise Keychains",
+    "price": "$9.99",
+    "published_at": "2026-01-19T21:12:39-08:00"
+   },
+   "9015179706625": {
+    "handle": "better-every-day-journal",
+    "hash": "f19b8e64ca3131e3",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/image-2026-01-31T200900.981.png?v=1769918998",
+    "name": "Better Every Day & Dig Deeper Journals: Your Path to Growth and Reflection",
+    "price": "$29.99 - $34.99",
+    "published_at": "2026-01-31T20:08:56-08:00"
+   },
+   "9015219519745": {
+    "handle": "dig-deeper-journal",
+    "hash": "b4c3da3cc3343cc3",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/image-2026-01-31T220245.703.png?v=1769925800",
+    "name": "Dig Deeper Journal",
+    "price": "$34.95",
+    "published_at": "2026-01-31T22:07:13-08:00"
+   },
+   "9028591780097": {
+    "handle": "personal-growth-bundle-free-gift",
+    "hash": "ef98906f98679898",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/journal-2_3_8b7072ed-5552-414d-867d-3985c6134385.png?v=1770938055",
+    "name": "Personal Growth Bundle",
+    "price": "$54.99",
+    "published_at": "2026-02-12T15:14:34-08:00"
+   },
+   "9042219532545": {
+    "handle": "365-days-god-journal",
+    "hash": "97c1a8dfa854ad54",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/image-2026-02-25T214534.966.png?v=1772084984",
+    "name": "365 Days God Journal",
+    "price": "$29.99",
+    "published_at": "2026-02-25T21:47:31-08:00"
+   },
+   "9046036447489": {
+    "handle": "tell-your-story-series-journal",
+    "hash": "9b9c30676d3296c9",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/image-2026-03-02T173534.752.png?v=1772501762",
+    "name": "Tell Your Story Series Journal",
+    "price": "$19.99",
+    "published_at": "2026-03-02T17:38:47-08:00"
+   },
+   "9048023892225": {
+    "handle": "the-miracle-journal",
+    "hash": "85d27ac17ac66a39",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/image-2026-03-05T183254.257.png?v=1772764415",
+    "name": "The Miracle Journal",
+    "price": "$29.99",
+    "published_at": "2026-03-05T18:39:22-08:00"
+   },
+   "9085169598721": {
+    "handle": "what-i-love-about-you-mom-book",
+    "hash": "bdc2c266c23d938e",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/image-2026-03-09T222003.536.png?v=1773120032",
+    "name": "What I Love About You, Mom Book",
+    "price": "$14.99",
+    "published_at": "2026-03-09T22:19:25-07:00"
+   },
+   "9090858483969": {
+    "handle": "this-is-why-youre-mine-journal",
+    "hash": "fb2cccc3c2d39324",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/image-2026-03-16T170510.107.png?v=1773705932",
+    "name": "THIS IS WHY YOU'RE MINE JOURNAL",
+    "price": "$14.99",
+    "published_at": "2026-03-16T17:04:59-07:00"
+   },
+   "9093490475265": {
+    "handle": "what-i-love-about-you-journal",
+    "hash": "bdc2c361c23f931c",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/image-2026-03-18T163930.593.png?v=1773877205",
+    "name": "What I Love About You Journal",
+    "price": "$14.99",
+    "published_at": "2026-03-18T16:39:17-07:00"
+   },
+   "9100839256321": {
+    "handle": "bts-ver-4-light-stick",
+    "hash": "ed8792909a6c9e6c",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/6DF9F52C-59CF-414C-BD1F-8395AC1220B6.jpg?v=1774498502",
+    "name": "BTS VER.4 Light Stick",
+    "price": "$69.99",
+    "published_at": "2026-04-15T22:18:43-07:00"
+   },
+   "9106075779329": {
+    "handle": "bts-light-stick-ver-4",
+    "hash": "e4ce9b31998c6467",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/product-image-1467786798_d5c3bdde-f59a-4c80-bd6a-14462a4c0cbb.jpg?v=1775093363",
+    "name": "BTS LIGHT STICK VER.4",
+    "price": "$69.99",
+    "published_at": "2026-04-01T18:29:57-07:00"
+   },
+   "9116873064705": {
+    "handle": "arirang-bts-collection",
+    "hash": "bec98537d2329236",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/Untitled_design_-_2026-04-07T161837.391.png?v=1775883710",
+    "name": "Arirang BTS Collection",
+    "price": "$44.95 - $69.99",
+    "published_at": "2026-04-10T22:01:47-07:00"
+   },
+   "9131954798849": {
+    "handle": "kat-hoodies",
+    "hash": "811e7c8135e64f75",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/1x1_2026_0325_KatseyexGAP_Ecom10612_82b77a5a-440e-407f-b0a8-97cc3aaccc5a.webp?v=1777012502",
+    "name": "KAT Hoodies",
+    "price": "$49.99",
+    "published_at": "2026-04-23T23:35:00-07:00"
+   },
+   "9145260572929": {
+    "handle": "starter-pullover-jacket-blue",
+    "hash": "b4c3c32dcf309cd8",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/image-2026-05-05T212710.450.png?v=1778041672",
+    "name": "Starter Pullover Jacket Blue",
+    "price": "$69.99",
+    "published_at": "2026-05-05T21:32:15-07:00"
+   },
+   "9147248312577": {
+    "handle": "hit-me-hard-and-soft-jersey",
+    "hash": "ec93934ccc299b99",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/1_8359f6a7-d43d-4984-bb9f-370328b79a98.png?v=1778142418",
+    "name": "Billie Eilish Hard and Soft Jersey",
+    "price": "$29.99",
+    "published_at": "2026-05-07T00:51:37-07:00"
+   },
+   "9171036143873": {
+    "handle": "flag-blanket",
+    "hash": "bfbbc0c03f192a62",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/July4th_Flag_Hugs_x503_progressive_png.webp?v=1779777002",
+    "name": "Patriotic Flag Blanket",
+    "price": "$64.99",
+    "published_at": "2026-05-25T23:29:59-07:00"
+   },
+   "9171983270145": {
+    "handle": "one-wish-willow",
+    "hash": "81aa3e91c75e983d",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/IMG_6808.jpg?v=1779847717",
+    "name": "One Wish Willow",
+    "price": "$9.99",
+    "published_at": "2026-05-26T19:08:35-07:00"
+   },
+   "9174614638849": {
+    "handle": "one-wish-willow-2",
+    "hash": "81aa3e91c75e983d",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/IMG_6808.jpg?v=1779847717",
+    "name": "One Wish Willow",
+    "price": "$19.99",
+    "published_at": "2026-05-29T23:33:32-07:00"
+   },
+   "9181713793281": {
+    "handle": "8-piece-mystery-squishy-box-ultimate-malt-sugar-stress-relief-sensory-bundle",
+    "hash": "ba43dc91d63c01be",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/C009_7.webp?v=1780890063",
+    "name": "8-Piece Mystery Squishy Box",
+    "price": "$44.99",
+    "published_at": "2026-06-07T20:41:01-07:00"
+   },
+   "9194696179969": {
+    "handle": "mexican-jersey",
+    "hash": "fa4685b1d2529e2b",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/c70ec584-a056-46c6-b1f0-a5a63ed78c38.png?v=1781761405",
+    "name": "2026 World Cup- Exclusive Mexico Jersey",
+    "price": "$39.99",
+    "published_at": "2026-06-17T22:43:23-07:00"
+   },
+   "9196835864833": {
+    "handle": "exclusive-bts-by-you",
+    "hash": "e626999999666666",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/ChatGPTImageJun6_2026_02_05_39AM_e827cf5c-a2e2-4e27-ac7b-bcd9de853a48.png?v=1781911266",
+    "name": "Exclusive BTS By You",
+    "price": "$24.99 - $34.99",
+    "published_at": "2026-06-19T16:21:04-07:00"
+   },
+   "9197134086401": {
+    "handle": "army-charm-bracelet",
+    "hash": "bc39c3b293cbca18",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/FullSizeRender.jpg?v=1781927080",
+    "name": "ARMY Charm Bracelet",
+    "price": "$29.99",
+    "published_at": "2026-06-19T20:44:38-07:00"
+   },
+   "9279726190849": {
+    "handle": "polka-dot-backpack",
+    "hash": "fac18187969ed24e",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/535229125.webp?v=1784692206",
+    "name": "Polka Dot Backpack",
+    "price": "$29.99",
+    "published_at": "2026-07-21T20:50:04-07:00"
+   },
+   "9280151453953": {
+    "handle": "hk-graphic-collection",
+    "hash": "82b719990f6666d9",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/Madhappy-Hello-Kitty-Jersey-Tee-Flat-White-01.webp?v=1784699278",
+    "name": "HK Graphic Collection",
+    "price": "$24.99 - $44.99",
+    "published_at": "2026-07-21T22:47:55-07:00"
+   },
+   "9297313792257": {
+    "handle": "chromearbuds",
+    "hash": "bc30938bcdcc6666",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/shadowfixed.png?v=1785384775",
+    "name": "Chroma Wired Buds",
+    "price": "$29.99",
+    "published_at": "2026-07-29T21:12:52-07:00"
+   },
+   "9297535893761": {
+    "handle": "carrying-case",
+    "hash": "956c7ab269692587",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/Kaching-Bundles-Copy_of_150_000_HAPPY_CUSTOMERS-18_300x300_0a6d0629-d24c-4554-af44-c1459bda5b4d.png?v=1785386549",
+    "name": "Carrying Case",
+    "price": "$9.99",
+    "published_at": "2026-07-29T21:42:33-07:00"
+   },
+   "9301488238849": {
+    "handle": "spiderman-custom-bunny-plush",
+    "hash": "8f51b8619aef01ce",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/grey-bunny_4.png?v=1785647327",
+    "name": "SpiderMan Custom Bunny Plush",
+    "price": "$39.95",
+    "published_at": "2026-08-01T22:08:44-07:00"
+   },
+   "9303247061249": {
+    "handle": "web-hero-hanger",
+    "hash": "d0913ce0da7e655a",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/image-2026-08-03T233019.635.png?v=1785825079",
+    "name": "Handmade Spiderman Hero Hanger",
+    "price": "$24.99",
+    "published_at": "2026-08-03T23:31:24-07:00"
+   },
+   "9304462852353": {
+    "handle": "spider-man-keychain",
+    "hash": "fe1bf22d496149c8",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/Untitleddesign-2026-08-04T204828.954.png?v=1785902055",
+    "name": "Blindbox Keychain",
+    "price": "$9.99",
+    "published_at": "2026-08-04T18:20:51-07:00"
+   },
+   "9304939102465": {
+    "handle": "32oz-sprinkle-drip-bottle",
+    "hash": "e6669b9999643331",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/Gemini_Generated_Image_wsz0wnwsz0wnwsz0_f47b755a-fb94-4f98-8cea-fc4ccc846b2d.png?v=1785949382",
+    "name": "32oz Sprinkle Drip Bottle",
+    "price": "$24.99",
+    "published_at": "2026-08-05T10:03:00-07:00"
+   },
+   "9304946868481": {
+    "handle": "cozy-knit-beanie",
+    "hash": "e4d7975968646097",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/Designone.jpg?v=1785950319",
+    "name": "Spider Knit Beanie",
+    "price": "$19.95",
+    "published_at": "2026-08-05T10:18:36-07:00"
+   },
+   "9305645908225": {
+    "handle": "coraline-squid-plush",
+    "hash": "e2d699699e596096",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/COR-PL-2_Coraline_SquidPlush_1.webp?v=1786074225",
+    "name": "Coraline Squid Plush",
+    "price": "$24.99",
+    "published_at": "2026-08-06T20:43:43-07:00"
+   },
+   "9306409763073": {
+    "handle": "custombackpacks",
+    "hash": "ed9298cd67679818",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/ChatGPTImageJul19_2026_04_46_47PM_cc4f2ebe-bf00-4c91-8685-65c4b31c0f74.png?v=1786143817",
+    "name": "LIMITED Custom Backpacks",
+    "price": "$29.99",
+    "published_at": "2026-08-07T16:03:35-07:00"
+   },
+   "9306450493697": {
+    "handle": "wild-instincts-zip-up",
+    "hash": "cc9c6d616d363236",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/pimg_a30af3379bfabef8a458.webp?v=1786163276",
+    "name": "Wild Instincts Zip-Up",
+    "price": "$39.99",
+    "published_at": "2026-08-07T21:28:38-07:00"
+   },
+   "9307404828929": {
+    "handle": "spidey-zip-up",
+    "hash": "d1022efd2bb524f4",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/Untitleddesign_65.png?v=1786323345",
+    "name": "Spidey Zip-Up",
+    "price": "$29.99",
+    "published_at": "2026-08-09T17:55:42-07:00"
+   },
+   "9308559180033": {
+    "handle": "spider-denim-backpack",
+    "hash": "ebb081c79a839e1e",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/ChatGPTImageJul23_2026_07_10_41PM.png?v=1786512874",
+    "name": "Spider Denim Backpack",
+    "price": "$34.99",
+    "published_at": "2026-08-11T22:34:31-07:00"
+   },
+   "9308567765249": {
+    "handle": "custom-spider-hoodie",
+    "hash": "e926a829ae73d471",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/ChatGPT_Image_Aug_8_2026_06_28_42_PM.png?v=1786517007",
+    "name": "Custom Spider Hoodies",
+    "price": "$29.99 - $39.99",
+    "published_at": "2026-08-11T23:43:25-07:00"
+   },
+   "9313292091649": {
+    "handle": "miffy-makeup-pouch",
+    "hash": "c88e6d2db07271b3",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/image-2026-08-13T203936.022.png?v=1786678798",
+    "name": "Miffy Makeup Pouch",
+    "price": "$19.99",
+    "published_at": "2026-08-13T20:37:42-07:00"
+   },
+   "9313301922049": {
+    "handle": "tortoise-hydrojug-40-oz-tumbler",
+    "hash": "b49bc4c6c84e9b5c",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/pimg_4dcf6a778c271c92ec55.webp?v=1786682827",
+    "name": "Tortoise Hydrojug 40 Oz Tumbler",
+    "price": "$39.95",
+    "published_at": "2026-08-13T21:47:38-07:00"
+   },
+   "9314356297985": {
+    "handle": "bella-swan-twilight-sheet-set",
+    "hash": "f33373321b8e4c4c",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/84643857_009_b.webp?v=1786818559",
+    "name": "Bella Swan “Twilight” Sheet Set",
+    "price": "$34.95 - $54.95",
+    "published_at": "2026-08-15T11:29:17-07:00"
+   },
+   "9314419540225": {
+    "handle": "lock-shoulder-bag",
+    "hash": "fa81c62b847aa37c",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/image-2026-08-15T215347.839.png?v=1786856055",
+    "name": "BDG Lock Shoulder Bag",
+    "price": "$39.99",
+    "published_at": "2026-08-15T21:29:58-07:00"
+   },
+   "9318317949185": {
+    "handle": "shark-boots",
+    "hash": "bf0f8e0a4a3c8d17",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/0bcbf8f49ffb17f0f21602a8991c8c161383368e.jpg?v=1787197728",
+    "name": "Vera Shark Boots",
+    "price": "$49.99",
+    "published_at": "2026-08-19T20:48:48-07:00"
+   },
+   "9318601031937": {
+    "handle": "unisex-530-turtledove-mushroom",
+    "hash": "bb97c8c82e976c90",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/pimg_02061ce051e3e2bf4c55.webp?v=1787205632",
+    "name": "Unisex 530 Turtledove Mushroom",
+    "price": "$49.99",
+    "published_at": "2026-08-19T23:00:11-07:00"
+   },
+   "9324203835649": {
+    "handle": "deer-blanket",
+    "hash": "948a7a756932a1b7",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/3223965_8718964287024-110_01_jalsdx.png?v=1787632737",
+    "name": "Deer Blanket",
+    "price": "$29.99 - $59.99",
+    "published_at": "2026-08-24T21:38:54-07:00"
+   },
+   "9325591331073": {
+    "handle": "blood-red-spider-full-zip-hoodie",
+    "hash": "aa93d14c3cce3593",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/Create_product_picture_3_hoodies_202607220743_4b24b695-bf94-49bd-921b-d95413279f06.jpg?v=1787708169",
+    "name": "Spider Full Zip Hoodies",
+    "price": "$39.99",
+    "published_at": "2026-08-25T18:36:07-07:00"
+   },
+   "9325900955905": {
+    "handle": "the-everly-clogs",
+    "hash": "eb82943c6dc3d21e",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/pimg_d20fb93ecd97aed73258.webp?v=1787719172",
+    "name": "The Everly Clogs",
+    "price": "$29.99",
+    "published_at": "2026-08-25T21:40:45-07:00"
+   },
+   "9330411340033": {
+    "handle": "club-zipper-hoodie",
+    "hash": "afe4e40eec991991",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/scuffers-1.webp?v=1788143013",
+    "name": "Club Zipper Hoodie",
+    "price": "$29.99",
+    "published_at": "2026-08-30T19:23:30-07:00"
+   },
+   "9331972374785": {
+    "handle": "butterfly-wings-knit-cardigan",
+    "hash": "d3f3e12d8a8768a2",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/ChatGPTImageAug31_2026_08_57_35PM.png?v=1788235062",
+    "name": "Butterfly Wings Knit Cardigan",
+    "price": "$29.99",
+    "published_at": "2026-08-31T20:57:31-07:00"
+   },
+   "9333334343937": {
+    "handle": "cat-print-pullover",
+    "hash": "b885c55a9e699b2c",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/image-2026-09-01T224111.062.png?v=1788327704",
+    "name": "Cat Print Pullover",
+    "price": "$29.99",
+    "published_at": "2026-09-01T22:42:05-07:00"
+   },
+   "9335345611009": {
+    "handle": "rilakkuma-hoodie",
+    "hash": "e2a5969a98cb893b",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/allicientrilakkuma.png?v=1788416399",
+    "name": "Rilakkuma Hoodie",
+    "price": "$29.99",
+    "published_at": "2026-09-02T23:19:56-07:00"
+   },
+   "9349664899329": {
+    "handle": "sb-snoopy-shaped-cold-cup",
+    "hash": "c814e70bb299cd76",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/Untitled_design_1.png?v=1789093404",
+    "name": "Snoopy Collection",
+    "price": "$29.99 - $39.99",
+    "published_at": "2026-09-10T19:23:20-07:00"
+   },
+   "9349833982209": {
+    "handle": "vintage-jacket",
+    "hash": "abf3d20b9d4ccd40",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/ChatGPT_Image_Sep_7_2026_02_12_36_PM.png?v=1789103409",
+    "name": "Vintage Jacket",
+    "price": "$69.99",
+    "published_at": "2026-09-10T22:10:05-07:00"
+   },
+   "9353291333889": {
+    "handle": "perfect-fall-boots",
+    "hash": "91906a69959db6b6",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/magnific_same-image_4R0VM2i9Aa.png?v=1789436569",
+    "name": "Aspen Fall Boots",
+    "price": "$29.95",
+    "published_at": "2026-09-14T18:42:47-07:00"
+   },
+   "9353295593729": {
+    "handle": "limited-edition-spooky-season-blanket",
+    "hash": "dababa08d623e9e0",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/317473c6-5419-4b99-8b6d-3a159de55225.jpg?v=1789436776",
+    "name": "Limited Edition Spooky Season Blanket",
+    "price": "$34.95",
+    "published_at": "2026-09-14T18:46:13-07:00"
+   },
+   "9353296544001": {
+    "handle": "fortnite-tracksuit-set",
+    "hash": "b0d34c74c3cc6c6d",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/Sweatsuit1.png?v=1789516980",
+    "name": "Fortnite Tracksuit Set",
+    "price": "$29.99",
+    "published_at": "2026-09-14T18:47:02-07:00"
+   },
+   "9362734645505": {
+    "handle": "the-york-bag",
+    "hash": "e99666659a669269",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/1a60895f-082a-469f-8183-b4ff104ce7a4.jpg?v=1790129614",
+    "name": "The York Bag",
+    "price": "$24.99",
+    "published_at": "2026-09-22T19:13:31-07:00"
+   },
+   "9363874283777": {
+    "handle": "snoopy-shoulder-bag",
+    "hash": "b9c6c638ce319cc9",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/pimg_16cc0486f792059532a4.webp?v=1790225842",
+    "name": "Snoopy Shoulder Bag",
+    "price": "$39.99",
+    "published_at": "2026-09-23T21:57:20-07:00"
+   },
+   "9364883964161": {
+    "handle": "autumn-dog-sweatshirt",
+    "hash": "eefff100c20a8b2b",
+    "image": "https://cdn.shopify.com/s/files/1/0790/5807/5905/files/High-end-ecommerce-studio-product-photo_1.png?v=1790310963",
+    "name": "Snoopy sweatshirt",
+    "price": "$39.99",
+    "published_at": "2026-09-24T21:11:44-07:00"
+   }
+  },
+  "https://shopvelour.co": {
+   "9226263724250": {
+    "handle": "teddy-bear-shiesty",
+    "hash": "b632cbcf8d3430c3",
+    "image": "https://cdn.shopify.com/s/files/1/0778/9412/3738/files/WhatsAppImage2025-12-27at9.36.48AM_1.jpg?v=1776387565",
+    "name": "Teddy Bear Shiesty",
+    "price": "$47.95",
+    "published_at": "2026-04-16T18:01:17-07:00"
+   },
+   "9229947568346": {
+    "handle": "teddy-bear-shiesty-vip",
+    "hash": "b632cbcf8d3430c3",
+    "image": "https://cdn.shopify.com/s/files/1/0778/9412/3738/files/WhatsAppImage2025-12-27at9.36.48AM_1.jpg?v=1776387565",
+    "name": "Teddy Bear Shiesty VIP",
+    "price": "$19.95",
+    "published_at": "2026-04-20T14:05:41-07:00"
+   },
+   "9234002837722": {
+    "handle": "40oz-intrepid-tumbler-with-straw",
+    "hash": "b36c8e96cc938c65",
+    "image": "https://cdn.shopify.com/s/files/1/0778/9412/3738/files/40Tumbler_BLACK-front.avif?v=1776975975",
+    "name": "40 Oz Intrepid Tumbler with Straw",
+    "price": "$44.95",
+    "published_at": "2026-04-23T13:28:45-07:00"
+   },
+   "9234013061338": {
+    "handle": "jesus-is-the-light-printed-hoodie",
+    "hash": "baf3855fc80ced04",
+    "image": "https://cdn.shopify.com/s/files/1/0778/9412/3738/files/IMG_2903.webp?v=1776976625",
+    "name": "Jesus Is The Light Printed Hoodie",
+    "price": "$34.95",
+    "published_at": "2026-04-23T13:38:19-07:00"
+   },
+   "9409518797018": {
+    "handle": "jesus-is-the-light-printed-hoodie-vip",
+    "hash": "baf3855fc80ced04",
+    "image": "https://cdn.shopify.com/s/files/1/0778/9412/3738/files/IMG_2903.webp?v=1776976625",
+    "name": "Jesus Is The Light Printed Hoodie VIP",
+    "price": "$24.95",
+    "published_at": "2026-07-27T17:40:26-07:00"
+   }
+  },
+  "https://tryoceans.com": {
+   "7952828137611": {
+    "handle": "test-product",
+    "hash": "99a6b38689796696",
+    "image": "https://cdn.shopify.com/s/files/1/0707/4578/4459/files/small-rocky-island-in-blue-ocean-shallows.jpg?v=1760289323",
+    "name": "Test Product",
+    "price": "$9.95",
+    "published_at": "2025-10-12T13:18:18-04:00"
+   },
+   "8058350239883": {
+    "handle": "sloth",
+    "hash": "f887c63c2d72c661",
+    "image": "https://cdn.shopify.com/s/files/1/0707/4578/4459/files/1-min-min.jpg?v=1769620471",
+    "name": "Sloth Weighted Plush",
+    "price": "$9.95",
+    "published_at": "2026-01-28T18:25:09-05:00"
+   },
+   "8337076093067": {
+    "handle": "cow",
+    "hash": "e8d39578432fc07c",
+    "image": "https://cdn.shopify.com/s/files/1/0707/4578/4459/files/c25b4fcbb9e68ef5dba7c105bef170d80526d4b8.webp?v=1783470285",
+    "name": "Weighted Cow Plush",
+    "price": "$9.95",
+    "published_at": "2026-07-07T20:24:43-04:00"
+   }
+  },
+  "https://vosseraofficial.com": {
+   "9403672166618": {
+    "handle": "spider-backpack",
+    "hash": "e14c363a9c8dc763",
+    "image": "https://cdn.shopify.com/s/files/1/0804/8931/6570/files/ChatGPT_Image_Jul_22_2026_04_50_04_PM.png?v=1784753424",
+    "name": "SPIDER BACKPACK",
+    "price": "$29.99",
+    "published_at": "2026-09-17T01:08:04-04:00"
+   },
+   "9468305866970": {
+    "handle": "raw-unisex-hoodie",
+    "hash": "ebe1951e68e13760",
+    "image": "https://cdn.shopify.com/s/files/1/0804/8931/6570/files/Scuffers_2025_153.webp?v=1788390994",
+    "name": "Raw Unisex Hoodie",
+    "price": "$29.99",
+    "published_at": "2026-09-03T01:34:07-04:00"
+   }
+  },
+  "https://www.ashnon.com": {
+   "11266962456918": {
+    "handle": "mini-backpack",
+    "hash": "edb8c45a85b5c2e2",
+    "image": "https://cdn.shopify.com/s/files/1/1060/1768/5846/files/images.jpg?v=1789325040",
+    "name": "Mini Backpack",
+    "price": "$7.95",
+    "published_at": "2026-09-13T13:43:23-05:00"
+   }
+  },
   "https://www.curvite.com": {
    "10298058670271": {
     "handle": "one-piece-40-oz-tumbler",
@@ -2061,6 +4267,222 @@
     "name": "Pink Coraline Shoulder Bag",
     "price": "$49.95",
     "published_at": "2026-09-24T08:53:06-04:00"
+   },
+   "8393245819071": {
+    "handle": "striped-logo-everyday-set",
+    "hash": "e4a59e5a1db2930d",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/C79A4791.webp?v=1775590018",
+    "name": "Striped Logo Everyday Set",
+    "price": "$32.95",
+    "published_at": "2026-04-06T10:40:58-04:00"
+   },
+   "8393296314559": {
+    "handle": "pink-white-polka-dots-set",
+    "hash": "b1f34698399ccc27",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/a_model_wearing_202604062216.jpg?v=1775491404",
+    "name": "Pink & White Polka Dots Set",
+    "price": "$49.95",
+    "published_at": "2026-04-06T11:47:58-04:00"
+   },
+   "8393967796415": {
+    "handle": "rb-abstract-graphic-hoodie",
+    "hash": "e686c619996b8c57",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/Subject__The_same_202604111005.jpg?v=1775880212",
+    "name": "RB Abstract Graphic Hoodie",
+    "price": "$59.95",
+    "published_at": "2026-04-06T14:52:23-04:00"
+   },
+   "8394866950335": {
+    "handle": "striped-tank",
+    "hash": "a78f9e9631b0d854",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/C79A4837.jpg?v=1775590018",
+    "name": "Striped Tank",
+    "price": "$59.95",
+    "published_at": "2026-04-07T18:20:45-04:00"
+   },
+   "8394867146943": {
+    "handle": "striped-logo-shorts",
+    "hash": "af3b8d3ec2547250",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/C79A5517.jpg?v=1775590018",
+    "name": "Striped  Logo Shorts",
+    "price": "$59.95",
+    "published_at": "2026-04-07T18:22:10-04:00"
+   },
+   "8395085512895": {
+    "handle": "draped-scarf-neck-top",
+    "hash": "b6637399cc8c6133",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/Whisk_f056c3fc7d04232ae2249dc91e21e95adr.png?v=1775630748",
+    "name": "Draped Scarf Neck Top",
+    "price": "$69.95",
+    "published_at": "2026-04-08T02:45:45-04:00"
+   },
+   "8395085545663": {
+    "handle": "vintage-pu-leather-shoulder-bags-for-women-2025-classic-y2k-small-purse-luxury-brand-female-handbags-daily-ladies-underarm-bag",
+    "hash": "e8971d95b5689649",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/Se2d0f01ecffc4c9a9a6dd8a27c19a4bc2.webp?v=1775630751",
+    "name": "Celeste Shoulder Bag",
+    "price": "$69.95",
+    "published_at": "2026-04-08T02:45:48-04:00"
+   },
+   "8395085611199": {
+    "handle": "new-fashionable-high-end-moon-shaped-baseball-bag-showing-luxury-womens-single-shoulder-bag",
+    "hash": "b99cd2077c920dcb",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/Sa2c99f65cb77432fb2adeece9716348de.webp?v=1775630753",
+    "name": "Luna Shoulder Bag",
+    "price": "$69.95",
+    "published_at": "2026-04-08T02:45:50-04:00"
+   },
+   "8395085643967": {
+    "handle": "vintage-faux-woven-leather-shoulder-bag-womens-handbag-large-capacity-tote-bag-crescent-bag-zipper-underarm-bag-daily-commuter-bag-random-pattern",
+    "hash": "e596c339cc2cc731",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/S23050138451343c680dd4e1f31a7c0adq.webp?v=1775630756",
+    "name": "Tresse Hobo Bag",
+    "price": "$79.95",
+    "published_at": "2026-04-08T02:45:53-04:00"
+   },
+   "8395085676735": {
+    "handle": "womens-teen-mules-new-spring-and-summer-vintage-casual-slip-on-shoes-pu-upper-double-strap-half-slippers-with-adjustable-buckle",
+    "hash": "e559ca609b62be58",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/Sbcffe8c7b81b427599b0c1307ba2b1b0C.webp?v=1775630760",
+    "name": "Sable Sandals",
+    "price": "$59.95",
+    "published_at": "2026-04-08T02:45:56-04:00"
+   },
+   "8395085807807": {
+    "handle": "women-high-heeled-rhinestone-slippers-fashion-stiletto-high-heels-slippers-flip-flops-woman-pointed-open-toe-slides-party-shoes",
+    "hash": "eac4953bd2664c71",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/S0f3058934d504c8791ffe19312330704W.webp?v=1775630765",
+    "name": "Scintille Mule Heels",
+    "price": "$79.95",
+    "published_at": "2026-04-08T02:46:01-04:00"
+   },
+   "8395085840575": {
+    "handle": "linen-slippers-female-summer-male-couple-home-embroidered-non-slip-soft-bottom-indoor-home-use-cotton-and-linen-floor-slippers",
+    "hash": "a8d01c3f1f0d496f",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/Hbda835ca65cd47009bfc323f550d1db8n.webp?v=1775630769",
+    "name": "Floret Slippers",
+    "price": "$59.95",
+    "published_at": "2026-04-08T02:46:05-04:00"
+   },
+   "8395085873343": {
+    "handle": "2026-stainless-steel-lip-chain-double-layered-fringe-necklace-gold-color-chaoker-fashion-jewelry-long-neckalce-sets-for-women",
+    "hash": "d532e4952a87ca5d",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/S137657bac876412cb742967092897f8eP.webp?v=1775630771",
+    "name": "Trace Lariat Necklace",
+    "price": "$69.95",
+    "published_at": "2026-04-08T02:46:08-04:00"
+   },
+   "8395085938879": {
+    "handle": "women-minimalism-thin-chain-cross-crescent-moon-star-bracelet-stainless-steel-female-adjustable-link-stacked-layered",
+    "hash": "afd88c6dcb0422fa",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/S1c6e161557e14f6bade4f7035c7f2e33d.webp?v=1775630774",
+    "name": "Celestial Stack Bracelet Set",
+    "price": "$59.95",
+    "published_at": "2026-04-08T02:46:11-04:00"
+   },
+   "8395085971647": {
+    "handle": "fashion-vintage-sun-flower-smiley-face-metal-waist-chain-for-women-summer-beach-body-chain-gold-plated-belt-female-jewelry",
+    "hash": "87648fd2d3136696",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/S8f72a2e7de8940baac90255edbe2a33cp.webp?v=1775630776",
+    "name": "Golden Hour Body Chain",
+    "price": "$49.95",
+    "published_at": "2026-04-08T02:46:13-04:00"
+   },
+   "8395086004415": {
+    "handle": "tree-of-life-pendant-multi-layered-crystal-beads-stainless-steel-womens-fashion-jewelry-gift-summer-beach-party-feet-chain",
+    "hash": "fc58d2239ef04987",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/Sb41e9d43099d4c019aa7741abadfb20dB.webp?v=1775630779",
+    "name": "Eden Anklet Set",
+    "price": "$59.95",
+    "published_at": "2026-04-08T02:46:16-04:00"
+   },
+   "8395086037183": {
+    "handle": "new-conch-shells-starfish-dangle-earrings-for-women-bohemia-long-tassel-star-shell-drop-earring-girl-ocean-beach-party-jewelry",
+    "hash": "f083dbe34d61cc1a",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/S7ce082a5a6c34adbbbddd34d4b5d221a6.webp?v=1775630781",
+    "name": "Marea Drop Earrings",
+    "price": "$59.95",
+    "published_at": "2026-04-08T02:46:18-04:00"
+   },
+   "8395086069951": {
+    "handle": "white-turquoise-beaded-chain-starfish-pendant-ankle-summer-bracelet-charm-sandals-barefoot-beach-foot-bridal-jewelry",
+    "hash": "96da291e8fe1711a",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/S11f3db4ea9f346ceb65dc0a3e242b70du.webp?v=1775630784",
+    "name": "Shore Pebble Anklet",
+    "price": "$49.95",
+    "published_at": "2026-04-08T02:46:21-04:00"
+   },
+   "8395086135487": {
+    "handle": "elegant-with-belt-black-long-coat-for-women-oversize-woolen-double-button-lapel-overcoat-autumn-new-lady-high-street-outerwear",
+    "hash": "e1f7926b8c497234",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/Untitleddesign_24.png?v=1775630791",
+    "name": "Maison Black Overcoat",
+    "price": "$79.95",
+    "published_at": "2026-04-08T02:46:28-04:00"
+   },
+   "8395086168255": {
+    "handle": "weird-puss-seashell-halter-camisole-women-backless-swing-collar-satin-silky-midnight-clubwear-skinny-beach-vacation-tank-tops",
+    "hash": "e466139ace314dcd",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/Untitleddesign_25.png?v=1775630794",
+    "name": "Amalfi Halter Top",
+    "price": "$69.95",
+    "published_at": "2026-04-08T02:46:31-04:00"
+   },
+   "8395086201023": {
+    "handle": "speckle-halter-top",
+    "hash": "bc7363928e9bc264",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/Untitleddesign_26.png?v=1775630797",
+    "name": "Speckle Halter Top",
+    "price": "$69.95",
+    "published_at": "2026-04-08T02:46:33-04:00"
+   },
+   "8395086266559": {
+    "handle": "dulzura-v-neck-sleeveless-halter-backless-bodycon-corp-top-solid-sexy-elegant-y2k-top-party-clubwear-street-summer-vest",
+    "hash": "fc26d33e61983332",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/Untitleddesign_27.png?v=1775630802",
+    "name": "Plunge Tie Top",
+    "price": "$79.95",
+    "published_at": "2026-04-08T02:46:36-04:00"
+   },
+   "8395086299327": {
+    "handle": "ahagaga-fashion-eelgant-womens-jumpsuits-halter-sleeveless-long-flare-pants-sheath-sexy-solid-satin-backless-pleated-rompers",
+    "hash": "b2cf9b98c7186538",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/Untitleddesign_28.png?v=1775630805",
+    "name": "Eclipse Maxi Dress",
+    "price": "$89.95",
+    "published_at": "2026-04-08T02:46:41-04:00"
+   },
+   "8395086364863": {
+    "handle": "leopard-halter-top",
+    "hash": "e58716361bcb9a86",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/Untitleddesign_29.png?v=1775630807",
+    "name": "Leopard Halter Top",
+    "price": "$69.95",
+    "published_at": "2026-04-08T02:46:44-04:00"
+   },
+   "8396600672447": {
+    "handle": "beck-seersucker-mini-dress",
+    "hash": "aa50653465e0e7fa",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/A44D62CC-C1E0-452B-81CB-46DA02F1CD4C_540x_007083fb-7376-4c02-a994-ccc4ec90d513.webp?v=1775770478",
+    "name": "Beck Mini Dress",
+    "price": "$29.95",
+    "published_at": "2026-04-09T16:13:16-04:00"
+   },
+   "8396613091519": {
+    "handle": "cotton-candy-clouds-skirt",
+    "hash": "e2a63173939bcc49",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/98340433_000_b3_1.jpg?v=1775766034",
+    "name": "Cotton Candy Clouds Skirt",
+    "price": "$24.95",
+    "published_at": "2026-04-09T16:23:42-04:00"
+   },
+   "8399271362751": {
+    "handle": "la-griffe-web-hoodie",
+    "hash": "bc30c19bc9e71c65",
+    "image": "https://cdn.shopify.com/s/files/1/0743/2732/6911/files/202604121459.jpg?v=1775984541",
+    "name": "La Griffe Web Hoodie",
+    "price": "$59.95",
+    "published_at": "2026-04-12T05:04:34-04:00"
    },
    "8410275938495": {
     "handle": "honey-bag",
