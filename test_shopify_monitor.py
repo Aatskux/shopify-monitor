@@ -478,8 +478,9 @@ class LiveBase(Base):
         return [b for b, p in zip(POSTED, POSTED_PATHS) if p == path]
 
     def cards(self):
-        """Heti postatut osumakortit (2 h koosteella on content-rivi)."""
-        return [b for b in self.posted("/trends") if "content" not in b]
+        """Heti postatut osumakortit (ei 2 h koosteen viesteja)."""
+        return [b for b in self.posted("/trends")
+                if b["embeds"][0]["title"].startswith("Sama tuote")]
 
 
 # --- kuvatiivisteet ja nimet --------------------------------------------
@@ -510,8 +511,10 @@ class TestImageHash(LiveBase):
 
     def test_osuman_vahvuus(self):
         h = "c3d4e5f6a7b8c9d0"
-        near = format(int(h, 16) ^ 0b11111111, "016x")         # 8 bittia eri
-        far = format(int(h, 16) ^ 0x1FF, "016x")               # 9 bittia eri
+        limit = m.HASH_MAX_DISTANCE
+        near = format(int(h, 16) ^ (2 ** limit - 1), "016x")         # juuri rajalla
+        far = format(int(h, 16) ^ (2 ** (limit + 1) - 1), "016x")    # bitin yli
+        self.assertEqual(m.hamming(h, near), limit)
         self.assertEqual(self.classify("Snoopy Shoulder Bag", "Snoopy Bag Brown", h, near), "varma")
         self.assertEqual(self.classify("Cargo Pants", "Denim Jacket", h, h), "vahva")
         self.assertEqual(self.classify("Last Supper Hoodie", "Viral Last Supper Hoodie", h, far),
@@ -585,12 +588,30 @@ class TestMatching(LiveBase):
         [card] = self.cards()
         self.assertIn("vahva", card["embeds"][0]["description"])
 
-    def test_vain_nimi_on_mahdollinen_osuma(self):
-        self.add("b", 5, "Snoopy Shoulder Bag", image=555)
+    def test_mahdollinen_osuma_ei_tule_heti_vaan_koosteeseen(self):
+        self.add("b", 5, "Snoopy Shoulder Bag", image=555)    # nimi sama, kuva ei
         self.round(T0 + timedelta(minutes=5))
+        self.assertEqual(self.cards(), [], "pelkka nimiosuma ei saa tulla heti")
+        [rec] = self.state(m.MATCHES_FILE)
+        self.assertEqual(rec["strength"], "mahdollinen")
+        # 2 h kooste: vain "tarkista itse" -osio, ei top-ryhmia
+        [digest] = self.posted("/trends")
+        embed = digest["embeds"][0]
+        self.assertEqual(embed["title"], "Mahdolliset osumat, tarkista itse (1)")
+        self.assertIn(f"{self.a}/products/h1", embed["description"])
+        self.assertIn(f"{self.b}/products/h5", embed["description"])
+
+    def test_kortissa_vain_kuvaosumat(self):
+        self.add("b", 5, "Snoopy Shoulder Bag", image=555)    # mahdollinen
+        self.round(T0 + timedelta(minutes=5))
+        self.add("c", 9, "Snoopy Shoulder Bag", image=101)    # kuva a:n kanssa
+        self.round(T0 + timedelta(minutes=10))
         [card] = self.cards()
-        fields = {f["name"]: f["value"] for f in card["embeds"][0]["fields"]}
-        self.assertEqual(fields["Osuman vahvuus"], "mahdollinen")
+        embed = card["embeds"][0]
+        fields = {f["name"]: f["value"] for f in embed["fields"]}
+        self.assertEqual(fields["Kaupoissa yhteensa"], "2")
+        self.assertIn(f"{self.a}/products/h1", embed["description"])
+        self.assertNotIn(f"{self.b}/products", embed["description"])
 
     def test_saman_kaupan_tuotteita_ei_verrata(self):
         self.add("a", 3, "Snoopy Shoulder Bag", image=101)
@@ -847,7 +868,7 @@ class TestDigest(LiveBase):
         log = [self.record(self.a, str(i), [(self.b, str(i))]) for i in range(15)]
         products = {s: {str(i): self.entry(f"T{i}", 1) for i in range(15)}
                     for s in (self.a, self.b)}
-        self.assertEqual(len(m.build_digest(log, products, [], T0)["embeds"]), 10)
+        self.assertEqual(len(m.build_top_groups(log, products, [], T0)["embeds"]), 10)
 
     def test_kooste_2h_valein_ja_vain_uusista_osumista(self):
         os.environ["TRENDS_WEBHOOK"] = f"{self.base}/trends"
@@ -866,6 +887,37 @@ class TestDigest(LiveBase):
         m.send_summaries([], log, self.products, summary, T0 + timedelta(hours=2, minutes=5))
         self.assertEqual(len(POSTED), 2)
 
+    def possible(self, store, pid, other, opid, when=T0):
+        rec = self.record(store, pid, [(other, opid)], when)
+        rec["strength"] = rec["matches"][0]["strength"] = "mahdollinen"
+        rec["matches"][0]["distance"] = 30
+        return rec
+
+    def test_mahdolliset_omana_osionaan(self):
+        self.products[self.c]["9"] = self.entry("Nimitwin", 1)
+        self.products[self.a]["9"] = self.entry("Nimitwin", 1)
+        log = self.log + [self.possible(self.c, "9", self.a, "9")]
+        top, possible = m.build_digest(log, self.products, [], T0)
+        self.assertTrue(top["content"].startswith("**Trendikooste"))
+        self.assertEqual(possible["embeds"][0]["title"],
+                         "Mahdolliset osumat, tarkista itse (1)")
+        self.assertIn("nimi 100", possible["embeds"][0]["description"])
+        names = [self.products[s][p]["name"] for s, p in
+                 (r["node"] for r in m.digest_rows(log, self.products, [], T0))]
+        self.assertNotIn("Nimitwin", names, "mahdollinen ei muodosta trendiryhmaa")
+
+    def test_mahdolliset_vain_jakson_ajalta(self):
+        self.products[self.c]["9"] = self.entry("Nimitwin", 1)
+        self.products[self.a]["9"] = self.entry("Nimitwin", 1)
+        old = self.possible(self.c, "9", self.a, "9", T0 - timedelta(hours=3))
+        self.assertEqual(len(m.build_digest(self.log + [old], self.products, [], T0)), 1)
+
+    def test_mahdollinen_ei_yhdista_kuvaryhmia(self):
+        # a1-b1-c1 on kuvaryhma; d3 vain nimella a1:n kanssa -> ryhma pysyy 3 kaupassa
+        log = self.log + [self.possible("https://d.example", "3", self.a, "1")]
+        rows = m.digest_rows(log, self.products, [], T0)
+        self.assertEqual(sorted(len(r["stores"]) for r in rows), [2, 2, 3])
+
     def test_poistetut_tuotteet_eivat_ole_koosteessa(self):
         del self.products[self.b]["2"]
         rows = m.digest_rows(self.log, self.products, [], T0)
@@ -874,7 +926,7 @@ class TestDigest(LiveBase):
 
     def test_loppuunmyynnit_nakyvat_kortissa(self):
         events = [{"type": "soldout", "store": self.a, "product_id": "2", "time": m._iso(T0)}] * 3
-        card = m.build_digest(self.log, self.products, events, T0)["embeds"][0]
+        card = m.build_top_groups(self.log, self.products, events, T0)["embeds"][0]
         fields = {f["name"]: f["value"] for f in card["fields"]}
         self.assertEqual(fields["Loppuunmyynnit 72 h"], "3")
         self.assertEqual(fields["Kauppoja"], "2")

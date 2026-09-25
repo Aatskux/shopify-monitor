@@ -59,9 +59,11 @@ IMAGE_WIDTH = 256                  # Shopifyn CDN pienentaa kuvan
 IMAGE_MAX_TRIES = 3                # epaonnistuneen kuvan yritykset ennen luovutusta
 
 # --- saman tuotteen tunnistus ---
-HASH_MAX_DISTANCE = 8              # Hamming-etaisyys <= tama = sama kuva
+# Laatuarviossa etaisyys 6-8 oli lahes aina eri tuote valkoisella taustalla.
+HASH_MAX_DISTANCE = 5              # Hamming-etaisyys <= tama = sama kuva
 NAME_WITH_IMAGE = 60               # kuva + nimi yli taman -> "varma"
 NAME_ONLY = 85                     # pelkka nimi yli taman -> "mahdollinen"
+# (mahdolliset osumat eivat tule heti-ilmoituksina, vain 2 h koosteeseen)
 # token_set_ratio antaa 100 aina kun toinen nimi on toisen osajoukko
 # ("2009 Jacket" vs. mika tahansa takki), joten pelkan nimen osumalta
 # vaaditaan lisaksi etta nimet ovat kokonaisuutenakin lahella.
@@ -549,8 +551,13 @@ def build_match_card(store, pid, matches, products):
     return {"embeds": [embed]}
 
 
+def _is_strong(match):
+    return match["strength"] != "mahdollinen"
+
+
 def process_new_matches(done_new, hashes, matches_log, now, dry_run=False):
-    """Etsii osumat uusille tuotteille, kirjaa ne ja postaa kortit heti."""
+    """Etsii osumat uusille tuotteille ja kirjaa ne. Kuvaosumat (varma/vahva)
+    postataan heti; pelkat nimiosumat ("mahdollinen") vain 2 h koosteeseen."""
     products = hashes["products"]
     webhook = os.environ.get("TRENDS_WEBHOOK")
     posted_pairs, found = set(), 0
@@ -568,13 +575,16 @@ def process_new_matches(done_new, hashes, matches_log, now, dry_run=False):
         print(f"[osuma] {_host(store)}: {products[store][pid]['name']!r} -> "
               + ", ".join(f"{_host(m['store'])} ({m['strength']})" for m in matches))
 
+        strong = [m for m in matches if _is_strong(m)]
+        if not strong:
+            continue
         # Kaksi uutta samaa tuotetta samalla kierroksella: yksi kortti riittaa.
-        pairs = {frozenset([(store, pid), (m["store"], m["product_id"])]) for m in matches}
+        pairs = {frozenset([(store, pid), (m["store"], m["product_id"])]) for m in strong}
         if pairs <= posted_pairs:
             continue
         posted_pairs |= pairs
 
-        payload = build_match_card(store, pid, matches, products)
+        payload = build_match_card(store, pid, strong, products)
         if dry_run:
             _print_payload("TRENDS_WEBHOOK", payload)
         elif not webhook:
@@ -647,7 +657,8 @@ def build_sales_summary(events, since, now):
 
 
 def match_groups(matches_log, products):
-    """Yhdistaa osumat ryhmiksi (sama tuote useassa kaupassa)."""
+    """Yhdistaa kuvaosumat ryhmiksi (sama tuote useassa kaupassa).
+    Mahdolliset (vain nimi) osumat eivat yhdista ryhmia."""
     parent = {}
 
     def find(x):
@@ -659,10 +670,13 @@ def match_groups(matches_log, products):
 
     latest = {}
     for rec in matches_log:
+        strong = [mt for mt in rec.get("matches", []) if _is_strong(mt)]
+        if not strong:
+            continue
         a = (rec["store"], rec["product_id"])
         find(a)
-        latest[a] = rec
-        for mt in rec.get("matches", []):
+        latest[a] = {**rec, "matches": strong}
+        for mt in strong:
             parent[find((mt["store"], mt["product_id"]))] = find(a)
 
     groups = defaultdict(list)
@@ -697,7 +711,61 @@ def digest_rows(matches_log, products, events, now):
     return rows[:DIGEST_TOP]
 
 
-def build_digest(matches_log, products, events, now):
+def possible_matches_payload(matches_log, products, since, now):
+    """Oma viesti: aikavalin mahdolliset (vain nimi) osumat, tarkistettavaksi."""
+    lines, seen_pairs = [], set()
+    for rec in matches_log:
+        t = _parse_time(rec.get("time"))
+        if t is None or not since < t <= now:
+            continue
+        a = (rec["store"], rec["product_id"])
+        for mt in rec.get("matches", []):
+            b = (mt["store"], mt["product_id"])
+            pair = frozenset([a, b])
+            if _is_strong(mt) or pair in seen_pairs:
+                continue
+            seen_pairs.add(pair)
+            if a[1] not in products.get(a[0], {}) or b[1] not in products.get(b[0], {}):
+                continue                      # toinen tuotteista poistettu
+            links = []
+            for s, pid in (a, b):
+                e = products[s][pid]
+                links.append(f"[{_clip(e['name'], 50)}]({_product_url(s, e.get('handle', ''))})"
+                             f" ({_host(s)})")
+            lines.append(f"{links[0]} ↔ {links[1]} — nimi {mt['name_score']:.0f}")
+    if not lines:
+        return None
+    text, shown = "", 0
+    for line in lines:
+        if len(text) + len(line) > 3800:      # embedin kuvaus max 4096
+            break
+        text += line + "\n"
+        shown += 1
+    if shown < len(lines):
+        text += f"… +{len(lines) - shown} lisaa"
+    return {"embeds": [{
+        "title": f"Mahdolliset osumat, tarkista itse ({len(lines)})",
+        "description": text.rstrip(),
+        "color": STRENGTH_COLOR["mahdollinen"],
+        "footer": {"text": "Vain nimi tasmaa, kuva ei. Ei lasketa trendeihin."},
+    }]}
+
+
+def build_digest(matches_log, products, events, now, since=None):
+    """2 h kooste: lista viesteja. Ensin top 10 kuvaosumaryhmaa, sitten
+    omana viestinaan jakson mahdolliset osumat."""
+    payloads = []
+    top = build_top_groups(matches_log, products, events, now)
+    if top:
+        payloads.append(top)
+    possible = possible_matches_payload(matches_log, products,
+                                        since or now - TRENDS_EVERY, now)
+    if possible:
+        payloads.append(possible)
+    return payloads or None
+
+
+def build_top_groups(matches_log, products, events, now):
     rows = digest_rows(matches_log, products, events, now)
     if not rows:
         return None
@@ -757,25 +825,31 @@ def send_summaries(events, matches_log, products, summary, now, dry_run=False):
         last = _parse_time(summary.get("trends")) or now - TRENDS_EVERY
         if not any((_parse_time(r.get("time")) or last) > last for r in matches_log):
             return None                      # ei uusia osumia -> ei viestia
-        return build_digest(matches_log, products, events, now)
+        return build_digest(matches_log, products, events, now, since=last)
 
     jobs = [("sales", "SALES_WEBHOOK", SALES_EVERY, sales_payload),
             ("trends", "TRENDS_WEBHOOK", TRENDS_EVERY, trends_payload)]
     for key, env, every, build in jobs:
         if not _is_due(summary, key, every, now):
             continue
-        payload = build()
-        if payload is None:
+        payloads = build()
+        if payloads is None:
             continue
+        if isinstance(payloads, dict):
+            payloads = [payloads]
         webhook = os.environ.get(env)
         if dry_run:
-            _print_payload(env, payload)
+            for payload in payloads:
+                _print_payload(env, payload)
             continue
         if not webhook:
             print(f"[{key}] {env} puuttuu, yhteenveto ohitetaan")
             continue
         try:
-            post_webhook(webhook, payload)
+            for i, payload in enumerate(payloads):
+                if i:
+                    time.sleep(1)             # Discordin rate limit
+                post_webhook(webhook, payload)
         except Exception as e:
             print(f"[webhook-virhe] {env}: {describe_error(e)}")
             continue                          # seuraava kierros yrittaa uudelleen
