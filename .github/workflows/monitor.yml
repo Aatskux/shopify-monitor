@@ -70,7 +70,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           for f in seen.json stores.json intake_state.json image_hashes.json \
-                   best_sellers.json matches.json summary_state.json; do
+                   best_sellers.json matches.json summary_state.json \
+                   seen_missing.json; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
           git diff --staged --quiet && echo "ei muutoksia" && exit 0

@@ -44,6 +44,9 @@ STORES = {}                        # tayttyy load_stores():lla main():ssa
 
 INTERVAL = 60                      # sekuntia kierrosten välillä (vain jatkuvassa ajossa)
 STATE = pathlib.Path("seen.json")  # muistaa jo nähdyt tuotteet
+# Kauppa -> tuote-id -> milloin id havaittiin ensimmaisen kerran puuttuvaksi.
+MISSING_FILE = pathlib.Path("seen_missing.json")
+PRUNE_AFTER = 24 * 3600            # sekuntia yhtajaksoista puuttumista ennen karsintaa
 HEADERS = {"User-Agent": "Mozilla/5.0 (product monitor)"}
 TIMEOUT = 15                       # sekuntia yhtä HTTP-pyyntöä kohti
 PAGE_SIZE = 250
@@ -151,18 +154,29 @@ def save_seen(seen):
         STATE.write_text(text)
 
 
-def prune_seen(known, products):
-    """Pudottaa kaupan nahdyista tuotteista ne, joita products.json ei enaa
-    listaa. Kutsutaan vain kun kaupan haku onnistui talla kierroksella
-    (fetch_products hakee kaikki sivut tai nostaa virheen, joten vajaata
-    listaa ei tule). Tyhjaa vastausta ei uskota: silloin kaikki tuotteet
-    palaisivat seuraavalla kierroksella "uusina"."""
+def prune_seen(known, products, missing, now):
+    """Karsii kaupan nahdyista tuotteista ne, jotka ovat puuttuneet
+    products.jsonista yhtajaksoisesti PRUNE_AFTER sekuntia.
+
+    missing = {tuote-id: ensimmainen puuttumisaika} talle kaupalle; paivitetaan
+    paikallaan. Id:n palatessa listalle ajastin nollataan, joten hetkellinen
+    vajaa vastaus ei aiheuta uudelleenpostauksia. Kutsutaan vain kun kaupan
+    haku onnistui talla kierroksella. Tyhjaa vastausta ei uskota lainkaan.
+    Palauttaa karsittujen maaran.
+    """
     current = {str(p.get("id")) for p in products}
-    gone = known - current
-    if not gone or not current:
+    if not current:
         return 0
-    known -= gone
-    return len(gone)
+    for pid in [i for i in missing if i in current or i not in known]:
+        del missing[pid]                      # palasi listalle -> nollaus
+    for pid in known - current:
+        missing.setdefault(pid, _iso(now))
+    expired = [pid for pid, since in missing.items()
+               if (now - (_parse_time(since) or now)).total_seconds() >= PRUNE_AFTER]
+    for pid in expired:
+        known.discard(pid)
+        del missing[pid]
+    return len(expired)
 
 
 def fetch_products(store):
@@ -966,6 +980,7 @@ def check_all(seen, webhook=None, dry_run=False, now=None):
     failed = []
     catalog = {}                 # taman kierroksen onnistuneet haut
     best_state = _load_json(BEST_SELLERS, {})
+    missing = _load_json(MISSING_FILE, {})
     matches_log = _load_json(MATCHES_FILE, [])
     hashes = _load_json(IMAGE_HASHES, {})
     hashes.setdefault("products", {})
@@ -1006,14 +1021,14 @@ def check_all(seen, webhook=None, dry_run=False, now=None):
             except Exception as e:
                 print(f"[webhook-virhe] {store}: {describe_error(e)}")
 
-        pruned = prune_seen(known, products)
+        pruned = prune_seen(known, products, missing.setdefault(store, {}), now)
 
         if baseline:
             print(f"{store}: OK, {len(products)} tuotetta, "
                   f"pohjadata tallennettu ({took:.1f}s)")
         else:
             print(f"{store}: OK, {len(products)} tuotetta, "
-                  f"{len(new)} uutta" + (f", {pruned} poistunutta karsittu" if pruned else "")
+                  f"{len(new)} uutta" + (f", {pruned} yli 24 h puuttunutta karsittu" if pruned else "")
                   + f" ({took:.1f}s)")
 
     done_new = update_image_hashes(hashes, catalog)
@@ -1036,6 +1051,7 @@ def check_all(seen, webhook=None, dry_run=False, now=None):
         # Kuten seen.json: poistettujen kauppojen tila ei jaa roikkumaan.
         _save_json(IMAGE_HASHES, hashes)
         _save_json(BEST_SELLERS, best_state)
+        _save_json(MISSING_FILE, {k: v for k, v in missing.items() if k in STORES and v})
         _save_json(MATCHES_FILE, matches_log)
         _save_json(SUMMARY_STATE, summary)
 

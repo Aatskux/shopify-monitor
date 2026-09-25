@@ -152,12 +152,12 @@ class Base(unittest.TestCase):
         tmp = pathlib.Path(self.tmp.name)
 
         saved_d = (d.API_BASE, d.STORES_FILE, d.SEEN_FILE, d.STATE_FILE, d.products_url)
-        saved_m = (m.TIMEOUT, m.STORES, m.STATE, m.fetch_products, m.BEST_SELLERS,
+        saved_m = (m.TIMEOUT, m.STORES, m.STATE, m.MISSING_FILE, m.fetch_products, m.BEST_SELLERS,
                    m.IMAGE_HASHES, m.MATCHES_FILE, m.SUMMARY_STATE)
 
         def restore():
             d.API_BASE, d.STORES_FILE, d.SEEN_FILE, d.STATE_FILE, d.products_url = saved_d
-            (m.TIMEOUT, m.STORES, m.STATE, m.fetch_products, m.BEST_SELLERS,
+            (m.TIMEOUT, m.STORES, m.STATE, m.MISSING_FILE, m.fetch_products, m.BEST_SELLERS,
              m.IMAGE_HASHES, m.MATCHES_FILE, m.SUMMARY_STATE) = saved_m
         self.addCleanup(restore)
 
@@ -171,6 +171,7 @@ class Base(unittest.TestCase):
         m.TIMEOUT = 2
         # monitorin kierros ajetaan osassa testeja: sen tilat temppiin
         m.BEST_SELLERS = tmp / "best_sellers.json"
+        m.MISSING_FILE = tmp / "seen_missing.json"
         m.IMAGE_HASHES = tmp / "image_hashes.json"
         m.MATCHES_FILE = tmp / "matches.json"
         m.SUMMARY_STATE = tmp / "summary_state.json"

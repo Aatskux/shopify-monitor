@@ -166,7 +166,7 @@ class Server(ThreadingHTTPServer):
         pass
 
 
-SAVED = ["STORES", "STORES_FILE", "STATE", "TIMEOUT", "BEST_SELLERS", "IMAGE_HASHES",
+SAVED = ["STORES", "STORES_FILE", "STATE", "MISSING_FILE", "TIMEOUT", "BEST_SELLERS", "IMAGE_HASHES",
          "MATCHES_FILE", "SUMMARY_STATE", "IMAGE_TIMEOUT", "BEST_MIN_LISTED",
          "MAX_IMAGE_DOWNLOADS", "IMAGE_BUDGET", "fetch_products"]
 
@@ -199,6 +199,7 @@ class Base(unittest.TestCase):
         m.STORES_FILE = tmp / "stores.json"
         m.STORES_FILE.write_text(json.dumps(m.STORES))
         m.STATE = tmp / "seen.json"
+        m.MISSING_FILE = tmp / "seen_missing.json"
         m.BEST_SELLERS = tmp / "best_sellers.json"
         m.IMAGE_HASHES = tmp / "image_hashes.json"
         m.MATCHES_FILE = tmp / "matches.json"
@@ -746,7 +747,8 @@ class TestImageLimits(LiveBase):
 # --- tilatiedostot eivat muutu turhaan ----------------------------------
 
 class TestStableState(LiveBase):
-    FILES = ("STATE", "IMAGE_HASHES", "MATCHES_FILE", "SUMMARY_STATE", "BEST_SELLERS")
+    FILES = ("STATE", "MISSING_FILE", "IMAGE_HASHES", "MATCHES_FILE", "SUMMARY_STATE",
+             "BEST_SELLERS")
 
     def snapshot(self):
         out = {}
@@ -1127,6 +1129,8 @@ class TestSmallStore(BestBase):
 # --- seen.json:n karsinta ja webhook-testi --------------------------------
 
 class TestSeenPruning(LiveBase):
+    """Id karsitaan vasta kun se on puuttunut yhtajaksoisesti 24 h."""
+
     def setUp(self):
         super().setUp()
         m.STORES = {self.a: "$", self.b: "$"}
@@ -1138,13 +1142,56 @@ class TestSeenPruning(LiveBase):
     def seen(self):
         return json.loads(m.STATE.read_text())
 
-    def test_poistunut_tuote_karsitaan(self):
-        del LIVE[0]                                    # tuote 1 poistui kaupasta
+    def missing(self):
+        return json.loads(m.MISSING_FILE.read_text()) if m.MISSING_FILE.exists() else {}
+
+    def test_puuttuminen_kirjataan_mutta_ei_karsita_heti(self):
+        del LIVE[0]
         self.round(T0 + timedelta(minutes=5))
+        self.assertIn("1", self.seen()[self.a])
+        self.assertEqual(self.missing(), {self.a: {"1": m._iso(T0 + timedelta(minutes=5))}})
+
+    def test_karsitaan_24_h_yhtajaksoisen_puuttumisen_jalkeen(self):
+        del LIVE[0]
+        self.round(T0 + timedelta(minutes=5))
+        self.round(T0 + timedelta(hours=23, minutes=59))
+        self.assertIn("1", self.seen()[self.a], "alle 24 h: ei viela")
+        self.round(T0 + timedelta(hours=24, minutes=5))
         self.assertNotIn("1", self.seen()[self.a])
-        self.assertEqual(len(self.seen()[self.a]), 9)
+        self.assertEqual(self.missing(), {}, "karsittu id pois myos ajastimista")
+
+    def test_palaava_id_nollaa_ajastimen(self):
+        removed = LIVE.pop(0)
+        self.round(T0 + timedelta(minutes=5))
+        LIVE.insert(0, removed)
+        self.round(T0 + timedelta(hours=12))           # palasi -> nollaus
+        self.assertEqual(self.missing(), {})
+        LIVE.pop(0)
+        self.round(T0 + timedelta(hours=20))           # puuttuu taas
+        self.round(T0 + timedelta(hours=30))           # 10 h, ei 25 h
+        self.assertIn("1", self.seen()[self.a])
+        self.round(T0 + timedelta(hours=44, minutes=5))
+        self.assertNotIn("1", self.seen()[self.a])
+
+    def test_hetkellinen_vajaa_vastaus_ei_postaa_uudelleen(self):
+        saved = LIVE[:5]
+        del LIVE[:5]
+        self.round(T0 + timedelta(minutes=5))
+        LIVE[:0] = saved
+        self.round(T0 + timedelta(minutes=10))
+        self.assertEqual(POSTED, [], "palanneet eivat ole uusia")
+
+    def test_oikeasti_poistettu_joka_palaa_myohemmin_on_uusi(self):
+        removed = LIVE.pop(0)
+        self.round(T0 + timedelta(minutes=5))
+        self.round(T0 + timedelta(hours=25))           # karsittu
+        LIVE.insert(0, removed)
+        self.round(T0 + timedelta(hours=26))
+        self.assertEqual([b["embeds"][0]["title"] for b in POSTED], ["Tuote 1"])
 
     def test_epaonnistunut_haku_ei_karsi(self):
+        del LIVE[0]
+        self.round(T0 + timedelta(minutes=5))
         original = m.fetch_products
 
         def flaky(store):
@@ -1152,33 +1199,27 @@ class TestSeenPruning(LiveBase):
                 raise requests.ConnectionError("katkos")
             return original(store)
         m.fetch_products = flaky
-        del LIVE[:5]
-        self.round(T0 + timedelta(minutes=5))
-        self.assertEqual(len(self.seen()[self.a]), 10, "haku epaonnistui -> ei karsintaa")
+        self.round(T0 + timedelta(hours=25))
+        self.assertIn("1", self.seen()[self.a], "haku epaonnistui -> ei karsintaa")
 
-    def test_tyhja_vastaus_ei_karsi(self):
-        del LIVE[:10]                                  # kauppa a palauttaa tyhjan listan
+    def test_tyhja_vastaus_ei_kaynnista_ajastimia(self):
+        del LIVE[:10]
         self.round(T0 + timedelta(minutes=5))
+        self.assertEqual(self.missing(), {})
         self.assertEqual(len(self.seen()[self.a]), 10)
-
-    def test_iso_osa_kadonnut_karsitaan(self):
-        # oikeassa datassa 12 kauppaa on poistanut yli puolet tuotteistaan
-        del LIVE[:8]
-        self.round(T0 + timedelta(minutes=5))
-        self.assertEqual(self.seen()[self.a], ["10", "9"])
-
-    def test_karsittu_tuote_joka_palaa_on_uusi(self):
-        removed = LIVE.pop(0)
-        self.round(T0 + timedelta(minutes=5))
-        LIVE.insert(0, removed)
-        self.round(T0 + timedelta(minutes=10))
-        titles = [b["embeds"][0]["title"] for b in POSTED]
-        self.assertEqual(titles, ["Tuote 1"])
 
     def test_muiden_kauppojen_tila_sailyy(self):
         del LIVE[0]
         self.round(T0 + timedelta(minutes=5))
+        self.round(T0 + timedelta(hours=25))
         self.assertEqual(self.seen()[self.b], ["50"])
+
+    def test_poistetun_kaupan_ajastimet_siivotaan(self):
+        del LIVE[0]
+        self.round(T0 + timedelta(minutes=5))
+        m.STORES = {self.b: "$"}
+        self.round(T0 + timedelta(minutes=10))
+        self.assertEqual(self.missing(), {})
 
 
 class TestWebhookTest(Base):
