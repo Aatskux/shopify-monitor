@@ -29,7 +29,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - run: pip install requests
+      - run: pip install -r requirements.txt
 
       # Lisaa Discord-kanavalle postatut kaupat stores.json:iin ennen
       # monitorin kierrosta. Jos Discord ei vastaa, monitori ajetaan silti.
@@ -40,9 +40,14 @@ jobs:
           AI_STORES_CHANNEL_ID: ${{ secrets.AI_STORES_CHANNEL_ID }}
         run: python -u discord_intake.py ${{ inputs.dry_run && '--dry-run' || '' }}
 
+      # Sama 5 min kierros hoitaa myos ristiinkauppaosumat (postataan heti
+      # TRENDS_WEBHOOKiin) seka tunnin ja 2 tunnin koosteet, jotka lahtevat
+      # kun summary_state.json:n mukaan on niiden vuoro.
       - name: Tarkista uudet tuotteet
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          SALES_WEBHOOK: ${{ secrets.SALES_WEBHOOK }}
+          TRENDS_WEBHOOK: ${{ secrets.TRENDS_WEBHOOK }}
         run: python -u shopify_monitor.py --once ${{ inputs.dry_run && '--dry-run' || '' }}
 
       - name: Tallenna tila
@@ -50,7 +55,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          for f in seen.json stores.json intake_state.json; do
+          for f in seen.json stores.json intake_state.json image_hashes.json \
+                   stock_state.json events.json matches.json summary_state.json; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
           git diff --staged --quiet && echo "ei muutoksia" && exit 0

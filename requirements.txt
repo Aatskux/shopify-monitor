@@ -1,0 +1,4 @@
+requests
+imagehash
+Pillow
+rapidfuzz

@@ -29,7 +29,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - run: pip install requests
+      - run: pip install -r requirements.txt
 
       - name: Yksikkotestit (valekauppa, ei verkkoa)
         run: python -u -m unittest -v test_shopify_monitor.py test_discord_intake.py
