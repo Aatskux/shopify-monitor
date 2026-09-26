@@ -100,5 +100,22 @@
   "stores": 2,
   "strength": "varma",
   "time": "2026-09-26T05:31:06+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 20,
+    "name_score": 85.7,
+    "product_id": "9464766071013",
+    "store": "https://plantona.store",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Pink Winter Tumbler",
+  "product_id": "9087872041158",
+  "store": "https://evonnashop.com",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-26T07:15:51+00:00"
  }
 ]
