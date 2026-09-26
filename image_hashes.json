@@ -1113,6 +1113,14 @@
     "name": "Ghostfreak Crew",
     "price": "$19.99",
     "published_at": "2026-09-26T05:10:00-07:00"
+   },
+   "7923594395707": {
+    "handle": "trunks-cropped-jacket",
+    "hash": "aac58a9b3db19872",
+    "image": "https://cdn.shopify.com/s/files/1/0697/9390/6747/files/1_9a3220c5-6f64-43d1-b7f1-3f2d0ad960ec.png?v=1790424626",
+    "name": "Trunks Cropped Jacket",
+    "price": "$34.99",
+    "published_at": "2026-09-26T05:11:02-07:00"
    }
   },
   "https://buy.fayora.shop": {
@@ -19019,6 +19027,30 @@
     "name": "Dark Camo Thermal",
     "price": "$19.99",
     "published_at": "2026-09-24T06:53:41-05:00"
+   },
+   "15394467643607": {
+    "handle": "spidey-sweater",
+    "hash": "faa5851a97ca6aa1",
+    "image": "https://cdn.shopify.com/s/files/1/0831/3503/7655/files/1_8c58eb8a-a7e8-4c86-9a69-7c5cffdb744a.png?v=1790424689",
+    "name": "Spidey Sweater",
+    "price": "$24.99",
+    "published_at": "2026-09-26T07:12:02-05:00"
+   },
+   "15394467774679": {
+    "handle": "glam-pink-track-set",
+    "hash": "e8c895f7f060f660",
+    "image": "https://cdn.shopify.com/s/files/1/0831/3503/7655/files/1789723405774-25a7cdc1.jpg?v=1790424743",
+    "name": "Glam Pink Track Set",
+    "price": "$29.99",
+    "published_at": "2026-09-26T07:13:05-05:00"
+   },
+   "15394467971287": {
+    "handle": "double-layered-henley",
+    "hash": "d48f69b18f64834d",
+    "image": "https://cdn.shopify.com/s/files/1/0831/3503/7655/files/by.kalm_1786383843_3960796353739068616_40773685307.jpg?v=1790424816",
+    "name": "Double Layered Henley",
+    "price": "$19.99",
+    "published_at": "2026-09-26T07:14:34-05:00"
    },
    "9309133439191": {
     "handle": "world-cup-polo-collection",
