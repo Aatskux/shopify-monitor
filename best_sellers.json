@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-26T16:55:57+00:00",
+ "checked": "2026-09-26T17:56:00+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -103,7 +103,6 @@
   },
   "https://autumnandash.co": {
    "ranks": {
-    "camo-fleece": 6,
     "monarch-butterfly-cardigan": 4,
     "polo-bear-fleece": 2,
     "polo-bear-fleece-jacket": 3,
@@ -493,21 +492,19 @@
     "2026-snoopy-peanuts-popcorn-bucket": 4,
     "bella-s-twilight-floral-duvet-set": 5,
     "bella-swan-twilight-sheet-set": 2,
-    "lando-norris-jellycat": 6,
-    "lanterns-hal-jordan-brown-jacket": 10,
     "shipping-protection": 3,
-    "twilight-fur-jacket": 9,
+    "sza-tapestry-hoodie": 8,
     "vip-membership": 1,
-    "white-athletic-dept-1987-cap": 18,
-    "white-athletic-dept-1987-cap-vip": 15,
-    "white-distressed-denim-baseball-cap": 16,
-    "white-distressed-denim-baseball-cap-vip": 14,
-    "white-distressed-trucker-hat": 8,
-    "white-distressed-trucker-hat-vip": 13,
-    "white-racing-club-trucker-cap": 7,
-    "white-racing-club-trucker-cap-vip": 12,
-    "white-rhinestone-monogram-trucker-cap": 17,
-    "white-rhinestone-monogram-trucker-cap-vip": 11
+    "white-athletic-dept-1987-cap": 16,
+    "white-athletic-dept-1987-cap-vip": 13,
+    "white-distressed-denim-baseball-cap": 14,
+    "white-distressed-denim-baseball-cap-vip": 12,
+    "white-distressed-trucker-hat": 7,
+    "white-distressed-trucker-hat-vip": 11,
+    "white-racing-club-trucker-cap": 6,
+    "white-racing-club-trucker-cap-vip": 10,
+    "white-rhinestone-monogram-trucker-cap": 15,
+    "white-rhinestone-monogram-trucker-cap-vip": 9
    }
   },
   "https://maverostyle.com": {
@@ -682,10 +679,11 @@
   },
   "https://nuvaly.shop": {
    "ranks": {
-    "cozy-set": 1,
-    "halter-neck-mini-dress": 4,
-    "leopard-zip-up-jacket": 3,
-    "ripped-jeans": 2
+    "cozy-set": 2,
+    "halter-neck-mini-dress": 5,
+    "jacket": 1,
+    "leopard-zip-up-jacket": 4,
+    "ripped-jeans": 3
    }
   },
   "https://officialsoreva.com": {
