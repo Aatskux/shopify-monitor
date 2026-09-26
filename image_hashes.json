@@ -372,6 +372,14 @@
     "price": "$29.99",
     "published_at": "2026-09-24T19:27:33-04:00"
    },
+   "15377260839017": {
+    "handle": "bambi-abstract-jacket",
+    "hash": "e88797dac30dd08e",
+    "image": "https://cdn.shopify.com/s/files/1/0585/6840/9193/files/STEVEMADDEN_APPAREL_SC01143_ABSTRACT-DOT_02-1.webp?v=1790388552",
+    "name": "Bambi Abstract Jacket",
+    "price": "$29.99",
+    "published_at": "2026-09-25T22:12:45-04:00"
+   },
    "9449447096425": {
     "handle": "crochet-skull-pants",
     "hash": "bcf3876c9948932c",
@@ -529,6 +537,14 @@
     "name": "Sage Hooded Poncho",
     "price": "$29.99",
     "published_at": "2026-09-24T19:27:33-04:00"
+   },
+   "15377260839017": {
+    "handle": "bambi-abstract-jacket",
+    "hash": "e88797dac30dd08e",
+    "image": "https://cdn.shopify.com/s/files/1/0585/6840/9193/files/STEVEMADDEN_APPAREL_SC01143_ABSTRACT-DOT_02-1.webp?v=1790388552",
+    "name": "Bambi Abstract Jacket",
+    "price": "$29.99",
+    "published_at": "2026-09-25T22:12:45-04:00"
    },
    "9449447096425": {
     "handle": "crochet-skull-pants",

@@ -49,5 +49,39 @@
   "stores": 2,
   "strength": "varma",
   "time": "2026-09-26T00:46:14+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 0,
+    "name_score": 100.0,
+    "product_id": "15377260839017",
+    "store": "https://ashandbloom.store",
+    "strength": "varma"
+   }
+  ],
+  "name": "Bambi Abstract Jacket",
+  "product_id": "15377260839017",
+  "store": "https://aurorathelabel.shop",
+  "stores": 2,
+  "strength": "varma",
+  "time": "2026-09-26T02:16:01+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 0,
+    "name_score": 100.0,
+    "product_id": "15377260839017",
+    "store": "https://aurorathelabel.shop",
+    "strength": "varma"
+   }
+  ],
+  "name": "Bambi Abstract Jacket",
+  "product_id": "15377260839017",
+  "store": "https://ashandbloom.store",
+  "stores": 2,
+  "strength": "varma",
+  "time": "2026-09-26T02:16:01+00:00"
  }
 ]
