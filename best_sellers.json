@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-26T20:55:48+00:00",
+ "checked": "2026-09-26T21:56:07+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -198,6 +198,7 @@
   },
   "https://cavessi.store": {
    "ranks": {
+    "big-mochi-pumpkin-plush": 9,
     "hey-sista-t-shirt": 1,
     "monster-drink-plush": 4,
     "otto-sausage-dog": 7,
@@ -415,6 +416,30 @@
     "sweat-set": 3
    }
   },
+  "https://instatame.store": {
+   "ranks": {
+    "big-mochi-pumpkin-squisheen": 10,
+    "deer-print-faux-fur-throw-blanket": 19,
+    "firkin-jelly-collection": 17,
+    "heart-to-tail-hot-dog-novelty-pet-bed": 20,
+    "katseye-hoodies": 5,
+    "lace-up-long-sleeve-top": 2,
+    "lace-up-long-sleeve-top-copy": 11,
+    "laced-up-pants": 12,
+    "magnolia-bonsai-hoodie": 13,
+    "matcha-active-set": 4,
+    "matcha-active-set-1": 8,
+    "michael-jackson-prop-doll-plush-figure": 9,
+    "pokemon-water-bottles": 3,
+    "punch-orangutan-plush-toy": 18,
+    "rasenshuriken-spinner": 15,
+    "reversible-fleece": 16,
+    "scary-movie-popcorn-bucket": 6,
+    "scary-movie-popcorn-bucket-2": 7,
+    "shipping-protection": 1,
+    "spiderman-wallet": 14
+   }
+  },
   "https://kairovaglobal.com": {
    "ranks": {
     "autumn-whisper-top": 6,
@@ -486,6 +511,29 @@
   },
   "https://lyrx.shop": {
    "unsupported": "2026-09-25T22:55:29+00:00"
+  },
+  "https://madebyripples.com": {
+   "ranks": {
+    "cecilia-ring-gold": 12,
+    "cecilia-ring-silver": 8,
+    "coco-ring-gold": 13,
+    "coco-ring-silver": 10,
+    "freeform-choker-with-fancy-yellow-pear-diamonds": 19,
+    "hp-necklace": 1,
+    "jelly-baguette": 4,
+    "jelly-firkin": 3,
+    "maria-bracelet-gold": 17,
+    "maria-bracelet-silver": 7,
+    "melania-ring-gold": 14,
+    "melania-ring-silver": 16,
+    "miru-interactive-bag-charm": 6,
+    "nadine-hand-chain-gold": 15,
+    "nadine-hand-chain-silver": 18,
+    "sunny-g-goggles": 5,
+    "the-graduated-tennis-bracelet-gold": 11,
+    "the-graduated-tennis-bracelet-silver": 9,
+    "weeping-ring": 2
+   }
   },
   "https://maisonveya.com": {
    "ranks": {

@@ -6701,6 +6701,160 @@
     "published_at": "2026-05-28T22:51:40-05:00"
    }
   },
+  "https://madebyripples.com": {
+   "11366322635093": {
+    "handle": "jelly-firkin",
+    "hash": "ea95c66eb0699338",
+    "image": "https://cdn.shopify.com/s/files/1/1052/8315/8357/files/hotpink.png?v=1781577395",
+    "name": "Jelly Firkin",
+    "price": "$59.00",
+    "published_at": "2026-06-16T03:36:31+01:00"
+   },
+   "11366322798933": {
+    "handle": "jelly-baguette",
+    "hash": "fb84966b841fe05c",
+    "image": "https://cdn.shopify.com/s/files/1/1052/8315/8357/files/pinkf.png?v=1781577421",
+    "name": "Jelly Baguette",
+    "price": "$49.00",
+    "published_at": "2026-06-16T04:04:32+01:00"
+   },
+   "11368772370773": {
+    "handle": "sunny-g-goggles",
+    "hash": "bab4c54f2fa49072",
+    "image": "https://cdn.shopify.com/s/files/1/1052/8315/8357/files/ripples-sunnyg-orange1.webp?v=1781666759",
+    "name": "Ripples Swimming Goggles",
+    "price": "$24.95",
+    "published_at": "2026-06-17T04:03:26+01:00"
+   },
+   "11378744394069": {
+    "handle": "hp-necklace",
+    "hash": "b324ccceb164cc9b",
+    "image": "https://cdn.shopify.com/s/files/1/1052/8315/8357/files/47242F1D-5FC2-47E2-AAE8-34BF8C62D193.jpg?v=1782229412",
+    "name": "Ripples Golden Snitch Necklace™",
+    "price": "$24.95",
+    "published_at": "2026-06-23T16:43:29+01:00"
+   },
+   "11446047375701": {
+    "handle": "weeping-ring",
+    "hash": "9ecf6b64879348c8",
+    "image": "https://cdn.shopify.com/s/files/1/1052/8315/8357/files/sapphire_weeping_ring.jpg?v=1784267283",
+    "name": "Weeping Ring",
+    "price": "$19.95",
+    "published_at": "2026-07-17T06:48:00+01:00"
+   },
+   "11636551680341": {
+    "handle": "freeform-choker-with-fancy-yellow-pear-diamonds",
+    "hash": "9f344f0aa8bbaa2a",
+    "image": "https://cdn.shopify.com/s/files/1/1052/8315/8357/files/SHOT_01_0340cropped.jpg?v=1790191876",
+    "name": "Freeform Choker with Fancy Yellow Pear Diamonds",
+    "price": "$39.00",
+    "published_at": "2026-09-23T20:31:11+01:00"
+   },
+   "11637043069269": {
+    "handle": "nadine-hand-chain-silver",
+    "hash": "fb63cc98b6266464",
+    "image": "https://cdn.shopify.com/s/files/1/1052/8315/8357/files/nadine-hand-chain-silver-7738835.jpg?v=1790216691",
+    "name": "ARYA HAND CHAIN - SILVER",
+    "price": "$49.95",
+    "published_at": "2026-09-24T03:24:49+01:00"
+   },
+   "11637043102037": {
+    "handle": "maria-bracelet-gold",
+    "hash": "e36c9c92636ce193",
+    "image": "https://cdn.shopify.com/s/files/1/1052/8315/8357/files/maria-bracelet-gold-8341571.jpg?v=1790216693",
+    "name": "MARIA BRACELET - GOLD",
+    "price": "$49.95",
+    "published_at": "2026-09-24T03:24:49+01:00"
+   },
+   "11637043134805": {
+    "handle": "melania-ring-silver",
+    "hash": "b233c5ca3c38b363",
+    "image": "https://cdn.shopify.com/s/files/1/1052/8315/8357/files/melania-ring-silver-4554595.jpg?v=1790216692",
+    "name": "MELANIA RING - SILVER",
+    "price": "$49.95",
+    "published_at": "2026-09-24T03:24:49+01:00"
+   },
+   "11637043167573": {
+    "handle": "nadine-hand-chain-gold",
+    "hash": "fb63cc98b6266464",
+    "image": "https://cdn.shopify.com/s/files/1/1052/8315/8357/files/nadine-hand-chain-gold-7237799.jpg?v=1790216692",
+    "name": "ARYA HAND CHAIN - GOLD",
+    "price": "$49.95",
+    "published_at": "2026-09-24T03:24:49+01:00"
+   },
+   "11637043200341": {
+    "handle": "melania-ring-gold",
+    "hash": "b232c5ca3c3cb363",
+    "image": "https://cdn.shopify.com/s/files/1/1052/8315/8357/files/melania-ring-gold-pre-order-ships-june-26-7325132.jpg?v=1790216693",
+    "name": "MELANIA RING - GOLD",
+    "price": "$49.95",
+    "published_at": "2026-09-24T03:24:49+01:00"
+   },
+   "11637043233109": {
+    "handle": "coco-ring-gold",
+    "hash": "b09bcf64389bc564",
+    "image": "https://cdn.shopify.com/s/files/1/1052/8315/8357/files/coco-ring-gold-2714423.jpg?v=1790216698",
+    "name": "COCO RING - GOLD",
+    "price": "$49.95",
+    "published_at": "2026-09-24T03:24:56+01:00"
+   },
+   "11637043265877": {
+    "handle": "cecilia-ring-gold",
+    "hash": "bccec3353ccae025",
+    "image": "https://cdn.shopify.com/s/files/1/1052/8315/8357/files/cecilia-ring-gold-7279964.jpg?v=1790216698",
+    "name": "CECILIA RING - GOLD",
+    "price": "$49.95",
+    "published_at": "2026-09-24T03:24:56+01:00"
+   },
+   "11637043298645": {
+    "handle": "the-graduated-tennis-bracelet-gold",
+    "hash": "bb1bc4e42a1bb564",
+    "image": "https://cdn.shopify.com/s/files/1/1052/8315/8357/files/the-graduated-tennis-bracelet-gold-1512453.jpg?v=1790216698",
+    "name": "THE GRADUATED TENNIS BRACELET - GOLD",
+    "price": "$49.95",
+    "published_at": "2026-09-24T03:24:56+01:00"
+   },
+   "11637043331413": {
+    "handle": "coco-ring-silver",
+    "hash": "b09bcf64389bc564",
+    "image": "https://cdn.shopify.com/s/files/1/1052/8315/8357/files/coco-ring-silver-2913649.jpg?v=1790216698",
+    "name": "COCO RING - SILVER",
+    "price": "$49.95",
+    "published_at": "2026-09-24T03:24:56+01:00"
+   },
+   "11637043364181": {
+    "handle": "the-graduated-tennis-bracelet-silver",
+    "hash": "bb1bc4e42a1bb564",
+    "image": "https://cdn.shopify.com/s/files/1/1052/8315/8357/files/the-graduated-tennis-bracelet-silver-5982810.jpg?v=1790216699",
+    "name": "THE GRADUATED TENNIS BRACELET - SILVER",
+    "price": "$49.95",
+    "published_at": "2026-09-24T03:24:56+01:00"
+   },
+   "11637043396949": {
+    "handle": "cecilia-ring-silver",
+    "hash": "bccac3353ccae035",
+    "image": "https://cdn.shopify.com/s/files/1/1052/8315/8357/files/cecilia-ring-silver-2504689.jpg?v=1790216705",
+    "name": "CECILIA RING - SILVER",
+    "price": "$49.95",
+    "published_at": "2026-09-24T03:25:02+01:00"
+   },
+   "11637043429717": {
+    "handle": "maria-bracelet-silver",
+    "hash": "e36c9893636ce592",
+    "image": "https://cdn.shopify.com/s/files/1/1052/8315/8357/files/maria-bracelet-silver-2318238.jpg?v=1790216704",
+    "name": "MARIA BRACELET - SILVER",
+    "price": "$49.95",
+    "published_at": "2026-09-24T03:25:02+01:00"
+   },
+   "11637049065813": {
+    "handle": "miru-interactive-bag-charm",
+    "hash": "ea9595684f1a6995",
+    "image": "https://cdn.shopify.com/s/files/1/1052/8315/8357/files/mirumibagcharm.webp?v=1790218503",
+    "name": "Miru Interactive Bag Charm",
+    "price": "$39.95",
+    "published_at": "2026-09-24T03:54:25+01:00"
+   }
+  },
   "https://maisonveya.com": {
    "10367609209114": {
     "handle": "white-distressed-trucker-hat",
