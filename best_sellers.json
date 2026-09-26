@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-25T23:55:31+00:00",
+ "checked": "2026-09-26T00:55:53+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -203,12 +203,13 @@
   "https://cavessi.store": {
    "ranks": {
     "hey-sista-t-shirt": 1,
-    "monster-drink-plush": 3,
-    "otto-sausage-dog": 6,
+    "monster-drink-plush": 4,
+    "otto-sausage-dog": 7,
     "shipping-protection": 2,
-    "snoopy-popcorn-bucket": 4,
-    "spooky-boo-bunny": 7,
-    "the-rosewood-tartan-collared-jacket": 5
+    "snoopy-popcorn-bucket": 5,
+    "spooky-boo-bunny": 8,
+    "star-girl-tracksuit": 3,
+    "the-rosewood-tartan-collared-jacket": 6
    }
   },
   "https://celinea.online": {
@@ -412,7 +413,8 @@
    "ranks": {
     "back-logo-hoodie-and-pants": 4,
     "club-zipper-hoodie": 2,
-    "energy-drink-plushie": 5,
+    "mj-jacket": 5,
+    "mj-pants": 6,
     "shipping-protection": 1,
     "sweat-set": 3
    }
@@ -1207,6 +1209,30 @@
     "sweatpants-next-world": 6,
     "tracksuit-next-level-true": 4,
     "tracksuit-true-next-level": 3
+   }
+  },
+  "https://xevorausa.com": {
+   "ranks": {
+    "anti-sa-hoodie": 1,
+    "fdr-camo-hoodie": 17,
+    "fdr-camo-hoodie-1": 16,
+    "kill-social-anxiety-hoodie-vip": 9,
+    "leopard-zip-up-1": 19,
+    "shipping-protection": 2,
+    "shorts-next-level": 8,
+    "true-woman-skirt": 7,
+    "true-woman-skirt-vip": 6,
+    "unisex-poject-hoodie": 3,
+    "unisex-poject-hoodie-vip": 18,
+    "vip-membership": 5,
+    "vip-membership-free": 4,
+    "viral-autumn-jacket": 13,
+    "viral-autumn-jacket-vip": 12,
+    "viral-leopard-hoodie": 14,
+    "viral-leopard-hoodie-vip": 11,
+    "viral-zip-up-hoodie": 15,
+    "viral-zip-up-hoodie-vip": 10,
+    "💞seamless-front-closure-bra-with-adjustable-straps-vip": 20
    }
   },
   "https://zolera.co": {
