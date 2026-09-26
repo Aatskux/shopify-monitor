@@ -185,5 +185,39 @@
   "stores": 2,
   "strength": "mahdollinen",
   "time": "2026-09-26T12:21:11+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 0,
+    "name_score": 100.0,
+    "product_id": "15378443206761",
+    "store": "https://ashandbloom.store",
+    "strength": "varma"
+   }
+  ],
+  "name": "Ace of Hearts Incense Tray",
+  "product_id": "15378443206761",
+  "store": "https://aurorathelabel.shop",
+  "stores": 2,
+  "strength": "varma",
+  "time": "2026-09-26T16:15:59+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 0,
+    "name_score": 100.0,
+    "product_id": "15378443206761",
+    "store": "https://aurorathelabel.shop",
+    "strength": "varma"
+   }
+  ],
+  "name": "Ace of Hearts Incense Tray",
+  "product_id": "15378443206761",
+  "store": "https://ashandbloom.store",
+  "stores": 2,
+  "strength": "varma",
+  "time": "2026-09-26T16:15:59+00:00"
  }
 ]
