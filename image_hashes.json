@@ -5748,14 +5748,6 @@
    }
   },
   "https://hazelhaven.co": {
-   "10085790679189": {
-    "handle": "energy-drink-plushie",
-    "hash": "b333cc08cccfcf24",
-    "image": "https://cdn.shopify.com/s/files/1/0720/3117/4805/files/ChatGPTImageSep23_2026_12_09_09PM.png?v=1790180160",
-    "name": "Energy Drink Plushie",
-    "price": "$19.99",
-    "published_at": "2026-09-23T11:48:12-05:00"
-   },
    "9211289632917": {
     "handle": "club-zipper-hoodie",
     "hash": "afe4e40eec991991",
@@ -5763,6 +5755,14 @@
     "name": "Club Zipper Hoodie",
     "price": "$29.99",
     "published_at": "2026-05-05T12:49:21-05:00"
+   },
+   "9374029906069": {
+    "handle": "mj-jacket",
+    "hash": "c9061cf0f6f8a317",
+    "image": "https://cdn.shopify.com/s/files/1/0720/3117/4805/files/THRILLERCOSTUME-1.png?v=1789485333",
+    "name": "MJ Jacket",
+    "price": "$24.99",
+    "published_at": "2026-09-25T19:06:41-05:00"
    },
    "9374492622997": {
     "handle": "back-logo-hoodie-and-pants",
@@ -5779,6 +5779,14 @@
     "name": "Sweat Set",
     "price": "$34.99",
     "published_at": "2026-09-14T20:15:38-05:00"
+   },
+   "9375411437717": {
+    "handle": "mj-pants",
+    "hash": "a436c74c9a6d9339",
+    "image": "https://cdn.shopify.com/s/files/1/0720/3117/4805/files/ChatGPT_Image_Sep_15_2026_11_09_01_AM.png?v=1789484949",
+    "name": "MJ Pants",
+    "price": "$19.99",
+    "published_at": "2026-09-25T19:06:27-05:00"
    }
   },
   "https://kairovaglobal.com": {
