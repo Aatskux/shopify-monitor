@@ -54,6 +54,22 @@ jobs:
           AI_STORES_CHANNEL_ID: ${{ secrets.AI_STORES_CHANNEL_ID }}
         run: python -u discord_intake.py ${{ inputs.dry_run && '--dry-run' || '' }}
 
+      # Videoiden metadatan poisto omalla botilla (METADATA_BOT_TOKEN).
+      # Ei koskaan kaada tuoteseurantaa. Ilman secretteja skripti lopettaa hiljaa.
+      - name: Poista videoiden metadata
+        continue-on-error: true
+        if: ${{ !inputs.dry_run }}
+        env:
+          METADATA_BOT_TOKEN: ${{ secrets.METADATA_BOT_TOKEN }}
+          METADATA_CHANNEL_ID: ${{ secrets.METADATA_CHANNEL_ID }}
+        run: |
+          # ei secretteja -> ominaisuus pois, ei turhaa ffmpeg-asennusta
+          [ -n "$METADATA_BOT_TOKEN" ] && [ -n "$METADATA_CHANNEL_ID" ] || exit 0
+          command -v ffmpeg >/dev/null \
+            || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+          ffmpeg -version | head -1
+          python -u metadata_cleaner.py
+
       # Sama 5 min kierros hoitaa myos ristiinkauppaosumat (heti
       # TRENDS_WEBHOOKiin), 2 tunnin trendikoosteen (summary_state.json) ja
       # tunnin valein best-sellerit (best_sellers.json -> SALES_WEBHOOK).
@@ -71,7 +87,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           for f in seen.json stores.json intake_state.json image_hashes.json \
                    best_sellers.json matches.json summary_state.json \
-                   seen_missing.json; do
+                   seen_missing.json metadata_state.json; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
           git diff --staged --quiet && echo "ei muutoksia" && exit 0
