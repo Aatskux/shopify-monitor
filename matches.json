@@ -117,5 +117,22 @@
   "stores": 2,
   "strength": "mahdollinen",
   "time": "2026-09-26T07:15:51+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 0,
+    "name_score": 44.4,
+    "product_id": "16091268251982",
+    "store": "https://coredistrict.co",
+    "strength": "vahva"
+   }
+  ],
+  "name": "Ghostfreak Crew",
+  "product_id": "7923592921147",
+  "store": "https://blankspaces.us",
+  "stores": 2,
+  "strength": "vahva",
+  "time": "2026-09-26T12:10:57+00:00"
  }
 ]
