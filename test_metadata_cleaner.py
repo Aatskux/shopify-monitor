@@ -371,6 +371,13 @@ def encoder_available(name):
 
 
 FORBIDDEN = ("creation_time", "encoder", "location", "handler")
+# ffmpegin muxerin pakolliset geneeriset oletukset, joita -map_metadata -1
+# ei voi poistaa (MP4/MOV hdlr-laatikon nimi, WebM:n muxerin nimi).
+# Ne eivat tule alkuperaisesta tiedostosta; kaikki muu on kielletty.
+MUXER_DEFAULTS = {"video:handler_name": "VideoHandler",
+                  "audio:handler_name": "SoundHandler",
+                  "encoder": "Lavf"}
+ORIGINAL_VALUES = ("Salainen", "2024-06-01", "+60.1699", "iPhone", "Core Media")
 
 
 # CI asettaa REQUIRE_FFMPEG=1: silloin puuttuva ffmpeg on virhe eika ohitus.
@@ -400,8 +407,12 @@ class TestRealFfmpeg(Base):
         self.assertEqual(stream_hashes(src), stream_hashes(dst))
 
         after = self.tags(info)
-        leaked = {k: v for k, v in after.items() if any(f in k for f in FORBIDDEN)}
+        leaked = {k: v for k, v in after.items()
+                  if any(f in k for f in FORBIDDEN) and MUXER_DEFAULTS.get(k) != v}
         self.assertEqual(leaked, {}, f"{ext}: metadataa jai: {leaked} (kaikki: {after})")
+        for value in ORIGINAL_VALUES:
+            self.assertNotIn(value, json.dumps(info), f"{ext}: alkuperainen arvo {value!r} jai")
+            self.assertNotIn(value.encode(), dst.read_bytes(), f"{ext}: {value!r} tiedoston tavuissa")
         self.assertNotIn("title", after)
         self.assertEqual(info.get("chapters"), [])
         orig = ffprobe(src)["streams"]
@@ -448,8 +459,11 @@ class TestRealFfmpeg(Base):
         out = self.tmp / name
         out.write_bytes(data)
         self.assertEqual(stream_hashes(src), stream_hashes(out))
-        leaked = [k for k in self.tags(ffprobe(out)) if any(f in k for f in FORBIDDEN)]
+        leaked = [k for k, v in self.tags(ffprobe(out)).items()
+                  if any(f in k for f in FORBIDDEN) and MUXER_DEFAULTS.get(k) != v]
         self.assertEqual(leaked, [])
+        for value in ORIGINAL_VALUES:
+            self.assertNotIn(value.encode(), data)
         self.assertEqual(REACTIONS, [("10", mc.CLEANED)])
         self.assertEqual(list(self.work.iterdir()), [])
 

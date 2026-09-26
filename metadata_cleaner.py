@@ -54,7 +54,12 @@ FAILED = "⚠️"  # :warning:
 # --- ffmpeg -------------------------------------------------------------
 
 def ffmpeg_command(src, dst):
-    """Metadata ja kappaleet pois, virrat kopioidaan sellaisenaan."""
+    """Metadata ja kappaleet pois, virrat kopioidaan sellaisenaan.
+
+    Muxer kirjoittaa silti omat geneeriset oletuksensa, joita ei voi
+    poistaa: MP4/MOV:n pakollisen hdlr-laatikon nimi (VideoHandler /
+    SoundHandler) ja WebM:n muxerin nimi (Lavf, ilman versiota bitexactin
+    ansiosta). Ne eivat sisalla mitaan alkuperaisesta tiedostosta."""
     return ["ffmpeg", "-nostdin", "-hide_banner", "-loglevel", "error", "-y",
             "-i", str(src),
             "-map", "0:v", "-map", "0:a?",
@@ -62,10 +67,6 @@ def ffmpeg_command(src, dst):
             "-c", "copy",
             "-fflags", "+bitexact", "-flags:v", "+bitexact", "-flags:a", "+bitexact",
             "-movflags", "+faststart",
-            # -map_metadata -1 ei poista muxerin omia oletuksia
-            # (VideoHandler/SoundHandler, Lavf): tyhjennetaan ne erikseen.
-            "-metadata:s:v", "handler_name=", "-metadata:s:a", "handler_name=",
-            "-metadata", "encoder=",
             str(dst)]
 
 
