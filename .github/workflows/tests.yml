@@ -31,8 +31,17 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Yksikkotestit (valekauppa, ei verkkoa)
-        run: python -u -m unittest -v test_shopify_monitor.py test_discord_intake.py
+      # metadata_cleaner tarvitsee ffmpegin; asennetaan vain jos kuvasta puuttuu
+      - name: ffmpeg
+        run: |
+          command -v ffmpeg >/dev/null && command -v ffprobe >/dev/null \
+            || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+          ffmpeg -version | head -1
+
+      - name: Yksikkotestit (valekauppa, vale-Discord, ei verkkoa)
+        env:
+          REQUIRE_FFMPEG: "1"
+        run: python -u -m unittest -v test_shopify_monitor.py test_discord_intake.py test_metadata_cleaner.py
 
       # Savutesti hakee oikeat kaupat ja renderoi oikeat Discord-embedit,
       # mutta ajaa dry-runina: mitaan ei posteta eika tilaa kirjoiteta.
