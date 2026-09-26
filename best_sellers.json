@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-26T06:55:47+00:00",
+ "checked": "2026-09-26T07:55:59+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -87,11 +87,12 @@
   },
   "https://astrapparels.com": {
    "ranks": {
-    "chinese-time-shirt": 4,
+    "chinese-time-shirt": 5,
     "p-f-shoes": 2,
     "patterned-funnel-coat": 1,
-    "vintage-bug-costumes": 5,
-    "y2k-angel-shoes": 3
+    "vintage-bug-costumes": 6,
+    "y2k-angel-shoes": 3,
+    "y2k-sneakers": 4
    }
   },
   "https://aurorathelabel.shop": {
@@ -358,8 +359,8 @@
   },
   "https://evonnashop.com": {
    "ranks": {
-    "casual-necklace-set": 2,
-    "classic-casual-clogs": 3,
+    "comfort-mule-shoes": 2,
+    "pink-winter-tumbler": 3,
     "priority-protection": 1
    }
   },
@@ -964,25 +965,25 @@
   "https://shopsakura.store": {
    "ranks": {
     "balloon-sleeve-hoodie-and-wide-leg-sweatpants": 5,
-    "bambi-jean": 12,
-    "champagne-shimmer-knit-sweater": 15,
-    "chinese-time-longsleeve": 14,
-    "cowboy-portrait-sweatshirt": 18,
-    "crimson-floral-jacket": 16,
+    "bambi-jean": 14,
+    "champagne-shimmer-knit-sweater": 17,
+    "chinese-time-longsleeve": 16,
+    "cowboy-portrait-sweatshirt": 20,
+    "crimson-floral-jacket": 18,
     "drift-tapestry-baggy-joggers": 10,
-    "golden-hawkeye-zip-up-hoodie": 13,
-    "green-apple-coat": 20,
+    "golden-cat-fur-trim-puffer-jacket": 12,
+    "golden-hawkeye-zip-up-hoodie": 15,
     "holy-zip-up-hoodie": 7,
-    "it-girl-jeans": 19,
     "loser-colossus-jeans": 4,
-    "miidnight-hoodie-and-sweatpants": 17,
+    "miidnight-hoodie-and-sweatpants": 19,
     "never-everland-graphic-hoodie-collection": 3,
-    "rebel-archive": 11,
+    "rebel-archive": 13,
     "sakura-set": 2,
     "shipping-protection": 1,
     "signature-low-rise-micro-skort": 8,
     "sweetheart-skirt-bag-collection": 9,
-    "vintage-new-york-zip-hoodie": 6
+    "vintage-new-york-zip-hoodie": 6,
+    "zora-ballet-flat": 11
    }
   },
   "https://shopurbanthread.com": {
