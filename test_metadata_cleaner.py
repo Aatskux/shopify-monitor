@@ -396,14 +396,14 @@ class TestRealFfmpeg(Base):
 
         mc.clean_video(src, dst)
         info = ffprobe(dst)
-        after = self.tags(info)
-        leaked = {k: v for k, v in after.items() if any(f in k for f in FORBIDDEN)}
-        self.assertEqual(leaked, {}, f"{ext}: metadataa jai: {leaked}")
-        self.assertNotIn("title", after)
-        self.assertEqual(info.get("chapters"), [])
-
         # virrat identtiset: samat koodekit ja tavu tavulta samat paketit
         self.assertEqual(stream_hashes(src), stream_hashes(dst))
+
+        after = self.tags(info)
+        leaked = {k: v for k, v in after.items() if any(f in k for f in FORBIDDEN)}
+        self.assertEqual(leaked, {}, f"{ext}: metadataa jai: {leaked} (kaikki: {after})")
+        self.assertNotIn("title", after)
+        self.assertEqual(info.get("chapters"), [])
         orig = ffprobe(src)["streams"]
         for a, b in zip(orig, info["streams"]):
             for key in ("codec_name", "codec_type", "width", "height", "sample_rate", "channels"):

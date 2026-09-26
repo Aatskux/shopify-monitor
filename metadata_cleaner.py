@@ -62,6 +62,10 @@ def ffmpeg_command(src, dst):
             "-c", "copy",
             "-fflags", "+bitexact", "-flags:v", "+bitexact", "-flags:a", "+bitexact",
             "-movflags", "+faststart",
+            # -map_metadata -1 ei poista muxerin omia oletuksia
+            # (VideoHandler/SoundHandler, Lavf): tyhjennetaan ne erikseen.
+            "-metadata:s:v", "handler_name=", "-metadata:s:a", "handler_name=",
+            "-metadata", "encoder=",
             str(dst)]
 
 
