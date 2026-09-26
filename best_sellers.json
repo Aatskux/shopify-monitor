@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-26T22:55:55+00:00",
+ "checked": "2026-09-26T23:55:54+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -198,13 +198,12 @@
   },
   "https://cavessi.store": {
    "ranks": {
-    "big-mochi-pumpkin-plush": 9,
+    "big-mochi-pumpkin-plush": 8,
     "hey-sista-t-shirt": 1,
     "monster-drink-plush": 4,
-    "otto-sausage-dog": 7,
     "shipping-protection": 2,
     "snoopy-popcorn-bucket": 5,
-    "spooky-boo-bunny": 8,
+    "spooky-boo-bunny": 7,
     "star-girl-tracksuit": 3,
     "the-rosewood-tartan-collared-jacket": 6
    }
@@ -1098,6 +1097,30 @@
     "monkey-in-pjays-plushie": 9,
     "one-wish-willow": 7,
     "snoop-exclusive-collab-freesip-32-oz-water-bottle": 6
+   }
+  },
+  "https://someriestore.com": {
+   "ranks": {
+    "classic-dirt-footbag-copy": 7,
+    "classical-dirt-footbag-copy": 17,
+    "coachella-exclusive-bieber-hoodie": 15,
+    "coco-movie-tote-bag": 9,
+    "cowprint-owal": 13,
+    "exclusive-scary-movie-bong-bucket": 12,
+    "exclusive-snoopy-owal": 14,
+    "hogwarts-magic-tote-bag": 20,
+    "karol-g-keychain": 5,
+    "karol-g-x-staney-exclusive-40oz-tumbler": 2,
+    "karol-g-x-staney-exclusive-40oz-tumbler-copy": 8,
+    "merlin-mexico-fan-plush": 4,
+    "mexican-jersey": 11,
+    "nightmare-before-christmas-trader-joes-bag": 3,
+    "somerie™-dirt-footbag": 1,
+    "spooky-ghost-straw-cup": 18,
+    "spooky-jack-keychain": 6,
+    "star-wars-staney-exclusive": 10,
+    "the-48-laws-of-power-for-women": 19,
+    "young-justin-tee": 16
    }
   },
   "https://stryxaco.com": {
