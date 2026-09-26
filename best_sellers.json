@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-26T19:55:50+00:00",
+ "checked": "2026-09-26T20:55:48+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -830,11 +830,12 @@
    "ranks": {
     "double-zip-knit-cardigan": 1,
     "energy-drink-plush": 3,
-    "energy-drink-plushy": 5,
-    "floral-tote-bag": 7,
+    "energy-drink-plushies": 5,
+    "energy-drink-plushy": 6,
+    "floral-tote-bag": 8,
     "the-cropped-lace-t-shirt": 2,
     "the-heated-lash-curler": 4,
-    "the-sunday-denim-jeans": 6
+    "the-sunday-denim-jeans": 7
    }
   },
   "https://revoraco.com": {
@@ -952,25 +953,25 @@
   "https://shoplunnessa.com": {
    "ranks": {
     "cozy-teddy-bear-slippers": 7,
-    "dulzura-v-neck-sleeveless-halter-backless-bodycon-corp-top-solid-sexy-elegant-y2k-top-party-clubwear-street-summer-vest": 17,
-    "fitflow-polka-dot-set": 13,
-    "floral-lace-flare-jeans": 12,
+    "dulzura-v-neck-sleeveless-halter-backless-bodycon-corp-top-solid-sexy-elegant-y2k-top-party-clubwear-street-summer-vest": 16,
+    "fitflow-polka-dot-set": 12,
+    "floral-lace-flare-jeans": 11,
     "flower-bouquet": 1,
     "galaxy-star-light-projector": 9,
     "gap-leopard-hoodie": 6,
     "halloween-quencher-h2-0-flowstate™-tumbler-40-oz": 4,
     "hp-smart-chessboard": 3,
-    "iride-scarf-top": 20,
-    "leopard-halter-top": 19,
-    "look-4-eternal-time": 11,
-    "pink-countdown-surprise-box": 10,
-    "pink-white-polka-dots-set": 14,
+    "iride-scarf-top": 19,
+    "leopard-halter-top": 18,
+    "look-4-eternal-time": 10,
+    "pink-white-polka-dots-set": 13,
     "polo-bear-high-pile-fleece": 5,
     "sb-snoopy-shaped-cold-cup": 2,
-    "speckle-halter-top": 18,
-    "striped-logo-everyday-set": 15,
+    "speckle-halter-top": 17,
+    "striped-logo-everyday-set": 14,
     "striped-tank": 8,
-    "weird-puss-seashell-halter-camisole-women-backless-swing-collar-satin-silky-midnight-clubwear-skinny-beach-vacation-tank-tops": 16
+    "weird-puss-seashell-halter-camisole-women-backless-swing-collar-satin-silky-midnight-clubwear-skinny-beach-vacation-tank-tops": 15,
+    "wooden-corset": 20
    }
   },
   "https://shopsakura.store": {
