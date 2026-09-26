@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-26T11:55:46+00:00",
+ "checked": "2026-09-26T12:55:50+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -119,12 +119,12 @@
   },
   "https://avellalane.com": {
    "ranks": {
-    "club-zip-hoodie": 2,
-    "energy-drink-plush": 4,
+    "club-zip-hoodie": 3,
+    "energy-drink-plush": 2,
     "hello-kitty-glass-cup-20oz": 5,
     "lando-norris-bunny": 7,
     "shipping-protection": 1,
-    "snoopy-bunny": 3,
+    "snoopy-bunny": 4,
     "spiked-red-bottom-heels": 6
    }
   },
@@ -522,19 +522,21 @@
   "https://miravaclothing.com": {
    "ranks": {
     "above-all-else-guard-your-heart-longsleeve": 5,
-    "all-we-need-is-christ-hoodie": 18,
+    "all-we-need-is-christ-hoodie": 20,
     "behold-jeans": 11,
-    "bite-me-hoodie": 17,
+    "bite-me-hoodie": 19,
     "divine-judgement-longsleeve": 9,
     "eastern-ridge-collection": 2,
     "forever-faithful-longsleeve": 7,
     "jesus-is-king-hoodie": 12,
+    "rewind-collection": 16,
     "shipping-protection": 1,
     "spider-beanie": 8,
-    "sundrop-collection": 15,
+    "stonewash-jorts": 15,
+    "sundrop-collection": 17,
     "the-last-supper-hoodie": 14,
     "trust-jesus-sweats": 13,
-    "trusting-him-collection": 16,
+    "trusting-him-collection": 18,
     "unfulfilled-collection": 6,
     "vintage-striped-zip-up": 3,
     "walking-with-god-tee": 10,
@@ -935,10 +937,10 @@
    "ranks": {
     "ghost-face-jellycat": 3,
     "hocus-bunny-jellycat": 2,
-    "otto-sausage-dog": 4,
-    "paris-token": 5,
+    "otto-sausage-dog": 5,
+    "paris-token": 6,
     "snoopy-x-starbucks-cup": 1,
-    "starbucks-x-jellycat-bear": 6
+    "starbucks-x-jellycat-bear": 4
    }
   },
   "https://shoplunnessa.com": {
