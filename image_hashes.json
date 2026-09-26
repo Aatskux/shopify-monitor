@@ -15899,6 +15899,64 @@
     "published_at": "2026-09-21T22:45:12-05:00"
    }
   },
+  "https://renzara.com": {
+   "10312858108079": {
+    "handle": "the-heated-lash-curler",
+    "hash": "c91494ea954bbe6a",
+    "image": "https://cdn.shopify.com/s/files/1/0746/6509/9439/files/MEDIA1_b3534536-61f6-4743-bd8e-fdc2d881ede8.png?v=1790008010",
+    "name": "The Heated Lash Curler",
+    "price": "$29.99",
+    "published_at": "2026-09-21T11:27:32-05:00"
+   },
+   "10315893178543": {
+    "handle": "energy-drink-plush",
+    "hash": "b092c92f86e38f66",
+    "image": "https://cdn.shopify.com/s/files/1/0746/6509/9439/files/IMG-6609.webp?v=1790288679",
+    "name": "Energy Drink Plush",
+    "price": "$24.99",
+    "published_at": "2026-09-24T17:24:16-05:00"
+   },
+   "10316724306095": {
+    "handle": "energy-drink-plushy",
+    "hash": "b192b24fce93ce28",
+    "image": "https://cdn.shopify.com/s/files/1/0746/6509/9439/files/ChatGPTImageSep25_2026_08_02_19PM.png?v=1790384917",
+    "name": "Energy Drink Plushy",
+    "price": "$24.99",
+    "published_at": "2026-09-25T20:08:49-05:00"
+   },
+   "8694570418351": {
+    "handle": "double-zip-knit-cardigan",
+    "hash": "e7f2c81edc272152",
+    "image": "https://cdn.shopify.com/s/files/1/0746/6509/9439/files/ChatGPT_Image_Sep_12_2026_06_41_32_PM.png?v=1789256672",
+    "name": "Double Zip Knit Cardigan",
+    "price": "$49.99",
+    "published_at": "2026-09-12T18:32:56-05:00"
+   },
+   "8697873170607": {
+    "handle": "floral-tote-bag",
+    "hash": "a984f63a83719772",
+    "image": "https://cdn.shopify.com/s/files/1/0746/6509/9439/files/ChatGPTImageSep14_2026_11_07_44AM.png?v=1789402078",
+    "name": "Floral Tote Bag",
+    "price": "$34.99",
+    "published_at": "2026-09-14T11:05:10-05:00"
+   },
+   "8703553274031": {
+    "handle": "the-cropped-lace-t-shirt",
+    "hash": "de39d30b21f0f039",
+    "image": "https://cdn.shopify.com/s/files/1/0746/6509/9439/files/MEDIA1_83308a8c-9bfe-4390-97ab-e5c67ab75cfc.png?v=1789681244",
+    "name": "The Cropped Lace T-shirt",
+    "price": "$36.99",
+    "published_at": "2026-09-17T16:44:45-05:00"
+   },
+   "8709129633967": {
+    "handle": "the-sunday-denim-jeans",
+    "hash": "bbe36327e7188c48",
+    "image": "https://cdn.shopify.com/s/files/1/0746/6509/9439/files/10b059c8-57da-48bb-aeed-3add32448fdd.png?v=1789945590",
+    "name": "The Sunday Denim Jeans",
+    "price": "$59.99",
+    "published_at": "2026-09-20T18:07:29-05:00"
+   }
+  },
   "https://revoraco.com": {
    "10587697578278": {
     "handle": "etherea®-moissanite-tennis-bracelet",
