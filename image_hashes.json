@@ -7939,6 +7939,24 @@
     "published_at": "2026-08-24T01:30:35-05:00"
    }
   },
+  "https://novirainc.store": {
+   "15313492640116": {
+    "handle": "knox-funnel-neck-jacket",
+    "hash": "b9c3b51e488dcd46",
+    "image": "https://cdn.shopify.com/s/files/1/1014/0041/2532/files/2061433-01-4.jpg?v=1790055152",
+    "name": "Knox Funnel Neck Jacket",
+    "price": "$39.99",
+    "published_at": "2026-09-22T00:39:02-05:00"
+   },
+   "15317960294772": {
+    "handle": "polo-bear-fleece",
+    "hash": "a337d2488dcecc66",
+    "image": "https://cdn.shopify.com/s/files/1/1014/0041/2532/files/ChatGPT_Image_Sep_22_2026_12_22_01_PM_530x_987f0e63-3454-4125-abc1-8b79e5db1269.png?v=1790230757",
+    "name": "Polo Bear Fleece",
+    "price": "$39.99",
+    "published_at": "2026-09-24T01:20:31-05:00"
+   }
+  },
   "https://novirastudios.shop": {
    "10000336584982": {
     "handle": "yumi®-track-shorts",
