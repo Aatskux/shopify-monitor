@@ -15,5 +15,22 @@
   "stores": 2,
   "strength": "mahdollinen",
   "time": "2026-09-26T00:10:37+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 32,
+    "name_score": 100.0,
+    "product_id": "15967597527372",
+    "store": "https://rovak.store",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Vintage Studded Hobo Bag",
+  "product_id": "10773269381414",
+  "store": "https://revoraco.com",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-26T00:31:01+00:00"
  }
 ]
