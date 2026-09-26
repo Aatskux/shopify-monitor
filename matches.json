@@ -151,5 +151,39 @@
   "stores": 2,
   "strength": "mahdollinen",
   "time": "2026-09-26T12:15:59+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 0,
+    "name_score": 100.0,
+    "product_id": "7892724875323",
+    "store": "https://blankspaces.us",
+    "strength": "varma"
+   }
+  ],
+  "name": "Zoro Zip-Up",
+  "product_id": "15309131383088",
+  "store": "https://vossaofficial.com",
+  "stores": 2,
+  "strength": "varma",
+  "time": "2026-09-26T12:21:11+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 28,
+    "name_score": 100.0,
+    "product_id": "10301611573300",
+    "store": "https://distrikdofficial.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Rewind Collection",
+  "product_id": "15388531392877",
+  "store": "https://miravaclothing.com",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-26T12:21:11+00:00"
  }
 ]
