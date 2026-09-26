@@ -8643,6 +8643,56 @@
     "published_at": "2026-09-22T13:04:10-04:00"
    }
   },
+  "https://oceanysage.com": {
+   "15015922663535": {
+    "handle": "jesus-is-the-light-hoodie",
+    "hash": "ebb5c20b9c48add2",
+    "image": "https://cdn.shopify.com/s/files/1/0682/5957/7967/files/newcc.png?v=1779387774",
+    "name": "Jesus is The Light Hoodie",
+    "price": "$19.95",
+    "published_at": "2026-06-06T15:22:20-04:00"
+   },
+   "15410214273135": {
+    "handle": "plain-t-shirt",
+    "hash": "86b03f1e6af868a9",
+    "image": "https://cdn.shopify.com/s/files/1/0682/5957/7967/files/wtshirt.png?v=1785247271",
+    "name": "Plain T-Shirt",
+    "price": "$4.99",
+    "published_at": "2026-07-28T09:50:28-04:00"
+   },
+   "15504819880047": {
+    "handle": "grey-leopard-hoodie",
+    "hash": "eea5955e39816626",
+    "image": "https://cdn.shopify.com/s/files/1/0682/5957/7967/files/glh1.webp?v=1788793248",
+    "name": "Grey Leopard Hoodie",
+    "price": "$29.99",
+    "published_at": "2026-09-07T10:54:50-04:00"
+   },
+   "15541355348079": {
+    "handle": "zipper-unisex-hoodie",
+    "hash": "e68665de2538d91c",
+    "image": "https://cdn.shopify.com/s/files/1/0682/5957/7967/files/pz1.webp?v=1789945561",
+    "name": "Zipper Unisex Hoodie",
+    "price": "$24.99",
+    "published_at": "2026-09-20T18:57:25-04:00"
+   },
+   "15544211374191": {
+    "handle": "bimbobox-unisex-jacket",
+    "hash": "fea1815e688d7961",
+    "image": "https://cdn.shopify.com/s/files/1/0682/5957/7967/files/pinkk1.webp?v=1790091855",
+    "name": "Bimbobox Unisex Jacket",
+    "price": "$29.95",
+    "published_at": "2026-09-22T11:46:46-04:00"
+   },
+   "15553223950447": {
+    "handle": "bear-fleece",
+    "hash": "a337d0199e8eccc6",
+    "image": "https://cdn.shopify.com/s/files/1/0682/5957/7967/files/ly1.webp?v=1790397903",
+    "name": "Bear Fleece",
+    "price": "$24.95",
+    "published_at": "2026-09-25T23:07:38-04:00"
+   }
+  },
   "https://officialsoreva.com": {
    "8976521789611": {
     "handle": "snoopy-glass-cup",

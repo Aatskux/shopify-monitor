@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-26T17:56:00+00:00",
+ "checked": "2026-09-26T18:55:51+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -686,6 +686,9 @@
     "ripped-jeans": 3
    }
   },
+  "https://oceanysage.com": {
+   "unsupported": "2026-09-26T18:55:51+00:00"
+  },
   "https://officialsoreva.com": {
    "unsupported": "2026-09-25T22:55:29+00:00"
   },
@@ -821,6 +824,17 @@
     "vintage-sneaker": 11,
     "women-s-hiking-waterproof": 18,
     "women-xt-6": 19
+   }
+  },
+  "https://renzara.com": {
+   "ranks": {
+    "double-zip-knit-cardigan": 1,
+    "energy-drink-plush": 3,
+    "energy-drink-plushy": 5,
+    "floral-tote-bag": 7,
+    "the-cropped-lace-t-shirt": 2,
+    "the-heated-lash-curler": 4,
+    "the-sunday-denim-jeans": 6
    }
   },
   "https://revoraco.com": {
