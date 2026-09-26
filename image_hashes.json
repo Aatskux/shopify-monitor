@@ -4682,6 +4682,14 @@
     "price": "$24.99",
     "published_at": "2026-09-26T06:10:15-04:00"
    },
+   "10330235961396": {
+    "handle": "jesus-art-jeans",
+    "hash": "b8b1c70ec74e921b",
+    "image": "https://cdn.shopify.com/s/files/1/0775/0493/8036/files/1_4718a698-2ffb-4f09-9a05-68f52bbc22fa.png?v=1790417436",
+    "name": "Jesus Art Jeans",
+    "price": "$24.99",
+    "published_at": "2026-09-26T06:11:09-04:00"
+   },
    "8907843010612": {
     "handle": "spider-web-designs",
     "hash": "ec4e91b09b4ecc6c",
@@ -6445,6 +6453,14 @@
     "name": "Limited Edition WIcked For Good FreeSip 32oz Water Bottle",
     "price": "$49.95",
     "published_at": "2026-09-26T05:30:11-04:00"
+   },
+   "8090989330510": {
+    "handle": "owala-cat-collage-freesip-32oz-water-bottle",
+    "hash": "e636999999c98c66",
+    "image": "https://cdn.shopify.com/s/files/1/0740/0000/7246/files/0533953900020_000_b_1.webp?v=1790417748",
+    "name": "Cat Collage FreeSip 32oz Water Bottle",
+    "price": "$49.95",
+    "published_at": "2026-09-26T06:15:45-04:00"
    }
   },
   "https://lunveraco.com": {
