@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-26T07:55:59+00:00",
+ "checked": "2026-09-26T08:56:21+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -648,6 +648,9 @@
     "untitled-aug20_03-03-33": 9
    }
   },
+  "https://novirainc.store": {
+   "unsupported": "2026-09-26T08:56:21+00:00"
+  },
   "https://novirastudios.shop": {
    "ranks": {
     "benito-bowl®-bad-bunny-jersey-unisex": 17,
@@ -964,26 +967,26 @@
   },
   "https://shopsakura.store": {
    "ranks": {
+    "australia-aubrie-black-sheepskin-knee-high-boots": 11,
     "balloon-sleeve-hoodie-and-wide-leg-sweatpants": 5,
-    "bambi-jean": 14,
-    "champagne-shimmer-knit-sweater": 17,
-    "chinese-time-longsleeve": 16,
-    "cowboy-portrait-sweatshirt": 20,
-    "crimson-floral-jacket": 18,
+    "bambi-jean": 16,
+    "champagne-shimmer-knit-sweater": 19,
+    "chinese-time-longsleeve": 18,
+    "crimson-floral-jacket": 20,
     "drift-tapestry-baggy-joggers": 10,
-    "golden-cat-fur-trim-puffer-jacket": 12,
-    "golden-hawkeye-zip-up-hoodie": 15,
+    "golden-cat-fur-trim-puffer-jacket": 14,
+    "golden-hawkeye-zip-up-hoodie": 17,
     "holy-zip-up-hoodie": 7,
+    "journey-2-in-1-rain-jacket-prayer-mat": 12,
     "loser-colossus-jeans": 4,
-    "miidnight-hoodie-and-sweatpants": 19,
     "never-everland-graphic-hoodie-collection": 3,
-    "rebel-archive": 13,
+    "rebel-archive": 15,
     "sakura-set": 2,
     "shipping-protection": 1,
     "signature-low-rise-micro-skort": 8,
     "sweetheart-skirt-bag-collection": 9,
     "vintage-new-york-zip-hoodie": 6,
-    "zora-ballet-flat": 11
+    "zora-ballet-flat": 13
    }
   },
   "https://shopurbanthread.com": {
