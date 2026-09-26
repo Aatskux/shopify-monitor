@@ -32,5 +32,22 @@
   "stores": 2,
   "strength": "mahdollinen",
   "time": "2026-09-26T00:31:01+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 0,
+    "name_score": 75.7,
+    "product_id": "15887869018272",
+    "store": "https://clemoreclothing.shop",
+    "strength": "varma"
+   }
+  ],
+  "name": "Star Girl Tracksuit",
+  "product_id": "16032543113547",
+  "store": "https://cavessi.store",
+  "stores": 2,
+  "strength": "varma",
+  "time": "2026-09-26T00:46:14+00:00"
  }
 ]
