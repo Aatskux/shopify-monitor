@@ -514,5 +514,22 @@
   "stores": 2,
   "strength": "mahdollinen",
   "time": "2026-09-27T19:10:55+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 34,
+    "name_score": 100.0,
+    "product_id": "9482938515675",
+    "store": "https://mylumeras.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "The Freaky Nikki Costume",
+  "product_id": "15323846050164",
+  "store": "https://novirainc.store",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-27T19:35:44+00:00"
  }
 ]
