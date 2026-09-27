@@ -8311,6 +8311,32 @@
     "published_at": "2026-09-14T05:36:36-04:00"
    }
   },
+  "https://nevorafashion.com": {
+   "10475807998241": {
+    "handle": "powered-by-3am-zoomies-svg",
+    "hash": "ec38d1842eed7998",
+    "image": "https://cdn.shopify.com/s/files/1/0995/4659/5617/files/1.png?v=1785838946",
+    "name": "Powered by 3AM Zoomies SVG",
+    "price": "$2.99",
+    "published_at": "2026-08-04T06:22:39-04:00"
+   },
+   "10566184599841": {
+    "handle": "untitled-sep27_02-58-58",
+    "hash": "aae5d51a2ae5f112",
+    "image": "https://cdn.shopify.com/s/files/1/0995/4659/5617/files/E9CCAE75-3FB7-4B3E-9624-790A484E3880.png?v=1790495962",
+    "name": "Limited Snoopy Shoes Collection",
+    "price": "$29.99",
+    "published_at": "2026-09-27T04:16:23-04:00"
+   },
+   "10566303187233": {
+    "handle": "rick-grimes-jacket",
+    "hash": "bccb8193d2b29b32",
+    "image": "https://cdn.shopify.com/s/files/1/0995/4659/5617/files/il_1588xN.7905913145_8wv1.webp?v=1790498838",
+    "name": "Rick Grimes Jacket",
+    "price": "$24.99",
+    "published_at": "2026-09-27T04:47:19-04:00"
+   }
+  },
   "https://nivorawear.com": {
    "14910625480815": {
     "handle": "cropped-top",
