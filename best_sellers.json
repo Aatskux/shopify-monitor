@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-27T06:55:44+00:00",
+ "checked": "2026-09-27T07:55:52+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -126,15 +126,16 @@
   },
   "https://avellalane.com": {
    "ranks": {
-    "cat-in-the-hat-bunny": 5,
+    "cat-in-the-hat-bunny": 6,
     "club-zip-hoodie": 3,
-    "custom-carebears": 6,
+    "custom-carebears": 7,
     "energy-drink-plush": 2,
-    "hello-kitty-glass-cup-20oz": 7,
-    "lando-norris-bunny": 9,
+    "green-tea-plushie": 5,
+    "hello-kitty-glass-cup-20oz": 8,
+    "lando-norris-bunny": 10,
     "shipping-protection": 1,
     "snoopy-bunny": 4,
-    "spiked-red-bottom-heels": 8
+    "spiked-red-bottom-heels": 9
    }
   },
   "https://balmay.co": {
@@ -577,22 +578,22 @@
   "https://miravaclothing.com": {
    "ranks": {
     "above-all-else-guard-your-heart-longsleeve": 5,
-    "all-we-need-is-christ-hoodie": 20,
     "behold-jeans": 11,
-    "bite-me-hoodie": 19,
     "divine-judgement-longsleeve": 9,
     "eastern-ridge-collection": 2,
     "forever-faithful-longsleeve": 7,
     "jesus-is-king-hoodie": 12,
-    "rewind-collection": 16,
+    "rewind-collection": 18,
+    "rock-lee-denim": 15,
     "shipping-protection": 1,
     "spider-beanie": 8,
-    "stonewash-jorts": 15,
-    "sundrop-collection": 17,
+    "stonewash-jorts": 17,
+    "sundrop-collection": 19,
     "the-last-supper-hoodie": 14,
     "trust-jesus-sweats": 13,
-    "trusting-him-collection": 18,
+    "trusting-him-collection": 20,
     "unfulfilled-collection": 6,
+    "vintage-meadow-zip": 16,
     "vintage-striped-zip-up": 3,
     "walking-with-god-tee": 10,
     "y2k-trapper-jacket": 4
@@ -1238,26 +1239,17 @@
   },
   "https://vossaofficial.com": {
    "ranks": {
-    "baddie-basics-set": 11,
-    "bathing-ape-shirt": 16,
-    "cottage-set": 15,
-    "fear-not-collection": 20,
-    "graphic-reversible-hoodie": 8,
-    "hk-graphic-tote-bag": 7,
-    "jesus-childrens-hoodie": 4,
-    "jesus-loves-you-hoodie": 9,
-    "messiah-collection": 19,
-    "mew-longsleeve": 3,
-    "navy-zipper-hoodie": 6,
-    "oversized-script-hoodie": 17,
-    "priority-processing": 1,
-    "slanted-hoop-shorts": 13,
-    "the-only-way-hoodie": 5,
-    "therapy-collection": 14,
-    "tmnt-clogs": 10,
-    "trust-me-hoodie": 18,
-    "unisex-graphic-long-sleeve": 2,
-    "watching-angels-hoodie": 12
+    "gengar-longsleeve": 3,
+    "graphic-reversible-hoodie": 9,
+    "hk-graphic-tote-bag": 8,
+    "jesus-childrens-hoodie": 5,
+    "mew-longsleeve": 4,
+    "navy-zipper-hoodie": 7,
+    "plaid-soar-pants": 2,
+    "priority-processing": 11,
+    "the-only-way-hoodie": 6,
+    "unisex-graphic-long-sleeve": 10,
+    "zoro-zip-up": 1
    }
   },
   "https://vosseraofficial.com": {
