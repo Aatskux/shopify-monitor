@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-27T19:55:56+00:00",
+ "checked": "2026-09-27T20:56:05+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -680,6 +680,13 @@
     "tees-collection": 2,
     "vice-velour-set": 8,
     "zip-sweats-set": 15
+   }
+  },
+  "https://nevorafashion.com": {
+   "ranks": {
+    "powered-by-3am-zoomies-svg": 1,
+    "rick-grimes-jacket": 2,
+    "untitled-sep27_02-58-58": 3
    }
   },
   "https://nivorawear.com": {
