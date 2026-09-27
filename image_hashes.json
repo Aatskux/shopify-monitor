@@ -4796,6 +4796,22 @@
     "price": "$14.99 - $24.99",
     "published_at": "2026-09-27T04:11:10-04:00"
    },
+   "10331298857012": {
+    "handle": "skeleton-sweatsuit",
+    "hash": "cba4b09f8469365b",
+    "image": "https://cdn.shopify.com/s/files/1/0775/0493/8036/files/skeletonstudios__1784413802_3944198463073034113_51912013925.jpg?v=1790508660",
+    "name": "Skeleton Sweatsuit",
+    "price": "$29.99",
+    "published_at": "2026-09-27T07:32:10-04:00"
+   },
+   "10331298889780": {
+    "handle": "close-up-hoodie",
+    "hash": "e8a6835a9e699e43",
+    "image": "https://cdn.shopify.com/s/files/1/0775/0493/8036/files/1_33662d90-9eb0-4e91-addc-5cd6bd8d2186.png?v=1790508779",
+    "name": "Close Up Hoodie",
+    "price": "$24.99",
+    "published_at": "2026-09-27T07:33:34-04:00"
+   },
    "8907843010612": {
     "handle": "spider-web-designs",
     "hash": "ec4e91b09b4ecc6c",
@@ -20073,6 +20089,14 @@
     "name": "Double Layered Henley",
     "price": "$19.99",
     "published_at": "2026-09-26T07:14:34-05:00"
+   },
+   "15394928591063": {
+    "handle": "curious-george-beanie",
+    "hash": "ac64c39b39c83e6c",
+    "image": "https://cdn.shopify.com/s/files/1/0831/3503/7655/files/4_a528fefc-0454-4dec-8204-1729f01f0506.png?v=1790508846",
+    "name": "CURIOUS GEORGE BEANIE",
+    "price": "$14.99",
+    "published_at": "2026-09-27T06:34:22-05:00"
    },
    "9309133439191": {
     "handle": "world-cup-polo-collection",
