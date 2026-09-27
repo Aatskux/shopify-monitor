@@ -394,5 +394,36 @@
   "stores": 4,
   "strength": "mahdollinen",
   "time": "2026-09-27T01:35:46+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 24,
+    "name_score": 100.0,
+    "product_id": "16343877419343",
+    "store": "https://avellalane.com",
+    "strength": "mahdollinen"
+   },
+   {
+    "distance": 32,
+    "name_score": 100.0,
+    "product_id": "15299363799344",
+    "store": "https://rosavelle.online",
+    "strength": "mahdollinen"
+   },
+   {
+    "distance": 22,
+    "name_score": 100.0,
+    "product_id": "8338914705526",
+    "store": "https://someriestore.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Hello Kitty Glass Cup 20oz",
+  "product_id": "15394434285755",
+  "store": "https://maverostyle.com",
+  "stores": 4,
+  "strength": "mahdollinen",
+  "time": "2026-09-27T05:25:49+00:00"
  }
 ]
