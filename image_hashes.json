@@ -497,6 +497,88 @@
     "published_at": "2026-09-21T01:17:40-05:00"
    }
   },
+  "https://atlumeo.com": {
+   "10305209532707": {
+    "handle": "hanging-swing-ghost-decoration",
+    "hash": "899d76623762076d",
+    "image": "https://cdn.shopify.com/s/files/1/0989/3445/6611/files/2345dcc0-bab1-493a-bef2-395f9acb4cb3.png?v=1784821019",
+    "name": "Hanging Swing Ghost Decoration",
+    "price": "$69.99",
+    "published_at": "2026-08-08T22:33:34-04:00"
+   },
+   "10324857028899": {
+    "handle": "doggy-robe",
+    "hash": "a29a1cbd9f2291d9",
+    "image": "https://cdn.shopify.com/s/files/1/0989/3445/6611/files/ChatGPT_Image_Aug_9_2026_11_22_45_AM.png?v=1786289367",
+    "name": "Doggy Robe",
+    "price": "$34.99 - $39.99",
+    "published_at": "2026-08-08T20:56:26-04:00"
+   },
+   "10351436661027": {
+    "handle": "barefoot-water-rhinestone-shoes",
+    "hash": "d51965e42df005e7",
+    "image": "https://cdn.shopify.com/s/files/1/0989/3445/6611/files/ChatGPT_Image_Aug_31_2026_06_09_37_PM.png?v=1788215872",
+    "name": "Rhinestone-Embellished Barefoot Water Shoes",
+    "price": "$44.99",
+    "published_at": "2026-08-31T00:53:35-04:00"
+   },
+   "10358046654755": {
+    "handle": "plaid-fall-balloon-pants",
+    "hash": "c349a173b22ddcac",
+    "image": "https://cdn.shopify.com/s/files/1/0989/3445/6611/files/ChatGPTImageSep3_2026_10_58_52PM.png?v=1788490803",
+    "name": "Plaid Fall Balloon Pants",
+    "price": "$44.99",
+    "published_at": "2026-09-03T22:42:51-04:00"
+   },
+   "10366355472675": {
+    "handle": "baggy-sweatset",
+    "hash": "a30ecd1399658e6d",
+    "image": "https://cdn.shopify.com/s/files/1/0989/3445/6611/files/hf_20260911_024211_b153dfe0-9ab7-48a3-835b-aa066c7e7206.png?v=1789094914",
+    "name": "Vintage Wash Boxy Sweatset",
+    "price": "$69.99",
+    "published_at": "2026-09-10T22:08:15-04:00"
+   },
+   "10370479587619": {
+    "handle": "all-eyes-on-you-sweater",
+    "hash": "e6cfc69ca414912f",
+    "image": "https://cdn.shopify.com/s/files/1/0989/3445/6611/files/download_2.webp?v=1789436063",
+    "name": "All Eyes On You Sweater",
+    "price": "$44.99",
+    "published_at": "2026-09-14T20:38:38-04:00"
+   },
+   "10378500407587": {
+    "handle": "in-full-bloom-denim-jacket",
+    "hash": "b719d2f0c9cc19c9",
+    "image": "https://cdn.shopify.com/s/files/1/0989/3445/6611/files/Codex_Image_Sep_21_2026_10_56_10_PM.png?v=1790045782",
+    "name": "In Full Bloom Denim Jacket",
+    "price": "$69.99",
+    "published_at": "2026-09-21T21:22:12-04:00"
+   },
+   "10383357673763": {
+    "handle": "the-noire-lace-flare-leggings",
+    "hash": "e61ac9079b649b63",
+    "image": "https://cdn.shopify.com/s/files/1/0989/3445/6611/files/hf_20260923_222739_8a7289b7-1cdc-48d0-8069-068ef0db741b.png?v=1790202982",
+    "name": "The Noire Lace Flare Leggings",
+    "price": "$34.99",
+    "published_at": "2026-09-23T18:05:17-04:00"
+   },
+   "10389128741155": {
+    "handle": "energy-drink-plushie",
+    "hash": "b1c6b13a6c916f4c",
+    "image": "https://cdn.shopify.com/s/files/1/0989/3445/6611/files/ChatGPTImageSep26_2026_04_16_59PM.png?v=1790454219",
+    "name": "Energy Drink Plushie",
+    "price": "$24.99",
+    "published_at": "2026-09-26T16:29:34-04:00"
+   },
+   "10389311652131": {
+    "handle": "bear-with-me-teddy-jumpsuit",
+    "hash": "a60c3733d999d90d",
+    "image": "https://cdn.shopify.com/s/files/1/0989/3445/6611/files/hf_20260927_025908_d9b1fabe-9025-452b-964c-1aaaf8e0f1a5.png?v=1790479260",
+    "name": "Bear With Me Teddy Jumpsuit",
+    "price": "$59.99",
+    "published_at": "2026-09-26T22:47:04-04:00"
+   }
+  },
   "https://aurorathelabel.shop": {
    "10254394261609": {
     "handle": "ash-bloom-incense",
