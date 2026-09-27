@@ -497,5 +497,22 @@
   "stores": 2,
   "strength": "mahdollinen",
   "time": "2026-09-27T07:35:53+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 30,
+    "name_score": 100.0,
+    "product_id": "8397123485785",
+    "store": "https://reluxeastore.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Leon Kennedy Jacket",
+  "product_id": "10438937149722",
+  "store": "https://maisonveya.com",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-27T19:10:55+00:00"
  }
 ]
