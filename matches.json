@@ -425,5 +425,77 @@
   "stores": 4,
   "strength": "mahdollinen",
   "time": "2026-09-27T05:25:49+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 0,
+    "name_score": 100.0,
+    "product_id": "7892724875323",
+    "store": "https://blankspaces.us",
+    "strength": "varma"
+   }
+  ],
+  "name": "Zoro Zip-Up",
+  "product_id": "10332566388793",
+  "store": "https://vossaofficial.com",
+  "stores": 2,
+  "strength": "varma",
+  "time": "2026-09-27T07:35:53+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 32,
+    "name_score": 90.9,
+    "product_id": "16329426796879",
+    "store": "https://avellalane.com",
+    "strength": "mahdollinen"
+   },
+   {
+    "distance": 28,
+    "name_score": 100.0,
+    "product_id": "9211289632917",
+    "store": "https://hazelhaven.co",
+    "strength": "mahdollinen"
+   },
+   {
+    "distance": 36,
+    "name_score": 100.0,
+    "product_id": "10519842947350",
+    "store": "https://novirastudios.shop",
+    "strength": "mahdollinen"
+   },
+   {
+    "distance": 28,
+    "name_score": 100.0,
+    "product_id": "9330411340033",
+    "store": "https://shopurbanthread.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Club Zipper Hoodie",
+  "product_id": "10332565569593",
+  "store": "https://vossaofficial.com",
+  "stores": 5,
+  "strength": "mahdollinen",
+  "time": "2026-09-27T07:35:53+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 24,
+    "name_score": 100.0,
+    "product_id": "15359308988669",
+    "store": "https://myraco.shop",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Graphic Reversible Hoodie",
+  "product_id": "10332565340217",
+  "store": "https://vossaofficial.com",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-27T07:35:53+00:00"
  }
 ]

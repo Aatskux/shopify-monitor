@@ -19822,461 +19822,85 @@
    }
   },
   "https://vossaofficial.com": {
-   "15253403631920": {
+   "10332565209145": {
     "handle": "unisex-graphic-long-sleeve",
     "hash": "abf0c407fada2ca1",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/1_93ca99d2-7da0-427d-b182-82965c2e3079.png?v=1787866472",
+    "image": "https://cdn.shopify.com/s/files/1/0829/2712/4537/files/1_93ca99d2-7da0-427d-b182-82965c2e3079.png?v=1790494268",
     "name": "Unisex Graphic Long Sleeve",
     "price": "$19.99",
-    "published_at": "2026-08-27T14:34:29-07:00"
+    "published_at": "2026-09-27T03:31:05-04:00"
    },
-   "15253403664688": {
+   "10332565340217": {
     "handle": "graphic-reversible-hoodie",
     "hash": "901a7aad61976766",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/1_28293430-edc0-4302-8c2f-86d061f74e05.png?v=1787866474",
+    "image": "https://cdn.shopify.com/s/files/1/0829/2712/4537/files/1_28293430-edc0-4302-8c2f-86d061f74e05.png?v=1790494270",
     "name": "Graphic Reversible Hoodie",
     "price": "$24.99",
-    "published_at": "2026-08-27T14:34:31-07:00"
+    "published_at": "2026-09-27T03:31:07-04:00"
    },
-   "15253403697456": {
-    "handle": "jesus-loves-you-hoodie",
-    "hash": "e2a7865a8925dca7",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/5_4081d599-d8f4-4799-a019-56b2081c36f0.png?v=1787866476",
-    "name": "Jesus Loves You Hoodie",
-    "price": "$24.99",
-    "published_at": "2026-08-27T14:34:33-07:00"
-   },
-   "15253403795760": {
+   "10332565438521": {
     "handle": "hk-graphic-tote-bag",
     "hash": "ed92926d4f309cc3",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/1_b12a7b3e-1d32-46c6-adca-f9adcac1a802.png?v=1787866481",
+    "image": "https://cdn.shopify.com/s/files/1/0829/2712/4537/files/1_b12a7b3e-1d32-46c6-adca-f9adcac1a802.png?v=1790494273",
     "name": "HK Graphic Tote Bag",
     "price": "$34.99",
-    "published_at": "2026-08-27T14:34:36-07:00"
+    "published_at": "2026-09-27T03:31:09-04:00"
    },
-   "15253403828528": {
+   "10332565569593": {
     "handle": "navy-zipper-hoodie",
     "hash": "ebe5945a79854664",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/Club_Navy_Zipper_DROP7_2.webp?v=1787866480",
+    "image": "https://cdn.shopify.com/s/files/1/0829/2712/4537/files/Club_Navy_Zipper_DROP7_2.webp?v=1790494274",
     "name": "Club Zipper Hoodie",
     "price": "$24.99",
-    "published_at": "2026-08-27T14:34:38-07:00"
+    "published_at": "2026-09-27T03:31:11-04:00"
    },
-   "15253403926832": {
+   "10332565733433": {
     "handle": "the-only-way-hoodie",
     "hash": "e793924fcc248ee2",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/d3bcbea8e9a342a8aac184f6e0890876.webp?v=1787866482",
+    "image": "https://cdn.shopify.com/s/files/1/0829/2712/4537/files/d3bcbea8e9a342a8aac184f6e0890876.webp?v=1790494275",
     "name": "The Only Way Hoodie",
     "price": "$24.99",
-    "published_at": "2026-08-27T14:34:39-07:00"
+    "published_at": "2026-09-27T03:31:13-04:00"
    },
-   "15256366252336": {
-    "handle": "monkey-graphic-tee",
-    "hash": "f813c7edc4389313",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/1.png?v=1787912610",
-    "name": "MONKEY GRAPHIC TEE",
-    "price": "$19.99",
-    "published_at": "2026-08-28T03:24:18-07:00"
-   },
-   "15256366907696": {
-    "handle": "funnel-neck-jacket",
-    "hash": "d7f5d04ac31bc858",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/2_9205aa6c-2b95-4a4d-8fc6-b7fad4668c56.png?v=1787912676",
-    "name": "Funnel Neck Jacket",
-    "price": "$29.99",
-    "published_at": "2026-08-28T03:25:09-07:00"
-   },
-   "15260285927728": {
-    "handle": "brshka-x-pf-hoodie",
-    "hash": "b063cf1c31d33473",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/03704309600-a4o.webp?v=1787988844",
-    "name": "BRSHKA x PF Hoodie",
-    "price": "$24.99",
-    "published_at": "2026-08-29T00:37:24-07:00"
-   },
-   "15260315877680": {
-    "handle": "caesar-collection",
-    "hash": "bd0bd2f4d41b830b",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/9.png?v=1787989085",
-    "name": "Caesar Collection",
-    "price": "$19.99 - $24.99",
-    "published_at": "2026-08-29T00:44:01-07:00"
-   },
-   "15262431969584": {
-    "handle": "baddie-basics-set",
-    "hash": "e6a6569659989999",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/3_6c40d856-2cbb-4ee1-b580-507a0370ccbb.png?v=1788074851",
-    "name": "Baddie Basics Set",
-    "price": "$19.99 - $24.99",
-    "published_at": "2026-08-30T01:08:03-07:00"
-   },
-   "15262443209008": {
-    "handle": "caesar-baggy-crewneck",
-    "hash": "94822ad665d65e8f",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/heatwavesph_1785418960_3952703059241487869_67038395226.jpg?v=1788080713",
-    "name": "Caesar Baggy Crewneck",
-    "price": "$19.99",
-    "published_at": "2026-08-30T02:06:11-07:00"
-   },
-   "15262458806576": {
-    "handle": "frank-ocean-collection",
-    "hash": "e897050adcf195da",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/7_d0eb5996-fe74-4201-ba3f-28f0848967b0.png?v=1788086733",
-    "name": "Frank Ocean Collection",
-    "price": "$19.99 - $24.99",
-    "published_at": "2026-08-30T03:55:25-07:00"
-   },
-   "15266921840944": {
-    "handle": "spider-sweater",
-    "hash": "bbf5c40ac92d3cd0",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/888balens_1787212382_3967746699136653308_54040487861.jpg?v=1788455268",
-    "name": "Spider Sweater",
-    "price": "$19.99",
-    "published_at": "2026-09-03T10:08:48-07:00"
-   },
-   "15266923020592": {
-    "handle": "matcha-denim",
-    "hash": "e527d938862cec71",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/IMG_7453_4.jpg?v=1788455405",
-    "name": "Matcha Denim",
-    "price": "$24.99",
-    "published_at": "2026-09-03T10:10:27-07:00"
-   },
-   "15271495631152": {
-    "handle": "apple-satchel",
-    "hash": "f8cf619c93309c27",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/emerald_dream_crafts_1767989904_3806497668529825202_54997724043.webp?v=1788791935",
-    "name": "Apple Satchel",
-    "price": "$29.99",
-    "published_at": "2026-09-07T07:39:10-07:00"
-   },
-   "15271496384816": {
-    "handle": "multi-pocket-baggy-sweats",
-    "hash": "9e3939e6649a3193",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/BLANKSWEATSV1.webp?v=1788792111",
-    "name": "Multi Pocket Baggy Sweats",
-    "price": "$24.99",
-    "published_at": "2026-09-07T07:43:49-07:00"
-   },
-   "15272478474544": {
-    "handle": "therapy-collection",
-    "hash": "c0bb5a443eaa3be4",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/15_afbf568c-6f6f-4da7-a639-698679a3cd64.png?v=1788867515",
-    "name": "Therapy Collection",
-    "price": "$19.99 - $24.99",
-    "published_at": "2026-09-08T04:53:53-07:00"
-   },
-   "15272498004272": {
-    "handle": "nightwing-hoodie",
-    "hash": "bff4c20bcc09cd26",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/1_fddfaed1-4e81-4e86-8630-78cc7b498ec4.png?v=1788871749",
-    "name": "Nightwing Hoodie",
-    "price": "$24.99",
-    "published_at": "2026-09-08T05:49:48-07:00"
-   },
-   "15272562590000": {
-    "handle": "vintage-racing-jacket",
-    "hash": "aea4910f4afd7c84",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/SnapInsta.to_784426963_18033213272840844_3458754762051310922_n.jpg?v=1788877426",
-    "name": "Vintage Racing Jacket",
-    "price": "$29.99",
-    "published_at": "2026-09-08T07:24:11-07:00"
-   },
-   "15279137227056": {
-    "handle": "tmnt-clogs",
-    "hash": "e89495eb1e45699a",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/3_75560662-5963-4ca6-8f25-f4f9b02ec8e2.png?v=1789125455",
-    "name": "TMNT CLOGS",
-    "price": "$34.99",
-    "published_at": "2026-09-11T04:17:32-07:00"
-   },
-   "15279160459568": {
+   "10332565897273": {
     "handle": "jesus-childrens-hoodie",
     "hash": "e7a21af5899dc81c",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/asunder.usa_1788960249_3982409625141678800_74251107746.jpg?v=1789130832",
+    "image": "https://cdn.shopify.com/s/files/1/0829/2712/4537/files/asunder.usa_1788960249_3982409625141678800_74251107746.jpg?v=1790494277",
     "name": "Jesus's Children Hoodie",
     "price": "$24.99",
-    "published_at": "2026-09-11T05:49:22-07:00"
+    "published_at": "2026-09-27T03:31:15-04:00"
    },
-   "15280498442544": {
+   "10332565995577": {
     "handle": "mew-longsleeve",
     "hash": "bba8c0479e9a69e4",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/1_b2cff983-2356-4400-b0a5-7ddb1351d3ad.png?v=1789211487",
+    "image": "https://cdn.shopify.com/s/files/1/0829/2712/4537/files/1_b2cff983-2356-4400-b0a5-7ddb1351d3ad.png?v=1790494280",
     "name": "Mew Longsleeve",
     "price": "$19.99",
-    "published_at": "2026-09-12T04:12:33-07:00"
+    "published_at": "2026-09-27T03:31:17-04:00"
    },
-   "15280500113712": {
-    "handle": "polka-pop-mini",
-    "hash": "ad900bcc68d7d92e",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/P0_2.jpg?v=1789211729",
-    "name": "Polka Pop Mini",
-    "price": "$24.99",
-    "published_at": "2026-09-12T04:16:12-07:00"
-   },
-   "15280549069104": {
-    "handle": "matching-yoga-set",
-    "hash": "afe4d09b92346363",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/top-sage-front.webp?v=1789216988",
-    "name": "Matching Yoga Set",
-    "price": "$19.99",
-    "published_at": "2026-09-12T05:48:37-07:00"
-   },
-   "15282302746928": {
+   "10332566126649": {
     "handle": "gengar-longsleeve",
     "hash": "fe2881d44e8b397c",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/1_c894ad95-1bc9-4460-9b27-54037ed82f84.png?v=1789385077",
+    "image": "https://cdn.shopify.com/s/files/1/0829/2712/4537/files/1_c894ad95-1bc9-4460-9b27-54037ed82f84.png?v=1790494282",
     "name": "Gengar Longsleeve",
     "price": "$19.99",
-    "published_at": "2026-09-14T04:25:36-07:00"
+    "published_at": "2026-09-27T03:31:19-04:00"
    },
-   "15282306908464": {
-    "handle": "faye-peacoat",
-    "hash": "b5e21b988ecd8d19",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/IMG_0378.webp?v=1789385153",
-    "name": "Faye Peacoat",
-    "price": "$29.99",
-    "published_at": "2026-09-14T04:26:59-07:00"
-   },
-   "15282315919664": {
-    "handle": "bat-mask-hoodie",
-    "hash": "b9ccc6c4c63be849",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/1_db21ed2a-5577-4810-a9be-2f7387ed837b.png?v=1789385304",
-    "name": "BAT Mask Hoodie",
-    "price": "$24.99",
-    "published_at": "2026-09-14T04:29:14-07:00"
-   },
-   "15284479590704": {
-    "handle": "vice-stripe-tracksuit",
-    "hash": "b033c2c3c66ecbc3",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/3_ab6d5d4e-dcb3-4f14-99fa-2fc61392e7b8.png?v=1789476368",
-    "name": "Vice Stripe Tracksuit",
-    "price": "$29.99",
-    "published_at": "2026-09-15T05:47:26-07:00"
-   },
-   "15284487356720": {
-    "handle": "rainbow-striped-jeans",
-    "hash": "b493cb3c8e2c86c7",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/05575110105-e1.jpg?v=1789476576",
-    "name": "Rainbow Striped Jeans",
-    "price": "$24.99",
-    "published_at": "2026-09-15T05:52:13-07:00"
-   },
-   "15284491026736": {
-    "handle": "bathing-ape-shirt",
-    "hash": "b96ec6b0919a0e4f",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/1_ba91e129-5460-418f-9382-726e3bf63de7.png?v=1789476862",
-    "name": "Bathing Ape Shirt",
-    "price": "$19.99",
-    "published_at": "2026-09-15T05:54:45-07:00"
-   },
-   "15284494729520": {
-    "handle": "meadow-maxi-skirt",
-    "hash": "b166266606db9dcc",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/f04d9770-f31d-4686-a29f-e326f99d50e7.webp?v=1789476992",
-    "name": "Meadow Maxi Skirt",
-    "price": "$24.99",
-    "published_at": "2026-09-15T05:57:05-07:00"
-   },
-   "15286462578992": {
-    "handle": "cadet-hat",
-    "hash": "e8c0973e68f035cd",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/2_96ae2b0f-44de-4581-998d-da0103b1064d.png?v=1789565296",
-    "name": "Cadet Hat",
-    "price": "$24.99",
-    "published_at": "2026-09-16T06:29:28-07:00"
-   },
-   "15286467461424": {
-    "handle": "appa-band",
-    "hash": "a8c8973669c99637",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/2_47116ac1-6660-4266-b90c-350af5d99bb6.png?v=1789565410",
-    "name": "Appa Band",
-    "price": "$19.99",
-    "published_at": "2026-09-16T06:31:52-07:00"
-   },
-   "15286471786800": {
-    "handle": "adventure-time-pajamas",
-    "hash": "bcb2c34dc30dc26d",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/cherrylollipop_lenceria_1788914153_3982022884930042912_55156506020.jpg?v=1789565560",
-    "name": "Adventure Time Pajamas",
-    "price": "$24.99",
-    "published_at": "2026-09-16T06:33:18-07:00"
-   },
-   "15288897634608": {
-    "handle": "death-rider-polo",
-    "hash": "f8f0e1e8ccd23a98",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/castillo_storee_1787638707_3971323584215075365_72253464003.jpg?v=1789640524",
-    "name": "Death Rider Polo",
-    "price": "$19.99",
-    "published_at": "2026-09-17T03:22:32-07:00"
-   },
-   "15288905105712": {
-    "handle": "fear-not-collection",
-    "hash": "8775d04ae8964f39",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/fearnot.usa_1785279476_3951532319734351282_56752072476.jpg?v=1789640583",
-    "name": "Fear Not Collection",
-    "price": "$24.99 - $29.99",
-    "published_at": "2026-09-17T03:27:34-07:00"
-   },
-   "15291976122672": {
-    "handle": "slanted-hoop-shorts",
-    "hash": "b996e5c992441b4f",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/1_26e42044-05f3-4cf5-8eeb-a17ec7b74c96.png?v=1789726880",
-    "name": "Slanted Hoop Shorts",
-    "price": "$24.99",
-    "published_at": "2026-09-18T04:01:26-07:00"
-   },
-   "15292174303536": {
-    "handle": "somewhere-between-crewneck",
-    "hash": "bac5945a89ee65d0",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/artof.archive_1789661183_3988289278788787758_56816037387.jpg?v=1789735014",
-    "name": "Somewhere Between Crewneck",
-    "price": "$19.99",
-    "published_at": "2026-09-18T05:37:24-07:00"
-   },
-   "15292381298992": {
-    "handle": "brainie",
-    "hash": "eac4963ac96da436",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/arkyve__1789491441_3986865509890481601_38705373076.jpg?v=1789743165",
-    "name": "BRAINIE",
-    "price": "$14.99",
-    "published_at": "2026-09-18T07:53:04-07:00"
-   },
-   "15294608015664": {
-    "handle": "selah-longsleeve",
-    "hash": "d28f2df0d20fcd0a",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/selahclothing.co_1789160210_3984085506785566377_17886074472.jpg?v=1789892347",
-    "name": "SELAH Longsleeve",
-    "price": "$19.99",
-    "published_at": "2026-09-20T01:20:15-07:00"
-   },
-   "15294878875952": {
-    "handle": "soccer-beanie",
-    "hash": "eaa59170941e9bda",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/7_ed583e34-f18e-49a3-9bc4-289afb5f9ad4.webp?v=1789904459",
-    "name": "Soccer Beanie",
-    "price": "$14.99",
-    "published_at": "2026-09-20T04:41:41-07:00"
-   },
-   "15294888968496": {
-    "handle": "oversized-script-hoodie",
-    "hash": "a4d39b3dc92cc4cc",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/d8549d3bfa8f4224996affb48660aca0_tplv-fhlh96nyum-resize-webp_800_800.webp?v=1789904546",
-    "name": "Oversized Script Hoodie",
-    "price": "$24.99",
-    "published_at": "2026-09-20T04:46:56-07:00"
-   },
-   "15295967822128": {
-    "handle": "last-supper-hoodie",
-    "hash": "955b4bad34e0db11",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/235.webp?v=1789985703",
-    "name": "Last Supper Hoodie",
-    "price": "$24.99",
-    "published_at": "2026-09-21T03:20:36-07:00"
-   },
-   "15296176521520": {
-    "handle": "trust-me-hoodie",
-    "hash": "ea64959a3bb149cc",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/2_5a92f187-e5ff-452c-b69f-6d825fe94235.png?v=1789995720",
-    "name": "\"Trust Me\" Hoodie",
-    "price": "$24.99",
-    "published_at": "2026-09-21T06:02:53-07:00"
-   },
-   "15296177242416": {
-    "handle": "slanted-sweatpants",
-    "hash": "be8bb3b06a4e248d",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/misfitmania_1789676789_3988416433666484592_50686033579.jpg?v=1789995936",
-    "name": "Slanted Sweatpants",
-    "price": "$24.99",
-    "published_at": "2026-09-21T06:06:24-07:00"
-   },
-   "15299948675376": {
-    "handle": "angel-zip-up",
-    "hash": "acb6924dc9b43792",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/soulestclo_1762029020_3756494151467747190_66842582233.jpg?v=1790158398",
-    "name": "“ANGEL” ZIP-UP",
-    "price": "$24.99",
-    "published_at": "2026-09-23T03:14:09-07:00"
-   },
-   "15299949199664": {
-    "handle": "watching-angels-hoodie",
-    "hash": "eea597389918991b",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/DIVINEHOODIEMOCK1.webp?v=1790158483",
-    "name": "Watching Angels Hoodie",
-    "price": "$24.99",
-    "published_at": "2026-09-23T03:15:44-07:00"
-   },
-   "15299950772528": {
-    "handle": "messiah-collection",
-    "hash": "baa5845f9878a1da",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/eternal_enemiess_1765987462_3789699969570636432_54381415048.jpg?v=1790158597",
-    "name": "Messiah Collection",
-    "price": "$24.99",
-    "published_at": "2026-09-23T03:18:17-07:00"
-   },
-   "15303789117744": {
-    "handle": "servant-of-christ-zip-up",
-    "hash": "ebb1944a499d74c6",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/4_f052d323-62c3-496a-a2e5-1a186004754c.png?v=1790246362",
-    "name": "Servant of Christ Zip Up",
-    "price": "$24.99",
-    "published_at": "2026-09-24T03:40:21-07:00"
-   },
-   "15303791542576": {
-    "handle": "carry-your-cross-hoodie",
-    "hash": "eeb3815e99286595",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/C97F719A-22C1-4DE9-AE81-802C8840725D_1.webp?v=1790246463",
-    "name": "Carry Your Cross Hoodie",
-    "price": "$24.99",
-    "published_at": "2026-09-24T03:41:41-07:00"
-   },
-   "15304150679856": {
-    "handle": "sacred-garden-hoodie",
-    "hash": "f0998f668d3c8764",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/3_f6f09c18-869a-4f43-840f-b5a8c405ff06.png?v=1790248821",
-    "name": "Sacred Garden Hoodie",
-    "price": "$24.99",
-    "published_at": "2026-09-24T04:21:25-07:00"
-   },
-   "15306644980016": {
-    "handle": "cottage-set",
-    "hash": "eeb591e693437128",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/6_37f71f86-1be8-4c39-ad0d-23d39fe9a41f.png?v=1790343067",
-    "name": "Cottage Set",
-    "price": "$24.99",
-    "published_at": "2026-09-25T06:32:18-07:00"
-   },
-   "15306651664688": {
-    "handle": "wild-doll-set",
-    "hash": "f2ff0909c0e84d9e",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/herrrbrand_1789837200_3989765748355789489_60906970081.jpg?v=1790343306",
-    "name": "Wild Doll Set",
-    "price": "$24.99",
-    "published_at": "2026-09-25T06:35:41-07:00"
-   },
-   "15306652713264": {
-    "handle": "starlet-swirl-freesip-32-oz",
-    "hash": "e3767611d99988cc",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/2_c449d9a1-e02f-46d5-8744-ef9463eb1188.png?v=1790343372",
-    "name": "Starlet Swirl Freesip 32 oz",
-    "price": "$34.99",
-    "published_at": "2026-09-25T06:36:22-07:00"
-   },
-   "15309082984752": {
+   "10332566257721": {
     "handle": "plaid-soar-pants",
     "hash": "ece6c70ec74c9219",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/1_41c89108-6016-43e4-8213-b231bbe789a4.png?v=1790423873",
+    "image": "https://cdn.shopify.com/s/files/1/0829/2712/4537/files/1_41c89108-6016-43e4-8213-b231bbe789a4.png?v=1790494283",
     "name": "PLAID SOAR PANTS",
     "price": "$24.99",
-    "published_at": "2026-09-26T05:01:03-07:00"
+    "published_at": "2026-09-27T03:31:21-04:00"
    },
-   "15309131383088": {
+   "10332566388793": {
     "handle": "zoro-zip-up",
     "hash": "efdc916e22181637",
-    "image": "https://cdn.shopify.com/s/files/1/0995/1100/9584/files/project.kosmic_1789675657_3988410453219919089_51175727643.jpg?v=1790425136",
+    "image": "https://cdn.shopify.com/s/files/1/0829/2712/4537/files/project.kosmic_1789675657_3988410453219919089_51175727643.jpg?v=1790494285",
     "name": "Zoro Zip-Up",
     "price": "$24.99",
-    "published_at": "2026-09-26T05:18:54-07:00"
+    "published_at": "2026-09-27T03:31:23-04:00"
    }
   },
   "https://vosseraofficial.com": {
