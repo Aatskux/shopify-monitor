@@ -1181,6 +1181,112 @@
     "published_at": "2026-09-27T04:42:36-07:00"
    }
   },
+  "https://bramoly.com": {
+   "7707022262331": {
+    "handle": "hydrocup-everyday-tumbler-14oz",
+    "hash": "b3ccce343431cb87",
+    "image": "https://cdn.shopify.com/s/files/1/0685/4603/5771/files/7.webp?v=1783940801",
+    "name": "HydroCup Tumbler",
+    "price": "$34.99",
+    "published_at": "2026-07-13T12:49:53-04:00"
+   },
+   "7721033367611": {
+    "handle": "deer-blanket",
+    "hash": "ea9ca47a8c27b4b2",
+    "image": "https://cdn.shopify.com/s/files/1/0685/4603/5771/files/76a8261e90decb04f059dbf4542a5bb7.webp?v=1784728035",
+    "name": "Deer Blanket",
+    "price": "$29.99",
+    "published_at": "2026-07-22T09:10:55-04:00"
+   },
+   "7721033498683": {
+    "handle": "deer-pillow",
+    "hash": "fa9785c785648578",
+    "image": "https://cdn.shopify.com/s/files/1/0685/4603/5771/files/33c6e003a98730a4eca2a74b77e9723f.webp?v=1784728055",
+    "name": "Deer Pillow",
+    "price": "$12.99",
+    "published_at": "2026-07-22T09:12:09-04:00"
+   },
+   "7742893490235": {
+    "handle": "moon-pillow",
+    "hash": "c3e73e9769c9240c",
+    "image": "https://cdn.shopify.com/s/files/1/0685/4603/5771/files/moon-hero-topdown_4823b476-5eaf-455f-9081-ddc381502d9f.webp?v=1786118862",
+    "name": "The Moon Pillow",
+    "price": "$89.00",
+    "published_at": "2026-08-05T12:28:19-04:00"
+   },
+   "7742893523003": {
+    "handle": "moon-pillow-extra-cover",
+    "hash": "afc2a49fd2688f24",
+    "image": "https://cdn.shopify.com/s/files/1/0685/4603/5771/files/moon-product-yellow_d36d1ba2-5414-4b55-932e-5e87b9e7a0ae.webp?v=1786114082",
+    "name": "Extra Cover",
+    "price": "$30.00",
+    "published_at": "2026-08-05T12:29:01-04:00"
+   },
+   "7752239022139": {
+    "handle": "coraline-bunny",
+    "hash": "e915c07a87d4da6a",
+    "image": "https://cdn.shopify.com/s/files/1/0685/4603/5771/files/coraline-bunny-01.webp?v=1786278369",
+    "name": "Coraline Bunny",
+    "price": "$29.99",
+    "published_at": "2026-08-09T07:36:26-04:00"
+   },
+   "7752239317051": {
+    "handle": "coraline-squid-plush",
+    "hash": "e2a69949877866a7",
+    "image": "https://cdn.shopify.com/s/files/1/0685/4603/5771/files/coraline-squid-01.webp?v=1786278388",
+    "name": "Coraline Squid Plush",
+    "price": "$19.99",
+    "published_at": "2026-08-09T07:36:37-04:00"
+   },
+   "7758576975931": {
+    "handle": "vintage-cat-zip-up",
+    "hash": "bba4930e9b8bc88b",
+    "image": "https://cdn.shopify.com/s/files/1/0685/4603/5771/files/cat-01-front.webp?v=1786583320",
+    "name": "Vintage Cat Zip-Up",
+    "price": "$34.99",
+    "published_at": "2026-08-12T21:07:54-04:00"
+   },
+   "7779836821563": {
+    "handle": "shearling-buckle-clog",
+    "hash": "b892c76d3892966d",
+    "image": "https://cdn.shopify.com/s/files/1/0685/4603/5771/files/shearling-buckle-clog-chocolate-1_4638aa91-a743-46cc-ae53-5a3668aec977.webp?v=1787725769",
+    "name": "Shearling Buckle Clog",
+    "price": "$79.99",
+    "published_at": "2026-08-21T17:54:45-04:00"
+   },
+   "7793211277371": {
+    "handle": "shark-boots",
+    "hash": "e6ce99369a398e30",
+    "image": "https://cdn.shopify.com/s/files/1/0685/4603/5771/files/shark-boots-brown-01_f75f416a-e7cc-4977-9172-a5ca5fe64231.webp?v=1787822535",
+    "name": "Shark Boots",
+    "price": "$49.99",
+    "published_at": "2026-08-27T05:06:54-04:00"
+   },
+   "7834643857467": {
+    "handle": "cloud-polka-dot-set",
+    "hash": "e6a630a699cd99d1",
+    "image": "https://cdn.shopify.com/s/files/1/0685/4603/5771/files/polka-01-lifestyle-white-set-a.webp?v=1788656264",
+    "name": "Cloud Polka Dot Set",
+    "price": "$39.99",
+    "published_at": "2026-09-05T20:57:43-04:00"
+   },
+   "7928133451835": {
+    "handle": "hello-kitty-glass-cup-20oz",
+    "hash": "e79a8ecc98652633",
+    "image": "https://cdn.shopify.com/s/files/1/0685/4603/5771/files/hk-01-white-packshot.webp?v=1790522959",
+    "name": "Hello Kitty Glass Cup 20oz",
+    "price": "$29.99",
+    "published_at": "2026-09-27T12:21:10-04:00"
+   },
+   "7928153243707": {
+    "handle": "hello-kitty-plush",
+    "hash": "eccdc634909b91d3",
+    "image": "https://cdn.shopify.com/s/files/1/0685/4603/5771/files/hello-kitty-plush-01.webp?v=1790523786",
+    "name": "Hello Kitty Plush",
+    "price": "$19.99",
+    "published_at": "2026-09-27T12:21:12-04:00"
+   }
+  },
   "https://buy.fayora.shop": {
    "10324478689380": {
     "handle": "stockholm-peacoat-jacket",
