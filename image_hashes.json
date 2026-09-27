@@ -621,6 +621,14 @@
     "name": "Coraline Carebear",
     "price": "$99.99",
     "published_at": "2026-09-26T18:04:46-04:00"
+   },
+   "16346832798031": {
+    "handle": "cat-in-the-hat-bunny",
+    "hash": "b993923b1bac1966",
+    "image": "https://cdn.shopify.com/s/files/1/1023/8351/8031/files/ChatGPTImageSep27_2026_02_36_45AM.png?v=1790466379",
+    "name": "Cat In The Hat Bunny",
+    "price": "$99.99",
+    "published_at": "2026-09-26T20:35:17-04:00"
    }
   },
   "https://balmay.co": {
@@ -6967,6 +6975,14 @@
     "name": "Big Mochi Pumpkin Squisheen",
     "price": "$19.95",
     "published_at": "2026-09-26T20:11:46-04:00"
+   },
+   "10438491111706": {
+    "handle": "black-onyx-puffer",
+    "hash": "e9c7c396ca365a24",
+    "image": "https://cdn.shopify.com/s/files/1/1005/8583/2730/files/BLACK-PUFFER-SMALL_0175.webp?v=1790469080",
+    "name": "Black Onyx Puffer",
+    "price": "$49.95",
+    "published_at": "2026-09-26T20:32:39-04:00"
    }
   },
   "https://maverostyle.com": {
