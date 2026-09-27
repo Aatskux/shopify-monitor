@@ -17059,6 +17059,240 @@
     "published_at": "2026-09-02T12:19:31+02:00"
    }
   },
+  "https://salinthreads.com": {
+   "10316597559495": {
+    "handle": "green-stripe-crewneck",
+    "hash": "bebdd002cb148f4d",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/green-stripe-crewneck.png?v=1790138691",
+    "name": "Green Stripe Crewneck",
+    "price": "$19.99",
+    "published_at": "2026-09-23T00:44:41-04:00"
+   },
+   "8857709543623": {
+    "handle": "af-jackets",
+    "hash": "fea18577826a827a",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/black1.png?v=1786426340",
+    "name": "AF Jackets",
+    "price": "$24.95",
+    "published_at": "2026-09-08T11:53:10-04:00"
+   },
+   "8863074156743": {
+    "handle": "cts-collection",
+    "hash": "ac13d3f4c49e9346",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/ChatGPTImageAug16_2026_05_41_10PM.png?v=1786874533",
+    "name": "CTS Collection",
+    "price": "$19.99",
+    "published_at": "2026-09-15T03:05:45-04:00"
+   },
+   "8864201703623": {
+    "handle": "tang-jacket",
+    "hash": "fee7a190945bd20a",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/Screenshot2025-11-27200239.png?v=1786993182",
+    "name": "Tang Jacket",
+    "price": "$24.95",
+    "published_at": "2026-08-17T14:59:38-04:00"
+   },
+   "8864201736391": {
+    "handle": "nj-set",
+    "hash": "eb94946b91ea94d8",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/hf_20260508_203035_87155e4a-ebbd-4fe5-80a7-2dfb9c9065bb.png?v=1786993185",
+    "name": "NJZ/SKZ Hoodies",
+    "price": "$19.95 - $24.95",
+    "published_at": "2026-08-17T14:59:41-04:00"
+   },
+   "8864201900231": {
+    "handle": "fever-collection",
+    "hash": "faa0855f9a0be5c4",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/ChatGPTImageAug10_2026_12_38_21PM.png?v=1786993195",
+    "name": "Fever Collection",
+    "price": "$19.99 - $24.99",
+    "published_at": "2026-08-17T14:59:52-04:00"
+   },
+   "8864201932999": {
+    "handle": "tour-hoodies",
+    "hash": "ebb4b44b8f6e8830",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/ChatGPTImageAug4_2026_04_06_08PM.png?v=1786993197",
+    "name": "Tour Hoodies",
+    "price": "$24.99",
+    "published_at": "2026-08-17T14:59:54-04:00"
+   },
+   "8864201998535": {
+    "handle": "tour-collection",
+    "hash": "e2a796789919a786",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/ZIP_UP_HOODIE_KOREA_1200x_1cdae19d-01e0-42cc-b97b-ea653297510a.webp?v=1786993199",
+    "name": "Tour Collection",
+    "price": "$19.99 - $24.99",
+    "published_at": "2026-08-17T14:59:56-04:00"
+   },
+   "8864215892167": {
+    "handle": "tour-drop",
+    "hash": "e2a796789919a786",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/ZIP_UP_HOODIE_KOREA_1200x_0249374c-7590-414d-8652-acaf265c6d1f.webp?v=1786996320",
+    "name": "Tour Drop",
+    "price": "$19.99 - $24.99",
+    "published_at": "2026-08-17T15:51:57-04:00"
+   },
+   "8875174854855": {
+    "handle": "button-patch-long-sleeve",
+    "hash": "fea88555924aba5a",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/button-patch-long-sleeve-1.png?v=1787808758",
+    "name": "Button Patch Long Sleeve",
+    "price": "$19.99",
+    "published_at": "2026-08-27T01:22:25-04:00"
+   },
+   "8875175379143": {
+    "handle": "airbrush-splendor-dress",
+    "hash": "e985961e866bc16b",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/airbrush-splendor-dress-1.png?v=1787808919",
+    "name": "Airbrush Splendor Dress",
+    "price": "$19.99",
+    "published_at": "2026-08-27T01:23:21-04:00"
+   },
+   "8875175444679": {
+    "handle": "classic-crewneck",
+    "hash": "fa2885d3976d3834",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/classic-crewneck-1.png?v=1787808940",
+    "name": "Classic Crewneck",
+    "price": "$24.95",
+    "published_at": "2026-08-27T01:23:27-04:00"
+   },
+   "8875175510215": {
+    "handle": "prk-crewnecks",
+    "hash": "941a6be56ca57625",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/prk-crewnecks-7.webp?v=1787808535",
+    "name": "PRK Crewnecks",
+    "price": "$24.99",
+    "published_at": "2026-08-27T01:23:37-04:00"
+   },
+   "8875175542983": {
+    "handle": "polka-lounge-set",
+    "hash": "f2b9f16009cecf06",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/polka-lounge-set-1.png?v=1787808997",
+    "name": "Polka Lounge Set",
+    "price": "$29.99",
+    "published_at": "2026-08-27T01:23:48-04:00"
+   },
+   "8875175608519": {
+    "handle": "quarter-zip-sweat-set",
+    "hash": "eabd90c3894acd4e",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/quarter-zip-sweat-set-1.png?v=1787809000",
+    "name": "Quarter Zip Sweat Set",
+    "price": "$29.95",
+    "published_at": "2026-08-27T01:23:51-04:00"
+   },
+   "8875175641287": {
+    "handle": "relaxed-sweat-set",
+    "hash": "e56a988796989a79",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/relaxed-sweat-set-1.png?v=1787809010",
+    "name": "Relaxed Sweat Set",
+    "price": "$29.95",
+    "published_at": "2026-08-27T01:23:55-04:00"
+   },
+   "8875175772359": {
+    "handle": "surf-collection",
+    "hash": "ac93873d4a2b35c5",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/surf-collection-1.jpg?v=1787808684",
+    "name": "Surf Collection",
+    "price": "$14.99 - $19.99",
+    "published_at": "2026-08-27T01:24:33-04:00"
+   },
+   "8875175805127": {
+    "handle": "sweat-set",
+    "hash": "e56a988796989a79",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/sweat-set-1.png?v=1787809078",
+    "name": "Sweat Set",
+    "price": "$29.95",
+    "published_at": "2026-08-27T01:24:39-04:00"
+   },
+   "8889677119687": {
+    "handle": "portrait-tee-collection",
+    "hash": "ba52c5a4934b9e2e",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/hf_20260908_093112_994cde95-e810-4fd4-bc11-e473683782ff.png?v=1788861303",
+    "name": "Portrait Tee Collection",
+    "price": "$19.99",
+    "published_at": "2026-09-08T05:54:46-04:00"
+   },
+   "8889760907463": {
+    "handle": "patchwork-plaid-hoodie",
+    "hash": "eea09117924e9eda",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/hf_20260908_100622_7e9bd332-59af-4b6b-8332-d2ed58600d18.png?v=1788862141",
+    "name": "Patchwork Plaid Hoodie",
+    "price": "$24.99",
+    "published_at": "2026-09-08T06:08:49-04:00"
+   },
+   "8889936609479": {
+    "handle": "surf-tees",
+    "hash": "ac93873d4a2b35c5",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/2FD1DFC9-A4C6-4E0F-9D2F-9159EDE97574.jpg?v=1788882694",
+    "name": "Surf Collection",
+    "price": "$14.99 - $19.99",
+    "published_at": "2026-09-08T11:51:17-04:00"
+   },
+   "8889936740551": {
+    "handle": "collegiate-arch-hoodie",
+    "hash": "faa185ce8d38b89a",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/hf_20260908_084329_0135114e-62bf-43f7-8a09-c7f1b76dfcd1.png?v=1788882708",
+    "name": "Mac Hoodie",
+    "price": "$24.99",
+    "published_at": "2026-09-08T11:51:39-04:00"
+   },
+   "8897040285895": {
+    "handle": "striped-jacket-collection",
+    "hash": "bab5d042cb0f8d6c",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/stripe-navy-gray.png?v=1789455747",
+    "name": "Striped Jacket Collection",
+    "price": "$29.99",
+    "published_at": "2026-09-15T03:02:51-04:00"
+   },
+   "8897043497159": {
+    "handle": "wte-collection",
+    "hash": "aaf5d41b9b4ccc50",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/wave-black-tour-hoodie.png?v=1789455980",
+    "name": "WTE Collection",
+    "price": "$19.99 - $24.99",
+    "published_at": "2026-09-15T03:06:22-04:00"
+   },
+   "8905031024839": {
+    "handle": "logo-hoodies",
+    "hash": "abe1d405861e9f78",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/logo-hoodies-0.png?v=1789711159",
+    "name": "Logo Hoodies",
+    "price": "$24.99",
+    "published_at": "2026-09-18T01:59:07-04:00"
+   },
+   "8905036234951": {
+    "handle": "printed-hoodies",
+    "hash": "fba4865b984f8538",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/printed-hoodies-0.png?v=1789711765",
+    "name": "Printed Hoodies",
+    "price": "$24.99",
+    "published_at": "2026-09-18T02:09:13-04:00"
+   },
+   "8905255092423": {
+    "handle": "striped-hoodies",
+    "hash": "bab5d042cb0f8d6c",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/stripe-navy-gray_fccb0702-7d7e-4de8-95ae-76c962e4f9d7.png?v=1789717210",
+    "name": "Striped Hoodies",
+    "price": "$24.99",
+    "published_at": "2026-09-18T03:39:51-04:00"
+   },
+   "8907935809735": {
+    "handle": "vintage-tee",
+    "hash": "ea5781a89517973a",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/hf_20260919_075254_8782babd-8b7c-45d5-a27d-1f3b2b4b2ae1_min.webp?v=1789804550",
+    "name": "Vintage Tee",
+    "price": "$14.99",
+    "published_at": "2026-09-19T03:55:31-04:00"
+   },
+   "8907936858311": {
+    "handle": "romantic-tour-hoodie",
+    "hash": "ffa085579a1eda08",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/hf_20260919_075254_a851097a-30ab-4fc9-a9d7-61d894241dbf_min.webp?v=1789804564",
+    "name": "Romantic Tour Hoodie",
+    "price": "$19.99",
+    "published_at": "2026-09-19T03:55:52-04:00"
+   }
+  },
   "https://sentrafashion.com": {
    "10302304911511": {
     "handle": "advent-calendar-26",
