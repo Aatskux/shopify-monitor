@@ -6959,6 +6959,14 @@
     "name": "SZA Tapestry Hoodie",
     "price": "$29.95",
     "published_at": "2026-09-26T13:18:43-04:00"
+   },
+   "10438489866522": {
+    "handle": "big-mochi-pumpkin-squisheen",
+    "hash": "aed8a5ada13e5245",
+    "image": "https://cdn.shopify.com/s/files/1/1005/8583/2730/files/BigMochiPumpkinPlush_01_web.webp?v=1790467890",
+    "name": "Big Mochi Pumpkin Squisheen",
+    "price": "$19.95",
+    "published_at": "2026-09-26T20:11:46-04:00"
    }
   },
   "https://maverostyle.com": {
@@ -16386,22 +16394,6 @@
     "price": null,
     "published_at": "2026-09-26T15:48:35-05:00"
    },
-   "8694570418351": {
-    "handle": "double-zip-knit-cardigan",
-    "hash": "e7f2c81edc272152",
-    "image": "https://cdn.shopify.com/s/files/1/0746/6509/9439/files/ChatGPT_Image_Sep_12_2026_06_41_32_PM.png?v=1789256672",
-    "name": "Double Zip Knit Cardigan",
-    "price": "$49.99",
-    "published_at": "2026-09-12T18:32:56-05:00"
-   },
-   "8697873170607": {
-    "handle": "floral-tote-bag",
-    "hash": "a984f63a83719772",
-    "image": "https://cdn.shopify.com/s/files/1/0746/6509/9439/files/ChatGPTImageSep14_2026_11_07_44AM.png?v=1789402078",
-    "name": "Floral Tote Bag",
-    "price": "$34.99",
-    "published_at": "2026-09-14T11:05:10-05:00"
-   },
    "8703553274031": {
     "handle": "the-cropped-lace-t-shirt",
     "hash": "de39d30b21f0f039",
@@ -16409,14 +16401,6 @@
     "name": "The Cropped Lace T-shirt",
     "price": "$36.99",
     "published_at": "2026-09-17T16:44:45-05:00"
-   },
-   "8709129633967": {
-    "handle": "the-sunday-denim-jeans",
-    "hash": "bbe36327e7188c48",
-    "image": "https://cdn.shopify.com/s/files/1/0746/6509/9439/files/10b059c8-57da-48bb-aeed-3add32448fdd.png?v=1789945590",
-    "name": "The Sunday Denim Jeans",
-    "price": "$59.99",
-    "published_at": "2026-09-20T18:07:29-05:00"
    }
   },
   "https://revoraco.com": {

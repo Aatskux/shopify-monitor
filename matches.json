@@ -332,5 +332,36 @@
   "stores": 4,
   "strength": "mahdollinen",
   "time": "2026-09-26T20:51:02+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 0,
+    "name_score": 100.0,
+    "product_id": "9644591579375",
+    "store": "https://instatame.store",
+    "strength": "varma"
+   },
+   {
+    "distance": 0,
+    "name_score": 70.0,
+    "product_id": "10311352516827",
+    "store": "https://mylumeras.com",
+    "strength": "varma"
+   },
+   {
+    "distance": 32,
+    "name_score": 100.0,
+    "product_id": "8343496360054",
+    "store": "https://someriestore.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Big Mochi Pumpkin Squisheen",
+  "product_id": "10438489866522",
+  "store": "https://maisonveya.com",
+  "stores": 4,
+  "strength": "varma",
+  "time": "2026-09-27T00:15:55+00:00"
  }
 ]
