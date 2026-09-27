@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-26T23:55:54+00:00",
+ "checked": "2026-09-27T00:55:54+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -111,14 +111,15 @@
   },
   "https://avellalane.com": {
    "ranks": {
+    "cat-in-the-hat-bunny": 5,
     "club-zip-hoodie": 3,
-    "custom-carebears": 5,
+    "custom-carebears": 6,
     "energy-drink-plush": 2,
-    "hello-kitty-glass-cup-20oz": 6,
-    "lando-norris-bunny": 8,
+    "hello-kitty-glass-cup-20oz": 7,
+    "lando-norris-bunny": 9,
     "shipping-protection": 1,
     "snoopy-bunny": 4,
-    "spiked-red-bottom-heels": 7
+    "spiked-red-bottom-heels": 8
    }
   },
   "https://balmay.co": {
@@ -539,19 +540,21 @@
     "2026-snoopy-peanuts-popcorn-bucket": 4,
     "bella-s-twilight-floral-duvet-set": 5,
     "bella-swan-twilight-sheet-set": 2,
+    "big-mochi-pumpkin-squisheen": 9,
+    "black-onyx-puffer": 8,
     "shipping-protection": 3,
-    "sza-tapestry-hoodie": 8,
+    "sza-tapestry-hoodie": 10,
     "vip-membership": 1,
-    "white-athletic-dept-1987-cap": 16,
-    "white-athletic-dept-1987-cap-vip": 13,
-    "white-distressed-denim-baseball-cap": 14,
-    "white-distressed-denim-baseball-cap-vip": 12,
+    "white-athletic-dept-1987-cap": 18,
+    "white-athletic-dept-1987-cap-vip": 15,
+    "white-distressed-denim-baseball-cap": 16,
+    "white-distressed-denim-baseball-cap-vip": 14,
     "white-distressed-trucker-hat": 7,
-    "white-distressed-trucker-hat-vip": 11,
+    "white-distressed-trucker-hat-vip": 13,
     "white-racing-club-trucker-cap": 6,
-    "white-racing-club-trucker-cap-vip": 10,
-    "white-rhinestone-monogram-trucker-cap": 15,
-    "white-rhinestone-monogram-trucker-cap-vip": 9
+    "white-racing-club-trucker-cap-vip": 12,
+    "white-rhinestone-monogram-trucker-cap": 17,
+    "white-rhinestone-monogram-trucker-cap-vip": 11
    }
   },
   "https://maverostyle.com": {
@@ -875,14 +878,11 @@
   },
   "https://renzara.com": {
    "ranks": {
-    "double-zip-knit-cardigan": 1,
-    "energy-drink-plush": 3,
-    "energy-drink-plushies": 5,
-    "energy-drink-plushy": 6,
-    "floral-tote-bag": 8,
-    "the-cropped-lace-t-shirt": 2,
-    "the-heated-lash-curler": 4,
-    "the-sunday-denim-jeans": 7
+    "energy-drink-plush": 2,
+    "energy-drink-plushies": 4,
+    "energy-drink-plushy": 5,
+    "the-cropped-lace-t-shirt": 1,
+    "the-heated-lash-curler": 3
    }
   },
   "https://revoraco.com": {
@@ -948,6 +948,30 @@
     "western-rider-boots": 11,
     "wild-instinct-multi-pocket-bag": 19,
     "y2k-puffy-skate-sneaker": 6
+   }
+  },
+  "https://salinthreads.com": {
+   "ranks": {
+    "af-jackets": 10,
+    "airbrush-splendor-dress": 9,
+    "fever-collection": 3,
+    "green-stripe-crewneck": 20,
+    "nj-set": 6,
+    "printed-hoodies": 17,
+    "quarter-zip-sweat-set": 13,
+    "relaxed-sweat-set": 19,
+    "romantic-tour-hoodie": 18,
+    "shipping-protection": 1,
+    "striped-hoodies": 16,
+    "striped-jacket-collection": 15,
+    "surf-collection": 11,
+    "surf-tees": 7,
+    "sweat-set": 5,
+    "tang-jacket": 4,
+    "tour-collection": 12,
+    "tour-drop": 2,
+    "tour-hoodies": 8,
+    "wte-collection": 14
    }
   },
   "https://sentrafashion.com": {
