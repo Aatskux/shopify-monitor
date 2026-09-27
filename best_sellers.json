@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-27T02:55:54+00:00",
+ "checked": "2026-09-27T03:55:46+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -90,6 +90,20 @@
     "vintage-bug-costumes": 6,
     "y2k-angel-shoes": 3,
     "y2k-sneakers": 4
+   }
+  },
+  "https://atlumeo.com": {
+   "ranks": {
+    "all-eyes-on-you-sweater": 2,
+    "baggy-sweatset": 6,
+    "barefoot-water-rhinestone-shoes": 10,
+    "bear-with-me-teddy-jumpsuit": 7,
+    "doggy-robe": 1,
+    "energy-drink-plushie": 8,
+    "hanging-swing-ghost-decoration": 4,
+    "in-full-bloom-denim-jacket": 9,
+    "plaid-fall-balloon-pants": 5,
+    "the-noire-lace-flare-leggings": 3
    }
   },
   "https://aurorathelabel.shop": {
