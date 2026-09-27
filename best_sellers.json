@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-27T03:55:46+00:00",
+ "checked": "2026-09-27T04:56:02+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -84,12 +84,13 @@
   },
   "https://astrapparels.com": {
    "ranks": {
-    "chinese-time-shirt": 5,
+    "chinese-time-shirt": 6,
+    "nutella-advent-calendar": 4,
     "p-f-shoes": 2,
     "patterned-funnel-coat": 1,
-    "vintage-bug-costumes": 6,
+    "vintage-bug-costumes": 7,
     "y2k-angel-shoes": 3,
-    "y2k-sneakers": 4
+    "y2k-sneakers": 5
    }
   },
   "https://atlumeo.com": {
@@ -424,8 +425,6 @@
    "ranks": {
     "back-logo-hoodie-and-pants": 4,
     "club-zipper-hoodie": 2,
-    "mj-jacket": 5,
-    "mj-pants": 6,
     "shipping-protection": 1,
     "sweat-set": 3
    }
