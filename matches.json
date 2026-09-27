@@ -531,5 +531,22 @@
   "stores": 2,
   "strength": "mahdollinen",
   "time": "2026-09-27T19:35:44+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 26,
+    "name_score": 90.9,
+    "product_id": "12541398810942",
+    "store": "https://valuseofficial.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Energy Advent Calendar",
+  "product_id": "16211175899461",
+  "store": "https://shoplunnessa.com",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-27T21:55:56+00:00"
  }
 ]

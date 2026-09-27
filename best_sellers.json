@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-27T20:56:05+00:00",
+ "checked": "2026-09-27T21:55:56+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -182,6 +182,24 @@
     "trunks-cropped-jacket": 14,
     "weather-report-long-sleeve": 7,
     "zoro-zip-up": 18
+   }
+  },
+  "https://bramoly.com": {
+   "ranks": {
+    "cloud-polka-dot-set": 8,
+    "coraline-bunny": 4,
+    "coraline-squid-plush": 10,
+    "deer-blanket": 14,
+    "deer-pillow": 13,
+    "hello-kitty-glass-cup-20oz": 7,
+    "hello-kitty-plush": 6,
+    "hydrocup-everyday-tumbler-14oz": 2,
+    "moon-pillow": 12,
+    "moon-pillow-extra-cover": 11,
+    "shark-boots": 9,
+    "shearling-buckle-clog": 3,
+    "shipping-protection": 1,
+    "vintage-cat-zip-up": 5
    }
   },
   "https://buy.fayora.shop": {
@@ -1047,25 +1065,25 @@
   "https://shoplunnessa.com": {
    "ranks": {
     "cozy-teddy-bear-slippers": 7,
-    "dulzura-v-neck-sleeveless-halter-backless-bodycon-corp-top-solid-sexy-elegant-y2k-top-party-clubwear-street-summer-vest": 16,
-    "fitflow-polka-dot-set": 12,
+    "dulzura-v-neck-sleeveless-halter-backless-bodycon-corp-top-solid-sexy-elegant-y2k-top-party-clubwear-street-summer-vest": 17,
+    "energy-advent-calendar": 12,
+    "fitflow-polka-dot-set": 13,
     "floral-lace-flare-jeans": 11,
     "flower-bouquet": 1,
     "galaxy-star-light-projector": 9,
     "gap-leopard-hoodie": 6,
     "halloween-quencher-h2-0-flowstate™-tumbler-40-oz": 4,
     "hp-smart-chessboard": 3,
-    "iride-scarf-top": 19,
-    "leopard-halter-top": 18,
+    "iride-scarf-top": 20,
+    "leopard-halter-top": 19,
     "look-4-eternal-time": 10,
-    "pink-white-polka-dots-set": 13,
+    "pink-white-polka-dots-set": 14,
     "polo-bear-high-pile-fleece": 5,
     "sb-snoopy-shaped-cold-cup": 2,
-    "speckle-halter-top": 17,
-    "striped-logo-everyday-set": 14,
+    "speckle-halter-top": 18,
+    "striped-logo-everyday-set": 15,
     "striped-tank": 8,
-    "weird-puss-seashell-halter-camisole-women-backless-swing-collar-satin-silky-midnight-clubwear-skinny-beach-vacation-tank-tops": 15,
-    "wooden-corset": 20
+    "weird-puss-seashell-halter-camisole-women-backless-swing-collar-satin-silky-midnight-clubwear-skinny-beach-vacation-tank-tops": 16
    }
   },
   "https://shopsakura.store": {
@@ -1215,7 +1233,7 @@
     "caroline-sip-cup": 5,
     "halloween-quencher": 2,
     "maryjanes": 4,
-    "unicorn-necklace": 3
+    "snoopyslippers": 3
    }
   },
   "https://vaylae.com": {
