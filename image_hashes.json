@@ -719,6 +719,14 @@
     "name": "Cat In The Hat Bunny",
     "price": "$99.99",
     "published_at": "2026-09-26T20:35:17-04:00"
+   },
+   "16346920386895": {
+    "handle": "green-tea-plushie",
+    "hash": "b492c34dcbc6cb4c",
+    "image": "https://cdn.shopify.com/s/files/1/1023/8351/8031/files/ChatGPT_Image_Sep_25_2026_04_20_45_AM_24dcb7b2-5b04-45f3-b76a-98902777dd94.png?v=1790299597",
+    "name": "Green Tea Plushie",
+    "price": "$99.99",
+    "published_at": "2026-09-27T03:24:27-04:00"
    }
   },
   "https://balmay.co": {
