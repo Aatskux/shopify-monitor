@@ -620,5 +620,22 @@
   "stores": 5,
   "strength": "mahdollinen",
   "time": "2026-09-28T09:35:52+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 32,
+    "name_score": 100.0,
+    "product_id": "10311352516827",
+    "store": "https://mylumeras.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Pumpkin Clip Plush",
+  "product_id": "10240285736994",
+  "store": "https://stryxaco.com",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-28T09:41:24+00:00"
  }
 ]
