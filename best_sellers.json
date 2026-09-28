@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-28T09:56:00+00:00",
+ "checked": "2026-09-28T10:55:51+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -386,6 +386,8 @@
   },
   "https://evonnashop.com": {
    "ranks": {
+    "big-pumpkin-plush": 2,
+    "city-hero-shield": 3,
     "priority-protection": 1
    }
   },
@@ -993,7 +995,6 @@
   },
   "https://salinthreads.com": {
    "ranks": {
-    "af-girls-jackets": 20,
     "af-jackets": 8,
     "airbrush-splendor-dress": 9,
     "fever-collection": 3,
@@ -1012,6 +1013,7 @@
     "tour-collection": 12,
     "tour-drop": 2,
     "tour-hoodies": 10,
+    "twill-zip-jackets": 20,
     "wte-collection": 14
    }
   },
@@ -1337,25 +1339,25 @@
   "https://xevorausa.com": {
    "ranks": {
     "anti-sa-hoodie": 1,
-    "fdr-camo-hoodie": 17,
-    "fdr-camo-hoodie-1": 16,
-    "kill-social-anxiety-hoodie-vip": 9,
-    "leopard-zip-up-1": 19,
+    "copper-peptide-serum": 7,
+    "copper-peptide-serum-vip": 6,
+    "fdr-camo-hoodie": 19,
+    "fdr-camo-hoodie-1": 18,
+    "kill-social-anxiety-hoodie-vip": 11,
     "shipping-protection": 2,
-    "shorts-next-level": 8,
-    "true-woman-skirt": 7,
-    "true-woman-skirt-vip": 6,
+    "shorts-next-level": 10,
+    "true-woman-skirt": 9,
+    "true-woman-skirt-vip": 8,
     "unisex-poject-hoodie": 3,
-    "unisex-poject-hoodie-vip": 18,
+    "unisex-poject-hoodie-vip": 20,
     "vip-membership": 5,
     "vip-membership-free": 4,
-    "viral-autumn-jacket": 13,
-    "viral-autumn-jacket-vip": 12,
-    "viral-leopard-hoodie": 14,
-    "viral-leopard-hoodie-vip": 11,
-    "viral-zip-up-hoodie": 15,
-    "viral-zip-up-hoodie-vip": 10,
-    "💞seamless-front-closure-bra-with-adjustable-straps-vip": 20
+    "viral-autumn-jacket": 15,
+    "viral-autumn-jacket-vip": 14,
+    "viral-leopard-hoodie": 16,
+    "viral-leopard-hoodie-vip": 13,
+    "viral-zip-up-hoodie": 17,
+    "viral-zip-up-hoodie-vip": 12
    }
   },
   "https://zolera.co": {
