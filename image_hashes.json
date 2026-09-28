@@ -20017,6 +20017,72 @@
     "published_at": "2026-07-07T20:24:43-04:00"
    }
   },
+  "https://tryshinova.com": {
+   "10386268881225": {
+    "handle": "sc-hoodie",
+    "hash": "efe1951e68e12760",
+    "image": "https://cdn.shopify.com/s/files/1/0904/9581/1913/files/sc6.png?v=1788953610",
+    "name": "SCF Hoodie",
+    "price": "$29.95",
+    "published_at": "2026-09-09T07:34:18-04:00"
+   },
+   "10392627741001": {
+    "handle": "scf-club-zipper-hoodie",
+    "hash": "ebe5945a79854664",
+    "image": "https://cdn.shopify.com/s/files/1/0904/9581/1913/files/scuffers-4.webp?v=1789234291",
+    "name": "SCF Club Zipper Hoodie",
+    "price": "$29.99",
+    "published_at": "2026-09-12T13:31:30-04:00"
+   },
+   "10403919855945": {
+    "handle": "scf-felpa",
+    "hash": "efe1951e68e12760",
+    "image": "https://cdn.shopify.com/s/files/1/0904/9581/1913/files/sc6.png?v=1788953610",
+    "name": "SCF Felpa",
+    "price": "$29.95",
+    "published_at": "2026-09-18T14:09:09-04:00"
+   },
+   "10411320607049": {
+    "handle": "tacchi-elara",
+    "hash": "fac2872dd832873c",
+    "image": "https://cdn.shopify.com/s/files/1/0904/9581/1913/files/ImmagineCodex22set2026_10_37_54.png?v=1790066456",
+    "name": "Elara Heels",
+    "price": "$29.95",
+    "published_at": "2026-09-22T04:40:39-04:00"
+   },
+   "10415794389321": {
+    "handle": "lv-boots",
+    "hash": "b032cf64c76996cc",
+    "image": "https://cdn.shopify.com/s/files/1/0904/9581/1913/files/IMG_4460_2.jpg?v=1790258105",
+    "name": "LV Boots",
+    "price": "$29.95",
+    "published_at": "2026-09-24T11:45:22-04:00"
+   },
+   "10417777213769": {
+    "handle": "bl-blue-light-blockers",
+    "hash": "c207fdfc260748e9",
+    "image": "https://cdn.shopify.com/s/files/1/0904/9581/1913/files/ImmagineChatGPT25set2026_11_18_06-1.png?v=1790328083",
+    "name": "BL Blue Light Blockers",
+    "price": "$19.95",
+    "published_at": "2026-09-25T05:21:43-04:00"
+   },
+   "10424340447561": {
+    "handle": "pjs-spoky-snoopy",
+    "hash": "ed0e91c1961e9ab3",
+    "image": "https://cdn.shopify.com/s/files/1/0904/9581/1913/files/Immaginiprodottosfondobianco2.png?v=1790591552",
+    "name": "PJS Spoky Snoopy",
+    "price": "$29.99",
+    "published_at": "2026-09-28T06:37:33-04:00"
+   },
+   "10424440881481": {
+    "handle": "ny-stockholm-tee",
+    "hash": "eae1855e981979a5",
+    "image": "https://cdn.shopify.com/s/files/1/0904/9581/1913/files/felp1.webp?v=1790598553",
+    "name": "NY Stockholm Tee",
+    "price": "$29.99",
+    "published_at": "2026-09-28T08:43:48-04:00"
+   }
+  },
   "https://urbaneofficial.shop": {
    "8279764467849": {
     "handle": "spidey-cloggs",
