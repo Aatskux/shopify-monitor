@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-28T18:56:20+00:00",
+ "checked": "2026-09-28T19:56:01+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -762,8 +762,9 @@
     "energy-drink-jellycat": 1,
     "shipping-protection": 2,
     "snoopy-glass-cup": 3,
-    "starbucks-latte-plush": 4,
-    "y2k-bug-costume": 5
+    "starbucks-latte-plush": 5,
+    "test": 4,
+    "y2k-bug-costume": 6
    }
   },
   "https://nuvaly.shop": {
@@ -894,26 +895,26 @@
   },
   "https://renovaestore.com": {
    "ranks": {
-    "2000s-cable-knit-sweater": 14,
-    "fleece-zip-up": 9,
-    "gel-ds-trainer": 10,
+    "2000s-cable-knit-sweater": 16,
+    "amelie-lace-sneakers": 9,
+    "carol-bean-bag": 8,
+    "fleece-zip-up": 11,
+    "gel-ds-trainer": 12,
     "handball-spezial-sneaker": 2,
-    "jane-x-samba": 8,
+    "jane-x-samba": 10,
     "juicy-flats": 3,
-    "kitty-mary-jane": 17,
-    "leopard-define-jacket": 13,
+    "kitty-mary-jane": 19,
+    "leopard-define-jacket": 15,
     "lowmel": 7,
-    "michael-pj-set": 11,
-    "pink-workwear-jacket": 18,
-    "plaid-balloon-pants": 15,
+    "michael-pj-set": 13,
+    "pink-workwear-jacket": 20,
+    "plaid-balloon-pants": 17,
     "plaid-zip-up": 5,
     "shipping-protection": 4,
-    "spezial-women-s-sneaker": 16,
+    "spezial-women-s-sneaker": 18,
     "vamp-plush": 6,
     "vintage-hartt-brown-jacket": 1,
-    "vintage-sneaker": 12,
-    "women-s-hiking-waterproof": 19,
-    "women-xt-6": 20
+    "vintage-sneaker": 14
    }
   },
   "https://renzara.com": {
