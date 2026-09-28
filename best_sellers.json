@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-28T04:55:55+00:00",
+ "checked": "2026-09-28T05:55:48+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -84,11 +84,12 @@
   },
   "https://astrapparels.com": {
    "ranks": {
-    "chinese-time-shirt": 6,
-    "nutella-advent-calendar": 5,
+    "chinese-time-shirt": 7,
+    "lowmel-sneakers": 5,
+    "nutella-advent-calendar": 6,
     "p-f-shoes": 2,
     "patterned-funnel-coat": 1,
-    "vintage-bug-costumes": 7,
+    "vintage-bug-costumes": 8,
     "y2k-angel-shoes": 4,
     "y2k-sneakers": 3
    }
@@ -1243,25 +1244,25 @@
   "https://veyfina.com": {
    "ranks": {
     "17oz-mini-bottle-flip-cap-1": 2,
-    "bag-insert": 17,
-    "c-leopard-bag": 14,
-    "c-tote-bag": 16,
-    "cheetah-arizona-sandals": 12,
-    "cobblehop-bunny-plushie": 13,
-    "cora-pajama-set": 20,
+    "bag-insert": 18,
+    "c-leopard-bag": 15,
+    "c-tote-bag": 17,
+    "cheetah-arizona-sandals": 13,
+    "cobblehop-bunny-plushie": 14,
     "evelina-clog": 3,
     "faye-shoulder-bag": 4,
     "funnel-trench-jacket": 5,
-    "leopard-print-purse": 15,
-    "mossy-leggings": 10,
-    "mossy-long-sleeve": 8,
-    "mossy-set": 9,
-    "mossy-tee": 11,
-    "mossy-top": 7,
+    "leopard-print-purse": 16,
+    "mossy-leggings": 11,
+    "mossy-long-sleeve": 9,
+    "mossy-set": 10,
+    "mossy-tee": 12,
+    "mossy-top": 8,
     "shipping-protection": 1,
-    "snoopy-sippy-cup-16oz": 19,
-    "station-tote-bag": 18,
-    "yorkshire-plushie": 6
+    "snoopy-sippy-cup-16oz": 20,
+    "station-tote-bag": 19,
+    "yorkshire-plushie": 7,
+    "yorkshire-pudding-plushie": 6
    }
   },
   "https://vossaofficial.com": {
