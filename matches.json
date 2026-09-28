@@ -719,5 +719,29 @@
   "stores": 2,
   "strength": "mahdollinen",
   "time": "2026-09-28T17:55:52+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 22,
+    "name_score": 100.0,
+    "product_id": "9446498599131",
+    "store": "https://mylumeras.com",
+    "strength": "mahdollinen"
+   },
+   {
+    "distance": 30,
+    "name_score": 87.0,
+    "product_id": "10607941419274",
+    "store": "https://xevorausa.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "NYC Zip Hoodie",
+  "product_id": "15326034198900",
+  "store": "https://novirainc.store",
+  "stores": 3,
+  "strength": "mahdollinen",
+  "time": "2026-09-28T22:02:00+00:00"
  }
 ]
