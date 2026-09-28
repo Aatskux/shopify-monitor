@@ -668,5 +668,22 @@
   "stores": 4,
   "strength": "mahdollinen",
   "time": "2026-09-28T10:06:25+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 28,
+    "name_score": 100.0,
+    "product_id": "16026990903627",
+    "store": "https://cavessi.store",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "LIMITED MONSTER PLUSH",
+  "product_id": "10326385066084",
+  "store": "https://buy.fayora.shop",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-28T12:01:21+00:00"
  }
 ]
