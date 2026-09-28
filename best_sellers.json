@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-28T22:55:58+00:00",
+ "checked": "2026-09-28T23:55:59+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -1218,6 +1218,19 @@
     "cow": 1,
     "sloth": 2,
     "test-product": 3
+   }
+  },
+  "https://tryshinova.com": {
+   "ranks": {
+    "bl-blue-light-blockers": 8,
+    "lv-boots": 5,
+    "ny-stockholm-tee": 6,
+    "pjs-spoky-snoopy": 7,
+    "sc-hoodie": 1,
+    "scf-club-zipper-hoodie": 4,
+    "scf-felpa": 3,
+    "shipping-protection-4": 2,
+    "tacchi-elara": 9
    }
   },
   "https://urbaneofficial.shop": {
