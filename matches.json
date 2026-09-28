@@ -565,5 +565,22 @@
   "stores": 2,
   "strength": "mahdollinen",
   "time": "2026-09-28T09:11:09+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 32,
+    "name_score": 88.9,
+    "product_id": "15892035174560",
+    "store": "https://clemoreclothing.shop",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Blush Plaid Bell Sleeve Jacket",
+  "product_id": "16211829293381",
+  "store": "https://shoplunnessa.com",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-28T09:16:04+00:00"
  }
 ]
