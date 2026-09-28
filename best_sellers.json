@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-28T13:56:09+00:00",
+ "checked": "2026-09-28T14:56:26+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -97,11 +97,10 @@
   "https://atlumeo.com": {
    "ranks": {
     "all-eyes-on-you-sweater": 2,
-    "baggy-sweatset": 7,
+    "baggy-sweatset": 6,
     "bear-with-me-teddy-jumpsuit": 4,
     "doggy-robe": 1,
-    "energy-drink-plushie": 6,
-    "in-full-bloom-denim-jacket": 8,
+    "in-full-bloom-denim-jacket": 7,
     "plaid-fall-balloon-pants": 5,
     "the-noire-lace-flare-leggings": 3
    }
@@ -762,11 +761,10 @@
   "https://novirausa.com": {
    "ranks": {
     "energy-drink-jellycat": 1,
-    "hocus-pocus-bunny-plush": 4,
     "shipping-protection": 2,
     "snoopy-glass-cup": 3,
-    "starbucks-latte-plush": 5,
-    "y2k-bug-costume": 6
+    "starbucks-latte-plush": 4,
+    "y2k-bug-costume": 5
    }
   },
   "https://nuvaly.shop": {
