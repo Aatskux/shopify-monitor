@@ -637,5 +637,36 @@
   "stores": 2,
   "strength": "mahdollinen",
   "time": "2026-09-28T09:41:24+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 26,
+    "name_score": 100.0,
+    "product_id": "16014608007499",
+    "store": "https://cavessi.store",
+    "strength": "mahdollinen"
+   },
+   {
+    "distance": 34,
+    "name_score": 100.0,
+    "product_id": "10311352516827",
+    "store": "https://mylumeras.com",
+    "strength": "mahdollinen"
+   },
+   {
+    "distance": 26,
+    "name_score": 86.7,
+    "product_id": "10240285736994",
+    "store": "https://stryxaco.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Big Pumpkin Plush",
+  "product_id": "9090997780678",
+  "store": "https://evonnashop.com",
+  "stores": 4,
+  "strength": "mahdollinen",
+  "time": "2026-09-28T10:06:25+00:00"
  }
 ]
