@@ -702,5 +702,22 @@
   "stores": 2,
   "strength": "mahdollinen",
   "time": "2026-09-28T14:35:56+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 40,
+    "name_score": 86.5,
+    "product_id": "8240737681526",
+    "store": "https://someriestore.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Acotar 40oz Tumbler",
+  "product_id": "10625613758751",
+  "store": "https://celinea.online",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-28T17:55:52+00:00"
  }
 ]

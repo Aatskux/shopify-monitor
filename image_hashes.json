@@ -1613,6 +1613,14 @@
     "name": "Package Priority",
     "price": "$3.95",
     "published_at": "2026-09-09T06:20:08-04:00"
+   },
+   "10625613758751": {
+    "handle": "acotar-40oz-tumbler",
+    "hash": "f24897978b929663",
+    "image": "https://cdn.shopify.com/s/files/1/0972/5480/1695/files/acotar_2.webp?v=1790618038",
+    "name": "Acotar 40oz Tumbler",
+    "price": "$29.95",
+    "published_at": "2026-09-28T13:54:21-04:00"
    }
   },
   "https://cevorashop.com": {
@@ -6441,6 +6449,14 @@
     "name": "Big Mochi Pumpkin Squisheen",
     "price": "$29.99",
     "published_at": "2026-09-24T00:47:04-04:00"
+   },
+   "9649808179439": {
+    "handle": "raw-light-blue-hoodie",
+    "hash": "b4c6e6c99991d193",
+    "image": "https://cdn.shopify.com/s/files/1/0773/8494/1807/files/genecom3_SCFF_jpg.jpg?v=1790617855",
+    "name": "Raw Light Blue Hoodie",
+    "price": "$29.99",
+    "published_at": "2026-09-28T13:53:50-04:00"
    }
   },
   "https://kairovaglobal.com": {
