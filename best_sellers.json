@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-28T17:55:52+00:00",
+ "checked": "2026-09-28T18:56:20+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -442,7 +442,6 @@
    "ranks": {
     "back-logo-hoodie-and-pants": 4,
     "club-zipper-hoodie": 2,
-    "oreo-pusheen": 5,
     "shipping-protection": 1,
     "sweat-set": 3
    }
@@ -895,26 +894,26 @@
   },
   "https://renovaestore.com": {
    "ranks": {
-    "2000s-cable-knit-sweater": 13,
-    "fleece-zip-up": 8,
-    "gel-ds-trainer": 9,
+    "2000s-cable-knit-sweater": 14,
+    "fleece-zip-up": 9,
+    "gel-ds-trainer": 10,
     "handball-spezial-sneaker": 2,
+    "jane-x-samba": 8,
     "juicy-flats": 3,
-    "kitty-mary-jane": 16,
-    "leopard-define-jacket": 12,
+    "kitty-mary-jane": 17,
+    "leopard-define-jacket": 13,
     "lowmel": 7,
-    "michael-pj-set": 10,
-    "pink-workwear-jacket": 17,
-    "plaid-balloon-pants": 14,
+    "michael-pj-set": 11,
+    "pink-workwear-jacket": 18,
+    "plaid-balloon-pants": 15,
     "plaid-zip-up": 5,
     "shipping-protection": 4,
-    "spezial-women-s-sneaker": 15,
-    "twilight-fur-zip-hoodie": 20,
+    "spezial-women-s-sneaker": 16,
     "vamp-plush": 6,
     "vintage-hartt-brown-jacket": 1,
-    "vintage-sneaker": 11,
-    "women-s-hiking-waterproof": 18,
-    "women-xt-6": 19
+    "vintage-sneaker": 12,
+    "women-s-hiking-waterproof": 19,
+    "women-xt-6": 20
    }
   },
   "https://renzara.com": {
@@ -922,8 +921,10 @@
     "energy-drink-plush": 3,
     "energy-drink-plushies": 4,
     "energy-drink-plushy": 1,
+    "plush-plaid-lounge-pants": 7,
     "the-cropped-lace-t-shirt": 2,
-    "the-heated-lash-curler": 5
+    "the-heated-lash-curler": 5,
+    "unisex-patchwork-flannel-hoodie": 6
    }
   },
   "https://revoraco.com": {
