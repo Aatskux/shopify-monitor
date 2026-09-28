@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-28T19:56:01+00:00",
+ "checked": "2026-09-28T20:55:54+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -1201,12 +1201,13 @@
   },
   "https://trinkettown.store": {
    "ranks": {
+    "bat-plushie": 6,
     "butter-squishy": 4,
     "christmas-advent-blind-box": 2,
-    "dumbling-surprise": 7,
-    "halloween-bottle": 6,
+    "dumbling-surprise": 8,
+    "halloween-bottle": 7,
     "halloween-countdown-blind-box": 3,
-    "halloween-quencher-tumbler": 8,
+    "halloween-quencher-tumbler": 9,
     "limited-edition-glass-cup": 1,
     "spider-hoodie": 5
    }
