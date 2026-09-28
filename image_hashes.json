@@ -4230,6 +4230,14 @@
    }
   },
   "https://coralyneshop.com": {
+   "10314283221088": {
+    "handle": "kitty-leopard-hoodie",
+    "hash": "b262cd9bd81ccc6c",
+    "image": "https://cdn.shopify.com/s/files/1/0657/7910/5888/files/CyberKittyLeopardFurJacket-1.png?v=1790586138",
+    "name": "Kitty Leopard Hoodie",
+    "price": "$24.99",
+    "published_at": "2026-09-28T05:01:56-04:00"
+   },
    "7798520905824": {
     "handle": "sunset-wave-tee",
     "hash": "e9cb96a49b599834",
@@ -17465,6 +17473,14 @@
     "name": "Leopard Varsity Set",
     "price": "$19.99",
     "published_at": "2026-09-28T05:01:06-04:00"
+   },
+   "15376339632327": {
+    "handle": "stripe-flare-set",
+    "hash": "b930c7cfb0cc8c39",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/fdr-stripe-cropped-zip-hoodie-slimpantsy2k-06.png?v=1790586117",
+    "name": "Stripe Flare Set",
+    "price": "$19.99",
+    "published_at": "2026-09-28T05:01:32-04:00"
    },
    "8857709543623": {
     "handle": "af-jackets",

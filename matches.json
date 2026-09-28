@@ -548,5 +548,22 @@
   "stores": 2,
   "strength": "mahdollinen",
   "time": "2026-09-27T21:55:56+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 32,
+    "name_score": 100.0,
+    "product_id": "10607942533386",
+    "store": "https://xevorausa.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Kitty Leopard Hoodie",
+  "product_id": "10314283221088",
+  "store": "https://coralyneshop.com",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-28T09:11:09+00:00"
  }
 ]
