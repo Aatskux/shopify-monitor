@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-28T21:56:00+00:00",
+ "checked": "2026-09-28T22:55:58+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -701,8 +701,9 @@
   },
   "https://nevorafashion.com": {
    "ranks": {
+    "advent-calendar-26": 3,
     "powered-by-3am-zoomies-svg": 2,
-    "rick-grimes-jacket": 3,
+    "rick-grimes-jacket": 4,
     "untitled-sep27_02-58-58": 1
    }
   },
