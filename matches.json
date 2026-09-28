@@ -685,5 +685,22 @@
   "stores": 2,
   "strength": "mahdollinen",
   "time": "2026-09-28T12:01:21+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 36,
+    "name_score": 100.0,
+    "product_id": "15861034516640",
+    "store": "https://clemoreclothing.shop",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Graffiti Sweatsuit",
+  "product_id": "10332391112756",
+  "store": "https://distrikdofficial.com",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-28T14:35:56+00:00"
  }
 ]
