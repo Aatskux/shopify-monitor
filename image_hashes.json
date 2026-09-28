@@ -4990,6 +4990,14 @@
     "price": "$24.99",
     "published_at": "2026-09-28T10:57:46-04:00"
    },
+   "10332404514868": {
+    "handle": "naruto-collection",
+    "hash": "bdc6c2f08b0b2db4",
+    "image": "https://cdn.shopify.com/s/files/1/0775/0493/8036/files/Shadow_tee_WBG_1296x_ffab3282-5fb7-4020-9b4d-aacbb69aa176.webp?v=1790607487",
+    "name": "Naruto Collection",
+    "price": "$24.99 - $29.99",
+    "published_at": "2026-09-28T11:02:14-04:00"
+   },
    "8907843010612": {
     "handle": "spider-web-designs",
     "hash": "ec4e91b09b4ecc6c",
@@ -20413,6 +20421,14 @@
     "name": "PL Quarter Zip Collection",
     "price": "$24.99",
     "published_at": "2026-09-27T06:37:04-05:00"
+   },
+   "15395765027031": {
+    "handle": "spider-graphic-zip",
+    "hash": "a67a5a0bafa9b0a1",
+    "image": "https://cdn.shopify.com/s/files/1/0831/3503/7655/files/2_39c797b2-327f-428b-8f8d-f8e58d6605bc.webp?v=1790607921",
+    "name": "Spider Graphic Zip",
+    "price": "$24.99",
+    "published_at": "2026-09-28T10:06:02-05:00"
    },
    "9309133439191": {
     "handle": "world-cup-polo-collection",
