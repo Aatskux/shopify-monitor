@@ -4179,6 +4179,30 @@
     "name": "Leopard Trim Hoodie",
     "price": "$99.99",
     "published_at": "2026-09-25T14:03:32-04:00"
+   },
+   "15892029243552": {
+    "handle": "black-buckled-moto-jacket",
+    "hash": "b133cecc31333c33",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1a_bdfa272f-70f8-4e3f-8e35-495a6ea9f9b6.webp?v=1790567620",
+    "name": "Black Buckled Leather Jacket",
+    "price": "$99.99",
+    "published_at": "2026-09-27T23:53:56-04:00"
+   },
+   "15892035174560": {
+    "handle": "plaid-bell-sleeve-funnel-jacket",
+    "hash": "99f242e13d6c9ec2",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2_1535113a-8532-450b-8bc8-326081f39ef9.webp?v=1790567707",
+    "name": "Plaid Bell-Sleeve Funnel Jacket",
+    "price": "$99.99",
+    "published_at": "2026-09-27T23:55:21-04:00"
+   },
+   "15892038221984": {
+    "handle": "acid-wash-baggy-denim",
+    "hash": "bca2831d9379961b",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/3_0fa61803-64fb-4f57-8d30-4805d3da71ba.jpg?v=1790567743",
+    "name": "Acid Wash Baggy Denim",
+    "price": "$99.99",
+    "published_at": "2026-09-27T23:55:57-04:00"
    }
   },
   "https://coralyneshop.com": {
