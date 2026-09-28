@@ -582,5 +582,43 @@
   "stores": 2,
   "strength": "mahdollinen",
   "time": "2026-09-28T09:16:04+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 20,
+    "name_score": 100.0,
+    "product_id": "10377268298049",
+    "store": "https://autumnandash.co",
+    "strength": "mahdollinen"
+   },
+   {
+    "distance": 20,
+    "name_score": 100.0,
+    "product_id": "15317960294772",
+    "store": "https://novirainc.store",
+    "strength": "mahdollinen"
+   },
+   {
+    "distance": 22,
+    "name_score": 100.0,
+    "product_id": "15553223950447",
+    "store": "https://oceanysage.com",
+    "strength": "mahdollinen"
+   },
+   {
+    "distance": 32,
+    "name_score": 100.0,
+    "product_id": "16192260899141",
+    "store": "https://shoplunnessa.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Bear Fleece",
+  "product_id": "15376420143303",
+  "store": "https://salinthreads.com",
+  "stores": 5,
+  "strength": "mahdollinen",
+  "time": "2026-09-28T09:35:52+00:00"
  }
 ]

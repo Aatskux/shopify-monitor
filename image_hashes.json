@@ -17482,6 +17482,30 @@
     "price": "$19.99",
     "published_at": "2026-09-28T05:01:32-04:00"
    },
+   "15376419881159": {
+    "handle": "floral-zip-jacket",
+    "hash": "ebb48543da0f9332",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/floral-zip-jacket-floral.jpg?v=1790588126",
+    "name": "Floral Zip Jacket",
+    "price": "$19.99",
+    "published_at": "2026-09-28T05:35:25-04:00"
+   },
+   "15376420143303": {
+    "handle": "bear-fleece",
+    "hash": "f333b44cc98b9c8c",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/bear-fleece-fleece_front.jpg?v=1790588132",
+    "name": "Bear Fleece",
+    "price": "$24.99",
+    "published_at": "2026-09-28T05:35:30-04:00"
+   },
+   "15376421650631": {
+    "handle": "af-girls-jackets",
+    "hash": "bba8c427c607ba96",
+    "image": "https://cdn.shopify.com/s/files/1/0749/3664/7879/files/af-girls-jackets-fur_hood.jpg?v=1790588164",
+    "name": "AF Girls Jackets",
+    "price": "$24.95",
+    "published_at": "2026-09-28T05:36:00-04:00"
+   },
    "8857709543623": {
     "handle": "af-jackets",
     "hash": "fea18577826a827a",
