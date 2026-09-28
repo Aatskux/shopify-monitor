@@ -743,5 +743,29 @@
   "stores": 3,
   "strength": "mahdollinen",
   "time": "2026-09-28T22:02:00+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 0,
+    "name_score": 100.0,
+    "product_id": "10302304911511",
+    "store": "https://sentrafashion.com",
+    "strength": "varma"
+   },
+   {
+    "distance": 26,
+    "name_score": 90.9,
+    "product_id": "12541398810942",
+    "store": "https://valuseofficial.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Advent Calendar 26'",
+  "product_id": "10567945290017",
+  "store": "https://nevorafashion.com",
+  "stores": 3,
+  "strength": "varma",
+  "time": "2026-09-28T22:20:53+00:00"
  }
 ]
