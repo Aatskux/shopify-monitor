@@ -4251,6 +4251,38 @@
     "name": "Aqua Foldover Lounge Set",
     "price": "$99.99",
     "published_at": "2026-09-27T23:57:12-04:00"
+   },
+   "15896156930208": {
+    "handle": "arch-wide-jeans",
+    "hash": "bbe1c41ec40bc72e",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1_ca35622b-875a-494a-9ebb-1071661c029b.avif?v=1790713662",
+    "name": "Arch Wide Jeans",
+    "price": "$99.99",
+    "published_at": "2026-09-29T16:27:59-04:00"
+   },
+   "15896157159584": {
+    "handle": "summit-sherpa-pullover",
+    "hash": "b1c36c9c6992675a",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2a_3febd6e7-8c7e-47cc-842d-6a58141f57b3.avif?v=1790713699",
+    "name": "Summit Sherpa Pullover",
+    "price": "$99.99",
+    "published_at": "2026-09-29T16:28:36-04:00"
+   },
+   "15896157487264": {
+    "handle": "fan-favorite-alo-set",
+    "hash": "afb4d04bcd2a831e",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/3_daaebe7a-ddae-482e-857e-74e7e8c56bd9.webp?v=1790713791",
+    "name": "Fan Favorite Alo Set",
+    "price": "$99.99",
+    "published_at": "2026-09-29T16:30:06-04:00"
+   },
+   "15896157913248": {
+    "handle": "matching-selvedge-set",
+    "hash": "f8e68499875e865a",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/4a_4a8c592c-07f0-42df-98dc-b906f9f29e69.jpg?v=1790713853",
+    "name": "Matching Selvedge Set",
+    "price": "$99.99",
+    "published_at": "2026-09-29T16:31:20-04:00"
    }
   },
   "https://coralyneshop.com": {
