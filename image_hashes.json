@@ -605,6 +605,22 @@
     "name": "Vintage Jacket",
     "price": "$44.95",
     "published_at": "2026-09-22T22:51:31-04:00"
+   },
+   "15397452611905": {
+    "handle": "ghostface-plush",
+    "hash": "f9d8c6239b648c33",
+    "image": "https://cdn.shopify.com/s/files/1/0999/6596/0513/files/SnapInsta.to_771808671_17888960745673933_8650919484024199644_n.jpg?v=1790695981",
+    "name": "Ghostface Plush",
+    "price": "$24.99",
+    "published_at": "2026-09-29T11:33:39-04:00"
+   },
+   "15397453103425": {
+    "handle": "pink-puffer-jacket",
+    "hash": "c90c3cf163666673",
+    "image": "https://cdn.shopify.com/s/files/1/0999/6596/0513/files/a_66f4c3e4665645cd959de1487a64d009.webp?v=1790696031",
+    "name": "Pink Puffer Jacket",
+    "price": "$39.99",
+    "published_at": "2026-09-29T11:35:00-04:00"
    }
   },
   "https://avellalane.com": {
