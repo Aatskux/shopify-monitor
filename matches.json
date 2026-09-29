@@ -1010,5 +1010,29 @@
   "stores": 2,
   "strength": "mahdollinen",
   "time": "2026-09-29T17:41:06+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 2,
+    "name_score": 74.1,
+    "product_id": "10322814926910",
+    "store": "https://airpuply.com",
+    "strength": "varma"
+   },
+   {
+    "distance": 36,
+    "name_score": 100.0,
+    "product_id": "9649808179439",
+    "store": "https://instatame.store",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Raw Light Blue Hoodie",
+  "product_id": "15398669517012",
+  "store": "https://balmay.co",
+  "stores": 3,
+  "strength": "varma",
+  "time": "2026-09-29T18:35:54+00:00"
  }
 ]
