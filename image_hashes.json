@@ -7583,6 +7583,14 @@
     "name": "Resistance Shirt",
     "price": "$19.99",
     "published_at": "2026-09-29T09:24:44-04:00"
+   },
+   "15390987616621": {
+    "handle": "07-zip-up",
+    "hash": "afb4d00acf8b3b90",
+    "image": "https://cdn.shopify.com/s/files/1/1030/3717/4125/files/1_2bfca2f6-b79d-4388-a62d-05036d201993.png?v=1790691271",
+    "name": "07 Zip Up",
+    "price": "$24.99",
+    "published_at": "2026-09-29T10:16:25-04:00"
    }
   },
   "https://modo-clothing.myshopify.com": {
@@ -20665,6 +20673,14 @@
     "name": "Bear Graphic Sherpa",
     "price": "$44.99",
     "published_at": "2026-09-29T09:09:26-05:00"
+   },
+   "15396320018647": {
+    "handle": "pink-long-shorts",
+    "hash": "be30d00fc7cc0fcc",
+    "image": "https://cdn.shopify.com/s/files/1/0831/3503/7655/files/1_dc9e7f61-033f-4d07-8e91-6fb08f31eab7.png?v=1790691138",
+    "name": "Pink Long Shorts",
+    "price": "$24.99",
+    "published_at": "2026-09-29T09:12:57-05:00"
    },
    "9309133439191": {
     "handle": "world-cup-polo-collection",
