@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-29T16:55:59+00:00",
+ "checked": "2026-09-29T17:56:00+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -122,17 +122,18 @@
   },
   "https://avellalane.com": {
    "ranks": {
-    "cat-in-the-hat-bunny": 7,
+    "cat-in-the-hat-bunny": 8,
     "club-zip-hoodie": 3,
-    "custom-carebears": 8,
+    "custom-carebears": 9,
     "energy-drink-plush": 2,
-    "energy-drink-tumbler-40oz": 5,
-    "green-tea-plushie": 6,
-    "hello-kitty-glass-cup-20oz": 9,
-    "lando-norris-bunny": 11,
+    "energy-drink-tumbler-40oz": 6,
+    "green-tea-plushie": 7,
+    "hello-kitty-glass-cup-20oz": 10,
+    "lando-norris-bunny": 12,
+    "limited-fnaf-jackets": 5,
     "shipping-protection": 1,
     "snoopy-bunny": 4,
-    "spiked-red-bottom-heels": 10
+    "spiked-red-bottom-heels": 11
    }
   },
   "https://balmay.co": {
@@ -761,10 +762,11 @@
    "ranks": {
     "energy-drink-jellycat": 1,
     "shipping-protection": 2,
-    "snoopy-glass-cup": 3,
-    "starbucks-latte-plush": 4,
-    "test": 5,
-    "y2k-bug-costume": 6
+    "snoopy-glass-cup": 4,
+    "starbucks-latte-plush": 5,
+    "test": 6,
+    "varsity-mockneck": 3,
+    "y2k-bug-costume": 7
    }
   },
   "https://nuvaly.shop": {
@@ -885,6 +887,17 @@
     "vome-5s-triple-white": 10,
     "vome-5s-white-pink": 6,
     "white-95s": 19
+   }
+  },
+  "https://refinedapparelco.com": {
+   "ranks": {
+    "blond-tortoise-tumbler-40-oz": 4,
+    "coastal-stripe-jeans": 5,
+    "oasis-stripe-set": 6,
+    "pink-striped-tumbler": 2,
+    "sirena-maxi-dress": 7,
+    "the-pastel-paradise-set": 1,
+    "willow-rose-set": 3
    }
   },
   "https://reluxeastore.com": {
