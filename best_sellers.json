@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-29T11:55:52+00:00",
+ "checked": "2026-09-29T12:55:50+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -92,13 +92,13 @@
   },
   "https://atlumeo.com": {
    "ranks": {
-    "all-eyes-on-you-sweater": 2,
+    "all-eyes-on-you-sweater": 3,
     "baggy-sweatset": 6,
     "bear-with-me-teddy-jumpsuit": 4,
     "doggy-robe": 1,
     "in-full-bloom-denim-jacket": 7,
     "plaid-fall-balloon-pants": 5,
-    "the-noire-lace-flare-leggings": 3
+    "the-noire-lace-flare-leggings": 2
    }
   },
   "https://aurorathelabel.shop": {
@@ -159,26 +159,26 @@
   },
   "https://blankspaces.us": {
    "ranks": {
-    "2face-sweatsuit": 18,
+    "2face-sweatsuit": 16,
     "dmc-zip-up": 15,
-    "everything-is-temporary-reversible-zip": 11,
+    "everything-is-temporary-reversible-zip": 10,
     "fallen-rhinestone-set": 7,
-    "ghostfreak-crew": 3,
+    "gaara-jacket": 19,
+    "ghostfreak-crew": 6,
     "hail-mary-hoodie": 5,
-    "heat-reactive-puffer": 19,
-    "jaydes-collection": 4,
-    "jesus-rhinestone-hoodie": 10,
+    "heat-reactive-puffer": 17,
+    "jaydes-collection": 3,
+    "jesus-rhinestone-hoodie": 11,
     "jojo-graphic-collection": 1,
-    "luffy-hoodie": 16,
     "oversized-garage-hoodie": 13,
     "reborn-sweatpants": 12,
     "shipping-protection": 2,
-    "snow-leopard-jogger": 6,
-    "soul-eater-collection": 17,
+    "snow-leopard-jogger": 4,
     "spider-carhartt-hoodie": 14,
+    "toshiro-hitsugaya-tracksuit": 20,
     "trunks-cropped-jacket": 8,
     "weather-report-long-sleeve": 9,
-    "zoro-zip-up": 20
+    "zoro-zip-up": 18
    }
   },
   "https://bramoly.com": {
@@ -760,8 +760,8 @@
     "energy-drink-jellycat": 1,
     "shipping-protection": 2,
     "snoopy-glass-cup": 3,
-    "starbucks-latte-plush": 4,
-    "test": 5,
+    "starbucks-latte-plush": 5,
+    "test": 4,
     "y2k-bug-costume": 6
    }
   },
@@ -839,19 +839,19 @@
   },
   "https://pinkpookie.com": {
    "ranks": {
-    "baby-phat-runway-40oz-tumbler": 15,
-    "bashful-unicorn-plush": 18,
+    "baby-phat-runway-40oz-tumbler": 16,
+    "bashful-unicorn-plush": 19,
     "bizzlestomp-bear": 9,
-    "black-cat-bearista-plush-bag-charm": 14,
-    "blood-drip-tumbler": 17,
-    "brown-leopard-print-relaxed-logo-set": 19,
+    "black-cat-bearista-plush-bag-charm": 15,
+    "blood-drip-tumbler": 18,
+    "brown-leopard-print-relaxed-logo-set": 20,
+    "corpse-bride-bunny": 13,
     "exclusive-midnight-floral-40oz-traveler-tumbler": 2,
     "gilmore-girls-20oz-smoothsip-slider": 3,
-    "hello-kitty-gold-color-bracelet": 13,
-    "ironman-reactor-night-light": 20,
+    "hello-kitty-gold-color-bracelet": 14,
     "kitty-pendant-necklace": 12,
     "on-the-dot-traveler-40oz-tumbler": 1,
-    "one-piece-crewneck-sweatshirt-hat": 16,
+    "one-piece-crewneck-sweatshirt-hat": 17,
     "sally-x-jack-skellington-40-oz-tumbler": 6,
     "sand-strata-og-shoes": 11,
     "shipping-protection": 4,
@@ -894,26 +894,13 @@
   },
   "https://renovaestore.com": {
    "ranks": {
-    "2000s-cable-knit-sweater": 16,
-    "amelie-lace-sneakers": 9,
-    "carol-bean-bag": 8,
-    "fleece-zip-up": 11,
-    "gel-ds-trainer": 12,
-    "handball-spezial-sneaker": 2,
-    "jane-x-samba": 10,
-    "juicy-flats": 3,
-    "kitty-mary-jane": 19,
-    "leopard-define-jacket": 15,
-    "lowmel": 7,
-    "michael-pj-set": 13,
-    "pink-workwear-jacket": 20,
-    "plaid-balloon-pants": 17,
-    "plaid-zip-up": 5,
-    "shipping-protection": 4,
-    "spezial-women-s-sneaker": 18,
-    "vamp-plush": 6,
-    "vintage-hartt-brown-jacket": 1,
-    "vintage-sneaker": 14
+    "amelie-lace-sneakers": 3,
+    "carol-bean-bag": 2,
+    "jane-x-samba": 4,
+    "logo-sticker": 7,
+    "logo-sticker-vip": 5,
+    "shipping-protection": 1,
+    "vip-membership": 6
    }
   },
   "https://renzara.com": {
@@ -1066,15 +1053,15 @@
   },
   "https://shoplunnessa.com": {
    "ranks": {
-    "blush-plaid-bell-sleeve-jacket": 10,
+    "blush-plaid-bell-sleeve-jacket": 11,
     "cozy-plush-suede-ballet-flats": 14,
     "cozy-teddy-bear-slippers": 7,
     "dulzura-v-neck-sleeveless-halter-backless-bodycon-corp-top-solid-sexy-elegant-y2k-top-party-clubwear-street-summer-vest": 19,
-    "energy-advent-calendar": 11,
+    "energy-advent-calendar": 9,
     "fitflow-polka-dot-set": 15,
     "floral-lace-flare-jeans": 13,
     "flower-bouquet": 1,
-    "galaxy-star-light-projector": 9,
+    "galaxy-star-light-projector": 10,
     "gap-leopard-hoodie": 6,
     "halloween-quencher-h2-0-flowstate™-tumbler-40-oz": 4,
     "hp-smart-chessboard": 3,
@@ -1334,11 +1321,11 @@
     "lego-star-wars-tee": 19,
     "mex-jersey-collection": 20,
     "midnight-rune-hoodie": 13,
-    "raw-edge-track-set": 2,
+    "raw-edge-track-set": 3,
     "rick-morty-jeans": 17,
     "sesame-collection": 11,
     "shipping-protection": 1,
-    "spider-mask-hoodie": 3,
+    "spider-mask-hoodie": 2,
     "spidey-knit-long-sleeve": 6,
     "spidey-zip-hoodie": 7,
     "susanoo-zip-hoodie": 10,
@@ -1394,25 +1381,25 @@
   "https://xevorausa.com": {
    "ranks": {
     "anti-sa-hoodie": 1,
-    "copper-peptide-serum": 8,
-    "copper-peptide-serum-vip": 7,
-    "fdr-camo-hoodie": 19,
-    "fdr-camo-hoodie-1": 18,
-    "kill-social-anxiety-hoodie-vip": 11,
+    "copper-peptide-serum": 9,
+    "copper-peptide-serum-vip": 8,
+    "cr-obsidian-tracksuit": 7,
+    "fdr-camo-hoodie": 20,
+    "fdr-camo-hoodie-1": 19,
+    "kill-social-anxiety-hoodie-vip": 12,
     "shipping-protection": 2,
-    "shorts-next-level": 10,
+    "shorts-next-level": 11,
     "true-woman-skirt": 4,
-    "true-woman-skirt-vip": 9,
+    "true-woman-skirt-vip": 10,
     "unisex-poject-hoodie": 3,
-    "unisex-poject-hoodie-vip": 20,
     "vip-membership": 6,
     "vip-membership-free": 5,
-    "viral-autumn-jacket": 15,
-    "viral-autumn-jacket-vip": 14,
-    "viral-leopard-hoodie": 16,
-    "viral-leopard-hoodie-vip": 13,
-    "viral-zip-up-hoodie": 17,
-    "viral-zip-up-hoodie-vip": 12
+    "viral-autumn-jacket": 16,
+    "viral-autumn-jacket-vip": 15,
+    "viral-leopard-hoodie": 17,
+    "viral-leopard-hoodie-vip": 14,
+    "viral-zip-up-hoodie": 18,
+    "viral-zip-up-hoodie-vip": 13
    }
   },
   "https://zolera.co": {
