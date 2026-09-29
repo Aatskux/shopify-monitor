@@ -870,5 +870,22 @@
   "stores": 3,
   "strength": "varma",
   "time": "2026-09-29T05:31:02+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": null,
+    "name_score": 100.0,
+    "product_id": "15745956872352",
+    "store": "https://clemoreclothing.shop",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Selvedge Tiger Trinity Denim",
+  "product_id": "9701982798083",
+  "store": "https://shopsakura.store",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-29T07:50:53+00:00"
  }
 ]
