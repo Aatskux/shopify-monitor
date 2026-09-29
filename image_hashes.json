@@ -17295,6 +17295,56 @@
     "published_at": "2026-09-25T22:29:45-07:00"
    }
   },
+  "https://riftco.shop": {
+   "7949868368079": {
+    "handle": "archive",
+    "hash": "ebb194c4959a6a71",
+    "image": "https://cdn.shopify.com/s/files/1/0630/0201/7999/files/add_the_angel_hoodie_2K_20260916003230.jpg?v=1790322326",
+    "name": "Archive Hoodies",
+    "price": "$19.99",
+    "published_at": "2026-09-25T03:45:23-04:00"
+   },
+   "7949868400847": {
+    "handle": "fallen",
+    "hash": "bcb4c74f929830cd",
+    "image": "https://cdn.shopify.com/s/files/1/0630/0201/7999/files/fallen-faux-fu-rhinestone-zip-hoodie-washed-black-_detachable-fur_-7.webp?v=1790322328",
+    "name": "Fallen Hoodie & Sweats",
+    "price": "$24.99",
+    "published_at": "2026-09-25T03:45:25-04:00"
+   },
+   "7949868433615": {
+    "handle": "top-skirt",
+    "hash": "e69299499a6ccd69",
+    "image": "https://cdn.shopify.com/s/files/1/0630/0201/7999/files/Create_product_picture_set_2K_202607090610.jpg?v=1790322329",
+    "name": "Top & Skirt Set",
+    "price": "$24.99",
+    "published_at": "2026-09-25T03:45:27-04:00"
+   },
+   "7949868466383": {
+    "handle": "set",
+    "hash": "bcc2c31dc43cd05f",
+    "image": "https://cdn.shopify.com/s/files/1/0630/0201/7999/files/Supreme-Satin-Applique-Hooded-Sweatshirt-FW25-Heather-Grey-Product-2.jpg?v=1790322332",
+    "name": "Hoodie & Sweats Set",
+    "price": "$19.99",
+    "published_at": "2026-09-25T03:45:29-04:00"
+   },
+   "7949868499151": {
+    "handle": "hoodie-sweats",
+    "hash": "bcc2c31dc43cd05f",
+    "image": "https://cdn.shopify.com/s/files/1/0630/0201/7999/files/Supreme-Satin-Applique-Hooded-Sweatshirt-FW25-Heather-Grey-Product-2_1b3f9791-c56e-48f9-8073-c0ccfeadc0d2.jpg?v=1790322337",
+    "name": "Hoodie & Sweats",
+    "price": "$19.99",
+    "published_at": "2026-09-25T03:45:32-04:00"
+   },
+   "7949868531919": {
+    "handle": "spidey-zip-hoodies",
+    "hash": "aa93d14c3cce3593",
+    "image": "https://cdn.shopify.com/s/files/1/0630/0201/7999/files/Create_product_picture_3_hoodies_202607220743_4b24b695-bf94-49bd-921b-d95413279f06.jpg?v=1790322339",
+    "name": "Spidey Zip Hoodies",
+    "price": "$24.99",
+    "published_at": "2026-09-25T03:45:37-04:00"
+   }
+  },
   "https://rosavelle.online": {
    "15262565237040": {
     "handle": "package-priority",
