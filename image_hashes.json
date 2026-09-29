@@ -8958,22 +8958,6 @@
     "price": "$39.99",
     "published_at": "2026-09-24T01:20:31-05:00"
    },
-   "15322284818804": {
-    "handle": "bizzlestomp-bear",
-    "hash": "f0b19e6b855e9889",
-    "image": "https://cdn.shopify.com/s/files/1/1014/0041/2532/files/ASP1B_4__85527.webp?v=1790449701",
-    "name": "Bizzlestomp Bear",
-    "price": "$49.99",
-    "published_at": "2026-09-26T14:09:14-05:00"
-   },
-   "15323846050164": {
-    "handle": "the-freaky-nikki-costume",
-    "hash": "e6ce9863cc399989",
-    "image": "https://cdn.shopify.com/s/files/1/1014/0041/2532/files/43889a3a3f794ca89d553a60a7be067f_tplv-fhlh96nyum-resize-webp_800_800.webp?v=1790537462",
-    "name": "The Freaky Nikki Costume",
-    "price": "$49.99",
-    "published_at": "2026-09-27T14:32:42-05:00"
-   },
    "15326034198900": {
     "handle": "nyc-zip-hoodie",
     "hash": "ec92e24fcd1c62b2",
@@ -8981,6 +8965,14 @@
     "name": "NYC Zip Hoodie",
     "price": "$29.99",
     "published_at": "2026-09-28T16:56:46-05:00"
+   },
+   "15327725453684": {
+    "handle": "alo-sherpa-edge-bomber",
+    "hash": "ffc0a01f5079624f",
+    "image": "https://cdn.shopify.com/s/files/1/1014/0041/2532/files/W4530R_01_b1_s1_a3_m207_750x_b57ad137-10e9-4fa3-99e4-0f93396244b6.jpg?v=1790714111",
+    "name": "Alo Sherpa Edge Bomber",
+    "price": "$49.99",
+    "published_at": "2026-09-29T15:37:57-05:00"
    }
   },
   "https://novirastudios.shop": {
