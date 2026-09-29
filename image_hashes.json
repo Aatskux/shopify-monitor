@@ -9989,6 +9989,40 @@
     "published_at": "2026-09-19T13:39:21-05:00"
    }
   },
+  "https://parrisessentials.com": {
+   "10317188366410": {
+    "handle": "energy-dink-plush",
+    "hash": "b133c6cc8e989b33",
+    "image": "https://cdn.shopify.com/s/files/1/0707/7527/5594/files/ChatGPTImageSep22_2026_08_14_03PM.png?v=1790126062",
+    "name": "Energy Dink Plush",
+    "price": "$24.99",
+    "published_at": "2026-09-23T11:15:28-05:00"
+   },
+   "10322476695626": {
+    "handle": "energy-drink-plush",
+    "hash": "b890cd4bc7a4ca6d",
+    "image": "https://cdn.shopify.com/s/files/1/0707/7527/5594/files/ChatGPTImageSep24_2026_11_00_07PM.png?v=1790308818",
+    "name": "Energy drink plush",
+    "price": "$24.99",
+    "published_at": "2026-09-24T23:17:15-05:00"
+   },
+   "10330876575818": {
+    "handle": "baja-blast-plush",
+    "hash": "bb96c6c3b138863c",
+    "image": "https://cdn.shopify.com/s/files/1/0707/7527/5594/files/6979e1da-2d44-47f9-889c-9e6312e1020f.png?v=1790573112",
+    "name": "Baja Blast Plush",
+    "price": "$24.99",
+    "published_at": "2026-09-28T00:26:40-05:00"
+   },
+   "10333275652170": {
+    "handle": "dr-pepper-plush",
+    "hash": "e9969163c7ec941a",
+    "image": "https://cdn.shopify.com/s/files/1/0707/7527/5594/files/drpepperplush.png?v=1790621324",
+    "name": "Dr Pepper plush",
+    "price": "$24.99",
+    "published_at": "2026-09-28T13:50:37-05:00"
+   }
+  },
   "https://pilocea.com": {
    "8572682174625": {
     "handle": "unisex-fit-washed-t-shirt-2604001353-hdw260400712-1",
