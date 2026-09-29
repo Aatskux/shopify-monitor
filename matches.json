@@ -887,5 +887,29 @@
   "stores": 2,
   "strength": "mahdollinen",
   "time": "2026-09-29T07:50:53+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 0,
+    "name_score": 100.0,
+    "product_id": "10354910822721",
+    "store": "https://allicient.co",
+    "strength": "varma"
+   },
+   {
+    "distance": 0,
+    "name_score": 100.0,
+    "product_id": "8705655603361",
+    "store": "https://exaluna.com",
+    "strength": "varma"
+   }
+  ],
+  "name": "Corpse Bride  Bunny",
+  "product_id": "15374030340287",
+  "store": "https://www.curvite.com",
+  "stores": 3,
+  "strength": "varma",
+  "time": "2026-09-29T10:21:00+00:00"
  }
 ]
