@@ -5671,24 +5671,6 @@
     "published_at": "2026-09-18T10:50:27-04:00"
    }
   },
-  "https://dorchellla.com": {
-   "11625844769109": {
-    "handle": "fluffy-clogs",
-    "hash": "be94c14b3cb413cb",
-    "image": "https://cdn.shopify.com/s/files/1/1007/3187/9765/files/ChatGPTImageSep19_2026_01_45_25PM.png?v=1789821957",
-    "name": "Fluffy Clogs",
-    "price": "$34.95",
-    "published_at": "2026-09-19T13:51:40+01:00"
-   },
-   "11627490050389": {
-    "handle": "checkered-slip-ons",
-    "hash": "e9c3922e1f706387",
-    "image": "https://cdn.shopify.com/s/files/1/1007/3187/9765/files/ChatGPT_Image_Sep_20_2026_04_29_37_PM.png?v=1789918259",
-    "name": "Checkered Slip Ons",
-    "price": "$29.99",
-    "published_at": "2026-09-20T16:32:08+01:00"
-   }
-  },
   "https://evonnashop.com": {
    "9090993389766": {
     "handle": "city-hero-shield",
