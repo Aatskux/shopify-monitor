@@ -16816,6 +16816,22 @@
     "price": "$44.97",
     "published_at": "2026-09-28T14:08:48-05:00"
    },
+   "15396506599657": {
+    "handle": "polka-hoodie",
+    "hash": "eab2e484070fcb5b",
+    "image": "https://cdn.shopify.com/s/files/1/0819/2494/8201/files/503F99CC-CD42-4AEB-AF15-953418D4CEB2.webp?v=1790707018",
+    "name": "Polka Hoodie",
+    "price": "$24.99",
+    "published_at": "2026-09-29T13:37:32-05:00"
+   },
+   "15396507386089": {
+    "handle": "acne-long-sleeve",
+    "hash": "e885875e78e12796",
+    "image": "https://cdn.shopify.com/s/files/1/0819/2494/8201/files/6DF1EFE3-402A-4AA2-BD57-7B8D598532F3.webp?v=1790707100",
+    "name": "Acne Long Sleeve",
+    "price": "$19.99",
+    "published_at": "2026-09-29T13:39:38-05:00"
+   },
    "9342993236201": {
     "handle": "logo-sticker",
     "hash": "8e81f47e63bc8f02",

@@ -1034,5 +1034,39 @@
   "stores": 3,
   "strength": "varma",
   "time": "2026-09-29T18:35:54+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 38,
+    "name_score": 85.7,
+    "product_id": "9237205811439",
+    "store": "https://instatame.store",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Acne Long Sleeve",
+  "product_id": "15396507386089",
+  "store": "https://renovaestore.com",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-29T18:40:59+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 28,
+    "name_score": 100.0,
+    "product_id": "9457258627291",
+    "store": "https://mylumeras.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Polka Hoodie",
+  "product_id": "15396506599657",
+  "store": "https://renovaestore.com",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-29T18:40:59+00:00"
  }
 ]
