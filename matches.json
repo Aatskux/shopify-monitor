@@ -812,5 +812,39 @@
   "stores": 6,
   "strength": "mahdollinen",
   "time": "2026-09-29T02:31:07+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 0,
+    "name_score": 100.0,
+    "product_id": "9090993389766",
+    "store": "https://evonnashop.com",
+    "strength": "varma"
+   }
+  ],
+  "name": "City Hero Shield",
+  "product_id": "10241747877922",
+  "store": "https://stryxaco.com",
+  "stores": 2,
+  "strength": "varma",
+  "time": "2026-09-29T05:16:31+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 0,
+    "name_score": 100.0,
+    "product_id": "8864201900231",
+    "store": "https://salinthreads.com",
+    "strength": "varma"
+   }
+  ],
+  "name": "Fever Collection",
+  "product_id": "7800243880032",
+  "store": "https://coralyneshop.com",
+  "stores": 2,
+  "strength": "varma",
+  "time": "2026-09-29T05:16:31+00:00"
  }
 ]

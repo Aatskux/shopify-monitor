@@ -4278,6 +4278,14 @@
     "price": "$19.99 - $24.99",
     "published_at": "2026-09-28T03:50:41-04:00"
    },
+   "7800243880032": {
+    "handle": "fever-collection",
+    "hash": "faa0855f9a0be5c4",
+    "image": "https://cdn.shopify.com/s/files/1/0657/7910/5888/files/ChatGPTImageAug10_2026_12_38_21PM.png?v=1789029732",
+    "name": "Fever Collection",
+    "price": "$19.99 - $24.99",
+    "published_at": "2026-09-29T01:13:08-04:00"
+   },
    "7800654037088": {
     "handle": "cute-hoodies",
     "hash": "faa18357dacac90c",
@@ -19887,6 +19895,16 @@
     "name": "Bloom Energy Plushy",
     "price": "$24.95",
     "published_at": "2026-09-28T03:38:32-04:00"
+   }
+  },
+  "https://stryxaco.com": {
+   "10241747877922": {
+    "handle": "city-hero-shield",
+    "hash": "e193ce2c9e6598c9",
+    "image": "https://cdn.shopify.com/s/files/1/0848/4067/7410/files/black_62a66094-00d0-4f41-b795-a4df686a6349.jpg?v=1790658403",
+    "name": "City Hero Shield",
+    "price": "$19.99",
+    "published_at": "2026-09-28T22:11:54-07:00"
    }
   },
   "https://trendlinemain.com": {
