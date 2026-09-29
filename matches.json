@@ -767,5 +767,50 @@
   "stores": 3,
   "strength": "varma",
   "time": "2026-09-28T22:20:53+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 26,
+    "name_score": 86.7,
+    "product_id": "15938989162830",
+    "store": "https://coredistrict.co",
+    "strength": "mahdollinen"
+   },
+   {
+    "distance": 26,
+    "name_score": 86.7,
+    "product_id": "9511513194733",
+    "store": "https://modo-clothing.myshopify.com",
+    "strength": "mahdollinen"
+   },
+   {
+    "distance": 6,
+    "name_score": 100.0,
+    "product_id": "10199893573910",
+    "store": "https://novirastudios.shop",
+    "strength": "mahdollinen"
+   },
+   {
+    "distance": 8,
+    "name_score": 100.0,
+    "product_id": "9468305866970",
+    "store": "https://vosseraofficial.com",
+    "strength": "mahdollinen"
+   },
+   {
+    "distance": 28,
+    "name_score": 86.7,
+    "product_id": "9324628279511",
+    "store": "https://wearseventyone.net",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Raw Hoodie Unisex",
+  "product_id": "10322814926910",
+  "store": "https://airpuply.com",
+  "stores": 6,
+  "strength": "mahdollinen",
+  "time": "2026-09-29T02:31:07+00:00"
  }
 ]
