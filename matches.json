@@ -942,5 +942,22 @@
   "stores": 4,
   "strength": "varma",
   "time": "2026-09-29T12:35:51+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 2,
+    "name_score": 59.1,
+    "product_id": "10309890506992",
+    "store": "https://airpuply.com",
+    "strength": "vahva"
+   }
+  ],
+  "name": "Bear Graphic Sherpa",
+  "product_id": "15396319002839",
+  "store": "https://wearseventyone.net",
+  "stores": 2,
+  "strength": "vahva",
+  "time": "2026-09-29T14:11:10+00:00"
  }
 ]
