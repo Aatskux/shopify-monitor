@@ -993,5 +993,22 @@
   "stores": 2,
   "strength": "varma",
   "time": "2026-09-29T17:01:26+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 22,
+    "name_score": 90.9,
+    "product_id": "8857709543623",
+    "store": "https://salinthreads.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Limited FNAF Jackets",
+  "product_id": "16351291113807",
+  "store": "https://avellalane.com",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-29T17:41:06+00:00"
  }
 ]
