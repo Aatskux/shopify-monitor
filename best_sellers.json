@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-29T14:55:49+00:00",
+ "checked": "2026-09-29T15:56:01+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -112,6 +112,8 @@
   },
   "https://autumnandash.co": {
    "ranks": {
+    "ghostface-plush": 6,
+    "pink-puffer-jacket": 5,
     "polo-bear-fleece": 2,
     "polo-bear-fleece-jacket": 3,
     "sam-winchester-vintage-jacket": 1,
