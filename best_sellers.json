@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-29T18:55:57+00:00",
+ "checked": "2026-09-29T19:56:01+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -771,13 +771,14 @@
   },
   "https://nuvaly.shop": {
    "ranks": {
-    "cozy-set": 4,
-    "faux-fur-jacket": 3,
-    "halter-neck-mini-dress": 7,
-    "leopard-printed-top": 1,
-    "leopard-zip-up-jacket": 6,
-    "ripped-jeans": 5,
-    "sweetheart-top": 2
+    "cozy-set": 5,
+    "faux-fur-jacket": 4,
+    "halter-neck-mini-dress": 8,
+    "leopard-printed-top": 2,
+    "leopard-zip-up-jacket": 7,
+    "ripped-jeans": 6,
+    "riverbend-trout-patchwork-zip-up-hoodie": 1,
+    "sweetheart-top": 3
    }
   },
   "https://oceanysage.com": {
@@ -815,6 +816,14 @@
     "snoopy-shoulder-bag": 15,
     "sports-surfboard": 18,
     "summer-bottle-collection": 19
+   }
+  },
+  "https://parrisessentials.com": {
+   "ranks": {
+    "baja-blast-plush": 3,
+    "dr-pepper-plush": 2,
+    "energy-dink-plush": 1,
+    "energy-drink-plush": 4
    }
   },
   "https://pilocea.com": {
@@ -909,15 +918,16 @@
   },
   "https://renovaestore.com": {
    "ranks": {
-    "acne-long-sleeve": 2,
-    "amelie-lace-sneakers": 5,
-    "carol-bean-bag": 4,
-    "jane-x-samba": 6,
-    "logo-sticker": 9,
-    "logo-sticker-vip": 7,
-    "polka-hoodie": 3,
+    "acne-long-sleeve": 3,
+    "amelie-lace-sneakers": 6,
+    "carol-bean-bag": 5,
+    "custom-bears-af1": 2,
+    "jane-x-samba": 7,
+    "logo-sticker": 10,
+    "logo-sticker-vip": 8,
+    "polka-hoodie": 4,
     "shipping-protection": 1,
-    "vip-membership": 8
+    "vip-membership": 9
    }
   },
   "https://renzara.com": {
@@ -954,6 +964,17 @@
     "v101-ebike": 17,
     "vintage-jacket": 12,
     "vome-5s-shoes": 20
+   }
+  },
+  "https://riftco.shop": {
+   "ranks": {
+    "archive": 4,
+    "fallen": 5,
+    "hoodie-sweats": 3,
+    "set": 2,
+    "shipping-protection": 1,
+    "spidey-zip-hoodies": 7,
+    "top-skirt": 6
    }
   },
   "https://rosavelle.online": {
