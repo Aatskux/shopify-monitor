@@ -10,30 +10,6 @@
     "price": "$32.99",
     "published_at": "2026-06-21T15:45:20-04:00"
    },
-   "10081796129008": {
-    "handle": "mini-insulated-bag-2026-summer-fun-full-set-of-6",
-    "hash": "eec4c24a934ae07f",
-    "image": "https://cdn.shopify.com/s/files/1/0841/3095/5504/files/s-l1600_13_1f7bd259-36c5-4e5a-9264-26623349414a.webp?v=1783012195",
-    "name": "Mini Insulated Bag 2026 Summer",
-    "price": "$19.99 - $79.99",
-    "published_at": "2026-07-02T13:17:51-04:00"
-   },
-   "10118961922288": {
-    "handle": "cloud-pleaser-squishy-fidget-toy",
-    "hash": "bb9491c1cc69963e",
-    "image": "https://cdn.shopify.com/s/files/1/0841/3095/5504/files/Gemini_Generated_Image_e77xgqe77xgqe77x.jpg?v=1784679355",
-    "name": "Cloud Pleaser Squishy Fidget Toy",
-    "price": "$24.99",
-    "published_at": "2026-07-21T20:16:55-04:00"
-   },
-   "10119030604016": {
-    "handle": "squeezza-pizza-squishy-toy-yellow-crust-orange-cheese",
-    "hash": "bb13dc4e61e4c730",
-    "image": "https://cdn.shopify.com/s/files/1/0841/3095/5504/files/SQZND_Image1.jpg?v=1784686100",
-    "name": "Squeezza Pizza Squishy Toy Yellow Crust Orange Cheese",
-    "price": "$24.99",
-    "published_at": "2026-07-21T22:07:09-04:00"
-   },
    "10184779432176": {
     "handle": "red-peter-bunny",
     "hash": "8159ce6653619c9f",
@@ -41,22 +17,6 @@
     "name": "Peter Bunny",
     "price": "$24.99",
     "published_at": "2026-08-02T21:48:45-04:00"
-   },
-   "10203238826224": {
-    "handle": "jumping-spider-stuffed-animal",
-    "hash": "bfc0852ef0a5c23d",
-    "image": "https://cdn.shopify.com/s/files/1/0841/3095/5504/files/10250803135068Alt1_x20132103_e24a98ae-4e38-4f5d-abc3-0d86fa3452ec.webp?v=1786384041",
-    "name": "Jumping Spider/ Bat Stuffed Animal",
-    "price": "$29.99",
-    "published_at": "2026-08-10T13:53:32-04:00"
-   },
-   "10231862165744": {
-    "handle": "unicorn-plush",
-    "hash": "e6c79849c73cc30d",
-    "image": "https://cdn.shopify.com/s/files/1/0841/3095/5504/files/BAH2UC__14058.jpg?v=1788308114",
-    "name": "Unicorn Plush - Medium",
-    "price": "$29.99",
-    "published_at": "2026-09-01T20:17:30-04:00"
    },
    "10274176467184": {
     "handle": "onyx-v1-seamless-compression-tee-copy",
