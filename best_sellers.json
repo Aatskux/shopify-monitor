@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-28T23:55:59+00:00",
+ "checked": "2026-09-29T00:55:47+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -124,16 +124,17 @@
   },
   "https://avellalane.com": {
    "ranks": {
-    "cat-in-the-hat-bunny": 6,
+    "cat-in-the-hat-bunny": 7,
     "club-zip-hoodie": 3,
-    "custom-carebears": 7,
+    "custom-carebears": 8,
     "energy-drink-plush": 2,
-    "green-tea-plushie": 5,
-    "hello-kitty-glass-cup-20oz": 8,
-    "lando-norris-bunny": 10,
+    "energy-drink-tumbler-40oz": 5,
+    "green-tea-plushie": 6,
+    "hello-kitty-glass-cup-20oz": 9,
+    "lando-norris-bunny": 11,
     "shipping-protection": 1,
     "snoopy-bunny": 4,
-    "spiked-red-bottom-heels": 9
+    "spiked-red-bottom-heels": 10
    }
   },
   "https://balmay.co": {
@@ -923,10 +924,11 @@
     "energy-drink-plush": 3,
     "energy-drink-plushies": 4,
     "energy-drink-plushy": 1,
-    "plush-plaid-lounge-pants": 7,
+    "pink-fall-trenchcoat": 6,
+    "plush-plaid-lounge-pants": 8,
     "the-cropped-lace-t-shirt": 2,
     "the-heated-lash-curler": 5,
-    "unisex-patchwork-flannel-hoodie": 6
+    "unisex-patchwork-flannel-hoodie": 7
    }
   },
   "https://revoraco.com": {
@@ -1211,6 +1213,27 @@
     "halloween-quencher-tumbler": 9,
     "limited-edition-glass-cup": 1,
     "spider-hoodie": 5
+   }
+  },
+  "https://tryjova.com": {
+   "ranks": {
+    "ax-eclipse": 7,
+    "cc-hoodie-1": 4,
+    "ds-comfort-jeans": 12,
+    "el-puffer-coat": 2,
+    "gr-top": 13,
+    "hoodie-next-level": 1,
+    "hv-clogs": 14,
+    "last-supper-shirt": 16,
+    "lc-classic-heels": 10,
+    "nk-shoes": 5,
+    "pb-fit-hat": 8,
+    "pp-puff-hoodie": 6,
+    "rl-pullover-1": 9,
+    "samba-glam-edition-super-gold-2-0": 17,
+    "tracksuit-perfect-combo": 15,
+    "vq-muse-cardigan": 11,
+    "vsh-bag": 3
    }
   },
   "https://tryoceans.com": {
