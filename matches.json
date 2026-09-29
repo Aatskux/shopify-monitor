@@ -846,5 +846,29 @@
   "stores": 2,
   "strength": "varma",
   "time": "2026-09-29T05:16:31+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 4,
+    "name_score": 86.7,
+    "product_id": "9090997780678",
+    "store": "https://evonnashop.com",
+    "strength": "varma"
+   },
+   {
+    "distance": 32,
+    "name_score": 100.0,
+    "product_id": "10311352516827",
+    "store": "https://mylumeras.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Cozy Pumpkin Plush",
+  "product_id": "10241777991714",
+  "store": "https://stryxaco.com",
+  "stores": 3,
+  "strength": "varma",
+  "time": "2026-09-29T05:31:02+00:00"
  }
 ]
