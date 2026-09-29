@@ -9530,6 +9530,14 @@
    }
   },
   "https://novirausa.com": {
+   "10495466668311": {
+    "handle": "varsity-mockneck",
+    "hash": "fba08557831f9a1a",
+    "image": "https://cdn.shopify.com/s/files/1/1019/8355/1767/files/143d6e7f-dd07-4764-bb07-7639bd5c6b5c.png?v=1786581045",
+    "name": "Varsity Mockneck",
+    "price": "$69.99",
+    "published_at": "2026-09-29T12:14:20-05:00"
+   },
    "10540913852695": {
     "handle": "snoopy-glass-cup",
     "hash": "b2c7ce38cd1832c7",
@@ -16697,6 +16705,72 @@
     "name": "Vome 5's Black Gray VIP",
     "price": "$49.95",
     "published_at": "2026-05-21T09:21:42-05:00"
+   }
+  },
+  "https://refinedapparelco.com": {
+   "10273866285123": {
+    "handle": "big-mochi-pumpkin-plush",
+    "hash": "aed8a5ada13e5245",
+    "image": "https://cdn.shopify.com/s/files/1/0683/2714/5539/files/BigMochiPumpkinPlush_01_web.webp?v=1790563807",
+    "name": "Big Mochi Pumpkin Plush",
+    "price": "$24.99",
+    "published_at": "2026-09-28T22:05:30-04:00"
+   },
+   "7621431787587": {
+    "handle": "coastal-stripe-jeans",
+    "hash": "9e19719c619cee98",
+    "image": "https://cdn.shopify.com/s/files/1/0683/2714/5539/files/28_01e20ca1-e251-4b69-ae14-14115cc90b8d.webp?v=1774395643",
+    "name": "Coastal Stripe Jeans",
+    "price": "$34.99",
+    "published_at": "2026-03-24T19:45:24-04:00"
+   },
+   "7625913040963": {
+    "handle": "sirena-maxi-dress",
+    "hash": "e43333939bc564cc",
+    "image": "https://cdn.shopify.com/s/files/1/0683/2714/5539/files/TM17339_SIRENA_MAXI_DRESS_FLORAL-__1of4_10of13.webp?v=1774913347",
+    "name": "Sirena Maxi Dress",
+    "price": "$39.99",
+    "published_at": "2026-03-30T19:32:46-04:00"
+   },
+   "7663772762179": {
+    "handle": "the-pastel-paradise-set",
+    "hash": "adf396c839c524c9",
+    "image": "https://cdn.shopify.com/s/files/1/0683/2714/5539/files/B6EBB459-1E53-4AA0-867B-4B8516AA1BAC.jpg?v=1779073682",
+    "name": "The Pastel Paradise Set",
+    "price": "$29.99",
+    "published_at": "2026-05-17T23:10:36-04:00"
+   },
+   "7735139336259": {
+    "handle": "willow-rose-set",
+    "hash": "b33267c3c1d3499c",
+    "image": "https://cdn.shopify.com/s/files/1/0683/2714/5539/files/004311_ASWB-261-148_PINK-MULTI_00.webp?v=1782960785",
+    "name": "Willow Rose Set",
+    "price": "$29.99",
+    "published_at": "2026-07-01T22:55:04-04:00"
+   },
+   "7752131280963": {
+    "handle": "oasis-stripe-set",
+    "hash": "f359a666a6499923",
+    "image": "https://cdn.shopify.com/s/files/1/0683/2714/5539/files/221591e2-9bdb-4e7c-8c69-63d66f34fd1e.png?v=1783918487",
+    "name": "Oasis Stripe Set",
+    "price": "$29.99",
+    "published_at": "2026-07-12T23:27:19-04:00"
+   },
+   "7757844447299": {
+    "handle": "pink-striped-tumbler",
+    "hash": "8ac70f10cda5376b",
+    "image": "https://cdn.shopify.com/s/files/1/0683/2714/5539/files/b7697931-7bb6-4737-b2a5-32a8262b85f2.png?v=1785462174",
+    "name": "The Everyday Tumbler 40oz",
+    "price": "$29.99",
+    "published_at": "2026-07-16T22:49:10-04:00"
+   },
+   "7819835539523": {
+    "handle": "blond-tortoise-tumbler-40-oz",
+    "hash": "9c9663696699319e",
+    "image": "https://cdn.shopify.com/s/files/1/0683/2714/5539/files/TRVL-BlondeTortoise-40oz-2-WPI_png.webp?v=1788317437",
+    "name": "Blonde Tortoise Tumbler 40 oz",
+    "price": "$29.99",
+    "published_at": "2026-09-03T14:37:19-04:00"
    }
   },
   "https://reluxeastore.com": {
