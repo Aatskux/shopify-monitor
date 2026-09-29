@@ -1068,5 +1068,22 @@
   "stores": 2,
   "strength": "mahdollinen",
   "time": "2026-09-29T18:40:59+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 30,
+    "name_score": 100.0,
+    "product_id": "11637049065813",
+    "store": "https://madebyripples.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "miru bag charm Interactive robot",
+  "product_id": "9542175949038",
+  "store": "https://bymarlow.com",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-29T21:41:00+00:00"
  }
 ]
