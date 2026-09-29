@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-29T04:56:01+00:00",
+ "checked": "2026-09-29T05:55:47+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -294,10 +294,11 @@
   },
   "https://coralyneshop.com": {
    "ranks": {
-    "best-friend-hoodie-collection": 18,
+    "best-friend-hoodie-collection": 19,
     "chinese-time-crewneck": 11,
     "cute-hoodies": 17,
-    "graphic-hoodie-collection": 19,
+    "fever-collection": 18,
+    "graphic-hoodie-collection": 20,
     "id-zips": 6,
     "kitty-leopard-hoodie": 12,
     "nj-set": 4,
@@ -312,7 +313,6 @@
     "tour-drop": 2,
     "tour-merch-collection": 10,
     "vvt-collection": 9,
-    "wildflower-tee": 20,
     "wte-collection": 7
    }
   },
