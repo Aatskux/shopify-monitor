@@ -959,5 +959,22 @@
   "stores": 2,
   "strength": "vahva",
   "time": "2026-09-29T14:11:10+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 26,
+    "name_score": 89.5,
+    "product_id": "8946437914676",
+    "store": "https://distrikdofficial.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Bleach Track Collection",
+  "product_id": "15391001444717",
+  "store": "https://miravaclothing.com",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-29T14:21:04+00:00"
  }
 ]
