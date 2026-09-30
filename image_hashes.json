@@ -8220,6 +8220,14 @@
     "price": "$29.95",
     "published_at": "2026-09-25T16:19:53-04:00"
    },
+   "10319329132763": {
+    "handle": "teal-hoodie",
+    "hash": "b4c6e6c99991d193",
+    "image": "https://cdn.shopify.com/s/files/1/0818/5698/7355/files/genecom3_SCFF_jpg.webp?v=1790809698",
+    "name": "Teal Hoodie",
+    "price": "$29.95",
+    "published_at": "2026-09-30T19:10:19-04:00"
+   },
    "9185098170587": {
     "handle": "luxe-cellulite-massager",
     "hash": "e6923bc998729327",
@@ -10351,6 +10359,14 @@
     "name": "Parke October Mockneck",
     "price": "$94.99",
     "published_at": "2026-09-30T13:36:27-05:00"
+   },
+   "15395700703306": {
+    "handle": "mia-tilley",
+    "hash": null,
+    "image": null,
+    "name": "mia Tilley",
+    "price": null,
+    "published_at": "2026-09-30T18:07:20-05:00"
    }
   },
   "https://pilocea.com": {

@@ -1400,5 +1400,22 @@
   "stores": 2,
   "strength": "mahdollinen",
   "time": "2026-09-30T21:32:59+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 0,
+    "name_score": 70.6,
+    "product_id": "9649808179439",
+    "store": "https://instatame.store",
+    "strength": "varma"
+   }
+  ],
+  "name": "Teal Hoodie",
+  "product_id": "10319329132763",
+  "store": "https://mylumeras.com",
+  "stores": 2,
+  "strength": "varma",
+  "time": "2026-09-30T23:11:05+00:00"
  }
 ]
