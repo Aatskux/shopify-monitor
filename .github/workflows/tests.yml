@@ -41,7 +41,12 @@ jobs:
       - name: Yksikkotestit (valekauppa, vale-Discord, ei verkkoa)
         env:
           REQUIRE_FFMPEG: "1"
-        run: python -u -m unittest -v test_shopify_monitor.py test_discord_intake.py test_metadata_cleaner.py
+        run: python -u -m unittest -v test_shopify_monitor.py test_discord_intake.py test_metadata_cleaner.py test_signal_bridge.py
+
+      - name: Signal validation pipeline
+        run: |
+          python -m unittest discover -s signal/tests -v
+          node --check signal/static/app.js
 
       # Savutesti hakee oikeat kaupat ja renderoi oikeat Discord-embedit,
       # mutta ajaa dry-runina: mitaan ei posteta eika tilaa kirjoiteta.
@@ -51,7 +56,7 @@ jobs:
         if: ${{ inputs.smoke }}
         run: |
           mkdir -p /tmp/smoke
-          cp shopify_monitor.py stores.json /tmp/smoke/
+          cp shopify_monitor.py signal_bridge.py stores.json /tmp/smoke/
           python - <<'PY'
           import json
           state = json.load(open("seen.json"))
