@@ -1181,5 +1181,104 @@
   "stores": 2,
   "strength": "mahdollinen",
   "time": "2026-09-30T05:46:07+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 0,
+    "name_score": 100.0,
+    "product_id": "10332566388793",
+    "store": "https://vossaofficial.com",
+    "strength": "varma"
+   }
+  ],
+  "name": "Zoro Zip-Up",
+  "product_id": "15397311250748",
+  "store": "https://blankspaces.us",
+  "stores": 2,
+  "strength": "varma",
+  "time": "2026-09-30T06:31:24+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 30,
+    "name_score": 87.8,
+    "product_id": "7800205934688",
+    "store": "https://coralyneshop.com",
+    "strength": "mahdollinen"
+   },
+   {
+    "distance": 32,
+    "name_score": 87.8,
+    "product_id": "8942627553332",
+    "store": "https://distrikdofficial.com",
+    "strength": "mahdollinen"
+   },
+   {
+    "distance": 32,
+    "name_score": 92.3,
+    "product_id": "9280151453953",
+    "store": "https://shopurbanthread.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Jojo Graphic Collection",
+  "product_id": "15397309841724",
+  "store": "https://blankspaces.us",
+  "stores": 4,
+  "strength": "mahdollinen",
+  "time": "2026-09-30T06:31:24+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 0,
+    "name_score": 70.8,
+    "product_id": "10315650793524",
+    "store": "https://distrikdofficial.com",
+    "strength": "varma"
+   }
+  ],
+  "name": "Jesus Rhinestone Hoodie",
+  "product_id": "15397309579580",
+  "store": "https://blankspaces.us",
+  "stores": 2,
+  "strength": "varma",
+  "time": "2026-09-30T06:31:24+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 26,
+    "name_score": 100.0,
+    "product_id": "9309316088023",
+    "store": "https://wearseventyone.net",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Jaydes Collection",
+  "product_id": "15397309481276",
+  "store": "https://blankspaces.us",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-30T06:31:24+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 0,
+    "name_score": 44.4,
+    "product_id": "16091268251982",
+    "store": "https://coredistrict.co",
+    "strength": "vahva"
+   }
+  ],
+  "name": "Ghostfreak Crew",
+  "product_id": "15397309088060",
+  "store": "https://blankspaces.us",
+  "stores": 2,
+  "strength": "vahva",
+  "time": "2026-09-30T06:31:24+00:00"
  }
 ]
