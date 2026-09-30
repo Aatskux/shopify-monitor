@@ -10508,14 +10508,6 @@
     "price": "$69.99",
     "published_at": "2026-09-29T12:14:20-05:00"
    },
-   "10540913852695": {
-    "handle": "snoopy-glass-cup",
-    "hash": "b2c7ce38cd1832c7",
-    "image": "https://cdn.shopify.com/s/files/1/1019/8355/1767/files/ChatGPTImageSep6_2026_02_47_13PM_1.png?v=1788724047",
-    "name": "Snoopy Glass Cup",
-    "price": "$29.95",
-    "published_at": "2026-09-06T14:47:52-05:00"
-   },
    "10581140504855": {
     "handle": "y2k-bug-costume",
     "hash": "be808c4fd33d8c72",
@@ -10531,14 +10523,6 @@
     "name": "Energy Drink Plush",
     "price": "$24.99",
     "published_at": "2026-09-21T13:48:56-05:00"
-   },
-   "15396686168343": {
-    "handle": "starbucks-latte-plush",
-    "hash": null,
-    "image": null,
-    "name": "Starbucks Latte Plush",
-    "price": "$24.99",
-    "published_at": "2026-09-27T21:44:50-05:00"
    },
    "15397347328279": {
     "handle": "test",
