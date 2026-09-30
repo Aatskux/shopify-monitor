@@ -17647,6 +17647,14 @@
     "name": "Leon Kennedy Jacket",
     "price": "$29.97",
     "published_at": "2026-09-24T01:01:40-05:00"
+   },
+   "9522124456025": {
+    "handle": "custom-vegas-shoes",
+    "hash": "a7b1d84e25f74311",
+    "image": "https://cdn.shopify.com/s/files/1/0738/3311/9833/files/4F782535-FE33-424D-B912-A0B9CC4CF4FB.png?v=1790738149",
+    "name": "Custom Vegas Shoes",
+    "price": "$79.99",
+    "published_at": "2026-09-29T22:17:48-05:00"
    }
   },
   "https://renovaestore.com": {
