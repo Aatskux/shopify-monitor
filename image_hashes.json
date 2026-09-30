@@ -5198,14 +5198,6 @@
     "price": "$34.99",
     "published_at": "2026-09-30T07:09:47-05:00"
    },
-   "15397428133940": {
-    "handle": "y2k-reversible-zip-up",
-    "hash": "bf60c19ecf1b302c",
-    "image": "https://cdn.shopify.com/s/files/1/0775/0493/8036/files/KIC_352-6292-00198-204_prod1.jpg?v=1790778621",
-    "name": "Y2K Reversible Zip Up",
-    "price": "$24.99",
-    "published_at": "2026-09-30T09:31:00-05:00"
-   },
    "15397428559924": {
     "handle": "tiger-tank-top",
     "hash": "b0cccf92862e3367",
@@ -8583,6 +8575,14 @@
     "name": "Polka Dot Hoodie",
     "price": "$24.99",
     "published_at": "2026-09-30T09:36:26-05:00"
+   },
+   "15392382124397": {
+    "handle": "y2k-reversible-zip-up",
+    "hash": "bf60c19ecf1b302c",
+    "image": "https://cdn.shopify.com/s/files/1/1030/3717/4125/files/KIC_352-6292-00198-204_prod1.webp?v=1790781205",
+    "name": "Y2K Reversible Zip Up",
+    "price": "$24.99",
+    "published_at": "2026-09-30T10:14:03-05:00"
    }
   },
   "https://modo-clothing.myshopify.com": {
