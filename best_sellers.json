@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-30T18:03:46+00:00",
+ "checked": "2026-09-30T19:06:34+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -123,18 +123,19 @@
   },
   "https://avellalane.com": {
    "ranks": {
-    "cat-in-the-hat-bunny": 8,
+    "cat-in-the-hat-bunny": 9,
+    "chainsaw-man-cloggs": 6,
     "club-zip-hoodie": 3,
-    "custom-carebears": 9,
+    "custom-carebears": 10,
     "energy-drink-plush": 2,
     "energy-drink-tumbler-40oz": 5,
-    "green-tea-plushie": 7,
-    "hello-kitty-glass-cup-20oz": 10,
-    "lando-norris-bunny": 12,
-    "limited-fnaf-jackets": 6,
+    "green-tea-plushie": 8,
+    "hello-kitty-glass-cup-20oz": 11,
+    "lando-norris-bunny": 13,
+    "limited-fnaf-jackets": 7,
     "shipping-protection": 1,
     "snoopy-bunny": 4,
-    "spiked-red-bottom-heels": 11
+    "spiked-red-bottom-heels": 12
    }
   },
   "https://balmay.co": {
@@ -756,6 +757,13 @@
     "untitled-aug20_03-03-33": 9
    }
   },
+  "https://noclout.store": {
+   "ranks": {
+    "angel-shoes": 1,
+    "giant-croissant-pillow": 3,
+    "wall-aurora-flowers": 2
+   }
+  },
   "https://novirainc.store": {
    "unsupported": "2026-09-26T08:56:21+00:00"
   },
@@ -787,11 +795,9 @@
    "ranks": {
     "energy-drink-jellycat": 1,
     "shipping-protection": 2,
-    "snoopy-glass-cup": 4,
-    "starbucks-latte-plush": 5,
-    "test": 6,
+    "test": 4,
     "varsity-mockneck": 3,
-    "y2k-bug-costume": 7
+    "y2k-bug-costume": 5
    }
   },
   "https://nuvaly.shop": {
@@ -846,9 +852,10 @@
   "https://parrisessentials.com": {
    "ranks": {
     "baja-blast-plush": 2,
-    "dr-pepper-plush": 3,
+    "dr-pepper-plush": 4,
     "energy-dink-plush": 1,
-    "energy-drink-plush": 4
+    "energy-drink-plush": 5,
+    "parke-october-mockneck": 3
    }
   },
   "https://pilocea.com": {
