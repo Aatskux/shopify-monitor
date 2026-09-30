@@ -9734,14 +9734,6 @@
     "price": "$39.99",
     "published_at": "2026-09-24T01:20:31-05:00"
    },
-   "15326034198900": {
-    "handle": "nyc-zip-hoodie",
-    "hash": "ec92e24fcd1c62b2",
-    "image": "https://cdn.shopify.com/s/files/1/1014/0041/2532/files/mockup-2026-02-02T181839.937_1.jpg?v=1790632474",
-    "name": "NYC Zip Hoodie",
-    "price": "$29.99",
-    "published_at": "2026-09-28T16:56:46-05:00"
-   },
    "15327725453684": {
     "handle": "alo-sherpa-edge-bomber",
     "hash": "ffc0a01f5079624f",
@@ -17648,14 +17640,6 @@
    }
   },
   "https://reluxeastore.com": {
-   "8397123485785": {
-    "handle": "leon-kennedy-jacket",
-    "hash": "acc3b0c38eb34e3c",
-    "image": "https://cdn.shopify.com/s/files/1/0738/3311/9833/files/1E5861ED-A6F9-4B8E-B9F5-2CAE12AEFF5D.webp?v=1790229649",
-    "name": "Leon Kennedy Jacket",
-    "price": "$29.97",
-    "published_at": "2026-09-24T01:01:40-05:00"
-   },
    "9522124456025": {
     "handle": "custom-vegas-shoes",
     "hash": "a7b1d84e25f74311",
