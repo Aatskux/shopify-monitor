@@ -1321,5 +1321,84 @@
   "stores": 3,
   "strength": "mahdollinen",
   "time": "2026-09-30T14:38:48+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 28,
+    "name_score": 100.0,
+    "product_id": "15236749099373",
+    "store": "https://miravaclothing.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Last Supper Hoodie",
+  "product_id": "10690438299941",
+  "store": "https://distrikdofficial.com",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-30T21:32:59+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 0,
+    "name_score": 70.8,
+    "product_id": "15397309579580",
+    "store": "https://blankspaces.us",
+    "strength": "varma"
+   },
+   {
+    "distance": 24,
+    "name_score": 85.7,
+    "product_id": "15239406485869",
+    "store": "https://miravaclothing.com",
+    "strength": "mahdollinen"
+   },
+   {
+    "distance": 26,
+    "name_score": 100.0,
+    "product_id": "15015922663535",
+    "store": "https://oceanysage.com",
+    "strength": "mahdollinen"
+   },
+   {
+    "distance": 12,
+    "name_score": 100.0,
+    "product_id": "9986833285403",
+    "store": "https://shopaluma.com",
+    "strength": "mahdollinen"
+   },
+   {
+    "distance": 12,
+    "name_score": 100.0,
+    "product_id": "9234013061338",
+    "store": "https://shopvelour.co",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Jesus is the Light Hoodie",
+  "product_id": "10690438234405",
+  "store": "https://distrikdofficial.com",
+  "stores": 6,
+  "strength": "varma",
+  "time": "2026-09-30T21:32:59+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 28,
+    "name_score": 100.0,
+    "product_id": "15388531392877",
+    "store": "https://miravaclothing.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Rewind Collection",
+  "product_id": "10690438103333",
+  "store": "https://distrikdofficial.com",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-30T21:32:59+00:00"
  }
 ]
