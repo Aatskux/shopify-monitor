@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-30T11:51:09+00:00",
+ "checked": "2026-09-30T12:51:10+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -188,21 +188,21 @@
   "https://bramoly.com": {
    "ranks": {
     "cloud-polka-dot-set": 10,
-    "coraline-bunny": 6,
+    "coraline-bunny": 7,
     "coraline-squid-plush": 12,
     "deer-blanket": 16,
     "deer-pillow": 15,
     "hello-kitty-glass-cup-20oz": 1,
     "hello-kitty-plush": 4,
-    "hello-kitty-straw-kit": 9,
+    "hello-kitty-straw-kit": 5,
     "hydrocup-everyday-tumbler-14oz": 3,
     "moon-pillow": 14,
     "moon-pillow-extra-cover": 13,
-    "sanrio-wall-poster": 8,
+    "sanrio-wall-poster": 9,
     "shark-boots": 11,
-    "shearling-buckle-clog": 5,
+    "shearling-buckle-clog": 6,
     "shipping-protection": 2,
-    "vintage-cat-zip-up": 7
+    "vintage-cat-zip-up": 8
    }
   },
   "https://buy.fayora.shop": {
@@ -300,20 +300,20 @@
   },
   "https://coralyneshop.com": {
    "ranks": {
-    "best-friend-hoodie-collection": 19,
-    "chinese-time-crewneck": 12,
-    "cute-hoodies": 17,
-    "fever-collection": 18,
+    "best-friend-hoodie-collection": 14,
+    "chinese-time-crewneck": 13,
+    "cute-hoodies": 19,
+    "fever-collection": 12,
     "graphic-hoodie-collection": 20,
     "id-zips": 6,
     "kitty-leopard-hoodie": 10,
     "nj-set": 4,
     "shipping-protection": 1,
     "shot-callers-zip-hoodie": 5,
-    "spd-collection": 15,
-    "spd-jersey": 14,
-    "spidey-collab": 13,
-    "spidey-collection": 16,
+    "spd-collection": 17,
+    "spd-jersey": 16,
+    "spidey-collab": 15,
+    "spidey-collection": 18,
     "tang-jacket": 3,
     "titan-thermal-long-sleeve": 8,
     "tour-drop": 2,
@@ -354,25 +354,25 @@
   },
   "https://distrikdofficial.com": {
    "ranks": {
-    "aot-longsleeve": 17,
-    "art-heals-zip-hoodie": 15,
+    "aot-longsleeve": 15,
+    "art-heals-zip-hoodie": 16,
     "ascent-rhinestone-sweatsuit": 3,
-    "baggy-pink-jeans": 11,
+    "baggy-pink-jeans": 10,
     "busy-praying-reversible-hoodie": 18,
-    "dont-chase-hoodie": 6,
+    "dont-chase-hoodie": 5,
     "drunk-tee": 19,
-    "emotions-collection": 16,
+    "emotions-collection": 17,
     "ethernal-ruin-polo": 9,
-    "jesus-is-the-light-hoodie": 5,
+    "jesus-is-the-light-hoodie": 6,
     "jesus-saves-longsleeve": 20,
-    "last-supper-hoodie": 8,
+    "last-supper-hoodie": 7,
     "memento-mori-polo": 14,
-    "naruto-clogs": 7,
+    "naruto-clogs": 8,
     "one-piece-slippers": 12,
     "rewind-collection": 2,
     "shipping-protection": 1,
     "templar-hoodie": 4,
-    "vintage-pattern-hoodie": 10,
+    "vintage-pattern-hoodie": 11,
     "yhwach-zip-up": 13
    }
   },
@@ -845,8 +845,8 @@
   },
   "https://parrisessentials.com": {
    "ranks": {
-    "baja-blast-plush": 3,
-    "dr-pepper-plush": 2,
+    "baja-blast-plush": 2,
+    "dr-pepper-plush": 3,
     "energy-dink-plush": 1,
     "energy-drink-plush": 4
    }
@@ -944,15 +944,12 @@
   "https://renovaestore.com": {
    "ranks": {
     "acne-long-sleeve": 3,
-    "amelie-lace-sneakers": 6,
-    "carol-bean-bag": 5,
     "custom-bears-af1": 2,
-    "jane-x-samba": 7,
-    "logo-sticker": 10,
-    "logo-sticker-vip": 8,
-    "polka-hoodie": 4,
+    "jane-x-samba": 4,
+    "logo-sticker": 7,
+    "logo-sticker-vip": 5,
     "shipping-protection": 1,
-    "vip-membership": 9
+    "vip-membership": 6
    }
   },
   "https://renzara.com": {
@@ -960,12 +957,13 @@
     "energy-drink-plush": 3,
     "energy-drink-plushies": 4,
     "energy-drink-plushy": 1,
-    "pink-fall-trenchcoat": 7,
+    "pink-fall-trenchcoat": 6,
     "plush-plaid-lounge-pants": 5,
-    "skeleton-hoodie": 8,
+    "skeleton-hoodie": 9,
     "the-cropped-lace-t-shirt": 2,
-    "the-heated-lash-curler": 6,
-    "unisex-patchwork-flannel-hoodie": 9
+    "the-heated-lash-curler": 7,
+    "the-og-footbag": 8,
+    "unisex-patchwork-flannel-hoodie": 10
    }
   },
   "https://revoraco.com": {
