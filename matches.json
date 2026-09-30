@@ -1164,5 +1164,22 @@
   "stores": 2,
   "strength": "mahdollinen",
   "time": "2026-09-30T03:41:07+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 26,
+    "name_score": 90.2,
+    "product_id": "15673740656800",
+    "store": "https://clemoreclothing.shop",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Fawn Spot Faux Fur Jacket",
+  "product_id": "16216910627141",
+  "store": "https://shoplunnessa.com",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-30T05:46:07+00:00"
  }
 ]
