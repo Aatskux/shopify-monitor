@@ -1293,6 +1293,14 @@
     "name": "Hello Kitty Plush",
     "price": "$19.99",
     "published_at": "2026-09-27T12:21:12-04:00"
+   },
+   "7936067239995": {
+    "handle": "hello-kitty-straw-kit",
+    "hash": null,
+    "image": null,
+    "name": "Straw Kit",
+    "price": "$9.99",
+    "published_at": "2026-09-29T20:56:59-04:00"
    }
   },
   "https://buy.fayora.shop": {
