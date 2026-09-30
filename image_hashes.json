@@ -19815,6 +19815,64 @@
     "published_at": "2026-09-29T04:24:38-04:00"
    }
   },
+  "https://shopseloraco.com": {
+   "10303125881073": {
+    "handle": "test-product",
+    "hash": "ad926c923cc6386f",
+    "image": "https://cdn.shopify.com/s/files/1/0817/6923/4673/files/61TuJysnG7L._AC_SL1500.jpg?v=1790214168",
+    "name": "test product",
+    "price": "$2.00",
+    "published_at": "2026-09-23T07:25:42-04:00"
+   },
+   "10303737987313": {
+    "handle": "vampire-snoopy",
+    "hash": "ec6d9192939d93c2",
+    "image": "https://cdn.shopify.com/s/files/1/0817/6923/4673/files/ChatGPTImageSep23_2026_11_52_33PM.png?v=1790221977",
+    "name": "Vampire Snoopy",
+    "price": "$19.99",
+    "published_at": "2026-09-23T23:53:21-04:00"
+   },
+   "10305827307761": {
+    "handle": "teddy-bear-plush-test",
+    "hash": "edc4995bc433c629",
+    "image": "https://cdn.shopify.com/s/files/1/0817/6923/4673/files/jellycat-medium-brown-bear-stuffed-animal.jpg?v=1790278240",
+    "name": "Teddy Bear Plush Test",
+    "price": "$12.99",
+    "published_at": "2026-09-24T15:31:08-04:00"
+   },
+   "10305835434225": {
+    "handle": "cat-bear-plush",
+    "hash": "edc4995bc433c629",
+    "image": "https://cdn.shopify.com/s/files/1/0817/6923/4673/files/jellycat-medium-brown-bear-stuffed-animal_9bd54b47-66f8-48dc-b4a6-e341464694b3.jpg?v=1790278408",
+    "name": "Cat Bear Plush",
+    "price": "$11.00",
+    "published_at": "2026-09-24T15:33:40-04:00"
+   },
+   "10307570499825": {
+    "handle": "big-mochi-pumkin-squisheen",
+    "hash": "b0c7cf1cd83023e7",
+    "image": "https://cdn.shopify.com/s/files/1/0817/6923/4673/files/BigMochiPumpkinPlush_18_web.webp?v=1790367095",
+    "name": "Big Mochi Pumkin Squisheen",
+    "price": "$24.95",
+    "published_at": "2026-09-25T16:13:28-04:00"
+   },
+   "15198342054129": {
+    "handle": "cross-squishy",
+    "hash": "dd52564d530e562e",
+    "image": "https://cdn.shopify.com/s/files/1/0817/6923/4673/files/ChatGPTImageSep27_2026_11_37_39PM.png?v=1790566717",
+    "name": "Cross Squishy",
+    "price": "$19.95",
+    "published_at": "2026-09-27T23:39:56-04:00"
+   },
+   "15200249282801": {
+    "handle": "ghostface-plush",
+    "hash": "f9d8c6239b648c33",
+    "image": "https://cdn.shopify.com/s/files/1/0817/6923/4673/files/ghostface1.webp?v=1790697652",
+    "name": "Ghostface Plush",
+    "price": "$24.99",
+    "published_at": "2026-09-29T12:01:49-04:00"
+   }
+  },
   "https://shopurbanthread.com": {
    "9006281294081": {
     "handle": "forever-promise-keychains",
