@@ -1280,5 +1280,22 @@
   "stores": 2,
   "strength": "vahva",
   "time": "2026-09-30T06:31:24+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 22,
+    "name_score": 87.0,
+    "product_id": "9547013914861",
+    "store": "https://modo-clothing.myshopify.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Camo Shark Full-Zip Hoodie",
+  "product_id": "15397104681175",
+  "store": "https://wearseventyone.net",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-30T12:21:43+00:00"
  }
 ]
