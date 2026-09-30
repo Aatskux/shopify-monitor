@@ -14,6 +14,7 @@ import pathlib
 import tempfile
 import threading
 import unittest
+from unittest.mock import patch
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 import requests
@@ -209,7 +210,7 @@ class Base(unittest.TestCase):
         self.addCleanup(self._restore)
 
         # Kehittajan omat webhookit eivat saa vuotaa testeihin.
-        for env in ("SALES_WEBHOOK", "TRENDS_WEBHOOK"):
+        for env in ("SALES_WEBHOOK", "TRENDS_WEBHOOK", "SIGNAL_URL", "SIGNAL_FEED_TOKEN"):
             old = os.environ.pop(env, None)
             if old is not None:
                 self.addCleanup(os.environ.__setitem__, env, old)
@@ -222,6 +223,27 @@ class Base(unittest.TestCase):
     @property
     def webhook(self):
         return f"{self.base}/webhook"
+
+
+class TestSignalPosting(Base):
+    def test_new_product_forwarded_even_if_discord_fails(self):
+        with patch.object(m.signal_bridge, 'configured', return_value=True), patch.object(m.signal_bridge, 'enqueue_launch') as enqueue, patch.object(m.signal_bridge, 'flush', return_value=0), patch.object(m, 'notify', side_effect=RuntimeError('offline')):
+            m.check_all({self.base: {'1','3'}}, webhook=self.webhook)
+        enqueue.assert_called_once_with(self.base, CATALOG[1])
+
+    def test_baseline_and_dry_run_do_not_enqueue(self):
+        with patch.object(m.signal_bridge, 'configured', return_value=True), patch.object(m.signal_bridge, 'enqueue_launch') as enqueue, patch.object(m.signal_bridge, 'flush', return_value=0) as flush:
+            m.check_all({}, webhook=self.webhook)
+            enqueue.assert_not_called()
+            flush.reset_mock()
+            m.check_all({self.base: {'1','3'}}, webhook=self.webhook, dry_run=True)
+            enqueue.assert_not_called(); flush.assert_not_called()
+
+    def test_enqueue_failure_keeps_product_retryable(self):
+        seen={self.base: {'1','3'}}
+        with patch.object(m.signal_bridge, 'configured', return_value=True), patch.object(m.signal_bridge, 'enqueue_launch',side_effect=OSError('disk full')), patch.object(m.signal_bridge, 'flush',return_value=0), patch.object(m, 'notify'):
+            m.check_all(seen,webhook=self.webhook)
+        self.assertNotIn('2',seen[self.base])
 
 
 # --- embedin sisalto ----------------------------------------------------

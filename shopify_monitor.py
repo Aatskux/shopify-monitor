@@ -32,6 +32,8 @@ from collections import Counter, defaultdict
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urlsplit
 
+import signal_bridge
+
 import imagehash
 import requests
 from PIL import Image
@@ -978,6 +980,7 @@ def check_all(seen, webhook=None, dry_run=False, now=None):
     round_start = time.monotonic()
     now = now or _utcnow()
     failed = []
+    signal_budget = 30.0         # rajaa Signal-verkkopyyntojen kokonaisajan
     catalog = {}                 # taman kierroksen onnistuneet haut
     best_state = _load_json(BEST_SELLERS, {})
     missing = _load_json(MISSING_FILE, {})
@@ -1009,6 +1012,19 @@ def check_all(seen, webhook=None, dry_run=False, now=None):
             # Ensimmaisella kerralla vain tallennetaan, ei spammata
             if baseline:
                 continue
+            # Signal saa saman uuden tuotteen, riippumatta Discordin onnistumisesta.
+            if not dry_run and signal_bridge.configured() and not is_service(p):
+                try:
+                    signal_bridge.enqueue_launch(store, p)
+                    if signal_budget > 0:
+                        started = time.monotonic()
+                        signal_bridge.flush(limit=1, budget=signal_budget)
+                        signal_budget -= time.monotonic() - started
+                except Exception as e:
+                    # Jos durable enqueue ei onnistunut, tuotetta ei merkitä nähdyksi.
+                    # Discord-ilmoitus saa silti edetä; seuraava kierros yrittää uudelleen.
+                    known.discard(str(p.get("id")))
+                    print(f"[signal] Launch deferred: {type(e).__name__}")
             # Uuden tuotteen kuva tiivistetaan ja verrataan muihin kauppoihin.
             # Pohjadatan tuotteet tiivistetaan myohemmin ilman postausta.
             if not is_service(p):
@@ -1030,6 +1046,14 @@ def check_all(seen, webhook=None, dry_run=False, now=None):
             print(f"{store}: OK, {len(products)} tuotetta, "
                   f"{len(new)} uutta" + (f", {pruned} yli 24 h puuttunutta karsittu" if pruned else "")
                   + f" ({took:.1f}s)")
+
+    if not dry_run and signal_bridge.configured() and signal_budget > 0:
+        try:
+            delivered = signal_bridge.flush(budget=signal_budget)
+            if delivered:
+                print(f"[signal] {delivered} queued launches delivered")
+        except Exception as e:
+            print(f"[signal] Queue retry deferred: {type(e).__name__}")
 
     done_new = update_image_hashes(hashes, catalog)
     found = process_new_matches(done_new, hashes, matches_log, now, dry_run=dry_run)

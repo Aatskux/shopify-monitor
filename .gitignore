@@ -1,2 +1,6 @@
 __pycache__/
 *.pyc
+signal_outbox.json.tmp
+signal/radar.sqlite3
+signal/radar.sqlite3-*
+*.env
