@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-30T02:56:01+00:00",
+ "checked": "2026-09-30T03:54:02+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -112,8 +112,9 @@
   },
   "https://autumnandash.co": {
    "ranks": {
-    "ghostface-plush": 6,
-    "pink-puffer-jacket": 5,
+    "abercrombie-field-jacket": 5,
+    "ghostface-plush": 7,
+    "pink-puffer-jacket": 6,
     "polo-bear-fleece": 2,
     "polo-bear-fleece-jacket": 3,
     "sam-winchester-vintage-jacket": 1,
@@ -536,6 +537,30 @@
     "winnie-the-pooh-40-oz-tumbler-1": 18
    }
   },
+  "https://lumiusa.store": {
+   "ranks": {
+    "6-piece-ear-cleaning-set": 14,
+    "60ml-cyperus-rotundus-oil-gentle-hair-removal-care-oil-reducing-body-hair-growth-moisturizing-nourishing-natural-cypress-oil-new": 15,
+    "canbuds-bull-plush": 7,
+    "canbuds-minis™-plush-bag-charms": 9,
+    "canbuds-plushie": 1,
+    "chopmaster-extra-attachments": 6,
+    "chopmaster-pro-vegetable-chopper": 5,
+    "flexflow-the-slip-on-tub-hose": 2,
+    "lumi-hydrating-pet-shampoo": 20,
+    "microfiber-cleaning-cloth": 12,
+    "multifunction-pedal-resistance-bands": 18,
+    "nail-art-markers-fine-tip-pens-for-home-manicure": 17,
+    "new-movie-kpop-cosplay-wig-mira-rumi-zoe-demon-hunters-purple-black-red-long-hair-heat-resistant-synthetic-wigs-carnival-props": 8,
+    "pcos-and-strawberry-skin-solution": 19,
+    "pet-washing-gloves": 3,
+    "purrscrub™-catnip-pillow": 11,
+    "suna-and-luna-necklace": 4,
+    "the-mistly-3-in-one-brush": 16,
+    "the-passenger-headrest-cover": 13,
+    "waxlift-adhesive-ear-cleaner": 10
+   }
+  },
   "https://lunveraco.com": {
    "unsupported": "2026-09-25T22:55:29+00:00"
   },
@@ -911,7 +936,7 @@
   },
   "https://reluxeastore.com": {
    "ranks": {
-    "leon-kennedy-jacket": 2,
+    "custom-vegas-shoes": 2,
     "shipping-protection-recommended": 1,
     "vip-membership": 3
    }
