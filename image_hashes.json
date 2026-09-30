@@ -4355,6 +4355,46 @@
     "name": "Abercrombie Plunge Tie Hoodie",
     "price": "$99.99",
     "published_at": "2026-09-29T16:36:05-04:00"
+   },
+   "15897924468896": {
+    "handle": "marin-reversible-striped-zip-hoodie",
+    "hash": "a770d09ecb93706c",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/1a_f52e3cd5-4ba9-423e-9c68-e9199585a14d.jpg?v=1790797638",
+    "name": "Marin Reversible Striped Zip Hoodie",
+    "price": "$99.99",
+    "published_at": "2026-09-30T15:47:32-04:00"
+   },
+   "15897925583008": {
+    "handle": "aurelia-pleated-peplum-maxi-set",
+    "hash": "e4b1ce4e31b16c1b",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/2a_a5ed8b74-6a9a-4a9f-8483-21b53a4ee583.webp?v=1790797682",
+    "name": "Aurelia Pleated Peplum Maxi Set",
+    "price": "$99.99",
+    "published_at": "2026-09-30T15:48:19-04:00"
+   },
+   "15897926762656": {
+    "handle": "maple-foliage-crewneck",
+    "hash": "aba4951ac02f3ef1",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/3_01063768-4bde-4627-aa1c-8aa7946e07ad.jpg?v=1790797724",
+    "name": "Maple Foliage Crewneck",
+    "price": "$99.99",
+    "published_at": "2026-09-30T15:49:03-04:00"
+   },
+   "15897927614624": {
+    "handle": "vesper-pleated-trousers",
+    "hash": "a5c3c79c8c38c33d",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/4a_0db25b05-bbd5-4709-b843-55cb536c2409.webp?v=1790797773",
+    "name": "Vesper Pleated Trousers",
+    "price": "$99.99",
+    "published_at": "2026-09-30T15:49:46-04:00"
+   },
+   "15897928958112": {
+    "handle": "ascension-cherub-embroidered-panel-denim",
+    "hash": "efb4d08ac38ecc8c",
+    "image": "https://cdn.shopify.com/s/files/1/0683/8789/7504/files/5a_81ec0194-f111-449e-9e37-00ccd9327f9e.jpg?v=1790797835",
+    "name": "Ascension Cherub Embroidered Panel Denim",
+    "price": "$99.99",
+    "published_at": "2026-09-30T15:50:50-04:00"
    }
   },
   "https://coralyneshop.com": {
