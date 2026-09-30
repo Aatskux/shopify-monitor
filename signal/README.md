@@ -5,7 +5,7 @@
 Vaatii Python 3.9+ ja selaimen. Ei asennettavia paketteja.
 
 ```sh
-cd outputs/product-radar
+cd signal
 python3 server.py
 ```
 
