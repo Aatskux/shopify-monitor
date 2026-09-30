@@ -8511,6 +8511,14 @@
     "name": "Chase Heaven Track Set",
     "price": "$29.99",
     "published_at": "2026-09-29T10:24:15-04:00"
+   },
+   "15392298729837": {
+    "handle": "chosen-league-collection",
+    "hash": "bc62cbb9b04363cc",
+    "image": "https://cdn.shopify.com/s/files/1/1030/3717/4125/files/20.png?v=1790770808",
+    "name": "Chosen League collection",
+    "price": "$14.99 - $24.99",
+    "published_at": "2026-09-30T07:28:57-05:00"
    }
   },
   "https://modo-clothing.myshopify.com": {
@@ -17689,30 +17697,6 @@
     "name": "Jane x Samba",
     "price": "$44.99",
     "published_at": "2026-09-28T13:49:26-05:00"
-   },
-   "15395793371369": {
-    "handle": "amelie-lace-sneakers",
-    "hash": "af97d219cd609a43",
-    "image": "https://cdn.shopify.com/s/files/1/0819/2494/8201/files/B29C61CA-CEC9-4225-BE47-FB2DDCFBD51B.png?v=1790622004",
-    "name": "Amélie Lace Sneakers",
-    "price": "$44.97",
-    "published_at": "2026-09-28T14:02:10-05:00"
-   },
-   "15395796615401": {
-    "handle": "carol-bean-bag",
-    "hash": "ea31b1c2c41e9b79",
-    "image": "https://cdn.shopify.com/s/files/1/0819/2494/8201/files/ED377EBA-EAFF-47A9-A7C5-DC826130C1F7.png?v=1790622478",
-    "name": "Carol Bean Bag",
-    "price": "$44.97",
-    "published_at": "2026-09-28T14:08:48-05:00"
-   },
-   "15396506599657": {
-    "handle": "polka-hoodie",
-    "hash": "eab2e484070fcb5b",
-    "image": "https://cdn.shopify.com/s/files/1/0819/2494/8201/files/503F99CC-CD42-4AEB-AF15-953418D4CEB2.webp?v=1790707018",
-    "name": "Polka Hoodie",
-    "price": "$24.99",
-    "published_at": "2026-09-29T13:37:32-05:00"
    },
    "15396507386089": {
     "handle": "acne-long-sleeve",
