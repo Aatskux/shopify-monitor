@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-30T22:06:10+00:00",
+ "checked": "2026-09-30T23:06:03+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -787,23 +787,29 @@
   },
   "https://novirausa.com": {
    "ranks": {
+    "clover-the-pocket-frog": 4,
     "energy-drink-jellycat": 1,
+    "mochi-the-moon-bunny": 8,
+    "nori-the-velvet-whale": 5,
+    "pip-the-pudding-bear": 7,
     "shipping-protection": 2,
-    "test": 4,
+    "test": 9,
     "varsity-mockneck": 3,
-    "y2k-bug-costume": 5
+    "waffle-the-snuggle-lamb": 6,
+    "y2k-bug-costume": 10
    }
   },
   "https://nuvaly.shop": {
    "ranks": {
-    "cozy-set": 5,
-    "faux-fur-jacket": 4,
-    "halter-neck-mini-dress": 8,
-    "leopard-printed-top": 2,
-    "leopard-zip-up-jacket": 7,
-    "ripped-jeans": 6,
-    "riverbend-trout-patchwork-zip-up-hoodie": 1,
-    "sweetheart-top": 3
+    "cozy-set": 6,
+    "faux-fur-jacket": 5,
+    "halter-neck-mini-dress": 9,
+    "leopard-printed-top": 3,
+    "leopard-zip-up-jacket": 8,
+    "pink-stripe-top": 1,
+    "ripped-jeans": 7,
+    "riverbend-trout-patchwork-zip-up-hoodie": 2,
+    "sweetheart-top": 4
    }
   },
   "https://oceanysage.com": {
@@ -846,10 +852,11 @@
   "https://parrisessentials.com": {
    "ranks": {
     "baja-blast-plush": 2,
-    "dr-pepper-plush": 4,
+    "dr-pepper-plush": 5,
     "energy-dink-plush": 1,
-    "energy-drink-plush": 5,
-    "parke-october-mockneck": 3
+    "energy-drink-plush": 6,
+    "mia-tilley": 3,
+    "parke-october-mockneck": 4
    }
   },
   "https://pilocea.com": {
