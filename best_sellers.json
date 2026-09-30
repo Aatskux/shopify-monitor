@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-30T00:55:53+00:00",
+ "checked": "2026-09-30T01:55:49+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -936,10 +936,11 @@
     "energy-drink-plushy": 1,
     "pink-fall-trenchcoat": 7,
     "plush-plaid-lounge-pants": 5,
+    "skeleton-hoodie": 8,
     "the-cropped-lace-t-shirt": 2,
     "the-heated-lash-curler": 6,
-    "the-og-footbag": 8,
-    "unisex-patchwork-flannel-hoodie": 9
+    "the-og-footbag": 9,
+    "unisex-patchwork-flannel-hoodie": 10
    }
   },
   "https://revoraco.com": {
@@ -1085,6 +1086,7 @@
     "hocus-bunny-jellycat": 2,
     "otto-sausage-dog": 5,
     "paris-token": 6,
+    "pink-drink-plush": 7,
     "snoopy-x-starbucks-cup": 1,
     "starbucks-x-jellycat-bear": 4
    }
@@ -1173,9 +1175,10 @@
   },
   "https://shopvolara.com": {
    "ranks": {
-    "lando-norris-plushie": 2,
+    "expresso-samba-sneakers": 2,
+    "lando-norris-plushie": 3,
     "shipping-protection": 1,
-    "squishy-advent-calendar-12-day": 3
+    "squishy-advent-calendar-12-day": 4
    }
   },
   "https://silvae.store": {
