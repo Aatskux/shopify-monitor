@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-30T06:51:06+00:00",
+ "checked": "2026-09-30T07:51:12+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -1268,22 +1268,23 @@
   },
   "https://tryjova.com": {
    "ranks": {
-    "ax-eclipse": 8,
+    "ax-eclipse": 9,
     "cc-hoodie-1": 6,
-    "ds-comfort-jeans": 12,
+    "ds-comfort-jeans": 13,
     "el-puffer-coat": 2,
-    "gr-top": 13,
+    "fn-trench-coat": 7,
+    "gr-top": 14,
     "hoodie-next-level": 1,
-    "hv-clogs": 14,
-    "last-supper-shirt": 16,
-    "lc-classic-heels": 10,
+    "hv-clogs": 15,
+    "last-supper-shirt": 17,
+    "lc-classic-heels": 11,
     "nk-shoes": 4,
-    "pb-fit-hat": 9,
-    "pp-puff-hoodie": 7,
+    "pb-fit-hat": 10,
+    "pp-puff-hoodie": 8,
     "rl-pullover-1": 5,
-    "samba-glam-edition-super-gold-2-0": 17,
-    "tracksuit-perfect-combo": 15,
-    "vq-muse-cardigan": 11,
+    "samba-glam-edition-super-gold-2-0": 18,
+    "tracksuit-perfect-combo": 16,
+    "vq-muse-cardigan": 12,
     "vsh-bag": 3
    }
   },
@@ -1334,25 +1335,25 @@
   "https://veyfina.com": {
    "ranks": {
     "17oz-mini-bottle-flip-cap-1": 2,
-    "bag-insert": 17,
-    "c-leopard-bag": 14,
-    "c-tote-bag": 16,
-    "cheetah-arizona-sandals": 12,
-    "cobblehop-bunny-plushie": 13,
-    "cora-pajama-set": 20,
+    "2000s-set": 8,
+    "bag-insert": 20,
+    "c-leopard-bag": 17,
+    "c-tote-bag": 19,
+    "cheetah-arizona-sandals": 15,
+    "cobblehop-bunny-plushie": 16,
     "evelina-clog": 3,
     "faye-shoulder-bag": 4,
     "funnel-trench-jacket": 5,
-    "leopard-print-purse": 15,
-    "mossy-leggings": 10,
-    "mossy-long-sleeve": 8,
-    "mossy-set": 9,
-    "mossy-tee": 11,
-    "mossy-top": 7,
+    "leopard-print-purse": 18,
+    "mossy-leggings": 13,
+    "mossy-long-sleeve": 11,
+    "mossy-set": 12,
+    "mossy-tee": 14,
+    "mossy-top": 10,
+    "sabrina-2000s-leggings": 6,
+    "sabrina-2000s-top": 7,
     "shipping-protection": 1,
-    "snoopy-sippy-cup-16oz": 19,
-    "station-tote-bag": 18,
-    "yorkshire-pudding-plushie": 6
+    "yorkshire-pudding-plushie": 9
    }
   },
   "https://vossaofficial.com": {
