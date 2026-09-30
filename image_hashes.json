@@ -7147,6 +7147,768 @@
     "published_at": "2026-09-26T06:15:45-04:00"
    }
   },
+  "https://lumiusa.store": {
+   "10303206195351": {
+    "handle": "cuddleduo-mom-baby-hoodie",
+    "hash": "e3b333193ccc32cc",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/01-main-white_c64b1d83-69ec-47f7-a2e1-03d89d8845a7.png?v=1790040927",
+    "name": "CuddleDuo — Mom & Baby Hoodie",
+    "price": "$74.98",
+    "published_at": "2026-09-21T21:36:38-04:00"
+   },
+   "10303251939479": {
+    "handle": "hat-mittens-set",
+    "hash": "bb37c4c83e90c939",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/O1CN017lkZbS1FjZqKlWEL2__2211016570523-0-cib.jpg?v=1790045532",
+    "name": "Hat & Mittens Set",
+    "price": "$24.98",
+    "published_at": "2026-09-21T23:11:53-04:00"
+   },
+   "10324502249623": {
+    "handle": "canbuds-minis™-plush-bag-charms",
+    "hash": "e895976a896e9788",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/Codex_Image_Sep_25_2026_11_14_22_PM.png?v=1790399228",
+    "name": "CanBuds Minis™ – Plush Bag Charms",
+    "price": "$14.98",
+    "published_at": "2026-09-25T18:28:49-04:00"
+   },
+   "15396295639191": {
+    "handle": "canbuds-bull-plush",
+    "hash": "b090cb0fc2e38f6e",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/CodexImageSep27_2026_01_19_58PM.png?v=1790529858",
+    "name": "CanBuds Bull Plush",
+    "price": "$29.98",
+    "published_at": "2026-09-27T13:32:51-04:00"
+   },
+   "15402455498903": {
+    "handle": "canbud-limited-drops",
+    "hash": "bf04187b6bb3a4c4",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/Premium-brand-coming-soon-teaser-high.png?v=1790714491",
+    "name": "CanBud Limited Drops",
+    "price": "$34.98",
+    "published_at": "2026-09-29T16:44:39-04:00"
+   },
+   "8827774926999": {
+    "handle": "smoothing-shapewear-bodysuit-for-women-faja-full-body-shaper-thong-soft-body-shaping-sculpting-breast-slimming-underwear",
+    "hash": "b3ce9a32cd499992",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/N1.jpg?v=1739249169",
+    "name": "Snached Shapewear Bodysuit",
+    "price": "$28.98",
+    "published_at": "2025-02-10T23:34:20-05:00"
+   },
+   "8876047204503": {
+    "handle": "magnetic-false-eyelashes-with-storage-box",
+    "hash": "943748fb4a606dce",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/Vms5zYjG6tc5SROA.webp?v=1744067496",
+    "name": "Magnetic Eyelashes",
+    "price": "$28.95",
+    "published_at": "2025-03-03T22:38:22-05:00"
+   },
+   "8938962550935": {
+    "handle": "performance-waist-support-sweat-belt-for-training-and-fitness",
+    "hash": "ad2582879f9b6871",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/Untitled_design_3.png?v=1744255633",
+    "name": "Lumi® Waist Trimmer",
+    "price": "$29.98",
+    "published_at": "2025-04-06T22:51:50-04:00"
+   },
+   "9106360729751": {
+    "handle": "60ml-cyperus-rotundus-oil-gentle-hair-removal-care-oil-reducing-body-hair-growth-moisturizing-nourishing-natural-cypress-oil-new",
+    "hash": "a6461949b364cebd",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Jul_12_2025_08_25_46_PM.png?v=1752366377",
+    "name": "Lumi™-Cyperus Rotundus Skin Serum",
+    "price": "$29.98",
+    "published_at": "2025-06-29T19:08:45-04:00"
+   },
+   "9124484677783": {
+    "handle": "pcos-and-strawberry-skin-solution",
+    "hash": "c3c96d873db63038",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Jul_14_2026_at_02_45_53_AM.png?v=1784011574",
+    "name": "At Home Chiropracting Guide",
+    "price": "$10.00",
+    "published_at": "2025-08-05T11:01:18-04:00"
+   },
+   "9127341523095": {
+    "handle": "lumi-waxing-strips",
+    "hash": "c0d26f4b362d253e",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Aug_6__2025__10_59_05_PM-removebg-preview_d6f0fbbe-14bc-4c1b-9d43-d868e7445f7d.png?v=1754535638",
+    "name": "Lumi Waxing Strips",
+    "price": "$19.99",
+    "published_at": "2025-08-05T11:00:41-04:00"
+   },
+   "9145338822807": {
+    "handle": "1-week-pcos-dieting-plan-cookbook",
+    "hash": "829d3f88363d05eb",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/Screenshot_2025-08-07_001128.png?v=1754539918",
+    "name": "1 Week PCOS Dieting Plan + Cookbook",
+    "price": "$24.99",
+    "published_at": "2025-08-07T00:12:45-04:00"
+   },
+   "9148061941911": {
+    "handle": "lumi™-neck-firming-cream",
+    "hash": "ed1b162cd9c1b592",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/LUMI_3.png?v=1755048372",
+    "name": "LUMI™-Neck Firming Cream",
+    "price": "$29.98",
+    "published_at": "2025-08-12T11:16:07-04:00"
+   },
+   "9148701311127": {
+    "handle": "lumi-skin-lift-tightening-mask",
+    "hash": "b969c726ce86cc89",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/Kaching-Bundles-ChatGPT_Image_Aug_14_2025_12_03_13_AM.png?v=1755144211",
+    "name": "LUMI Skin Lift Tightening Mask",
+    "price": "$20.00",
+    "published_at": "2025-08-13T23:15:45-04:00"
+   },
+   "9148702130327": {
+    "handle": "lumi-guasha-roller-combo",
+    "hash": "eb99f0161bc3d286",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/S7b3de141c5b94dc38d448be8aca3ca14X_jpg_960x960q75_jpg.avif?v=1755141977",
+    "name": "LUMI Guasha + Roller Combo",
+    "price": "$15.00",
+    "published_at": "2025-08-13T23:20:14-04:00"
+   },
+   "9151555272855": {
+    "handle": "lumi-vacgo",
+    "hash": "cb91846464cfd9d9",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Aug_21_2025_12_42_30_AM.png?v=1755751388",
+    "name": "LUMI™ VacGo",
+    "price": "$44.98",
+    "published_at": "2025-08-21T00:15:11-04:00"
+   },
+   "9156440522903": {
+    "handle": "immune-support-d3-1000-iu-k2-200mcg-dietary-supplement-d3-k2-softgel-capsule",
+    "hash": "e3929a25706deb92",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/Untitled_1024_x_1024_px.png?v=1756178671",
+    "name": "D3+K2 Softgel™",
+    "price": "$29.99",
+    "published_at": "2025-08-25T22:48:51-04:00"
+   },
+   "9168560816279": {
+    "handle": "lumi™-pure-tone-the-128hz-healing-tuning-fork",
+    "hash": "98cee31ce21966e3",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Sep_13_2025_02_40_54_PM.png?v=1757788889",
+    "name": "Pure Tone | The 128Hz Healing Tuning Fork",
+    "price": "$29.98",
+    "published_at": "2025-09-13T14:22:28-04:00"
+   },
+   "9168763125911": {
+    "handle": "oxford-press-guide-to-meditation",
+    "hash": "f9ac53a7b249b222",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/download_7.png?v=1757898931",
+    "name": "Oxford Press - Guide To Meditation",
+    "price": "$20.00",
+    "published_at": "2025-09-14T00:17:51-04:00"
+   },
+   "9168763453591": {
+    "handle": "ebook-guide-to-healing-with-tuning-forks",
+    "hash": "ca4a4bb595b0bc8e",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/HTA_Tuning_Fork-Pair-5-2.jpg?v=1757898911",
+    "name": "Ebook | Guide To Healing With Tuning Forks",
+    "price": "$15.00",
+    "published_at": "2025-09-14T00:28:04-04:00"
+   },
+   "9170431017111": {
+    "handle": "free-1-year-warranty",
+    "hash": "d4db2ff698a16824",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/pngtree-year-warranty-badge-label-with-ribbon-in-gold-black-colors-vector-png-image_15831649.png?v=1758065915",
+    "name": "FREE 1 Year Warranty",
+    "price": "$10.00",
+    "published_at": "2025-09-16T19:38:44-04:00"
+   },
+   "9173451341975": {
+    "handle": "restoraseal-the-hydrating-and-moisterizing-mouth-tape",
+    "hash": "ea95633a956a9962",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Sep_21_2025_11_53_28_PM.png?v=1758513792",
+    "name": "RestoraSeal |  The Hydrating and Moisterizing Mouth Tape",
+    "price": "$1.20",
+    "published_at": "2025-09-21T13:58:31-04:00"
+   },
+   "9173589196951": {
+    "handle": "guide-acheive-a-better-sleep-schdule",
+    "hash": "964b6970619e366e",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/Kaching-Bundles-145868685-computer-file-pdf-symbol-white-icon-with-shadow-on-transparent-background-removebg-preview_2086a1d3-a963-4bb7-8c0d-8479b59602f8.png?v=1758514133",
+    "name": "Guide | Acheive A Better Sleep Schdule",
+    "price": "$10.00",
+    "published_at": "2025-09-21T23:58:24-04:00"
+   },
+   "9174677422231": {
+    "handle": "fit-forge-the-layered-resistance-band-with-customizable-tension",
+    "hash": "a995c56e1e2d13d1",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/product-img-68d25a30b015d7c90a9f1a1a.jpg?v=1758939910",
+    "name": "Velvet Touch | The Intimate Solution Pillow",
+    "price": "$69.98",
+    "published_at": "2025-09-23T21:24:01-04:00"
+   },
+   "9176854134935": {
+    "handle": "pdf-guide-the-key-to-intimacy",
+    "hash": "b8e6c719b931c686",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/continuous-one-line-drawing-happy-arab-family-couple-relationship-in-love-man-hugging-his-partner-woman-intimacy-celebrates-wedding-anniversary-single-line-draw-design-graphic-illustr.jpg?v=1758941744",
+    "name": "PDF Guide | The Key To Intimacy",
+    "price": "$15.00",
+    "published_at": "2025-09-26T22:56:01-04:00"
+   },
+   "9176855380119": {
+    "handle": "lumi-silk-blindfold",
+    "hash": "ae33d5de90c89ac8",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/K5A7748copy_1298x700_aaea68c2-8153-4b96-b97c-05dc222f82b3.webp?v=1758942379",
+    "name": "LUMI Silk Blindfold",
+    "price": "$20.00",
+    "published_at": "2025-09-26T23:04:18-04:00"
+   },
+   "9179791327383": {
+    "handle": "autumn-winter-hello-kitty-slippers-for-women-plush-kawaii-cute-sanrio-home-warm-cotton-slippers-cartoon-home-indoor-shoes-gifts",
+    "hash": "f668a56593f1c486",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/IMG_2572_4d84eb40-08f4-4487-b276-f7d383518257.jpg?v=1759295582",
+    "name": "Hello Kitty Plush Slippers",
+    "price": "$23.80 - $28.80",
+    "published_at": "2025-09-30T23:15:02-04:00"
+   },
+   "9184358793367": {
+    "handle": "new-movie-kpop-cosplay-wig-mira-rumi-zoe-demon-hunters-purple-black-red-long-hair-heat-resistant-synthetic-wigs-carnival-props",
+    "hash": "e46633e698c69c99",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Feb_11_2026_at_10_18_36_PM.png?v=1770866939",
+    "name": "Rumi Children's Wig",
+    "price": "$19.98",
+    "published_at": "2025-10-07T20:08:52-04:00"
+   },
+   "9211444789399": {
+    "handle": "2025-whisky-advent-calendar-2d-flat-24-bottle-like-doors-wood-like-gift-for-whisky-tasting-parties-24-days-countdown-calendar",
+    "hash": "bf33c8d162c8d8b4",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/S925a925bf39248a6abdf3f1a5a4f1bbdo.webp?v=1761964609",
+    "name": "2025 Whisky Advent Calendar | 24 Days of Whiskey",
+    "price": "$44.97",
+    "published_at": "2025-10-29T22:43:55-04:00"
+   },
+   "9212422062231": {
+    "handle": "mini-artificial-christmas-tree-for-desktop-party-decorations-holiday-home-decoration-bedroom-decor-autumn-seasonal-ornament",
+    "hash": "f2d29c69c8a65ca6",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/Sfa1d562132d941e796cfbe2405d0912dy.webp?v=1761870309",
+    "name": "Mini Desk Christmas Tree",
+    "price": "$14.99",
+    "published_at": "2025-10-30T20:25:04-04:00"
+   },
+   "9214608670871": {
+    "handle": "h-oygi-nicotinamide-face-serum-for-reduce-melanin-fade-dark-spot-repair-nourishing-blue-copper-titanium-facial-skin-care-essence",
+    "hash": "ea91b5cea631ca19",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/Untitled_design-7.png?v=1762285403",
+    "name": "Recharge GHK-Cu Peptide Serum",
+    "price": "$29.98",
+    "published_at": "2025-11-03T22:02:42-05:00"
+   },
+   "9215865290903": {
+    "handle": "540-needles-for-facial-body-hair-growth-derma-roller-for-skin-beard-0-2mm-0-25mm-0-3mm-needle-micro-face-roll-tool",
+    "hash": "bebdc0423f1d48e4",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/GUEST_71480a34-d43b-423b-bc2b-83af0648c135-removebg-preview.png?v=1762309253",
+    "name": "Micro-Needling Roller",
+    "price": "$15.00",
+    "published_at": "2025-11-04T21:00:45-05:00"
+   },
+   "9221512495255": {
+    "handle": "msruioo-8ml-base-top-coat-gel-polish-semi-permanent-soak-off-uv-gel-led-nail-art-varnish-base-gel-top-coat-gel-varnish-manicure",
+    "hash": "d0ca3f9672256533",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/IMG20230407153710-01_1400x_4a290a72-9607-494a-ab44-9947ff2b1690_webp.jpg?v=1762834225",
+    "name": "Lumi Base Gel",
+    "price": "$20.00",
+    "published_at": "2025-11-10T23:08:02-05:00"
+   },
+   "9224844476567": {
+    "handle": "1pc-2pcs-3pcs-8ml-functional-gel-nail-art-set-with-base-coat-and-diamond-top-coat-matte-top-soak-off-for-nail-art-design-tool",
+    "hash": "ab2bd494877e812b",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/Sed84b260aeb5471391c78971f3661af00.webp?v=1763007854",
+    "name": "Base Coat + Top Coat +Matte Coat Trio",
+    "price": "$25.00",
+    "published_at": "2025-11-12T23:24:14-05:00"
+   },
+   "9228349866135": {
+    "handle": "breathing-grinch-comfort-plush",
+    "hash": "e69e996986274a9c",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/7_7d91d8ca-2ad4-4540-ba5d-4f4977cfacf7.png?v=1763524028",
+    "name": "Breathing Grumpy Comfort Plush",
+    "price": "$39.98",
+    "published_at": "2025-11-18T21:57:17-05:00"
+   },
+   "9228366282903": {
+    "handle": "silk-carrying-bag",
+    "hash": "cf4c349333f31b30",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/new-cbwh20_png.webp?v=1763525307",
+    "name": "Silk Carrying Bag",
+    "price": "$15.00",
+    "published_at": "2025-11-18T23:08:32-05:00"
+   },
+   "9232537092247": {
+    "handle": "womens-super-soft-flare-pants-high-waisted-tummy-control-workout-yoga-leggings-bell-bottoms-1",
+    "hash": "b13296c9cb6cc639",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Nov_21_2025_at_08_02_36_PM.png?v=1763786094",
+    "name": "Viral Straight Leg Leggings",
+    "price": "$34.98",
+    "published_at": "2025-11-21T18:32:03-05:00"
+   },
+   "9317907759255": {
+    "handle": "wagwobble-interactive-ball",
+    "hash": "e8ea2d54923595b9",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Dec_12_2025_at_02_57_38_PM.png?v=1765570312",
+    "name": "WagWobble Interactive Ball",
+    "price": "$39.98",
+    "published_at": "2025-12-11T23:13:05-05:00"
+   },
+   "9322071490711": {
+    "handle": "natural-dog-wipes",
+    "hash": "ec939764991966c6",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/post_1000x.png-removebg-preview.png?v=1765570873",
+    "name": "Natural Dog Wipes",
+    "price": "$15.00",
+    "published_at": "2025-12-12T15:21:19-05:00"
+   },
+   "9359767109783": {
+    "handle": "grill",
+    "hash": "ed61969ed0348f70",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Dec_14_2025_at_10_15_01_PM.png?v=1765771593",
+    "name": "HeatLock Grill Press",
+    "price": "$39.98",
+    "published_at": "2025-12-14T22:06:16-05:00"
+   },
+   "9403454980247": {
+    "handle": "plastic-zippered-pouch-hard-bins-storage-bins-stackable-waterproof-zippered-hard-pouch-clear-hard-shell-zipper-case",
+    "hash": "be1c9c7ec6c0c307",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Dec_30_2025_at_10_45_58_PM.png?v=1767152805",
+    "name": "ClearLock™ Hard Zipper Storage Bins",
+    "price": "$14.98 - $24.98",
+    "published_at": "2025-12-30T17:33:31-05:00"
+   },
+   "9408043909271": {
+    "handle": "lumi-cashbox",
+    "hash": "ab099dc3f2f0071e",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/29.jpg?v=1767586581",
+    "name": "Lumi Cashbox™",
+    "price": "$34.95",
+    "published_at": "2026-01-04T23:21:40-05:00"
+   },
+   "9409298235543": {
+    "handle": "1pc-vintage-love-you-bye-bye-metal-sign-2d-flat-home-bar-cafe-garage-wall-decor-random-hole-style-holiday-gift",
+    "hash": "fb841be39cc14a39",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Jan_6_2026_at_10_43_26_PM.png?v=1767757431",
+    "name": "\"Love You,Bye\" | Vintage Metal Sign",
+    "price": "$29.98",
+    "published_at": "2026-01-06T20:40:38-05:00"
+   },
+   "9409384939671": {
+    "handle": "daily-habit-tracker",
+    "hash": "f83e8f9f9352c0c0",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/daily-habit-tracker.jpg?v=1767755909",
+    "name": "Daily Habit Tracker",
+    "price": "$10.00",
+    "published_at": "2026-01-06T22:18:50-05:00"
+   },
+   "9413448237207": {
+    "handle": "multifunction-pedal-resistance-bands",
+    "hash": "b1c36c3ec33c93c4",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Jan_11_2026_at_12_23_11_AM.png?v=1768109119",
+    "name": "Pedal Resistance Band",
+    "price": "$29.98",
+    "published_at": "2026-01-10T23:40:54-05:00"
+   },
+   "9413524979863": {
+    "handle": "mid-size-exersize-mat",
+    "hash": "eec491bb5b50a48d",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/05-64468_GAIAM-10MM-FITNESS-MAT-PURPLE_C_bb3822d5-7306-4410-b6ed-eb411e4c4e01_jpg.webp?v=1768109416",
+    "name": "Mid-Size Yoga Mat",
+    "price": "$25.00",
+    "published_at": "2026-01-11T00:30:29-05:00"
+   },
+   "9418922066071": {
+    "handle": "heart-healthy-30-day-eating-gide",
+    "hash": "ee8891275826a77d",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/Nutrition-Month-1400x1400.jpg?v=1768362748",
+    "name": "Heart Healthy 30-Day Eating Gide",
+    "price": "$5.00",
+    "published_at": "2026-01-13T22:52:38-05:00"
+   },
+   "9419914477719": {
+    "handle": "diy-model-designer-construction-magnetic-building-block-toys-set-magnet-block-montessori-educational-toys-for-kids-gifts",
+    "hash": "bc7c87c4c24b6b34",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Jan_14_2026_at_11_00_19_PM.png?v=1768451168",
+    "name": "MagnaPlay™ Travel Tiles",
+    "price": "$29.98",
+    "published_at": "2026-01-14T22:56:19-05:00"
+   },
+   "9419923783831": {
+    "handle": "expansion-tile-pack",
+    "hash": "b6879ec9c80b64f4",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/TIle_photo.jpg?v=1768453538",
+    "name": "Expansion Tile Pack",
+    "price": "$10.00",
+    "published_at": "2026-01-15T00:05:41-05:00"
+   },
+   "9422639628439": {
+    "handle": "3-5-10pcs-kitchen-rag-steel-wire-cleaning-cloth-yarn-cotton-double-sided-kitchen-dish-pot-washdishing-cloths-towel-clean-tools",
+    "hash": "d6a10d9a6b27ac9a",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Jan_19_2026_at_12_04_30_AM.png?v=1768799179",
+    "name": "DualClean™ Scrub Cloth",
+    "price": "$19.98",
+    "published_at": "2026-01-18T22:49:30-05:00"
+   },
+   "9422686486679": {
+    "handle": "portable-60ml-all-purpose-kitchen-cleaner-stove-remover-removes-oil-dirt-rust-grease-degreaser-household-kitchen-cleaning-spray",
+    "hash": "cf935403db546399",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/TF_Lifestyle_Action_16_1x1_WebCompressed_jpg.webp?v=1768797636",
+    "name": "Kitchen Degreaser Spray",
+    "price": "$20.00",
+    "published_at": "2026-01-18T23:32:07-05:00"
+   },
+   "9426133680279": {
+    "handle": "1-2-4pcs-leak-proof-waterproof-washable-incontinence-pads-with-graphene-aseptic-technology-for-elderly-care",
+    "hash": "e9a09657afe170b0",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Jan_21_2026_at_09_18_50_PM.png?v=1769052280",
+    "name": "StayDry™ Reusable Incontinence Pads",
+    "price": "$19.98",
+    "published_at": "2026-01-21T21:04:28-05:00"
+   },
+   "9428327104663": {
+    "handle": "retro-varsity-zip-jacket",
+    "hash": "e9a09756825f9a1d",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/season-5-Stranger-Things-Will-Byers-Jacket--768x768.jpg?v=1769391632",
+    "name": "Retro 80s Varsity Zip Jacket",
+    "price": "$39.98",
+    "published_at": "2026-01-25T20:41:07-05:00"
+   },
+   "9428358758551": {
+    "handle": "hellfire-club-t-shirt",
+    "hash": "e3729c8db362d8c8",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/20247811_hi.jpg?v=1769399080",
+    "name": "Hellfire Club T-Shirt",
+    "price": "$19.99",
+    "published_at": "2026-01-25T22:44:59-05:00"
+   },
+   "9489093427351": {
+    "handle": "chopmaster-pro-vegetable-chopper",
+    "hash": "b0afc97ce7811954",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Mar_9_2026_at_07_46_45_PM.png?v=1773100044",
+    "name": "ChopMaster Pro",
+    "price": "$59.98",
+    "published_at": "2026-03-02T20:29:47-05:00"
+   },
+   "9489100570775": {
+    "handle": "chopmaster-extra-attachments",
+    "hash": "a10fa6e0dc3cb6cc",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPTImageMar2_2026at09_13_37PM.png?v=1772504057",
+    "name": "ChopMaster Extra Attachments",
+    "price": "$15.00",
+    "published_at": "2026-03-02T21:09:57-05:00"
+   },
+   "9501330112663": {
+    "handle": "optizoom-pro-glasses",
+    "hash": "ffb0602fb095c631",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPTImageMar17_2026at12_15_08AM.png?v=1773721774",
+    "name": "OptiZoom Pro Glasses",
+    "price": "$29.98",
+    "published_at": "2026-03-17T00:01:05-04:00"
+   },
+   "9501881368727": {
+    "handle": "microfiber-cleaning-cloth",
+    "hash": "ba87b05a83298f75",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/2316ed34fc1398670e6b57148ac8f255_jpg.webp?v=1773791997",
+    "name": "Microfiber Cleaning Cloth",
+    "price": "$10.00",
+    "published_at": "2026-03-17T20:00:03-04:00"
+   },
+   "9501952147607": {
+    "handle": "waxlift-adhesive-ear-cleaner",
+    "hash": "eddb5225c66cc12a",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPTImageMar18_2026at09_30_42PM.png?v=1773883925",
+    "name": "WaxLift Adhesive Ear Cleaner",
+    "price": "$34.99",
+    "published_at": "2026-03-17T23:22:05-04:00"
+   },
+   "9512111898775": {
+    "handle": "6-piece-ear-cleaning-set",
+    "hash": "adc0966fc861b1b6",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/Kaching-Bundles-Screenshot_2026-03-24_at_10.52.50_PM_dd6f0e87-3584-4d68-ad3d-23b9834801f1.png?v=1774407374",
+    "name": "6-Piece Ear Cleaning Set",
+    "price": "$20.00",
+    "published_at": "2026-03-24T22:53:17-04:00"
+   },
+   "9561634504855": {
+    "handle": "flexflow-the-slip-on-tub-hose",
+    "hash": "ca69d896a5b233cc",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Apr_28_2026_at_11_08_26_PM.png?v=1777432139",
+    "name": "FlexFlow | The Slip-On Tub Hose",
+    "price": "$34.98",
+    "published_at": "2026-04-05T22:45:31-04:00"
+   },
+   "9562178945175": {
+    "handle": "pet-washing-gloves",
+    "hash": "b732c4999acfe4a0",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/Blue_silicone_gloves_with_textured_bristles.png?v=1775515111",
+    "name": "Pet Washing Gloves",
+    "price": "$20.00",
+    "published_at": "2026-04-06T18:38:36-04:00"
+   },
+   "9567599558807": {
+    "handle": "lumi-hydrating-pet-shampoo",
+    "hash": "b393cd32e31c8c6c",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/YEGIBONGpetshampoobottleshowcase.png?v=1776132050",
+    "name": "LUMI Hydrating Pet Shampoo",
+    "price": "$7.99",
+    "published_at": "2026-04-13T22:01:46-04:00"
+   },
+   "9575132168343": {
+    "handle": "zoomies-running-plushie",
+    "hash": "998fc6f070f98616",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Apr_19_2026_at_08_28_09_PM.png?v=1776646938",
+    "name": "Zoomies | Running Plushie",
+    "price": "$34.99",
+    "published_at": "2026-04-19T21:02:38-04:00"
+   },
+   "9620441727127": {
+    "handle": "lumiear-quiet-your-world-tonight",
+    "hash": "bb8dc098977986f0",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_May_28_2026_at_02_20_17_PM.png?v=1779992459",
+    "name": "LumiEar - Quiet your world tonight. 🌙",
+    "price": "$29.95",
+    "published_at": "2026-05-28T11:11:43-04:00"
+   },
+   "9620499398807": {
+    "handle": "lumiear-carrying-case",
+    "hash": "e569c33696329e13",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPTImageMay28_2026at02_41_38PM.png?v=1779993715",
+    "name": "LumiEar Carrying Case",
+    "price": "$10.00",
+    "published_at": "2026-05-28T14:42:24-04:00"
+   },
+   "9623371284631": {
+    "handle": "peach-blossom-ring",
+    "hash": "b8a5c74a2d957a64",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_May_30_2026_at_10_37_11_PM.png?v=1780200372",
+    "name": "Peach Blossom Ring",
+    "price": "$14.98",
+    "published_at": "2026-05-30T19:32:37-04:00"
+   },
+   "9624555520151": {
+    "handle": "the-mistly-3-in-one-brush",
+    "hash": "e868c787973d3238",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Jun_2_2026_at_04_27_16_PM.png?v=1780434107",
+    "name": "The Mistly | 3 In One Brush",
+    "price": "$34.98",
+    "published_at": "2026-06-02T15:58:40-04:00"
+   },
+   "9625473187991": {
+    "handle": "lumi-bantana-oil",
+    "hash": "a3dbdc2cc9122ce3",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/batana_oil_hand_holding_with_texture_png.webp?v=1780544523",
+    "name": "Lumi Bantana Oil",
+    "price": "$15.00",
+    "published_at": "2026-06-03T23:42:09-04:00"
+   },
+   "9627804860567": {
+    "handle": "purrscrub™-catnip-pillow",
+    "hash": "fe5acadad029aaa0",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/657e7b75-2684-4f36-8e02-9748e817576e.png?v=1780889702",
+    "name": "PurrScrub™ Catnip Pillow",
+    "price": "$24.98",
+    "published_at": "2026-06-07T23:36:08-04:00"
+   },
+   "9651101466775": {
+    "handle": "hand-cut-heels",
+    "hash": "e088fa421fb45ade",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Jun_26_2026_at_12_55_15_AM.png?v=1782450134",
+    "name": "Hand-Cut Western Heels",
+    "price": "$49.98",
+    "published_at": "2026-06-26T00:22:02-04:00"
+   },
+   "9658659766423": {
+    "handle": "purrsense-cat-toy",
+    "hash": "840ece65759e6a3c",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPTImageJul2_2026at12_34_12AM.png?v=1782966873",
+    "name": "PurrSense |  Cat Toy",
+    "price": "$29.98",
+    "published_at": "2026-07-02T00:30:08-04:00"
+   },
+   "9658674741399": {
+    "handle": "lumi-catnip-spray",
+    "hash": "b3cccc33cc3899cc",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/Kaching-Bundles-46429606_jpg_6121df36-1e7b-4804-92ee-209c14c35c83.webp?v=1780894717",
+    "name": "Lumi Catnip Spray",
+    "price": "$15.00",
+    "published_at": "2026-07-02T01:25:32-04:00"
+   },
+   "9661089808535": {
+    "handle": "aquaspout-pool-fountain",
+    "hash": "bf5e2a8668370f21",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPTImageJul7_2026at01_01_48AM.png?v=1783400539",
+    "name": "AquaSpout | Pool Fountain",
+    "price": "$39.98",
+    "published_at": "2026-07-07T00:59:56-04:00"
+   },
+   "9661142171799": {
+    "handle": "lumi-pool-skimmer",
+    "hash": "c3585b65c6d4c89b",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/65399726_jpg.avif?v=1783403733",
+    "name": "Lumi Pool Skimmer",
+    "price": "$30.00",
+    "published_at": "2026-07-07T01:56:01-04:00"
+   },
+   "9662205788311": {
+    "handle": "stonescrub-pro",
+    "hash": "c56c199b36b6b494",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPTImageJul8_2026at12_20_45AM.png?v=1783484462",
+    "name": "StoneScrub Pro",
+    "price": "$19.98",
+    "published_at": "2026-07-08T00:18:16-04:00"
+   },
+   "9662297276567": {
+    "handle": "stone-scrub-additional-2-pack",
+    "hash": "bcc3c3c3c323c33c",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPTImageJul8_2026at01_17_15AM.png?v=1783488290",
+    "name": "Stone Scrub Additional 2 Pack",
+    "price": "$15.00",
+    "published_at": "2026-07-08T01:24:55-04:00"
+   },
+   "9668444160151": {
+    "handle": "knotiq-the-peanut-massage-roller",
+    "hash": "bf9ac0239de598c4",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Jul_15_2026_at_03_23_13_PM.png?v=1784144600",
+    "name": "Knotiq | The Peanut Massage Roller",
+    "price": "$24.98",
+    "published_at": "2026-07-14T01:00:33-04:00"
+   },
+   "9673398026391": {
+    "handle": "the-passenger-headrest-cover",
+    "hash": "939b991901c16f6f",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/image_bf851384-fe0d-4f6b-a102-5d80cd8b3a7a.png?v=1784321387",
+    "name": "The Shotgun Ghoul",
+    "price": "$24.98",
+    "published_at": "2026-07-17T18:08:05-04:00"
+   },
+   "9684587806871": {
+    "handle": "little-starfish-snuggler",
+    "hash": "e2ac339b98998367",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/01_hero_baby-butter-yellow.jpg?v=1785547614",
+    "name": "Little Starfish Snuggler",
+    "price": "$39.98",
+    "published_at": "2026-07-31T21:31:43-04:00"
+   },
+   "9685144993943": {
+    "handle": "ladies-secret-capsules",
+    "hash": "8ff8c80bb473700f",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/Prod_photo_Ai_ed.png?v=1785730417",
+    "name": "Ladies Secret Capsules",
+    "price": "$39.98",
+    "published_at": "2026-08-03T00:14:55-04:00"
+   },
+   "9686352429207": {
+    "handle": "mini-belt-buckle-initial-bracelet",
+    "hash": "c34746ccb9490bb7",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_May_22_2026_10_53_33_AM.png?v=1785902312",
+    "name": "Mini Belt Buckle Initial Bracelet",
+    "price": "$39.98",
+    "published_at": "2026-08-04T23:59:56-04:00"
+   },
+   "9686372941975": {
+    "handle": "suna-and-luna-necklace",
+    "hash": "e346302c3079f1fb",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Sep_4_2026_at_10_29_37_PM.png?v=1788575404",
+    "name": "Suna and Luna Necklace",
+    "price": "$34.98",
+    "published_at": "2026-08-05T00:34:30-04:00"
+   },
+   "9686375792791": {
+    "handle": "cowboy-hat-gift-box",
+    "hash": "e3c39439d39c98a3",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Aug_11_2026_at_11_34_35_PM.png?v=1786505711",
+    "name": "Signature Gift Box",
+    "price": "$9.98",
+    "published_at": "2026-08-05T00:44:47-04:00"
+   },
+   "9688626102423": {
+    "handle": "dental-dangle-the-cat-rope",
+    "hash": "be7ec2d2d8212da1",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPTImageAug8_2026at01_04_26AM.png?v=1786165755",
+    "name": "Dental Dangle | The Cat Rope",
+    "price": "$24.98",
+    "published_at": "2026-08-08T00:06:51-04:00"
+   },
+   "9700099915927": {
+    "handle": "the-tulip-bud-necklace",
+    "hash": "ca0e5c343d7de0e1",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPTImageAug25_2026at12_05_48AM.png?v=1787635312",
+    "name": "The Tulip Bud Necklace",
+    "price": "$34.98",
+    "published_at": "2026-08-24T23:29:29-04:00"
+   },
+   "9702902235287": {
+    "handle": "ornexis-ems-fix-swollen-legs-from-home",
+    "hash": "ea9196e839c5c791",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Aug_31_2026_at_09_39_38_PM.png?v=1788229183",
+    "name": "ORNEXIS - EMS FIX SWOLLEN LEGS FROM HOME",
+    "price": "$49.98",
+    "published_at": "2026-08-27T18:45:50-04:00"
+   },
+   "9704116682903": {
+    "handle": "ems-conductive-gel",
+    "hash": "e699993299cc99cc",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/6654b33b-24d3-4c74-8012-34502ad44d90_09874009-6a22-4105-94b1-a59ceb47f9cc.png?v=1788140925",
+    "name": "EMS Conductive Gel",
+    "price": "$29.98",
+    "published_at": "2026-08-30T21:48:33-04:00"
+   },
+   "9710176632983": {
+    "handle": "suna-luna-bracelet-duo",
+    "hash": "d4dd4cce6ac063e2",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Sep_4_2026_at_11_03_14_PM.png?v=1788577833",
+    "name": "Suna & Luna Bracelet Duo",
+    "price": "$39.98",
+    "published_at": "2026-09-04T22:41:20-04:00"
+   },
+   "9720460443799": {
+    "handle": "lumi-x-coraline-button-necklace",
+    "hash": "943f5f91298129cf",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPT_Image_Sep_6_2026_at_11_12_46_PM.png?v=1788750797",
+    "name": "LUMI x Coraline Button Necklace",
+    "price": "$34.98",
+    "published_at": "2026-09-06T21:52:30-04:00"
+   },
+   "9724364292247": {
+    "handle": "open-hole-coraline-necklace",
+    "hash": "e3cc9b66cc31449b",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/ChatGPTImageSep7_2026at01_31_56AM.png?v=1788759416",
+    "name": "Open Hole Coraline Necklace",
+    "price": "$29.98",
+    "published_at": "2026-09-07T01:40:21-04:00"
+   },
+   "9737755918487": {
+    "handle": "herbal-scalp-shampoo-bar",
+    "hash": "a6e0873bf8541f07",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/Codex_Image_Sep_9_2026_09_58_22_PM.png?v=1789005719",
+    "name": "Herbal Scalp Shampoo Bar.",
+    "price": "$29.98",
+    "published_at": "2026-09-09T21:16:08-04:00"
+   },
+   "9741685325975": {
+    "handle": "canbuds-plushie",
+    "hash": "e7669a4c99964939",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/Codex_Image_Sep_10_2026_10_32_29_PM.png?v=1789094035",
+    "name": "CanBuds MNSTR Plushie",
+    "price": "$32.98",
+    "published_at": "2026-09-10T22:03:49-04:00"
+   },
+   "9746686410903": {
+    "handle": "exhibit-01-the-verdict-tee",
+    "hash": "9fc07c20d24acfae",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/CodexImageSep12_2026_09_12_37PM.png?v=1789263545",
+    "name": "Exhibit 01: The Verdict Tee.",
+    "price": "$44.98",
+    "published_at": "2026-09-12T21:38:20-04:00"
+   },
+   "9746740838551": {
+    "handle": "chinese-time-longsleeve",
+    "hash": "eee1911a6ce523b2",
+    "image": "https://cdn.shopify.com/s/files/1/0632/0924/2775/files/38bf7f17fb16423190c6f4ca12bfa3f7_png.webp?v=1789273061",
+    "name": "Chinese Time Longsleeve",
+    "price": "$44.98",
+    "published_at": "2026-09-13T00:19:22-04:00"
+   }
+  },
   "https://lunveraco.com": {
    "10594034778411": {
     "handle": "limited-edition-snoopy-glass-cup",
