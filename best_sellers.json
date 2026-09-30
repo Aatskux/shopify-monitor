@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-30T19:06:34+00:00",
+ "checked": "2026-09-30T20:06:47+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -542,7 +542,7 @@
    "ranks": {
     "6-piece-ear-cleaning-set": 14,
     "60ml-cyperus-rotundus-oil-gentle-hair-removal-care-oil-reducing-body-hair-growth-moisturizing-nourishing-natural-cypress-oil-new": 15,
-    "canbuds-bull-plush": 5,
+    "canbuds-bull-plush": 4,
     "canbuds-minis™-plush-bag-charms": 8,
     "canbuds-plushie": 1,
     "chopmaster-extra-attachments": 7,
@@ -556,7 +556,7 @@
     "pcos-and-strawberry-skin-solution": 19,
     "pet-washing-gloves": 3,
     "purrscrub™-catnip-pillow": 11,
-    "suna-and-luna-necklace": 4,
+    "suna-and-luna-necklace": 5,
     "the-mistly-3-in-one-brush": 16,
     "the-passenger-headrest-cover": 13,
     "waxlift-adhesive-ear-cleaner": 10
@@ -1169,6 +1169,17 @@
     "vintage-new-york-zip-hoodie": 9
    }
   },
+  "https://shopseloraco.com": {
+   "ranks": {
+    "big-mochi-pumkin-squisheen": 2,
+    "cat-bear-plush": 6,
+    "cross-squishy": 4,
+    "ghostface-plush": 1,
+    "teddy-bear-plush-test": 7,
+    "test-product": 5,
+    "vampire-snoopy": 3
+   }
+  },
   "https://shopurbanthread.com": {
    "ranks": {
     "365-days-god-journal": 16,
@@ -1209,6 +1220,17 @@
     "lando-norris-plushie": 3,
     "shipping-protection": 1,
     "squishy-advent-calendar-12-day": 4
+   }
+  },
+  "https://shopzephyn.com": {
+   "ranks": {
+    "energy-drink-plush": 1,
+    "energy-drink-plush-1": 4,
+    "mj-kids-pajamas-set": 3,
+    "pajamas": 5,
+    "ski-mask": 7,
+    "spooky-dumpling-squishy": 6,
+    "squishy": 2
    }
   },
   "https://silvae.store": {
