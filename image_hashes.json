@@ -5198,6 +5198,14 @@
     "price": "$24.99",
     "published_at": "2026-09-30T09:31:00-05:00"
    },
+   "15397428559924": {
+    "handle": "tiger-tank-top",
+    "hash": "b0cccf92862e3367",
+    "image": "https://cdn.shopify.com/s/files/1/0775/0493/8036/files/1_30f3448e-03b4-4316-a1b2-31ba7af4a3a5.png?v=1790778683",
+    "name": "Tiger Tank Top",
+    "price": "$19.99",
+    "published_at": "2026-09-30T09:32:14-05:00"
+   },
    "8907843010612": {
     "handle": "spider-web-designs",
     "hash": "ec4e91b09b4ecc6c",
@@ -8551,6 +8559,22 @@
     "name": "Back to School Set",
     "price": "$19.99 - $24.99",
     "published_at": "2026-09-30T08:07:25-05:00"
+   },
+   "15392353452397": {
+    "handle": "y2k-ladybug-zip-hoodie",
+    "hash": "bd34d2c3c3c7c88c",
+    "image": "https://cdn.shopify.com/s/files/1/1030/3717/4125/files/2_c068ccd9-75dd-4696-92d4-9a5cef9ef1e5.png?v=1790778876",
+    "name": "Y2K Ladybug Zip Hoodie",
+    "price": "$24.99",
+    "published_at": "2026-09-30T09:35:11-05:00"
+   },
+   "15392354435437": {
+    "handle": "polka-dot-hoodie",
+    "hash": "ea32a4ac9e4b8be8",
+    "image": "https://cdn.shopify.com/s/files/1/1030/3717/4125/files/3_8a49fedd-fe4b-4552-9e89-e3c351afab11.png?v=1790778946",
+    "name": "Polka Dot Hoodie",
+    "price": "$24.99",
+    "published_at": "2026-09-30T09:36:26-05:00"
    }
   },
   "https://modo-clothing.myshopify.com": {

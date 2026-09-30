@@ -1297,5 +1297,29 @@
   "stores": 2,
   "strength": "mahdollinen",
   "time": "2026-09-30T12:21:43+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 30,
+    "name_score": 100.0,
+    "product_id": "9457258627291",
+    "store": "https://mylumeras.com",
+    "strength": "mahdollinen"
+   },
+   {
+    "distance": 32,
+    "name_score": 100.0,
+    "product_id": "9371296694508",
+    "store": "https://namico.store",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Polka Dot Hoodie",
+  "product_id": "15392354435437",
+  "store": "https://miravaclothing.com",
+  "stores": 3,
+  "strength": "mahdollinen",
+  "time": "2026-09-30T14:38:48+00:00"
  }
 ]
