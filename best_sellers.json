@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-30T01:55:49+00:00",
+ "checked": "2026-09-30T02:56:01+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -186,18 +186,19 @@
   },
   "https://bramoly.com": {
    "ranks": {
-    "cloud-polka-dot-set": 9,
+    "cloud-polka-dot-set": 10,
     "coraline-bunny": 6,
-    "coraline-squid-plush": 11,
-    "deer-blanket": 15,
-    "deer-pillow": 14,
+    "coraline-squid-plush": 12,
+    "deer-blanket": 16,
+    "deer-pillow": 15,
     "hello-kitty-glass-cup-20oz": 1,
     "hello-kitty-plush": 4,
-    "hello-kitty-straw-kit": 8,
+    "hello-kitty-straw-kit": 9,
     "hydrocup-everyday-tumbler-14oz": 3,
-    "moon-pillow": 13,
-    "moon-pillow-extra-cover": 12,
-    "shark-boots": 10,
+    "moon-pillow": 14,
+    "moon-pillow-extra-cover": 13,
+    "sanrio-wall-poster": 8,
+    "shark-boots": 11,
     "shearling-buckle-clog": 5,
     "shipping-protection": 2,
     "vintage-cat-zip-up": 7

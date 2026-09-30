@@ -1301,6 +1301,14 @@
     "name": "Straw Kit",
     "price": "$9.99",
     "published_at": "2026-09-29T20:56:59-04:00"
+   },
+   "7936347045947": {
+    "handle": "sanrio-wall-poster",
+    "hash": "fab56e0ee00ea5c2",
+    "image": "https://cdn.shopify.com/s/files/1/0685/4603/5771/files/poster-v2-1-sanrio-squad.webp?v=1790736777",
+    "name": "Sanrio Wall Poster",
+    "price": "$12.99",
+    "published_at": "2026-09-29T22:52:54-04:00"
    }
   },
   "https://buy.fayora.shop": {
