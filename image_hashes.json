@@ -6676,13 +6676,13 @@
    }
   },
   "https://kaverocenter.com": {
-   "15394721693940": {
-    "handle": "mini-robot-toy",
-    "hash": "9ccf8e270ee0c19e",
-    "image": "https://cdn.shopify.com/s/files/1/0817/7899/9540/files/1_de8136ff-7536-4453-a9f6-52b8f0f3d502.jpg?v=1790588813",
-    "name": "Mini Robot Toy",
-    "price": "$34.99",
-    "published_at": "2026-09-28T22:56:58-07:00"
+   "15406397260020": {
+    "handle": "casual-fleece-pullover",
+    "hash": "edb0933b928b34c9",
+    "image": "https://cdn.shopify.com/s/files/1/0817/7899/9540/files/admiral_lazuliblue.jpg?v=1790751628",
+    "name": "Casual Fleece Pullover",
+    "price": null,
+    "published_at": "2026-09-30T00:01:28-07:00"
    }
   },
   "https://lioren.shop": {
@@ -21377,6 +21377,14 @@
     "name": "Yorkshire Pudding Plushie",
     "price": "$19.99",
     "published_at": "2026-09-27T22:56:24-07:00"
+   },
+   "15396468457717": {
+    "handle": "2000s-set",
+    "hash": "ed61b4b65a92922b",
+    "image": "https://cdn.shopify.com/s/files/1/0811/2337/7397/files/1.png?v=1790751420",
+    "name": "2000s Set",
+    "price": "$19.99",
+    "published_at": "2026-09-29T23:58:51-07:00"
    },
    "9779731300597": {
     "handle": "leopard-zip-up-hoodie",
