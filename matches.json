@@ -1085,5 +1085,50 @@
   "stores": 2,
   "strength": "mahdollinen",
   "time": "2026-09-29T21:41:00+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 0,
+    "name_score": 100.0,
+    "product_id": "10583497998615",
+    "store": "https://novirausa.com",
+    "strength": "varma"
+   },
+   {
+    "distance": 8,
+    "name_score": 100.0,
+    "product_id": "16343880237391",
+    "store": "https://avellalane.com",
+    "strength": "mahdollinen"
+   },
+   {
+    "distance": 16,
+    "name_score": 97.1,
+    "product_id": "10317188366410",
+    "store": "https://parrisessentials.com",
+    "strength": "mahdollinen"
+   },
+   {
+    "distance": 26,
+    "name_score": 97.3,
+    "product_id": "10316724306095",
+    "store": "https://renzara.com",
+    "strength": "mahdollinen"
+   },
+   {
+    "distance": 10,
+    "name_score": 100.0,
+    "product_id": "10770815385894",
+    "store": "https://revoraco.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Energy Drink Plush",
+  "product_id": "10442836869402",
+  "store": "https://maisonveya.com",
+  "stores": 6,
+  "strength": "varma",
+  "time": "2026-09-30T00:55:53+00:00"
  }
 ]

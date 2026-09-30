@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-29T23:55:50+00:00",
+ "checked": "2026-09-30T00:55:53+00:00",
  "stores": {
   "https://airpuply.com": {
    "ranks": {
@@ -186,17 +186,18 @@
   },
   "https://bramoly.com": {
    "ranks": {
-    "cloud-polka-dot-set": 8,
+    "cloud-polka-dot-set": 9,
     "coraline-bunny": 6,
-    "coraline-squid-plush": 10,
-    "deer-blanket": 14,
-    "deer-pillow": 13,
+    "coraline-squid-plush": 11,
+    "deer-blanket": 15,
+    "deer-pillow": 14,
     "hello-kitty-glass-cup-20oz": 1,
     "hello-kitty-plush": 4,
+    "hello-kitty-straw-kit": 8,
     "hydrocup-everyday-tumbler-14oz": 3,
-    "moon-pillow": 12,
-    "moon-pillow-extra-cover": 11,
-    "shark-boots": 9,
+    "moon-pillow": 13,
+    "moon-pillow-extra-cover": 12,
+    "shark-boots": 10,
     "shearling-buckle-clog": 5,
     "shipping-protection": 2,
     "vintage-cat-zip-up": 7
@@ -570,21 +571,21 @@
     "bella-swan-twilight-sheet-set": 2,
     "big-mochi-pumpkin-squisheen": 5,
     "black-onyx-puffer": 7,
-    "coraline-kneeling-statue": 12,
+    "coraline-kneeling-statue": 13,
     "curious-george-owala-bottle": 6,
+    "energy-drink-plush": 12,
     "leon-kennedy-jacket": 9,
-    "pink-gingham-button-up-skirt-set": 13,
+    "pink-gingham-button-up-skirt-set": 14,
     "shipping-protection": 3,
-    "sza-tapestry-hoodie": 14,
+    "sza-tapestry-hoodie": 15,
     "vip-membership": 1,
-    "white-athletic-dept-1987-cap-vip": 19,
-    "white-distressed-denim-baseball-cap": 20,
-    "white-distressed-denim-baseball-cap-vip": 18,
+    "white-athletic-dept-1987-cap-vip": 20,
+    "white-distressed-denim-baseball-cap-vip": 19,
     "white-distressed-trucker-hat": 11,
-    "white-distressed-trucker-hat-vip": 17,
+    "white-distressed-trucker-hat-vip": 18,
     "white-racing-club-trucker-cap": 10,
-    "white-racing-club-trucker-cap-vip": 16,
-    "white-rhinestone-monogram-trucker-cap-vip": 15
+    "white-racing-club-trucker-cap-vip": 17,
+    "white-rhinestone-monogram-trucker-cap-vip": 16
    }
   },
   "https://maverostyle.com": {
