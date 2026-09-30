@@ -1147,5 +1147,22 @@
   "stores": 2,
   "strength": "mahdollinen",
   "time": "2026-09-30T02:25:50+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 18,
+    "name_score": 100.0,
+    "product_id": "15896159027360",
+    "store": "https://clemoreclothing.shop",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "Abercrombie Field Jacket",
+  "product_id": "15397666324801",
+  "store": "https://autumnandash.co",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-30T03:41:07+00:00"
  }
 ]

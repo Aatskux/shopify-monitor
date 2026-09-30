@@ -621,6 +621,14 @@
     "name": "Pink Puffer Jacket",
     "price": "$39.99",
     "published_at": "2026-09-29T11:35:00-04:00"
+   },
+   "15397666324801": {
+    "handle": "abercrombie-field-jacket",
+    "hash": "fbba84459a4bac49",
+    "image": "https://cdn.shopify.com/s/files/1/0999/6596/0513/files/ChatGPTImageSep29_2026_10_12_36PM.png?v=1790734377",
+    "name": "Abercrombie Field Jacket",
+    "price": "$29.95",
+    "published_at": "2026-09-29T23:40:22-04:00"
    }
   },
   "https://avellalane.com": {
@@ -1327,6 +1335,14 @@
     "name": "LIMITED MONSTER PLUSH",
     "price": "$24.99",
     "published_at": "2026-09-28T06:57:36-05:00"
+   },
+   "15397724913764": {
+    "handle": "limited-f1-hoodie",
+    "hash": "ebe5875a98199865",
+    "image": "https://cdn.shopify.com/s/files/1/0767/4242/6724/files/GeneratedImageSeptember30_2026-11_38AM.jpg?v=1790739530",
+    "name": "LIMITED F1 HOODIE",
+    "price": "$29.99",
+    "published_at": "2026-09-29T22:38:37-05:00"
    }
   },
   "https://bymarlow.com": {
