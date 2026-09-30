@@ -1130,5 +1130,22 @@
   "stores": 6,
   "strength": "varma",
   "time": "2026-09-30T00:55:53+00:00"
+ },
+ {
+  "matches": [
+   {
+    "distance": 24,
+    "name_score": 85.2,
+    "product_id": "8243054379126",
+    "store": "https://someriestore.com",
+    "strength": "mahdollinen"
+   }
+  ],
+  "name": "40oz Nightmare before Christmas Tumbler",
+  "product_id": "11314596708694",
+  "store": "https://www.ashnon.com",
+  "stores": 2,
+  "strength": "mahdollinen",
+  "time": "2026-09-30T02:25:50+00:00"
  }
 ]
