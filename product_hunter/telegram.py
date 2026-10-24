@@ -3,6 +3,22 @@ import os
 import requests
 
 
+def notify_new_product(store, product, *, dry_run=False):
+    """Best-effort delivery; missing configuration and dry runs send nothing.
+
+    Do not print exception text: requests errors can contain the token URL.
+    No automatic retry after ambiguous failures, to avoid duplicate messages.
+    """
+    if dry_run or not os.getenv("TELEGRAM_BOT_TOKEN") or not os.getenv("TELEGRAM_CHAT_ID"):
+        return False
+    try:
+        send_message(new_product_message(store, product))
+    except Exception:
+        print("[telegram] Notification failed; details omitted to protect credentials")
+        return False
+    return True
+
+
 def send_message(text, *, token=None, chat_id=None, timeout=15):
     token = token or os.getenv("TELEGRAM_BOT_TOKEN")
     chat_id = chat_id or os.getenv("TELEGRAM_CHAT_ID")
@@ -29,5 +45,6 @@ def new_product_message(store, product):
         f"Store: {store}\n"
         f"Product: {store.rstrip('/')}/products/{handle}\n"
         f"Image: {image or 'Not available'}\n"
-        "AI research: pending"
+        "AI research: not connected; TikTok virality unknown"
     )
+

@@ -36,6 +36,7 @@ import imagehash
 import requests
 from PIL import Image
 from rapidfuzz import fuzz
+from product_hunter import telegram
 
 # Kaupat joita seurataan luetaan tiedostosta stores.json:
 # {"https://kauppa.com": "$"}  (osoite ilman kauttaviivaa lopussa -> valuuttamerkki)
@@ -1021,6 +1022,9 @@ def check_all(seen, webhook=None, dry_run=False, now=None):
             except Exception as e:
                 print(f"[webhook-virhe] {store}: {describe_error(e)}")
 
+            # Independent optional channel: never changes Discord delivery or seen state.
+            telegram.notify_new_product(store, p, dry_run=dry_run)
+
         pruned = prune_seen(known, products, missing.setdefault(store, {}), now)
 
         if baseline:
@@ -1118,3 +1122,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

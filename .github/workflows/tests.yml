@@ -41,7 +41,7 @@ jobs:
       - name: Yksikkotestit (valekauppa, vale-Discord, ei verkkoa)
         env:
           REQUIRE_FFMPEG: "1"
-        run: python -u -m unittest -v test_shopify_monitor.py test_discord_intake.py test_metadata_cleaner.py
+        run: python -u -m unittest -v test_shopify_monitor.py test_discord_intake.py test_metadata_cleaner.py test_telegram.py
 
       # Savutesti hakee oikeat kaupat ja renderoi oikeat Discord-embedit,
       # mutta ajaa dry-runina: mitaan ei posteta eika tilaa kirjoiteta.
@@ -52,6 +52,7 @@ jobs:
         run: |
           mkdir -p /tmp/smoke
           cp shopify_monitor.py stores.json /tmp/smoke/
+          cp -r product_hunter /tmp/smoke/
           python - <<'PY'
           import json
           state = json.load(open("seen.json"))
@@ -60,3 +61,4 @@ jobs:
           print(f"pudotettiin {sum(len(v) for v in state.values()) - sum(len(v) for v in trimmed.values())} ID:ta")
           PY
           cd /tmp/smoke && python -u shopify_monitor.py --once --dry-run
+
