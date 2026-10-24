@@ -32,11 +32,13 @@ from collections import Counter, defaultdict
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urlsplit
 
+import signal_bridge
+from product_hunter import telegram
+
 import imagehash
 import requests
 from PIL import Image
 from rapidfuzz import fuzz
-from product_hunter import telegram
 
 # Kaupat joita seurataan luetaan tiedostosta stores.json:
 # {"https://kauppa.com": "$"}  (osoite ilman kauttaviivaa lopussa -> valuuttamerkki)
@@ -264,12 +266,35 @@ def notify(webhook, store, p, dry_run=False):
     post_webhook(webhook, {"embeds": [embed]})
 
 
+def channel_target(env):
+    webhook = os.environ.get(env)
+    if webhook:
+        return webhook
+    channel = os.environ.get(env.replace('_WEBHOOK', '_CHANNEL_ID'), '').strip()
+    if channel.isdigit() and os.environ.get('DISCORD_BOT_TOKEN'):
+        return 'discord-channel:' + channel
+    return None
+
+
 def post_webhook(webhook, payload):
-    r = requests.post(webhook, json=payload, timeout=TIMEOUT)
+    headers = {}
+    if webhook.startswith('discord-channel:'):
+        channel = webhook.split(':', 1)[1]
+        if not channel.isdigit():
+            raise ValueError('Invalid Discord channel ID')
+        webhook = 'https://discord.com/api/v10/channels/' + channel + '/messages'
+        headers = {'Authorization': 'Bot ' + os.environ['DISCORD_BOT_TOKEN']}
+    def send():
+        kwargs = {'json': payload, 'timeout': TIMEOUT}
+        if headers:
+            kwargs['headers'] = headers
+            kwargs['json'] = dict(payload, allowed_mentions={'parse': []})
+        return requests.post(webhook, **kwargs)
+    r = send()
     if r.status_code == 429:  # Discordin rate limit
         wait = float(r.json().get("retry_after", 2))
         time.sleep(wait + 0.5)
-        r = requests.post(webhook, json=payload, timeout=TIMEOUT)
+        r = send()
     r.raise_for_status()
 
 
@@ -548,7 +573,7 @@ def process_new_matches(done_new, hashes, matches_log, now, dry_run=False):
     """Etsii osumat uusille tuotteille ja kirjaa ne. Kuvaosumat (varma/vahva)
     postataan heti; pelkat nimiosumat ("mahdollinen") vain 2 h koosteeseen."""
     products = hashes["products"]
-    webhook = os.environ.get("TRENDS_WEBHOOK")
+    webhook = channel_target("TRENDS_WEBHOOK")
     posted_pairs, found = set(), 0
     for store, pid in done_new:
         matches = find_matches(store, pid, products)
@@ -932,7 +957,7 @@ def post_best_sellers(alerts, hashes, now, dry_run=False):
             if dry_run:
                 _print_payload(env, payload)
                 continue
-            webhook = os.environ.get(env)
+            webhook = channel_target(env)
             if not webhook:
                 print(f"[best-sellerit] {env} puuttuu, korttia ei postata")
                 continue
@@ -959,7 +984,7 @@ def send_summaries(matches_log, products, summary, now, dry_run=False):
         for payload in payloads:
             _print_payload("TRENDS_WEBHOOK", payload)
         return
-    webhook = os.environ.get("TRENDS_WEBHOOK")
+    webhook = channel_target("TRENDS_WEBHOOK")
     if not webhook:
         print("[trends] TRENDS_WEBHOOK puuttuu, kooste ohitetaan")
         return
@@ -979,6 +1004,7 @@ def check_all(seen, webhook=None, dry_run=False, now=None):
     round_start = time.monotonic()
     now = now or _utcnow()
     failed = []
+    signal_budget = 30.0         # rajaa Signal-verkkopyyntojen kokonaisajan
     catalog = {}                 # taman kierroksen onnistuneet haut
     best_state = _load_json(BEST_SELLERS, {})
     missing = _load_json(MISSING_FILE, {})
@@ -1010,6 +1036,19 @@ def check_all(seen, webhook=None, dry_run=False, now=None):
             # Ensimmaisella kerralla vain tallennetaan, ei spammata
             if baseline:
                 continue
+            # Signal saa saman uuden tuotteen, riippumatta Discordin onnistumisesta.
+            if not dry_run and signal_bridge.configured() and not is_service(p):
+                try:
+                    signal_bridge.enqueue_launch(store, p)
+                    if signal_budget > 0:
+                        started = time.monotonic()
+                        signal_bridge.flush(limit=1, budget=signal_budget)
+                        signal_budget -= time.monotonic() - started
+                except Exception as e:
+                    # Jos durable enqueue ei onnistunut, tuotetta ei merkitä nähdyksi.
+                    # Discord-ilmoitus saa silti edetä; seuraava kierros yrittää uudelleen.
+                    known.discard(str(p.get("id")))
+                    print(f"[signal] Launch deferred: {type(e).__name__}")
             # Uuden tuotteen kuva tiivistetaan ja verrataan muihin kauppoihin.
             # Pohjadatan tuotteet tiivistetaan myohemmin ilman postausta.
             if not is_service(p):
@@ -1022,7 +1061,6 @@ def check_all(seen, webhook=None, dry_run=False, now=None):
             except Exception as e:
                 print(f"[webhook-virhe] {store}: {describe_error(e)}")
 
-            # Independent optional channel: never changes Discord delivery or seen state.
             telegram.notify_new_product(store, p, dry_run=dry_run)
 
         pruned = prune_seen(known, products, missing.setdefault(store, {}), now)
@@ -1034,6 +1072,14 @@ def check_all(seen, webhook=None, dry_run=False, now=None):
             print(f"{store}: OK, {len(products)} tuotetta, "
                   f"{len(new)} uutta" + (f", {pruned} yli 24 h puuttunutta karsittu" if pruned else "")
                   + f" ({took:.1f}s)")
+
+    if not dry_run and signal_bridge.configured() and signal_budget > 0:
+        try:
+            delivered = signal_bridge.flush(budget=signal_budget)
+            if delivered:
+                print(f"[signal] {delivered} queued launches delivered")
+        except Exception as e:
+            print(f"[signal] Queue retry deferred: {type(e).__name__}")
 
     done_new = update_image_hashes(hashes, catalog)
     found = process_new_matches(done_new, hashes, matches_log, now, dry_run=dry_run)
@@ -1074,7 +1120,7 @@ def send_test_cards():
     menikö läpi. Palauttaa True jos kaikki onnistuivat."""
     ok = True
     for env, color in (("SALES_WEBHOOK", 0x3498DB), ("TRENDS_WEBHOOK", 0xE67E22)):
-        webhook = os.environ.get(env)
+        webhook = channel_target(env)
         if not webhook:
             print(f"[testi] {env}: PUUTTUU (ymparistomuuttuja tyhja)")
             ok = False
@@ -1122,4 +1168,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
