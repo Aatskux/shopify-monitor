@@ -126,4 +126,8 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except Exception:
+        print('[manual-research] Startup failed; sensitive details omitted', flush=True)
+        raise SystemExit(1)
