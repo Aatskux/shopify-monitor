@@ -12,7 +12,7 @@ STATE = Path('research_jobs.json')
 def configured():
     return os.getenv('RESEARCH_ENABLED') == 'true' and all(os.getenv(k) for k in (
         'OPENAI_API_KEY', 'OPENAI_RESEARCH_MODEL', 'APIFY_TOKEN',
-        'APIFY_MAX_RUN_USD', 'RESEARCH_DAILY_LIMIT'))
+        'APIFY_MAX_RUN_USD', 'RESEARCH_DAILY_LIMIT', 'RESEARCH_MONTHLY_LIMIT'))
 
 
 def _load():
@@ -51,7 +51,7 @@ def report(job):
               if candidates else 'Viraaliutta ei vahvistettu tässä enintään 5 videon otoksessa')
     text = ('🔎 TUOTETUTKIMUS\n' + identity['product_name'] + '\n' + identity['summary_fi'] +
             '\n' + job['store'].rstrip('/') + '/products/' + job['product'].get('handle', '') +
-            '\n\nTikTok: ' + status + '\nAI vertasi kansikuvia; koko videota ei tarkastettu.')
+            '\n\nTikTok: ' + status + '\nTuoteosuma arvioidaan kansikuvasta; koko videota ei ole tarkastettu.')
     for video in sorted(videos, key=lambda v: v['views'], reverse=True)[:3]:
         label = 'AI-kansikuvaosuma' if video['product_match_verified'] else 'Tuoteosuma epävarma'
         text += (f"\n\n{label}: {video['views']:,} katselua, {video['likes']:,} tykkäystä, "
@@ -68,15 +68,19 @@ def tick():
         limit = int(os.environ['RESEARCH_DAILY_LIMIT'])
         if not 1 <= limit <= 10:
             raise ValueError('Daily research limit must be 1..10')
+        month_limit = int(os.environ['RESEARCH_MONTHLY_LIMIT'])
+        if not 1 <= month_limit <= 60:
+            raise ValueError('Monthly research limit must be 1..60')
         cap = float(os.environ['APIFY_MAX_RUN_USD'])
-        if not 0 < cap <= 1:
+        if not 0.5 <= cap <= 1:
             raise ValueError('Invalid provider spend cap')
         day = datetime.now(timezone.utc).date().isoformat()
+        month_used = sum(count for date, count in data['usage'].items() if date.startswith(day[:7] + '-'))
         for key, job in data['jobs'].items():
             if job['stage'] in ('done', 'failed', 'ambiguous'):
                 continue
             if job['stage'] == 'pending':
-                if data['usage'].get(day, 0) >= limit:
+                if data['usage'].get(day, 0) >= limit or month_used >= month_limit:
                     continue
                 data['usage'][day] = data['usage'].get(day, 0) + 1
                 # Persist before external calls; never repeat an ambiguous paid request.

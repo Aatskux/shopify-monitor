@@ -68,8 +68,8 @@ def apify(method, path, **kwargs):
 def start_search(query):
     # Provider-side charge cap as well as worker-side job count caps.
     cap = float(os.environ['APIFY_MAX_RUN_USD'])
-    if not 0 < cap <= 1:
-        raise ValueError('Explicit per-run spend cap required (0 < cap <= 1 USD)')
+    if not 0.5 <= cap <= 1:
+        raise ValueError('Explicit per-run spend cap required (0.5 <= cap <= 1 USD)')
     result = apify('POST', 'acts/clockworks~tiktok-scraper/runs',
         params={'maxTotalChargeUsd': cap, 'timeout': 90, 'maxItems': 5},
         json={'searchQueries': [query[:120]], 'resultsPerPage': 5,
@@ -96,6 +96,20 @@ def poll_search(run_id):
     return rows[:5]
 
 
+def compare_cover(product, row):
+    image = ((product.get('images') or [{}])[0] or {}).get('src')
+    cover = (row.get('videoMeta') or {}).get('coverUrl')
+    match = {'same_product': False, 'confidence': 0, 'reason': 'No visual evidence'}
+    if https_url(image) and https_url(cover):
+        match = ai_json('Compare image 1 (store product) with image 2 (video cover). '
+                        'A related category, generic clothing, logo or text is not proof of the same product. '
+                        'Return {"same_product":boolean,"confidence":number,"reason":string}. '
+                        'Confidence is 0..1; choose false when uncertain. Do not claim a full video was inspected.',
+                        {'title': str(product.get('title', ''))[:180],
+                         'video_caption': str(row.get('text', ''))[:500]}, [image, cover])
+    return match
+
+
 def score_video(product, row, now=None):
     now = now or datetime.now(timezone.utc)
     url = https_url(row.get('webVideoUrl'), 'tiktok.com')
@@ -108,16 +122,7 @@ def score_video(product, row, now=None):
     age_days = (now.timestamp() - created) / 86400
     if not 0 <= age_days <= 30:
         return None
-    image = ((product.get('images') or [{}])[0] or {}).get('src')
-    cover = (row.get('videoMeta') or {}).get('coverUrl')
-    match = {'same_product': False, 'confidence': 0, 'reason': 'No visual evidence'}
-    if https_url(image) and https_url(cover):
-        match = ai_json('Compare image 1 (store product) with image 2 (video cover). '
-                        'A related category, generic clothing, logo or text is not proof of the same product. '
-                        'Return {"same_product":boolean,"confidence":number,"reason":string}. '
-                        'Confidence is 0..1; choose false when uncertain. Do not claim a full video was inspected.',
-                        {'title': str(product.get('title', ''))[:180],
-                         'video_caption': str(row.get('text', ''))[:500]}, [image, cover])
+    match = compare_cover(product, row)
     confidence = match.get('confidence')
     verified = match.get('same_product') is True and type(confidence) in (float, int) and 0.9 <= confidence <= 1
     return {'url': url, 'views': views, 'likes': likes, 'like_rate': likes / views,
