@@ -19,6 +19,7 @@ class TelegramTests(unittest.TestCase):
     @patch.dict(os.environ, CONFIG, clear=True)
     @patch.object(telegram.requests, "post")
     def test_transport_plain_text_timeout_and_length(self, post):
+        post.return_value.status_code = 200
         post.return_value.json.return_value = {"ok": True, "result": {"message_id": 1}}
         self.assertEqual(telegram.send_message("x" * 5000), {"message_id": 1})
         args, kwargs = post.call_args
@@ -52,6 +53,7 @@ class TelegramTests(unittest.TestCase):
     @patch.dict(os.environ, CONFIG, clear=True)
     @patch.object(telegram.requests, "post")
     def test_api_rejection(self, post):
+        post.return_value.status_code = 200
         post.return_value.json.return_value = {"ok": False}
         with contextlib.redirect_stdout(io.StringIO()):
             self.assertFalse(telegram.notify_new_product("https://shop", PRODUCT))
@@ -59,7 +61,7 @@ class TelegramTests(unittest.TestCase):
     def test_message_is_honest_about_research(self):
         text = telegram.new_product_message("https://shop/", PRODUCT)
         self.assertIn("https://shop/products/test", text)
-        self.assertIn("virality unknown", text)
+        self.assertIn("ei vielä vahvistettua dataa", text)
         self.assertNotIn("pending", text)
 
 
@@ -110,6 +112,58 @@ class IntegrationTests(unittest.TestCase):
         send.assert_called_once()
         self.assertIn("2", seen["https://shop"])
 
+
+
+class PhotoPrivacyTests(unittest.TestCase):
+    @patch.dict(os.environ, CONFIG, clear=True)
+    @patch.object(telegram.requests, 'post')
+    def test_photo_attached_and_protected(self, post):
+        post.return_value.status_code = 200
+        post.return_value.json.return_value = {'ok': True, 'result': {'message_id': 9}}
+        p = {**PRODUCT, 'images': [{'src': 'https://cdn.shopify.com/product.jpg'}]}
+        self.assertTrue(telegram.notify_new_product('https://shop', p))
+        args, kwargs = post.call_args
+        self.assertTrue(args[0].endswith('/sendPhoto'))
+        self.assertEqual(kwargs['json']['photo'], p['images'][0]['src'])
+        self.assertTrue(kwargs['json']['protect_content'])
+        self.assertNotIn('Image:', kwargs['json']['caption'])
+        self.assertFalse(kwargs['allow_redirects'])
+
+    @patch.dict(os.environ, CONFIG, clear=True)
+    @patch.object(telegram, '_call')
+    def test_definite_photo_rejection_falls_back(self, call):
+        call.side_effect = [telegram.TelegramRejected(400), {'message_id': 1}]
+        self.assertTrue(telegram.notify_new_product('https://shop', {**PRODUCT, 'images': [{'src': 'https://img.test/x'}]}))
+        self.assertEqual([c.args[0] for c in call.call_args_list], ['sendPhoto', 'sendMessage'])
+
+    @patch.dict(os.environ, CONFIG, clear=True)
+    @patch.object(telegram, '_call', side_effect=requests.Timeout('secret'))
+    def test_ambiguous_photo_timeout_does_not_duplicate(self, call):
+        with contextlib.redirect_stdout(io.StringIO()):
+            self.assertFalse(telegram.notify_new_product('https://shop', {**PRODUCT, 'images': [{'src': 'https://img.test/x'}]}))
+        call.assert_called_once()
+
+    @patch.dict(os.environ, {**CONFIG, 'TELEGRAM_PRIVATE_GROUP_ONLY': 'true'}, clear=True)
+    @patch.object(telegram, '_call')
+    def test_privacy_fails_closed(self, call):
+        for chat, count in (({'type': 'private'}, 3), ({'type': 'supergroup', 'username': 'public'}, 3),
+                            ({'type': 'group'}, 4), ({'type': 'group'}, 2)):
+            call.reset_mock()
+            call.side_effect = [chat, count]
+            with contextlib.redirect_stdout(io.StringIO()):
+                self.assertFalse(telegram.notify_new_product('https://shop', PRODUCT))
+            self.assertNotIn('sendMessage', [c.args[0] for c in call.call_args_list])
+
+    @patch.dict(os.environ, {**CONFIG, 'TELEGRAM_PRIVATE_GROUP_ONLY': 'true'}, clear=True)
+    @patch.object(telegram, '_call')
+    def test_only_private_three_member_group_passes(self, call):
+        call.side_effect = [{'type': 'supergroup'}, 3, {'message_id': 1}]
+        self.assertTrue(telegram.notify_new_product('https://shop', PRODUCT))
+
+    def test_utf16_caption_limit_and_protocol_relative_image(self):
+        self.assertLessEqual(len(telegram._clip('😀' * 1024, 1024).encode('utf-16-le')), 2048)
+        self.assertEqual(telegram._image({'images': [{'src': '//cdn.shopify.com/x'}]}), 'https://cdn.shopify.com/x')
+        self.assertIsNone(telegram._image({'images': [{'src': 'http://127.0.0.1/x'}]}))
 
 if __name__ == "__main__":
     unittest.main()
