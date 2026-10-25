@@ -57,14 +57,14 @@ new delivery. Keep membership and invite links under your control; the bot canno
 prevent a group admin from adding somebody or taking a photo of the screen.
 If this guard fails, notifications are skipped without stopping Discord.
 
-## Research integration — prepared, disabled until budget approval
+## Research integration — opt-in, budgeted
 
 The queue only activates when RESEARCH_ENABLED=true and all of these exist:
 OPENAI_API_KEY, OPENAI_RESEARCH_MODEL (an image-capable Responses model supporting
-JSON mode), APIFY_TOKEN, APIFY_MAX_RUN_USD (positive and at most 1 USD), and
-RESEARCH_DAILY_LIMIT (1..10 new jobs/day). Do not commit key values. Set secrets
-in Railway, separately from GitHub Actions. No paid smoke test has been performed.
-Verify model access, response shape, actor pricing and sample accuracy before enabling.
+JSON mode), APIFY_TOKEN, APIFY_MAX_RUN_USD (0.50..1.00 USD), and
+RESEARCH_DAILY_LIMIT (1..10 new jobs/day), and RESEARCH_MONTHLY_LIMIT (1..60 jobs/month). Do not commit key values. Set secrets
+in Railway, separately from GitHub Actions. A live image identification and a bounded five-video TikTok search have been validated.
+Re-verify model access, response shape, actor pricing and sample accuracy when changing providers.
 
 The first message includes a product photo immediately. A separate research
 follow-up arrives after the persistent worker identifies the product from image
@@ -99,3 +99,24 @@ API sources:
 - https://docs.apify.com/api/v2/actors-runs-post
 - https://apify.com/clockworks/tiktok-scraper/input-schema
 - https://apify.com/clockworks/tiktok-scraper/output-schema
+
+## Budgeted activation
+
+Activation now also requires RESEARCH_MONTHLY_LIMIT (1..60). The monthly limit
+sums persisted UTC daily admission records and is checked before either paid
+provider starts. The deployed configuration will use 2 new jobs/day, 60/month.
+The Clockworks actor currently requires APIFY_MAX_RUN_USD >= 0.50; this is a
+maximum per actor run, not a flat fee. Values outside 0.50..1.00 are rejected
+before any paid identification. OpenAI uses gpt-6-luna, tested with the image input
+and JSON response used here. The dedicated Shopify Monitor project has an enforced
+5 USD monthly spend limit; Apify remains on the Free plan with 5 USD usage credit,
+no subscription and no payment method. No automatic credit purchases were enabled.
+Provider enforcement can lag; these deliberately conservative limits leave room
+under the user's total 20 EUR/month ceiling. Do not upgrade subscriptions or
+increase provider budgets automatically when usage stops.
+
+OpenAI key scope is limited to Responses write/read in this dedicated project.
+The Apify token may run/list only clockworks/tiktok-scraper and access its default
+run storage. Its restricted actor mode also needs the account-level Create scope
+to create/manage NEW request queues and result stores. General access to existing
+account storages is not granted. User explicitly approved this additional scope.

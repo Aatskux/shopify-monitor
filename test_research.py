@@ -10,7 +10,7 @@ from datetime import datetime, timezone
 from product_hunter import providers, jobs
 
 ENV = {'RESEARCH_ENABLED': 'true', 'OPENAI_API_KEY': 'fake', 'OPENAI_RESEARCH_MODEL': 'test-model',
-       'APIFY_TOKEN': 'fake', 'APIFY_MAX_RUN_USD': '0.05', 'RESEARCH_DAILY_LIMIT': '1'}
+       'APIFY_TOKEN': 'fake', 'APIFY_MAX_RUN_USD': '0.5', 'RESEARCH_DAILY_LIMIT': '1', 'RESEARCH_MONTHLY_LIMIT': '60'}
 PRODUCT = {'id': 1, 'title': 'Lamp', 'handle': 'lamp', 'images': [{'src': 'https://img.test/p.jpg'}]}
 IDENTITY = {'product_name': 'Lamp', 'summary_fi': 'Valaisin', 'search_query': 'lamp'}
 
@@ -32,7 +32,7 @@ class ProviderTests(unittest.TestCase):
     @patch.object(providers, 'apify', return_value={'data': {'id': 'run123'}})
     def test_apify_cost_and_result_limits(self, api):
         self.assertEqual(providers.start_search('lamp'), 'run123')
-        self.assertEqual(api.call_args.kwargs['params']['maxTotalChargeUsd'], .05)
+        self.assertEqual(api.call_args.kwargs['params']['maxTotalChargeUsd'], .5)
         self.assertEqual(api.call_args.kwargs['params']['maxItems'], 5)
         self.assertEqual(api.call_args.kwargs['json']['searchQueries'], ['lamp'])
 
@@ -95,6 +95,26 @@ class QueueTests(unittest.TestCase):
     @patch.object(providers, 'identify')
     def test_invalid_budget_fails_before_any_provider_call(self, identify):
         os.environ['RESEARCH_DAILY_LIMIT'] = '1000'
+        jobs.enqueue('https://shop', PRODUCT)
+        with contextlib.redirect_stdout(io.StringIO()): jobs.tick()
+        identify.assert_not_called()
+
+class MonthlyCapTests(unittest.TestCase):
+    setUp = QueueTests.setUp
+    @patch.object(providers, 'identify')
+    def test_monthly_cap_survives_next_day(self, identify):
+        jobs.enqueue('https://shop', PRODUCT)
+        data = jobs._load()
+        day = datetime.now(timezone.utc).date().isoformat()
+        other_day = day[:8] + ('01' if day[-2:] != '01' else '02')
+        data['usage'] = {other_day: 60}
+        jobs._save(data)
+        jobs.tick()
+        identify.assert_not_called()
+
+    @patch.object(providers, 'identify')
+    def test_invalid_monthly_budget_blocks_all_paid_calls(self, identify):
+        os.environ['RESEARCH_MONTHLY_LIMIT'] = '1000'
         jobs.enqueue('https://shop', PRODUCT)
         with contextlib.redirect_stdout(io.StringIO()): jobs.tick()
         identify.assert_not_called()
