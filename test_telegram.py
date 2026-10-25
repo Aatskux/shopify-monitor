@@ -61,7 +61,8 @@ class TelegramTests(unittest.TestCase):
     def test_message_is_honest_about_research(self):
         text = telegram.new_product_message("https://shop/", PRODUCT)
         self.assertIn("https://shop/products/test", text)
-        self.assertIn("ei vielä vahvistettua dataa", text)
+        self.assertNotIn("AI-tutkimus", text)
+        self.assertNotIn("TikTok", text)
         self.assertNotIn("pending", text)
 
 
