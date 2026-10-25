@@ -44,3 +44,58 @@ list before enabling a full rollout. Disable Telegram by removing either variabl
 
 The repository currently has a GitHub Actions schedule in addition to the user's Railway deployment. Confirm which one is active to avoid duplicate notifications.
 
+
+## Photo delivery and private group
+
+Product images now use Telegram sendPhoto with the product link in the caption.
+Messages set protect_content=true to restrict forwarding/saving. This is not
+end-to-end encryption or an absolute guarantee against copying.
+Only TELEGRAM_CHAT_ID receives messages; the monitor does not broadcast to bot users.
+Set TELEGRAM_PRIVATE_GROUP_ONLY=true for a private group of exactly three members
+(two people and this bot). Public usernames or another member count block all
+new delivery. Keep membership and invite links under your control; the bot cannot
+prevent a group admin from adding somebody or taking a photo of the screen.
+If this guard fails, notifications are skipped without stopping Discord.
+
+## Research integration — prepared, disabled until budget approval
+
+The queue only activates when RESEARCH_ENABLED=true and all of these exist:
+OPENAI_API_KEY, OPENAI_RESEARCH_MODEL (an image-capable Responses model supporting
+JSON mode), APIFY_TOKEN, APIFY_MAX_RUN_USD (positive and at most 1 USD), and
+RESEARCH_DAILY_LIMIT (1..10 new jobs/day). Do not commit key values. Set secrets
+in Railway, separately from GitHub Actions. No paid smoke test has been performed.
+Verify model access, response shape, actor pricing and sample accuracy before enabling.
+
+The first message includes a product photo immediately. A separate research
+follow-up arrives after the persistent worker identifies the product from image
+and description, starts a bounded Clockworks TikTok search, polls it on a later
+round, then compares product/cover images. One step runs after each completed
+monitor round so Discord and monitor state persist before research. Up to five
+search results are considered. Each job uses at most six OpenAI calls (one
+identification plus five cover comparisons), each bounded to 600 output tokens;
+input images use low detail. Provider-side Apify per-run charge cap is supplied.
+Daily job counts limit usage, not total dollar spending across providers; configure
+provider billing controls too. Do not describe these controls as a guaranteed
+combined monthly dollar cap.
+
+Reports include video links, retrieved timestamps, views, likes, like rate,
+video age and an explicit AI-cover-match label. Only videos up to 30 days old
+with an AI cover-match confidence >=0.9 can become a viral candidate at >=100k
+views and >=3% likes/views. These are configurable product criteria in code, not
+proof of virality, growth, sales, ad spend or full-video verification. Missing,
+stale, invalid or visually uncertain evidence never becomes a positive verdict.
+No results means the five-video sample did not establish virality, not that the
+product has no TikTok presence. The pipeline does not yet measure growth over time.
+
+research_jobs.json lives alongside seen.json in /data. Queued data contains product
+metadata and research output, never credentials. Daily admission is persisted before
+paid calls. Ambiguous paid failures and send attempts are not automatically replayed;
+manual review is needed to avoid duplicate spending/messages. Queue cap is 500 jobs.
+Disable RESEARCH_ENABLED to stop paid research without affecting notifications.
+
+API sources:
+- https://core.telegram.org/bots/api#sendphoto
+- https://developers.openai.com/api/docs/guides/images-vision
+- https://docs.apify.com/api/v2/actors-runs-post
+- https://apify.com/clockworks/tiktok-scraper/input-schema
+- https://apify.com/clockworks/tiktok-scraper/output-schema

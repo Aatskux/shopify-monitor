@@ -26,3 +26,7 @@ if not os.environ.get('DISCORD_WEBHOOK') and not os.environ.get('SALES_WEBHOOK')
     shopify_monitor.get_webhook=lambda:None
     print('Discord delivery disabled; monitor state and configured Signal feed remain active',flush=True)
 shopify_monitor.main()
+
+# Research runs only after the normal monitor round and its persisted state.
+from product_hunter import jobs
+jobs.tick()
