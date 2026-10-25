@@ -66,47 +66,40 @@ def notify_new_product(store, product, *, dry_run=False):
     try:
         validate_destination()
         text = new_product_message(store, product)
+        from .manual import keyboard
+        markup = keyboard(text)
         image = _image(product)
         if image:
             try:
-                send_photo(image, text)
+                send_photo(image, text, reply_markup=markup)
             except TelegramRejected as error:
                 # Only a definite 400 rejection can fall back without risking duplicates.
                 if error.code != 400:
                     raise
-                send_message(text + '\nKuvan lataaminen epäonnistui.')
+                send_message(text, reply_markup=markup)
         else:
-            send_message(text)
+            send_message(text, reply_markup=markup)
     except Exception:
         print('[telegram] Notification failed; details omitted to protect credentials')
         return False
-    try:
-        from . import jobs
-        jobs.enqueue(store, product)
-    except Exception:
-        print('[research] Could not queue research; sensitive details omitted')
     return True
 
 
-def send_message(text, *, token=None, chat_id=None, timeout=15):
+def send_message(text, *, token=None, chat_id=None, timeout=15, reply_markup=None):
     return _call('sendMessage', {'chat_id': _chat_id(chat_id), 'text': _clip(text, 4096),
-                 'link_preview_options': {'is_disabled': True}, 'protect_content': True},
+                 'link_preview_options': {'is_disabled': True}, 'protect_content': True, **({'reply_markup': reply_markup} if reply_markup else {})},
                  token=token, timeout=timeout)
 
 
-def send_photo(image, caption, *, token=None, chat_id=None, timeout=15):
+def send_photo(image, caption, *, token=None, chat_id=None, timeout=15, reply_markup=None):
     return _call('sendPhoto', {'chat_id': _chat_id(chat_id), 'photo': image,
-                 'caption': _clip(caption, 1024), 'protect_content': True},
+                 'caption': _clip(caption, 1024), 'protect_content': True, **({'reply_markup': reply_markup} if reply_markup else {})},
                  token=token, timeout=timeout)
 
 
 def new_product_message(store, product):
     title = _clip(str(product.get('title') or 'Nimetön tuote'), 180)
     handle = product.get('handle') or ''
-    from .jobs import configured
-    research = 'AI-tutkimus: jonossa' if configured() else 'AI-tutkimus: palvelua ei ole vielä kytketty'
     return (f'🆕 UUSI TUOTE\n{title}\n'
             f'Kauppa: {store}\n'
-            f'Tuote: {store.rstrip("/")}/products/{handle}\n'
-            f'{research}\n'
-            'TikTok-viraalius: ei vielä vahvistettua dataa')
+            f'Tuote: {store.rstrip("/")}/products/{handle}')
