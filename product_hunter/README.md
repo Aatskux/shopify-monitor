@@ -37,7 +37,8 @@ Keep RESEARCH_ENABLED=false. Existing product detection, Discord and Signal stay
 ## Evidence card v2
 
 Replaces the long report with one message (max 3700 UTF-16 units). One capped Apify run
-uses two image-derived queries, up to ten results and PAST_MONTH/MOST_LIKED filters.
+uses two image-derived queries, up to ten Top-search results; dates are validated locally against a 30-day window.
+Clockworks video-only filters currently fail with device-ID errors, so no date/sort filter is sent.
 Invalid/stale metrics are rejected. Up to five video covers are compared with the product
 image in one batch; only confident exact cover matches support a strong-video signal.
 This is not full-video inspection, measured growth or buyer-country evidence. Similar

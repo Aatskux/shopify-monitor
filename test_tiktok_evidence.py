@@ -35,7 +35,7 @@ class Tests(unittest.TestCase):
  def test_provider_charge_and_search_bounds(self,api):
   api.side_effect=[{'data':{'id':'run123'}},{'data':{'status':'SUCCEEDED','defaultDatasetId':'data123'}},[]]
   self.assertEqual(tiktok.search(['one','two']),[])
-  p=api.call_args_list[0].kwargs;self.assertEqual(p['params']['maxTotalChargeUsd'],0.5);self.assertEqual(p['params']['maxItems'],10);self.assertEqual(p['json']['videoSearchDateFilter'],'PAST_MONTH');self.assertFalse(p['json']['shouldDownloadVideos'])
+  p=api.call_args_list[0].kwargs;self.assertEqual(p['params']['maxTotalChargeUsd'],0.5);self.assertEqual(p['params']['maxItems'],10);self.assertNotIn('videoSearchDateFilter',p['json']);self.assertFalse(p['json']['shouldDownloadVideos'])
  def test_no_results_does_not_prove_no_demand(self):
   self.assertIn('ei todista',tiktok.summary({'status':'ok','videos':[]}))
  def test_plain_compact_cited_card(self):

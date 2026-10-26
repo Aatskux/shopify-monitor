@@ -19,7 +19,7 @@ US: exact competitor/price or actual demand evidence; say missing if unavailable
 UK: exact competitor/price or actual demand evidence; say missing if unavailable.
 Myyntikulma: one product-specific audience + creative hook, not generic advice.
 Ratkaiseva puute: the single missing fact that most changes the decision.
-Cite at most TWO good sources inline. Distinguish facts vs inference. Never compare US/UK
+Cite at most THREE good sources inline; attach each numerical market claim to its actual source. Distinguish facts vs inference. Never compare US/UK
 market sizes without measured evidence. Missing supplier cost alone must not replace actual
 market investigation. No long legal, logistics or sample-order checklists. No TikTok repetition.
 """

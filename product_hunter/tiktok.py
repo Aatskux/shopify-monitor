@@ -2,6 +2,8 @@
 import base64
 import json
 import os
+import re
+from urllib.parse import urlsplit, urlunsplit
 import time
 from datetime import datetime, timezone
 import requests
@@ -31,15 +33,16 @@ def search(queries):
     if cap != 0.5:
         raise ValueError('Research requires the explicit 0.50 USD run ceiling')
     run = apify('POST', 'acts/clockworks~tiktok-scraper/runs',
-        params={'maxTotalChargeUsd': cap, 'timeout': 90, 'maxItems': 10},
-        json={'searchQueries': queries[:2], 'resultsPerPage': 5, 'searchSection': '/video',
-              'videoSearchDateFilter': 'PAST_MONTH', 'videoSearchSorting': 'MOST_LIKED',
+        params={'maxTotalChargeUsd': cap, 'timeout': 180, 'maxItems': 10},
+        json={'searchQueries': queries[:2], 'resultsPerPage': 5,
               'shouldDownloadVideos': False, 'shouldDownloadCovers': False})['data']
     run_id = safe_id(run['id'])
-    deadline = time.monotonic() + 115
+    deadline = time.monotonic() + 205
     while time.monotonic() < deadline:
         run = apify('GET', 'actor-runs/' + run_id)['data']
         if run['status'] == 'SUCCEEDED':
+            if 'Scraped 0/' in str(run.get('statusMessage', '')):
+                raise RuntimeError('Provider failed all search queries')
             rows = apify('GET', 'datasets/' + safe_id(run['defaultDatasetId']) + '/items',
                         params={'clean': 'true', 'limit': 10, 'format': 'json'})
             if not isinstance(rows, list):
@@ -54,6 +57,11 @@ def search(queries):
 
 def normalize(row, now):
     url = https_url(row.get('webVideoUrl'), 'tiktok.com')
+    if url:
+        parsed = urlsplit(url)
+        if not re.fullmatch(r'/@[^/]{1,64}/video/[0-9]{1,40}', parsed.path):
+            return None
+        url = urlunsplit((parsed.scheme, parsed.netloc, parsed.path, '', ''))
     fields = [row.get(k) for k in ('playCount', 'diggCount', 'commentCount', 'shareCount')]
     views, likes, comments, shares = fields
     created = row.get('createTime')
@@ -82,7 +90,7 @@ def collect(caption, image=None):
     product_image = 'data:image/jpeg;base64,' + base64.b64encode(image).decode()
     try:
         identified = visual_json('Identify the exact physical product from the picture. Create TWO short English TikTok search queries: '
-            'specific item/design and a close descriptive synonym. Avoid irrelevant store branding. Return {"queries":[string,string]}.',
+            'specific item/design and a close descriptive synonym, at most five keywords each. Avoid irrelevant store branding. Return {"queries":[string,string]}.',
             {'product': caption}, [product_image])
         queries = identified.get('queries')
         if not isinstance(queries, list) or len(queries) != 2 or not all(isinstance(q, str) and 2 <= len(q) <= 100 for q in queries):
@@ -127,7 +135,7 @@ def summary(evidence):
         verdict = 'vahva videosignaali' if len({v['creator'] for v in candidates if v['creator']}) >= 2 else 'yksittäinen suosittu video'
     else:
         verdict = 'ei varmistettua vahvaa videosignaalia'
-    lines = [f'TikTok (30 vrk): {verdict}. Tarkkoja kansikuvaosumia {len(exact)}/{len(videos)}.']
+    lines = [f'TikTok (30 vrk): {verdict}. Haettu {evidence.get("sampled", len(videos))} tulosta, tuoreita {len(videos)}, tarkkoja kansikuvaosumia {len(exact)}.']
     selected = sorted(exact, key=lambda v: v['views'], reverse=True)[:2]
     if not selected:
         selected = ([v for v in videos if v['match'] == 'similar'] or [v for v in videos if v['match'] == 'unverified'])[:1]
