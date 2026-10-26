@@ -41,7 +41,7 @@ jobs:
       - name: Yksikkotestit (valekauppa, vale-Discord, ei verkkoa)
         env:
           REQUIRE_FFMPEG: "1"
-        run: python -u -m unittest -v test_shopify_monitor.py test_discord_intake.py test_metadata_cleaner.py test_telegram.py test_research.py test_manual_research.py
+        run: python -u -m unittest -v test_shopify_monitor.py test_discord_intake.py test_metadata_cleaner.py test_telegram.py test_research.py test_manual_research.py test_tiktok_evidence.py
 
       # Savutesti hakee oikeat kaupat ja renderoi oikeat Discord-embedit,
       # mutta ajaa dry-runina: mitaan ei posteta eika tilaa kirjoiteta.

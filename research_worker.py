@@ -36,7 +36,7 @@ class Worker:
             self.answer(query, 'Tutkimus on jo käynnissä. Kokeile uudelleen sen valmistuttua.')
             return
         try:
-            status = self.state.claim(url)
+            status = self.state.claim('evidence-v2:' + url, limit=10)
             if status != 'started':
                 self.answer(query, 'Tämä tuote on jo käsitelty.' if status == 'duplicate' else 'Kuukauden tutkimusraja on täynnä.')
                 self.busy.release()
@@ -51,20 +51,14 @@ class Worker:
     def run_report(self, url, caption, photos=()):
         try:
             telegram.validate_destination()
-            telegram.send_message('🔎 Tutkin tuotteen ja vertaan US- ja UK-markkinoita.\n' + url)
+            telegram.send_message('🔎 Haen tuoreet TikTok-luvut ja vertaan US- ja UK-markkinoita.\n' + url)
             image = photo_bytes(photos) if photos else None
             report = investigate(url, caption, image)
-            # Preserve all sources and paragraphs instead of silently clipping the report.
-            while report:
-                chunk = telegram._clip(report, 3500)
-                if len(chunk) < len(report) and '\n' in chunk[1500:]:
-                    chunk = chunk[:chunk.rfind('\n') + 1]
-                telegram.validate_destination()
-                telegram.send_message(chunk)
-                report = report[len(chunk):]
-            self.state.finish(url, 'done')
+            telegram.validate_destination()
+            telegram.send_message(report)
+            self.state.finish('evidence-v2:' + url, 'done')
         except Exception:
-            self.state.finish(url, 'failed')
+            self.state.finish('evidence-v2:' + url, 'failed')
             print('[manual-research] Failed; details omitted to protect credentials', flush=True)
             try:
                 telegram.validate_destination()
@@ -97,7 +91,7 @@ def photo_bytes(photos):
 
 
 def main():
-    for name in ('TELEGRAM_BOT_TOKEN', 'TELEGRAM_CHAT_ID', 'OPENAI_API_KEY', 'OPENAI_RESEARCH_MODEL'):
+    for name in ('TELEGRAM_BOT_TOKEN', 'TELEGRAM_CHAT_ID', 'OPENAI_API_KEY', 'OPENAI_RESEARCH_MODEL', 'APIFY_TOKEN', 'APIFY_MAX_RUN_USD'):
         if not os.getenv(name):
             raise RuntimeError('Worker configuration is incomplete')
     if os.getenv('TELEGRAM_PRIVATE_GROUP_ONLY') != 'true':

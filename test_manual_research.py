@@ -60,7 +60,7 @@ class Tests(unittest.TestCase):
     def test_sources_and_caps(self,post):
         post.return_value.json.return_value={'status':'completed','output':[{'content':[{'type':'output_text','text':'UK X','annotations':[{'type':'url_citation','url':'https://example.com','start_index':3,'end_index':4}]}]}]}
         self.assertIn('https://example.com',market.investigate('url',TEXT))
-        payload=post.call_args.kwargs['json'];self.assertEqual(payload['max_tool_calls'],6);self.assertEqual(payload['max_output_tokens'],6000);self.assertFalse(payload['store'])
+        payload=post.call_args.kwargs['json'];self.assertEqual(payload['max_tool_calls'],6);self.assertEqual(payload['max_output_tokens'],2400);self.assertFalse(payload['store'])
         with self.assertRaises(ValueError):market.render({'status':'incomplete'})
         with self.assertRaises(ValueError):market.render({'status':'completed','output':[]})
     @patch('product_hunter.jobs.enqueue')
