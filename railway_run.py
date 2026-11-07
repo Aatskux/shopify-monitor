@@ -10,6 +10,10 @@ if not (DATA/'stores.json').exists():
 os.chdir(DATA)
 sys.path.insert(0,str(ROOT))
 sys.argv=[str(ROOT/'shopify_monitor.py'),'--once']
+from product_hunter import catalog_sync, tracked_catalog
+removed = tracked_catalog.remove_excluded(DATA/'stores.json')
+if removed:
+    print('[catalog] removed pilocea.com from persistent store list', flush=True)
 import shopify_monitor
 # Intake must update persistent stores before the monitor loads its catalogue.
 token=os.environ.get('DISCORD_BOT_TOKEN','').strip()
@@ -25,5 +29,14 @@ else:
 if not os.environ.get('DISCORD_WEBHOOK') and not os.environ.get('SALES_WEBHOOK'):
     shopify_monitor.get_webhook=lambda:None
     print('Discord delivery disabled; monitor state and configured Signal feed remain active',flush=True)
-shopify_monitor.main()
+def sync_catalogue():
+    try:
+        if catalog_sync.publish(DATA):
+            print('[catalog] published tracked-store catalogue', flush=True)
+    except Exception as error:
+        print(f'[catalog] sync failed: {type(error).__name__}', flush=True)
 
+if removed and (DATA/'image_hashes.json').exists():
+    sync_catalogue()
+shopify_monitor.main()
+sync_catalogue()
