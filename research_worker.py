@@ -36,7 +36,7 @@ class Worker:
             self.answer(query, 'Tutkimus on jo käynnissä. Kokeile uudelleen sen valmistuttua.')
             return
         try:
-            status = self.state.claim('evidence-v2:' + url, limit=10)
+            status = self.state.claim('evidence-v3:' + url, limit=10)
             if status != 'started':
                 self.answer(query, 'Tämä tuote on jo käsitelty.' if status == 'duplicate' else 'Kuukauden tutkimusraja on täynnä.')
                 self.busy.release()
@@ -56,9 +56,9 @@ class Worker:
             report = investigate(url, caption, image)
             telegram.validate_destination()
             telegram.send_message(report)
-            self.state.finish('evidence-v2:' + url, 'done')
+            self.state.finish('evidence-v3:' + url, 'done')
         except Exception:
-            self.state.finish('evidence-v2:' + url, 'failed')
+            self.state.finish('evidence-v3:' + url, 'failed')
             print('[manual-research] Failed; details omitted to protect credentials', flush=True)
             try:
                 telegram.validate_destination()

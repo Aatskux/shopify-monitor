@@ -51,3 +51,16 @@ Each attempt can start at most one $0.50-capped Apify run: at most $5 in new run
 Keep the existing $5 OpenAI project hard limit and the agreed 20 EUR combined API budget.
 No paid plan, token scope, automatic retry or queue changes. The worker needs the existing
 APIFY_TOKEN and APIFY_MAX_RUN_USD=0.5 in addition to its previous variables.
+
+## Cross-store evidence (v3)
+
+The existing US/UK web-search call also looks up the exact product in other shops.
+Up to three direct cited storefronts are shown, deduplicated by registrable domain
+(including distinct myshopify.com stores); the original store and common
+marketplaces are excluded. Identification is an AI assessment based on a shared
+identifier or sufficiently distinctive visual features, not a physical inspection.
+Show an explicit launch date only if the cited retailer page dates its launch of
+that exact product; otherwise show the listing with its date unconfirmed.
+Listings are evidence of distribution, not sales, demand or distinct ownership.
+Search is sampled; missing hits do not establish exclusivity. The v3 admission
+key permits one updated report for earlier cards within the existing monthly cap.
