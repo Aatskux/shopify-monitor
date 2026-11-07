@@ -52,15 +52,20 @@ Keep the existing $5 OpenAI project hard limit and the agreed 20 EUR combined AP
 No paid plan, token scope, automatic retry or queue changes. The worker needs the existing
 APIFY_TOKEN and APIFY_MAX_RUN_USD=0.5 in addition to its previous variables.
 
-## Cross-store evidence (v3)
+## Tracked-store comparison (v4)
 
-The existing US/UK web-search call also looks up the exact product in other shops.
-Up to three direct cited storefronts are shown, deduplicated by registrable domain
-(including distinct myshopify.com stores); the original store and common
-marketplaces are excluded. Identification is an AI assessment based on a shared
-identifier or sufficiently distinctive visual features, not a physical inspection.
-Show an explicit launch date only if the cited retailer page dates its launch of
-that exact product; otherwise show the listing with its date unconfirmed.
-Listings are evidence of distribution, not sales, demand or distinct ownership.
-Search is sampled; missing hits do not establish exclusivity. The v3 admission
-key permits one updated report for earlier cards within the existing monthly cap.
+The monitor publishes the current catalogue from its persistent stores.json and
+image_hashes.json to the research worker after each successful round. The private
+Railway endpoint accepts only timestamped HMAC-signed snapshots and persists
+them atomically. No new secrets or public route are needed. Catalogue data is
+not sent to an AI or search provider. Removed shops are omitted; pilocea.com
+is removed from persisted stores and blocked in Discord intake.
+
+The Telegram card looks up the clicked product by storefront and handle, compares
+its indexed image fingerprint and title with other tracked storefronts, counts
+each host once, and displays up to three links. Possible photo-only/name-only
+matches are separate from strong matches. Dates come from the store's product
+published_at field and do not establish sales. Snapshots older than 30 minutes
+or products missing from the index are reported as unavailable. The existing
+market section does not search for competitor storefronts. Old alerts can run
+the v4 report once within the existing research limits.

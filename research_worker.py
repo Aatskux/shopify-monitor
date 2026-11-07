@@ -5,7 +5,7 @@ import requests
 import threading
 import time
 from pathlib import Path
-from product_hunter import telegram
+from product_hunter import telegram, catalog_sync
 from product_hunter.manual import Admission, verified_callback
 from product_hunter.market import investigate
 
@@ -36,7 +36,7 @@ class Worker:
             self.answer(query, 'Tutkimus on jo käynnissä. Kokeile uudelleen sen valmistuttua.')
             return
         try:
-            status = self.state.claim('evidence-v3:' + url, limit=10)
+            status = self.state.claim('evidence-v4:' + url, limit=10)
             if status != 'started':
                 self.answer(query, 'Tämä tuote on jo käsitelty.' if status == 'duplicate' else 'Kuukauden tutkimusraja on täynnä.')
                 self.busy.release()
@@ -51,14 +51,14 @@ class Worker:
     def run_report(self, url, caption, photos=()):
         try:
             telegram.validate_destination()
-            telegram.send_message('🔎 Haen tuoreet TikTok-luvut ja vertaan US- ja UK-markkinoita.\n' + url)
+            telegram.send_message('🔎 Vertaan tuotetta seurantalistan kauppoihin ja tarkistan TikTok- sekä markkinasignaalit.\n' + url)
             image = photo_bytes(photos) if photos else None
             report = investigate(url, caption, image)
             telegram.validate_destination()
             telegram.send_message(report)
-            self.state.finish('evidence-v3:' + url, 'done')
+            self.state.finish('evidence-v4:' + url, 'done')
         except Exception:
-            self.state.finish('evidence-v3:' + url, 'failed')
+            self.state.finish('evidence-v4:' + url, 'failed')
             print('[manual-research] Failed; details omitted to protect credentials', flush=True)
             try:
                 telegram.validate_destination()
@@ -103,6 +103,7 @@ def main():
     if telegram._call('getWebhookInfo', {}).get('url'):
         raise RuntimeError('Bot webhook is configured')
     telegram.validate_destination()
+    catalog_server = catalog_sync.start(directory)
     worker = Worker(Admission(directory / 'manual_research.sqlite3'), telegram._call('getMe', {})['id'])
     print('[manual-research] Ready for explicit button presses', flush=True)
     while True:

@@ -28,6 +28,8 @@ import shopify_monitor as m
 
 API_BASE = "https://discord.com/api/v10"
 USER_AGENT = "DiscordBot (https://github.com/Aatskux/shopify-monitor, 1.0)"
+from product_hunter.tracked_catalog import excluded
+
 STORES_FILE = pathlib.Path("stores.json")
 SEEN_FILE = pathlib.Path("seen.json")
 STATE_FILE = pathlib.Path("intake_state.json")   # viimeksi kasitelty viesti-id
@@ -181,6 +183,8 @@ def describe_error(e):
 
 def handle_store(store, stores, seen):
     """Palauttaa (reaktio, selite). Muokkaa stores- ja seen-sanakirjoja."""
+    if excluded(store):
+        return UNREACHABLE, "kauppa poistettu seurannasta"
     if is_known(store, stores):
         return DUPLICATE, "on jo listalla"
     try:
